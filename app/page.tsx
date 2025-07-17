@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div style={{ minHeight: "100vh", background: "var(--color-background)", color: "var(--color-text)", fontFamily: "'Arial Rounded MT Bold', Arial, Helvetica, sans-serif" }}>
+    <div style={{ minHeight: "100vh", background: "var(--color-background)", color: "var(--color-text)", fontFamily: "'Inter', Tahoma, Arial, Helvetica, sans-serif" }}>
       {/* Header */}
       <header style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "2rem 3rem 1rem 3rem" }}>
         <div style={{ fontSize: "2rem", fontWeight: 700, letterSpacing: 2, color: "var(--color-primary)" }}>
