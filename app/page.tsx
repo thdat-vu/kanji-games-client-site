@@ -20,23 +20,23 @@ export default function Home() {
         {/* Left: Text */}
         <section style={{ maxWidth: 500 }}>
           <h1 style={{ fontSize: "3.5rem", fontWeight: 800, marginBottom: "0.5rem", lineHeight: 1.1 }}>
-            Master <span style={{ color: "var(--color-secondary)" }}>Kanji</span> <br /> with Fun Games
+            Chinh phục <span style={{ color: "var(--color-secondary)" }}>Kanji</span> <br /> qua Trò Chơi
           </h1>
           <h2 style={{ fontSize: "2rem", fontWeight: 400, color: "var(--color-primary)", marginBottom: "1.5rem" }}>
-            Play. Learn. Remember.
+            Vừa chơi vừa học, nhớ lâu vượt trội.
           </h2>
           <p style={{ fontSize: "1.2rem", color: "#796962cc", marginBottom: "2.5rem" }}>
-            Dive into interactive games designed to help you master Japanese kanji effortlessly. Challenge yourself, track your progress, and make learning fun!
+            Tham gia các trò chơi tương tác giúp bạn làm chủ chữ Kanji tiếng Nhật một cách dễ dàng. Thử thách bản thân, theo dõi tiến trình và biến việc học thành niềm vui!
           </p>
           <a href="#play" className="btn" style={{ textDecoration: "none" }}>
-            Play Now
+            Chơi ngay
           </a>
         </section>
         {/* Right: Illustration */}
         <section style={{ minWidth: 320, display: "flex", alignItems: "center", justifyContent: "center" }}>
           <Image
             src="/assets/images/avatar.jpeg"
-            alt="Kanji Games Mascot"
+            alt="Linh vật Kanji Games"
             width={350}
             height={350}
             style={{ borderRadius: "2rem", boxShadow: "0 8px 32px #79696222" }}
