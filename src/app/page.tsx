@@ -80,9 +80,9 @@ export default function Home() {
           <p className="text-[1.2rem] text-[#796962cc] mb-10">
             Tham gia các trò chơi tương tác giúp bạn làm chủ chữ Kanji tiếng Nhật một cách dễ dàng. Thử thách bản thân, theo dõi tiến trình và biến việc học thành niềm vui!
           </p>
-          <a href="#play" className="btn no-underline">
+          <Link href="/play" className="btn no-underline">
             Chơi ngay
-          </a>
+          </Link>
         </section>
         {/* Right: Illustration */}
         <section className="min-w-[320px] flex items-center justify-center">
