@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "@fontsource/inter/vietnamese.css";
+import { AuthProvider } from "@/context/auth-context";
 
 export const metadata: Metadata = {
   title: "Kanji Games, vui trước học sau, nhớ lâu vượt trội",
@@ -15,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased">
-        {children}
+        <AuthProvider>{children}</AuthProvider>
       </body>
     </html>
   );

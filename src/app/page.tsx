@@ -1,19 +1,71 @@
+"use client";
+
 import Image from "next/image";
+import Link from "next/link";
+import { useAuth } from "@/context/auth-context";
+
+function Header() {
+  const { user, loading } = useAuth();
+
+  return (
+    <header className="flex justify-between items-center px-12 pt-8 pb-4">
+      <div className="text-2xl font-bold tracking-wider text-[var(--color-primary)]">
+        Kanji<span className="text-[var(--color-secondary)]">Games</span>
+      </div>
+      <nav className="flex items-center gap-6">
+        <a
+          href="#"
+          aria-label="Instagram"
+          className="text-2xl text-[var(--color-primary)]"
+        >
+          📸
+        </a>
+        <a
+          href="#"
+          aria-label="Facebook"
+          className="text-2xl text-[var(--color-primary)]"
+        >
+          📘
+        </a>
+        <a
+          href="#"
+          aria-label="YouTube"
+          className="text-2xl text-[var(--color-primary)]"
+        >
+          ▶️
+        </a>
+        <div className="h-6 w-px bg-[var(--color-primary)]/30" />
+        {loading ? (
+          <span className="text-sm text-[var(--color-primary)]/80">
+            Đang kiểm tra đăng nhập...
+          </span>
+        ) : user ? (
+          <span className="text-sm text-[var(--color-primary)]/90">
+            Xin chào,{" "}
+            <span className="font-semibold">
+              {user.user_metadata.full_name ||
+                user.email ||
+                "người chơi"}
+            </span>
+          </span>
+        ) : (
+          <Link
+            href="/auth/login"
+            className="text-sm font-semibold text-[var(--color-primary)] underline-offset-4 hover:underline"
+          >
+            Đăng nhập
+          </Link>
+        )}
+      </nav>
+    </header>
+  );
+}
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-[var(--color-background)] text-[var(--color-text)] font-sans">
       {/* Header */}
-      <header className="flex justify-between items-center px-12 pt-8 pb-4">
-        <div className="text-2xl font-bold tracking-wider text-[var(--color-primary)]">
-          Kanji<span className="text-[var(--color-secondary)]">Games</span>
-        </div>
-        <nav className="flex gap-6">
-          <a href="#" aria-label="Instagram" className="text-2xl text-[var(--color-primary)]">📸</a>
-          <a href="#" aria-label="Facebook" className="text-2xl text-[var(--color-primary)]">📘</a>
-          <a href="#" aria-label="YouTube" className="text-2xl text-[var(--color-primary)]">▶️</a>
-        </nav>
-      </header>
+      <Header />
 
       {/* Hero Section */}
       <main className="flex flex-row items-center justify-center px-12 py-8 gap-12 flex-wrap">
