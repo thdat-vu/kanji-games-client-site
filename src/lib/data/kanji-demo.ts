@@ -1,3 +1,5 @@
+import type { JLPTLevel } from "@/constants/constants";
+
 export interface KanjiWord {
   word: string;
   reading: string;
@@ -5,7 +7,7 @@ export interface KanjiWord {
 }
 
 export interface KanjiLevel {
-  level: string;
+  level: JLPTLevel;
   coins: number;
   words: KanjiWord[];
 }
