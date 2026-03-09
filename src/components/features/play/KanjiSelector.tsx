@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { KANJI_DATA, type KanjiEntry, type KanjiLevel, type KanjiWord } from "@/lib/data/kanji-demo";
+import { LABELS } from "@/constants/constants";
 import { LevelMap } from "./LevelMap";
 import { WordListModal } from "./WordListModal";
 
@@ -16,8 +17,6 @@ export function KanjiSelector() {
     const params = new URLSearchParams({
       kanji: selectedKanji.kanji,
       word: word.word,
-      reading: word.reading,
-      meaning: word.meaning,
     });
     router.push(`/play/game?${params.toString()}`);
   }
@@ -31,7 +30,7 @@ export function KanjiSelector() {
     return (
       <section className="px-6 py-8 max-w-md mx-auto">
         <h1 className="text-2xl font-extrabold mb-6 text-center">
-          Chọn chữ Kanji
+          {LABELS.SELECT_KANJI}
         </h1>
         <div className="grid grid-cols-3 gap-4">
           {KANJI_DATA.map((entry) => (
@@ -42,7 +41,7 @@ export function KanjiSelector() {
                 px-4 py-5 shadow hover:shadow-lg hover:border-[var(--color-primary)]
                 hover:scale-105 transition-all duration-150"
             >
-              <span className="text-xs text-[var(--color-primary)]">漢字</span>
+              <span className="text-xs text-[var(--color-primary)]">{LABELS.KANJI_BADGE}</span>
               <span className="text-4xl font-bold text-red-800">
                 {entry.kanji}
               </span>
@@ -60,7 +59,7 @@ export function KanjiSelector() {
           onClick={handleBack}
           className="text-sm text-[var(--color-primary)] mb-4 underline underline-offset-4 bg-transparent"
         >
-          ← Chọn chữ khác
+          {LABELS.SELECT_OTHER}
         </button>
 
         <LevelMap

@@ -15,6 +15,19 @@ export interface KanjiEntry {
   levels: KanjiLevel[];
 }
 
+export function findWord(
+  kanjiChar: string,
+  wordStr: string
+): KanjiWord | null {
+  const entry = KANJI_DATA.find((e) => e.kanji === kanjiChar);
+  if (!entry) return null;
+  for (const level of entry.levels) {
+    const found = level.words.find((w) => w.word === wordStr);
+    if (found) return found;
+  }
+  return null;
+}
+
 export const KANJI_DATA: KanjiEntry[] = [
   {
     kanji: "事",

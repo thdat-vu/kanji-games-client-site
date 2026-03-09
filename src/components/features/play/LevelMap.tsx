@@ -1,7 +1,7 @@
 "use client";
 
 import type { KanjiLevel } from "@/lib/data/kanji-demo";
-import { LEVEL_COLORS, LEVEL_POSITIONS } from "@/constants/constants";
+import { LEVEL_COLORS, LEVEL_POSITIONS, LABELS } from "@/constants/constants";
 
 interface LevelMapProps {
   kanji: string;
@@ -15,7 +15,7 @@ export function LevelMap({ kanji, levels, onSelectLevel }: LevelMapProps) {
       <div className="flex items-center gap-3">
         <div className="bg-[#F5EEE6] border-2 border-[var(--color-primary)] rounded-xl px-4 py-2 shadow">
           <p className="text-xs text-[var(--color-primary)] font-medium">
-            漢字
+            {LABELS.KANJI_BADGE}
           </p>
           <p className="text-4xl font-bold text-red-800">{kanji}</p>
         </div>

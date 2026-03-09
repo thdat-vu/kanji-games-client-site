@@ -3,6 +3,7 @@
 import { useState, useCallback } from "react";
 import { useRouter } from "next/navigation";
 import { useGameTimer } from "@/hooks/useGameTimer";
+import { LABELS } from "@/constants/constants";
 
 interface GameRoundProps {
   kanji: string;
@@ -47,11 +48,49 @@ export function GameRound({ kanji, word, reading, meaning }: GameRoundProps) {
   const isTimedOut = revealed && expired && userAnswer.trim() === "";
   const isWrong = revealed && !isCorrect && !isTimedOut;
 
+  const resultTitle = isCorrect
+    ? LABELS.RESULT_CORRECT
+    : isTimedOut
+      ? LABELS.RESULT_TIMEOUT
+      : LABELS.RESULT_WRONG;
+
+  const resultSub = isCorrect
+    ? LABELS.RESULT_CORRECT_SUB
+    : isTimedOut
+      ? LABELS.RESULT_TIMEOUT_SUB
+      : LABELS.RESULT_WRONG_SUB;
+
+  const resultColor = isCorrect
+    ? "green"
+    : isTimedOut
+      ? "amber"
+      : "red";
+
+  const bannerStyles = {
+    green: "bg-green-100 border-2 border-green-400",
+    amber: "bg-amber-100 border-2 border-amber-400",
+    red: "bg-red-100 border-2 border-red-400",
+  }[resultColor];
+
+  const titleColor = {
+    green: "text-green-600",
+    amber: "text-amber-600",
+    red: "text-red-600",
+  }[resultColor];
+
+  const subColor = {
+    green: "text-green-700",
+    amber: "text-amber-700",
+    red: "text-red-700",
+  }[resultColor];
+
   return (
     <div className="min-h-screen bg-[var(--color-background)] text-[var(--color-text)] flex flex-col">
       <header className="flex items-center justify-between px-6 py-4">
         <div className="bg-[#F5EEE6] border-2 border-[var(--color-primary)] rounded-xl px-3 py-1 shadow">
-          <p className="text-[10px] text-[var(--color-primary)]">漢字</p>
+          <p className="text-[10px] text-[var(--color-primary)]">
+            {LABELS.KANJI_BADGE}
+          </p>
           <p className="text-2xl font-bold text-red-800 leading-tight">
             {kanji}
           </p>
@@ -66,7 +105,6 @@ export function GameRound({ kanji, word, reading, meaning }: GameRoundProps) {
       </header>
 
       <main className="flex-1 flex flex-col items-center justify-center px-6 gap-6">
-        {/* Word card */}
         <div className="bg-[#F5EEE6] border-2 border-[var(--color-secondary)] rounded-2xl shadow-lg px-8 py-6 w-full max-w-xs text-center space-y-2">
           <p className="text-lg text-[var(--color-primary)]">{reading}</p>
           <p className="text-4xl font-extrabold text-[var(--color-primary)]">
@@ -74,7 +112,6 @@ export function GameRound({ kanji, word, reading, meaning }: GameRoundProps) {
           </p>
         </div>
 
-        {/* Timer */}
         <div className="flex flex-col items-center gap-2 w-full max-w-xs">
           <div className="flex items-center gap-2">
             <span className="text-2xl">⏳</span>
@@ -88,7 +125,6 @@ export function GameRound({ kanji, word, reading, meaning }: GameRoundProps) {
           </div>
         </div>
 
-        {/* Answer area */}
         {!revealed ? (
           <div className="w-full max-w-xs space-y-3">
             <input
@@ -98,61 +134,26 @@ export function GameRound({ kanji, word, reading, meaning }: GameRoundProps) {
               onKeyDown={(e) =>
                 e.key === "Enter" && userAnswer.trim() && handleReveal()
               }
-              placeholder="Nhập nghĩa tiếng Việt..."
+              placeholder={LABELS.ANSWER_PLACEHOLDER}
               className="w-full px-4 py-3 rounded-xl border-2 border-[var(--color-secondary)] bg-white/80
                 text-[var(--color-primary)] placeholder:text-[#796962aa] focus:outline-none focus:border-[var(--color-primary)]"
             />
             <button onClick={handleReveal} className="btn w-full">
-              Trả lời
+              {LABELS.SUBMIT}
             </button>
           </div>
         ) : (
           <div className="w-full max-w-xs space-y-4">
-            {/* Result banner */}
-            <div
-              className={`rounded-2xl px-5 py-4 text-center shadow-md ${
-                isCorrect
-                  ? "bg-green-100 border-2 border-green-400"
-                  : isTimedOut
-                    ? "bg-amber-100 border-2 border-amber-400"
-                    : "bg-red-100 border-2 border-red-400"
-              }`}
-            >
-              <p
-                className={`text-3xl font-extrabold mb-1 ${
-                  isCorrect
-                    ? "text-green-600"
-                    : isTimedOut
-                      ? "text-amber-600"
-                      : "text-red-600"
-                }`}
-              >
-                {isCorrect
-                  ? "Chính xác!"
-                  : isTimedOut
-                    ? "Hết giờ!"
-                    : "Sai rồi!"}
+            <div className={`rounded-2xl px-5 py-4 text-center shadow-md ${bannerStyles}`}>
+              <p className={`text-3xl font-extrabold mb-1 ${titleColor}`}>
+                {resultTitle}
               </p>
-              <p
-                className={`text-sm ${
-                  isCorrect
-                    ? "text-green-700"
-                    : isTimedOut
-                      ? "text-amber-700"
-                      : "text-red-700"
-                }`}
-              >
-                {isCorrect
-                  ? "Bạn giỏi lắm, tiếp tục nhé!"
-                  : isTimedOut
-                    ? "Bạn chưa kịp trả lời."
-                    : "Đừng nản, thử lại nhé!"}
-              </p>
+              <p className={`text-sm ${subColor}`}>{resultSub}</p>
             </div>
 
             {isWrong && userAnswer.trim() && (
               <div className="bg-white/80 border-2 border-red-300 rounded-xl px-4 py-3 text-center">
-                <p className="text-sm text-[#796962cc]">Câu trả lời của bạn</p>
+                <p className="text-sm text-[#796962cc]">{LABELS.YOUR_ANSWER}</p>
                 <p className="text-xl font-bold text-red-600 line-through">
                   {userAnswer}
                 </p>
@@ -164,7 +165,7 @@ export function GameRound({ kanji, word, reading, meaning }: GameRoundProps) {
                 isCorrect ? "border-green-300" : "border-[var(--color-secondary)]"
               }`}
             >
-              <p className="text-sm text-[#796962cc]">Đáp án đúng</p>
+              <p className="text-sm text-[#796962cc]">{LABELS.CORRECT_ANSWER}</p>
               <p className="text-xl font-bold text-green-700">{meaning}</p>
             </div>
 
@@ -173,10 +174,10 @@ export function GameRound({ kanji, word, reading, meaning }: GameRoundProps) {
                 onClick={() => router.back()}
                 className="btn flex-1 bg-[var(--color-secondary)] text-[var(--color-primary)]"
               >
-                Quay lại
+                {LABELS.BACK}
               </button>
               <button onClick={handleReset} className="btn flex-1">
-                Chơi lại
+                {LABELS.RETRY}
               </button>
             </div>
           </div>
