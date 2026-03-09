@@ -1,0 +1,188 @@
+"use client";
+
+import { useState, useCallback } from "react";
+import { useRouter } from "next/navigation";
+import { useGameTimer } from "@/hooks/useGameTimer";
+import { LABELS } from "@/constants/constants";
+
+interface GameRoundProps {
+  kanji: string;
+  word: string;
+  reading: string;
+  meaning: string;
+}
+
+function normalize(s: string) {
+  return s.trim().toLowerCase().replace(/\s+/g, " ");
+}
+
+export function GameRound({ kanji, word, reading, meaning }: GameRoundProps) {
+  const router = useRouter();
+  const { timeLeft, percent, expired, stop, reset } = useGameTimer();
+
+  const [revealed, setRevealed] = useState(false);
+  const [userAnswer, setUserAnswer] = useState("");
+
+  const handleReveal = useCallback(() => {
+    stop();
+    setRevealed(true);
+  }, [stop]);
+
+  const handleReset = useCallback(() => {
+    setRevealed(false);
+    setUserAnswer("");
+    reset();
+  }, [reset]);
+
+  if (!revealed && expired) {
+    setRevealed(true);
+  }
+
+  const isCorrect =
+    revealed &&
+    userAnswer.trim() !== "" &&
+    normalize(meaning)
+      .split(",")
+      .some((part) => normalize(userAnswer) === normalize(part));
+
+  const isTimedOut = revealed && expired && userAnswer.trim() === "";
+  const isWrong = revealed && !isCorrect && !isTimedOut;
+
+  const resultTitle = isCorrect
+    ? LABELS.RESULT_CORRECT
+    : isTimedOut
+      ? LABELS.RESULT_TIMEOUT
+      : LABELS.RESULT_WRONG;
+
+  const resultSub = isCorrect
+    ? LABELS.RESULT_CORRECT_SUB
+    : isTimedOut
+      ? LABELS.RESULT_TIMEOUT_SUB
+      : LABELS.RESULT_WRONG_SUB;
+
+  const resultColor = isCorrect
+    ? "green"
+    : isTimedOut
+      ? "amber"
+      : "red";
+
+  const bannerStyles = {
+    green: "bg-green-100 border-2 border-green-400",
+    amber: "bg-amber-100 border-2 border-amber-400",
+    red: "bg-red-100 border-2 border-red-400",
+  }[resultColor];
+
+  const titleColor = {
+    green: "text-green-600",
+    amber: "text-amber-600",
+    red: "text-red-600",
+  }[resultColor];
+
+  const subColor = {
+    green: "text-green-700",
+    amber: "text-amber-700",
+    red: "text-red-700",
+  }[resultColor];
+
+  return (
+    <div className="min-h-screen bg-[var(--color-background)] text-[var(--color-text)] flex flex-col">
+      <header className="flex items-center justify-between px-6 py-4">
+        <div className="bg-[#F5EEE6] border-2 border-[var(--color-primary)] rounded-xl px-3 py-1 shadow">
+          <p className="text-[10px] text-[var(--color-primary)]">
+            {LABELS.KANJI_BADGE}
+          </p>
+          <p className="text-2xl font-bold text-red-800 leading-tight">
+            {kanji}
+          </p>
+        </div>
+        <button
+          onClick={() => router.back()}
+          className="w-8 h-8 rounded-full bg-[#c0392b] text-white font-bold text-sm flex items-center justify-center
+            hover:bg-red-700 transition-colors shadow"
+        >
+          X
+        </button>
+      </header>
+
+      <main className="flex-1 flex flex-col items-center justify-center px-6 gap-6">
+        <div className="bg-[#F5EEE6] border-2 border-[var(--color-secondary)] rounded-2xl shadow-lg px-8 py-6 w-full max-w-xs text-center space-y-2">
+          <p className="text-lg text-[var(--color-primary)]">{reading}</p>
+          <p className="text-4xl font-extrabold text-[var(--color-primary)]">
+            {word}
+          </p>
+        </div>
+
+        <div className="flex flex-col items-center gap-2 w-full max-w-xs">
+          <div className="flex items-center gap-2">
+            <span className="text-2xl">⏳</span>
+            <span className="text-lg font-bold tabular-nums">{timeLeft}s</span>
+          </div>
+          <div className="w-full h-2 bg-[var(--color-secondary)] rounded-full overflow-hidden">
+            <div
+              className="h-full bg-[var(--color-primary)] rounded-full transition-all duration-1000 ease-linear"
+              style={{ width: `${percent}%` }}
+            />
+          </div>
+        </div>
+
+        {!revealed ? (
+          <div className="w-full max-w-xs space-y-3">
+            <input
+              type="text"
+              value={userAnswer}
+              onChange={(e) => setUserAnswer(e.target.value)}
+              onKeyDown={(e) =>
+                e.key === "Enter" && userAnswer.trim() && handleReveal()
+              }
+              placeholder={LABELS.ANSWER_PLACEHOLDER}
+              className="w-full px-4 py-3 rounded-xl border-2 border-[var(--color-secondary)] bg-white/80
+                text-[var(--color-primary)] placeholder:text-[#796962aa] focus:outline-none focus:border-[var(--color-primary)]"
+            />
+            <button onClick={handleReveal} className="btn w-full">
+              {LABELS.SUBMIT}
+            </button>
+          </div>
+        ) : (
+          <div className="w-full max-w-xs space-y-4">
+            <div className={`rounded-2xl px-5 py-4 text-center shadow-md ${bannerStyles}`}>
+              <p className={`text-3xl font-extrabold mb-1 ${titleColor}`}>
+                {resultTitle}
+              </p>
+              <p className={`text-sm ${subColor}`}>{resultSub}</p>
+            </div>
+
+            {isWrong && userAnswer.trim() && (
+              <div className="bg-white/80 border-2 border-red-300 rounded-xl px-4 py-3 text-center">
+                <p className="text-sm text-[#796962cc]">{LABELS.YOUR_ANSWER}</p>
+                <p className="text-xl font-bold text-red-600 line-through">
+                  {userAnswer}
+                </p>
+              </div>
+            )}
+
+            <div
+              className={`bg-white/80 rounded-xl px-4 py-3 text-center border-2 ${
+                isCorrect ? "border-green-300" : "border-[var(--color-secondary)]"
+              }`}
+            >
+              <p className="text-sm text-[#796962cc]">{LABELS.CORRECT_ANSWER}</p>
+              <p className="text-xl font-bold text-green-700">{meaning}</p>
+            </div>
+
+            <div className="flex gap-3">
+              <button
+                onClick={() => router.back()}
+                className="btn flex-1 bg-[var(--color-secondary)] text-[var(--color-primary)]"
+              >
+                {LABELS.BACK}
+              </button>
+              <button onClick={handleReset} className="btn flex-1">
+                {LABELS.RETRY}
+              </button>
+            </div>
+          </div>
+        )}
+      </main>
+    </div>
+  );
+}
