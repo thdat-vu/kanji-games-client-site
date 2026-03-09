@@ -33,6 +33,19 @@ function GameRound() {
 
   const timerPercent = (timeLeft / TIMER_SECONDS) * 100;
 
+  function normalize(s: string) {
+    return s.trim().toLowerCase().replace(/\s+/g, " ");
+  }
+
+  const isCorrect =
+    revealed && userAnswer.trim() !== "" &&
+    normalize(meaning)
+      .split(",")
+      .some((part) => normalize(userAnswer) === normalize(part));
+
+  const isTimedOut = revealed && timeLeft <= 0 && userAnswer.trim() === "";
+  const isWrong = revealed && !isCorrect && !isTimedOut;
+
   return (
     <div className="min-h-screen bg-[var(--color-background)] text-[var(--color-text)] flex flex-col">
       {/* Top bar */}
@@ -85,6 +98,7 @@ function GameRound() {
               type="text"
               value={userAnswer}
               onChange={(e) => setUserAnswer(e.target.value)}
+              onKeyDown={(e) => e.key === "Enter" && userAnswer.trim() && handleReveal()}
               placeholder="Nhập nghĩa tiếng Việt..."
               className="w-full px-4 py-3 rounded-xl border-2 border-[var(--color-secondary)] bg-white/80
                 text-[var(--color-primary)] placeholder:text-[#796962aa] focus:outline-none focus:border-[var(--color-primary)]"
@@ -93,23 +107,68 @@ function GameRound() {
               onClick={handleReveal}
               className="btn w-full"
             >
-              Xem đáp án
+              Trả lời
             </button>
           </div>
         ) : (
           <div className="w-full max-w-xs space-y-4">
-            {/* Revealed answer */}
-            <div className="bg-white/80 border-2 border-green-300 rounded-xl px-4 py-3 text-center">
-              <p className="text-sm text-[#796962cc]">Đáp án</p>
-              <p className="text-xl font-bold text-green-700">{meaning}</p>
+            {/* Result banner */}
+            <div
+              className={`rounded-2xl px-5 py-4 text-center shadow-md ${
+                isCorrect
+                  ? "bg-green-100 border-2 border-green-400"
+                  : isTimedOut
+                    ? "bg-amber-100 border-2 border-amber-400"
+                    : "bg-red-100 border-2 border-red-400"
+              }`}
+            >
+              <p
+                className={`text-3xl font-extrabold mb-1 ${
+                  isCorrect
+                    ? "text-green-600"
+                    : isTimedOut
+                      ? "text-amber-600"
+                      : "text-red-600"
+                }`}
+              >
+                {isCorrect ? "Chính xác!" : isTimedOut ? "Hết giờ!" : "Sai rồi!"}
+              </p>
+              <p
+                className={`text-sm ${
+                  isCorrect
+                    ? "text-green-700"
+                    : isTimedOut
+                      ? "text-amber-700"
+                      : "text-red-700"
+                }`}
+              >
+                {isCorrect
+                  ? "Bạn giỏi lắm, tiếp tục nhé!"
+                  : isTimedOut
+                    ? "Bạn chưa kịp trả lời."
+                    : "Đừng nản, thử lại nhé!"}
+              </p>
             </div>
 
-            {userAnswer && (
-              <div className="bg-white/80 border-2 border-[var(--color-secondary)] rounded-xl px-4 py-3 text-center">
+            {/* User's answer (if wrong) */}
+            {isWrong && userAnswer.trim() && (
+              <div className="bg-white/80 border-2 border-red-300 rounded-xl px-4 py-3 text-center">
                 <p className="text-sm text-[#796962cc]">Câu trả lời của bạn</p>
-                <p className="text-xl font-bold">{userAnswer}</p>
+                <p className="text-xl font-bold text-red-600 line-through">
+                  {userAnswer}
+                </p>
               </div>
             )}
+
+            {/* Correct answer (always shown) */}
+            <div
+              className={`bg-white/80 rounded-xl px-4 py-3 text-center border-2 ${
+                isCorrect ? "border-green-300" : "border-[var(--color-secondary)]"
+              }`}
+            >
+              <p className="text-sm text-[#796962cc]">Đáp án đúng</p>
+              <p className="text-xl font-bold text-green-700">{meaning}</p>
+            </div>
 
             <div className="flex gap-3">
               <button
