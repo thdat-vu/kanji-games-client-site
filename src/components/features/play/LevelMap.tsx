@@ -1,6 +1,6 @@
 "use client";
 
-import type { KanjiLevel } from "@/lib/data/kanji-demo";
+import type { KanjiLevel } from "@/lib/types/kanji";
 import { LEVEL_COLORS, LEVEL_POSITIONS, LABELS } from "@/constants/constants";
 
 interface LevelMapProps {

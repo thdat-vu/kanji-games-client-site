@@ -2,12 +2,20 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { KANJI_DATA, type KanjiEntry, type KanjiLevel, type KanjiWord } from "@/lib/data/kanji-demo";
+import type {
+  KanjiEntry,
+  KanjiLevel,
+  KanjiWord,
+} from "@/lib/types/kanji";
 import { LABELS } from "@/constants/constants";
 import { LevelMap } from "./LevelMap";
 import { WordListModal } from "./WordListModal";
 
-export function KanjiSelector() {
+interface KanjiSelectorProps {
+  entries: KanjiEntry[];
+}
+
+export function KanjiSelector({ entries }: KanjiSelectorProps) {
   const router = useRouter();
   const [selectedKanji, setSelectedKanji] = useState<KanjiEntry | null>(null);
   const [selectedLevel, setSelectedLevel] = useState<KanjiLevel | null>(null);
@@ -33,7 +41,7 @@ export function KanjiSelector() {
           {LABELS.SELECT_KANJI}
         </h1>
         <div className="grid grid-cols-3 gap-4">
-          {KANJI_DATA.map((entry) => (
+          {entries.map((entry) => (
             <button
               key={entry.kanji}
               onClick={() => setSelectedKanji(entry)}

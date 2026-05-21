@@ -1,18 +1,25 @@
-"use client";
-
-import { useSearchParams } from "next/navigation";
-import { Suspense } from "react";
-import { findWord } from "@/lib/data/kanji-demo";
+import { findWord } from "@/lib/queries/kanji";
 import { LABELS } from "@/constants/constants";
 import { GameRound } from "@/components/features/play/GameRound";
 
-function GamePage() {
-  const searchParams = useSearchParams();
+interface PageProps {
+  searchParams: Promise<{ kanji?: string; word?: string }>;
+}
 
-  const kanji = searchParams.get("kanji") ?? "";
-  const wordParam = searchParams.get("word") ?? "";
+export const dynamic = "force-dynamic";
 
-  const wordData = findWord(kanji, wordParam);
+export default async function GamePage({ searchParams }: PageProps) {
+  const { kanji = "", word: wordParam = "" } = await searchParams;
+
+  if (!kanji || !wordParam) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-[var(--color-background)] text-[var(--color-text)]">
+        <p>{LABELS.NOT_FOUND}</p>
+      </div>
+    );
+  }
+
+  const wordData = await findWord(kanji, wordParam);
 
   if (!wordData) {
     return (
@@ -29,19 +36,5 @@ function GamePage() {
       reading={wordData.reading}
       meaning={wordData.meaning}
     />
-  );
-}
-
-export default function GamePageWrapper() {
-  return (
-    <Suspense
-      fallback={
-        <div className="min-h-screen flex items-center justify-center bg-[var(--color-background)] text-[var(--color-text)]">
-          {LABELS.LOADING}
-        </div>
-      }
-    >
-      <GamePage />
-    </Suspense>
   );
 }
