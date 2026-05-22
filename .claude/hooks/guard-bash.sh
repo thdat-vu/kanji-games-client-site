@@ -19,18 +19,17 @@ block() {
 }
 
 # ---- destructive ops ---------------------------------------------------------
-# Use python for precise word-boundary matching so absolute paths like /Users/... don't false-match "rm -rf /".
 nuke="$(printf '%s' "$cmd" | python3 -c '
 import sys,re
 c=sys.stdin.read()
 pats=[
-  r"\brm\s+-[rRf]+\s+/\s*$",          # rm -rf /
-  r"\brm\s+-[rRf]+\s+/\s",            # rm -rf / <something>
-  r"\brm\s+-[rRf]+\s+~/?\s*$",        # rm -rf ~ or ~/
-  r"\brm\s+-[rRf]+\s+\$HOME",         # rm -rf $HOME
-  r"\brm\s+-[rRf]+\s+\*",             # rm -rf *
-  r"\brm\s+-[rRf]+\s+\.\s*$",         # rm -rf .
-  r"\brm\s+-[rRf]+\s+\.\.\s*$",       # rm -rf ..
+  r"\brm\s+-[rRf]+\s+/\s*$",
+  r"\brm\s+-[rRf]+\s+/\s",
+  r"\brm\s+-[rRf]+\s+~/?\s*$",
+  r"\brm\s+-[rRf]+\s+\$HOME",
+  r"\brm\s+-[rRf]+\s+\*",
+  r"\brm\s+-[rRf]+\s+\.\s*$",
+  r"\brm\s+-[rRf]+\s+\.\.\s*$",
 ]
 for p in pats:
   if re.search(p, c):
@@ -52,7 +51,7 @@ case "$cmd" in
   *"--no-gpg-sign"*|*"-c commit.gpgsign=false"*) block "$cmd" "skipping commit signing not allowed" ;;
 esac
 
-# Force-push: block to main/master/d_dev, allow on feature branches
+# Force-push to protected branches
 case "$cmd" in
   *"git push"*"--force"*|*"git push"*" -f "*|*"git push"*"--force-with-lease"*)
     case "$cmd" in
@@ -69,12 +68,14 @@ case "$cmd" in
 esac
 
 if [ "$is_git_cmd" -eq 1 ]; then
-  # Block Claude attribution anywhere in the command
-  if printf '%s' "$cmd" | grep -qiE "co-authored-by:|generated with claude|🤖|noreply@anthropic"; then
-    block "$cmd" "Claude attribution disallowed in commits/PRs (project rule). Strip Co-Authored-By, Generated with, 🤖 lines."
+  # Block Claude attribution. Match the actual footer/signature forms only —
+  # not every passing mention of the words "Claude Code".
+  if printf '%s' "$cmd" | grep -qiE "co-authored-by:[[:space:]]*claude|generated[[:space:]]+with[[:space:]]+(\[)?claude|🤖|noreply@anthropic|claude\.com/claude-code"; then
+    block "$cmd" "Claude attribution disallowed in commits/PRs. Strip Co-Authored-By, 'Generated with...', 🤖, claude.com/claude-code."
   fi
 fi
 
+# git commit specifics: protected-branch + Conventional Commits subject
 case "$cmd" in
   git\ commit*|*\ git\ commit*)
     branch="$(git rev-parse --abbrev-ref HEAD 2>/dev/null || echo '')"
@@ -82,13 +83,9 @@ case "$cmd" in
       main|master|d_dev)
         block "$cmd" "direct commit to protected branch '$branch' — create a feature branch and PR into d_dev" ;;
     esac
-    # Conventional commit format check on -m message
     bad="$(printf '%s' "$cmd" | python3 - <<'PY'
 import sys,re,shlex
 cmd=sys.stdin.read()
-# Pull out anything between -m / --message and the next quoted/heredoc end.
-# We do a coarse scan: any line in the command that looks like a commit subject must match the convention.
-# Try shlex first; on failure fall back to regex extraction.
 candidates=[]
 try:
   toks=shlex.split(cmd, posix=True)
@@ -105,14 +102,15 @@ if not candidates:
 allowed=r"^(feat|fix|chore|docs|refactor|test|style|perf|build|ci|revert)(\([a-z0-9_./-]+\))?!?: .+"
 for c in candidates:
   first=c.lstrip().splitlines()[0] if c.strip() else ""
-  if first.startswith("Merge "): continue
+  if first.startswith("Merge "):
+    continue
   if not re.match(allowed, first):
     print("BAD: "+first)
     sys.exit(0)
 PY
 )"
     if [ -n "$bad" ]; then
-      block "$cmd" "commit message must follow Conventional Commits (e.g. 'feat: ...', 'fix(scope): ...'). Got: ${bad#BAD: }"
+      block "$cmd" "commit subject must follow Conventional Commits (e.g. 'feat: ...', 'fix(scope): ...'). Got: ${bad#BAD: }"
     fi
     ;;
 esac
@@ -124,22 +122,16 @@ case "$cmd" in
       *"--base d_dev"*|*"--base=d_dev"*|*"-B d_dev"*) : ;;
       *) block "$cmd" "gh pr create must target d_dev — add '--base d_dev'" ;;
     esac
-    # Block Claude footer in PR body — already covered above, but reinforce common phrase
-    if printf '%s' "$cmd" | grep -qiE "claude\.com/claude-code|claude code"; then
-      block "$cmd" "PR body contains Claude Code footer — remove it"
-    fi
     ;;
 esac
 
-# git push: warn if pushing to protected branch directly (not via PR)
+# git push: block direct pushes to main/master/d_dev
 case "$cmd" in
   git\ push*|*\ git\ push*)
     case "$cmd" in
       *" main"*|*" master"*|*":main"*|*":master"*)
         block "$cmd" "direct push to main/master — open a PR from a feature branch into d_dev" ;;
       *" d_dev"*|*":d_dev"*)
-        # Allow pushing your *current* branch where remote tracking happens to mention d_dev only via 'origin d_dev:d_dev'.
-        # The simple guard: block any explicit refspec ending in :d_dev or naming d_dev as the remote ref.
         block "$cmd" "direct push to d_dev — open a PR" ;;
     esac
     ;;
