@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import { createBrowserSupabaseClient } from "@/lib/supabase/client";
 
 type Provider = "google" | "github";
@@ -12,6 +13,7 @@ interface LoginButtonProps {
 export function LoginButton({ provider = "google" }: LoginButtonProps) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const t = useTranslations("auth");
 
   async function handleLogin() {
     setLoading(true);
@@ -31,7 +33,7 @@ export function LoginButton({ provider = "google" }: LoginButtonProps) {
         setError(error.message);
       }
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Something went wrong");
+      setError(err instanceof Error ? err.message : t("genericError"));
     } finally {
       setLoading(false);
     }
@@ -40,10 +42,9 @@ export function LoginButton({ provider = "google" }: LoginButtonProps) {
   return (
     <div className="flex flex-col gap-2">
       <button className="btn" onClick={handleLogin} disabled={loading}>
-        {loading ? "Redirecting..." : "Sign in with Google"}
+        {loading ? t("redirecting") : t("signInWithGoogle")}
       </button>
       {error && <p className="text-sm text-red-600">{error}</p>}
     </div>
   );
 }
-

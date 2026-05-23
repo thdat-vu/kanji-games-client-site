@@ -1,0 +1,49 @@
+{
+  "common": {
+    "appName": "Kanjido",
+    "appNameKanji": "漢字道",
+    "kanjiBadge": "漢字"
+  },
+  "meta": {
+    "homeTitle": "Kanjido — play first, learn deeper, remember longer",
+    "homeDescription": "Gamified kanji learning. Pick a single kanji and unlock every compound from JLPT N5 to N1.",
+    "loginTitle": "Sign in | Kanjido"
+  },
+  "home": {
+    "heroTitleStart": "Play first, learn deeper, remember",
+    "heroTitleHighlight": "longer",
+    "ctaPlay": "Play now",
+    "ctaLogin": "Sign in",
+    "checkingAuth": "Checking your session...",
+    "greeting": "Hello,",
+    "guestName": "player",
+    "mascotAlt": "Kanjido mascot"
+  },
+  "auth": {
+    "loginHeading": "Sign in to Kanjido",
+    "loginSubtitle": "Sign in to save your kanji learning progress.",
+    "signInWithGoogle": "Sign in with Google",
+    "redirecting": "Redirecting...",
+    "genericError": "Something went wrong, please try again."
+  },
+  "play": {
+    "selectKanji": "Pick a kanji",
+    "selectOther": "← Pick another",
+    "answerPlaceholder": "Type the meaning in English...",
+    "submit": "Answer",
+    "back": "Back",
+    "retry": "Retry",
+    "loading": "Loading...",
+    "notFound": "We couldn't find that word.",
+    "correctAnswer": "Correct answer",
+    "yourAnswer": "Your answer",
+    "result": {
+      "correctTitle": "Correct!",
+      "correctSub": "Nice work, keep it up!",
+      "wrongTitle": "Not quite!",
+      "wrongSub": "Don't give up — try again.",
+      "timeoutTitle": "Time's up!",
+      "timeoutSub": "You ran out of time."
+    }
+  }
+}

@@ -1,20 +1,23 @@
+import { getTranslations } from "next-intl/server";
 import { findWord } from "@/lib/queries/kanji";
-import { LABELS } from "@/constants/constants";
 import { GameRound } from "@/components/features/play/GameRound";
 
 interface PageProps {
   searchParams: Promise<{ kanji?: string; word?: string }>;
+  params: Promise<{ locale: string }>;
 }
 
 export const dynamic = "force-dynamic";
 
-export default async function GamePage({ searchParams }: PageProps) {
+export default async function GamePage({ searchParams, params }: PageProps) {
   const { kanji = "", word: wordParam = "" } = await searchParams;
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "play" });
 
   if (!kanji || !wordParam) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-[var(--color-background)] text-[var(--color-text)]">
-        <p>{LABELS.NOT_FOUND}</p>
+        <p>{t("notFound")}</p>
       </div>
     );
   }
@@ -24,7 +27,7 @@ export default async function GamePage({ searchParams }: PageProps) {
   if (!wordData) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-[var(--color-background)] text-[var(--color-text)]">
-        <p>{LABELS.NOT_FOUND}</p>
+        <p>{t("notFound")}</p>
       </div>
     );
   }
