@@ -1,6 +1,6 @@
 "use client";
 
-import type { KanjiWord } from "@/lib/data/kanji-demo";
+import type { KanjiWord } from "@/lib/types/kanji";
 
 interface WordListModalProps {
   kanji: string;

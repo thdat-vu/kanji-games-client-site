@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# We use npm; reject yarn lockfile if accidentally generated.
+yarn.lock
+
+# Claude Code per-machine settings (allowlist) — never commit.
+.claude/settings.local.json
