@@ -1,9 +1,9 @@
 "use client";
 
 import { useState, useCallback } from "react";
-import { useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
+import { useRouter } from "@/i18n/navigation";
 import { useGameTimer } from "@/hooks/useGameTimer";
-import { LABELS } from "@/constants/constants";
 
 interface GameRoundProps {
   kanji: string;
@@ -18,6 +18,8 @@ function normalize(s: string) {
 
 export function GameRound({ kanji, word, reading, meaning }: GameRoundProps) {
   const router = useRouter();
+  const t = useTranslations("play");
+  const tc = useTranslations("common");
   const { timeLeft, percent, expired, stop, reset } = useGameTimer();
 
   const [revealed, setRevealed] = useState(false);
@@ -49,22 +51,18 @@ export function GameRound({ kanji, word, reading, meaning }: GameRoundProps) {
   const isWrong = revealed && !isCorrect && !isTimedOut;
 
   const resultTitle = isCorrect
-    ? LABELS.RESULT_CORRECT
+    ? t("result.correctTitle")
     : isTimedOut
-      ? LABELS.RESULT_TIMEOUT
-      : LABELS.RESULT_WRONG;
+      ? t("result.timeoutTitle")
+      : t("result.wrongTitle");
 
   const resultSub = isCorrect
-    ? LABELS.RESULT_CORRECT_SUB
+    ? t("result.correctSub")
     : isTimedOut
-      ? LABELS.RESULT_TIMEOUT_SUB
-      : LABELS.RESULT_WRONG_SUB;
+      ? t("result.timeoutSub")
+      : t("result.wrongSub");
 
-  const resultColor = isCorrect
-    ? "green"
-    : isTimedOut
-      ? "amber"
-      : "red";
+  const resultColor = isCorrect ? "green" : isTimedOut ? "amber" : "red";
 
   const bannerStyles = {
     green: "bg-green-100 border-2 border-green-400",
@@ -89,7 +87,7 @@ export function GameRound({ kanji, word, reading, meaning }: GameRoundProps) {
       <header className="flex items-center justify-between px-6 py-4">
         <div className="bg-[#F5EEE6] border-2 border-[var(--color-primary)] rounded-xl px-3 py-1 shadow">
           <p className="text-[10px] text-[var(--color-primary)]">
-            {LABELS.KANJI_BADGE}
+            {tc("kanjiBadge")}
           </p>
           <p className="text-2xl font-bold text-red-800 leading-tight">
             {kanji}
@@ -134,12 +132,12 @@ export function GameRound({ kanji, word, reading, meaning }: GameRoundProps) {
               onKeyDown={(e) =>
                 e.key === "Enter" && userAnswer.trim() && handleReveal()
               }
-              placeholder={LABELS.ANSWER_PLACEHOLDER}
+              placeholder={t("answerPlaceholder")}
               className="w-full px-4 py-3 rounded-xl border-2 border-[var(--color-secondary)] bg-white/80
                 text-[var(--color-primary)] placeholder:text-[#796962aa] focus:outline-none focus:border-[var(--color-primary)]"
             />
             <button onClick={handleReveal} className="btn w-full">
-              {LABELS.SUBMIT}
+              {t("submit")}
             </button>
           </div>
         ) : (
@@ -153,7 +151,7 @@ export function GameRound({ kanji, word, reading, meaning }: GameRoundProps) {
 
             {isWrong && userAnswer.trim() && (
               <div className="bg-white/80 border-2 border-red-300 rounded-xl px-4 py-3 text-center">
-                <p className="text-sm text-[#796962cc]">{LABELS.YOUR_ANSWER}</p>
+                <p className="text-sm text-[#796962cc]">{t("yourAnswer")}</p>
                 <p className="text-xl font-bold text-red-600 line-through">
                   {userAnswer}
                 </p>
@@ -165,7 +163,7 @@ export function GameRound({ kanji, word, reading, meaning }: GameRoundProps) {
                 isCorrect ? "border-green-300" : "border-[var(--color-secondary)]"
               }`}
             >
-              <p className="text-sm text-[#796962cc]">{LABELS.CORRECT_ANSWER}</p>
+              <p className="text-sm text-[#796962cc]">{t("correctAnswer")}</p>
               <p className="text-xl font-bold text-green-700">{meaning}</p>
             </div>
 
@@ -174,10 +172,10 @@ export function GameRound({ kanji, word, reading, meaning }: GameRoundProps) {
                 onClick={() => router.back()}
                 className="btn flex-1 bg-[var(--color-secondary)] text-[var(--color-primary)]"
               >
-                {LABELS.BACK}
+                {t("back")}
               </button>
               <button onClick={handleReset} className="btn flex-1">
-                {LABELS.RETRY}
+                {t("retry")}
               </button>
             </div>
           </div>

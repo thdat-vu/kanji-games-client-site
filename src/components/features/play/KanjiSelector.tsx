@@ -1,13 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
+import { useRouter } from "@/i18n/navigation";
 import type {
   KanjiEntry,
   KanjiLevel,
   KanjiWord,
 } from "@/lib/types/kanji";
-import { LABELS } from "@/constants/constants";
 import { LevelMap } from "./LevelMap";
 import { WordListModal } from "./WordListModal";
 
@@ -17,6 +17,8 @@ interface KanjiSelectorProps {
 
 export function KanjiSelector({ entries }: KanjiSelectorProps) {
   const router = useRouter();
+  const t = useTranslations("play");
+  const tc = useTranslations("common");
   const [selectedKanji, setSelectedKanji] = useState<KanjiEntry | null>(null);
   const [selectedLevel, setSelectedLevel] = useState<KanjiLevel | null>(null);
 
@@ -38,7 +40,7 @@ export function KanjiSelector({ entries }: KanjiSelectorProps) {
     return (
       <section className="px-6 py-8 max-w-md mx-auto">
         <h1 className="text-2xl font-extrabold mb-6 text-center">
-          {LABELS.SELECT_KANJI}
+          {t("selectKanji")}
         </h1>
         <div className="grid grid-cols-3 gap-4">
           {entries.map((entry) => (
@@ -49,7 +51,7 @@ export function KanjiSelector({ entries }: KanjiSelectorProps) {
                 px-4 py-5 shadow hover:shadow-lg hover:border-[var(--color-primary)]
                 hover:scale-105 transition-all duration-150"
             >
-              <span className="text-xs text-[var(--color-primary)]">{LABELS.KANJI_BADGE}</span>
+              <span className="text-xs text-[var(--color-primary)]">{tc("kanjiBadge")}</span>
               <span className="text-4xl font-bold text-red-800">
                 {entry.kanji}
               </span>
@@ -67,7 +69,7 @@ export function KanjiSelector({ entries }: KanjiSelectorProps) {
           onClick={handleBack}
           className="text-sm text-[var(--color-primary)] mb-4 underline underline-offset-4 bg-transparent"
         >
-          {LABELS.SELECT_OTHER}
+          {t("selectOther")}
         </button>
 
         <LevelMap

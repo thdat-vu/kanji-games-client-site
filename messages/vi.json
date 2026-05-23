@@ -1,0 +1,49 @@
+{
+  "common": {
+    "appName": "Kanjido",
+    "appNameKanji": "漢字道",
+    "kanjiBadge": "漢字"
+  },
+  "meta": {
+    "homeTitle": "Kanjido — vừa chơi vừa học, nhớ lâu vượt trội",
+    "homeDescription": "Học Kanji theo phong cách trò chơi. Chọn 1 chữ Kanji, khám phá tất cả từ ghép theo cấp độ JLPT N5→N1.",
+    "loginTitle": "Đăng nhập | Kanjido"
+  },
+  "home": {
+    "heroTitleStart": "Vừa chơi vừa học, nhớ lâu",
+    "heroTitleHighlight": "vượt trội",
+    "ctaPlay": "Chơi ngay",
+    "ctaLogin": "Đăng nhập",
+    "checkingAuth": "Đang kiểm tra đăng nhập...",
+    "greeting": "Xin chào,",
+    "guestName": "người chơi",
+    "mascotAlt": "Linh vật Kanjido"
+  },
+  "auth": {
+    "loginHeading": "Đăng nhập Kanjido",
+    "loginSubtitle": "Đăng nhập để lưu tiến trình học Kanji của bạn.",
+    "signInWithGoogle": "Đăng nhập bằng Google",
+    "redirecting": "Đang chuyển hướng...",
+    "genericError": "Có lỗi xảy ra, vui lòng thử lại."
+  },
+  "play": {
+    "selectKanji": "Chọn chữ Kanji",
+    "selectOther": "← Chọn chữ khác",
+    "answerPlaceholder": "Nhập nghĩa tiếng Việt...",
+    "submit": "Trả lời",
+    "back": "Quay lại",
+    "retry": "Chơi lại",
+    "loading": "Đang tải...",
+    "notFound": "Không tìm thấy từ này trong dữ liệu.",
+    "correctAnswer": "Đáp án đúng",
+    "yourAnswer": "Câu trả lời của bạn",
+    "result": {
+      "correctTitle": "Chính xác!",
+      "correctSub": "Bạn giỏi lắm, tiếp tục nhé!",
+      "wrongTitle": "Sai rồi!",
+      "wrongSub": "Đừng nản, thử lại nhé!",
+      "timeoutTitle": "Hết giờ!",
+      "timeoutSub": "Bạn chưa kịp trả lời."
+    }
+  }
+}
