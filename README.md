@@ -70,3 +70,9 @@ Kanji Games là một web app học Kanji theo phong cách trò chơi, giúp ng�
 - **Auth**: Supabase Auth với Google OAuth (đã scaffold).
 
 File này mô tả tầm nhìn sản phẩm ở mức cao để team có thể thống nhất về trải nghiệm mong muốn trước khi đi sâu vào chi tiết kỹ thuật và thiết kế màn hình.
+
+### License
+
+Source-available under [PolyForm Noncommercial 1.0.0](./LICENSE.md). Free for personal study, classroom use, academic research, and unpaid open-source experimentation. **Any commercial use requires a separate written agreement** — see [LICENSE-COMMERCIAL.md](./LICENSE-COMMERCIAL.md) and email vuthanhdat181@gmail.com.
+
+The "Kanjido" name, the 漢字道 wordmark, and the mascot are not licensed under PolyForm and remain reserved.
