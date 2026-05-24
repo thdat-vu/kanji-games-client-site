@@ -1,0 +1,29 @@
+{
+  "tag": "3.6.2+20260518145612",
+  "files": [
+    {
+      "url": "https://github.com/scriptin/jmdict-simplified/releases/download/3.6.2%2B20260518145612/jmdict-eng-common-3.6.2%2B20260518145612.json.tgz",
+      "archive": "jmdict.tgz",
+      "extracted": "jmdict-eng-common-3.6.2.json",
+      "sha256": "65b1c7cc9dcd5c3bb9379ec42975ee039e566f413abe57d8b0b677557c4cfd22",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "attribution": "JMdict — © Electronic Dictionary Research and Development Group (EDRDG), https://www.edrdg.org/"
+    },
+    {
+      "url": "https://github.com/scriptin/jmdict-simplified/releases/download/3.6.2%2B20260518145612/kanjidic2-en-3.6.2%2B20260518145612.json.tgz",
+      "archive": "kanjidic2.tgz",
+      "extracted": "kanjidic2-en-3.6.2.json",
+      "sha256": "74a86861d954dd722bf6e04a11dd37d1d43422fcb04159a40ce3081afbb66a65",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "attribution": "KANJIDIC2 — © Electronic Dictionary Research and Development Group (EDRDG), https://www.edrdg.org/"
+    },
+    {
+      "url": "https://www.unicode.org/Public/UCD/latest/ucd/Unihan.zip",
+      "archive": "unihan.zip",
+      "extracted": "Unihan_Readings.txt",
+      "sha256": "f7a48b2b545acfaa77b2d607ae28747404ce02baefee16396c5d2d7a8ef34b5e",
+      "license": "Unicode License v3 (https://www.unicode.org/license.txt)",
+      "attribution": "Unihan Database — © Unicode, Inc."
+    }
+  ]
+}
