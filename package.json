@@ -9,7 +9,9 @@
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
-    "audit:signatures": "npm audit signatures"
+    "audit:signatures": "npm audit signatures",
+    "seed:download": "tsx scripts/seed-n5/download.ts",
+    "seed:build": "tsx scripts/seed-n5/build.ts"
   },
   "dependencies": {
     "@fontsource/inter": "5.2.8",
@@ -28,6 +30,7 @@
     "@types/react": "19.1.8",
     "@types/react-dom": "19.1.6",
     "tailwindcss": "4.1.11",
+    "tsx": "4.22.3",
     "typescript": "5.8.3"
   },
   "overrides": {

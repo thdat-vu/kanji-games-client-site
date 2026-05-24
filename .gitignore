@@ -45,3 +45,6 @@ yarn.lock
 
 # Claude Code per-machine settings (allowlist) — never commit.
 .claude/settings.local.json
+
+# Raw datasets downloaded by scripts/seed-n5/download.ts (~30MB, regenerable)
+/data/raw/
