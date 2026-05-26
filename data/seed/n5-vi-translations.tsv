@@ -1,0 +1,772 @@
+# N5 Vietnamese translations (first-pass).
+# Format: word<TAB>vi
+# Appended in batches; merge with `npm run seed:vi:populate` then `seed:vi:merge`.
+明白	rõ ràng, hiển nhiên
+あっという間に	trong chớp mắt
+あの人	người đó, anh ấy / chị ấy
+如何にも	quả thật, đúng là
+お菓子	bánh kẹo
+お休みなさい	chúc ngủ ngon
+お金	tiền
+お子様	con (của người khác)
+お手上げ	bó tay, đầu hàng
+お手洗い	nhà vệ sinh
+お手伝いさん	người giúp việc
+お世話になる	được giúp đỡ, được chăm sóc
+お先に	xin phép đi trước
+お前	mày, ngươi (xưng hô thân mật)
+お祖父さん	ông
+お祖母さん	bà
+お大事に	giữ gìn sức khỏe, mau khỏe
+お誕生日おめでとうございます	chúc mừng sinh nhật
+お天気	thời tiết
+お土産	quà lưu niệm
+お父さん	bố, cha
+お母さん	mẹ
+お話中	đang bận điện thoại
+こう言う	kiểu thế này, như vầy
+ことが出来る	có thể (làm được)
+この外	ngoài ra, hơn nữa
+この間	hôm trước, dạo gần đây
+その上	hơn nữa, ngoài ra
+その外	những cái còn lại
+と言うもの	cái gọi là, cái mà
+と言えば	nói đến, nhắc đến
+何方でも	bất kỳ ai
+何故なら	bởi vì
+何故ならば	bởi vì, lý do là
+ぶら下がる	treo lủng lẳng, đu đưa
+ぶら下げる	treo lên, đeo lủng lẳng
+見す見す	ngay trước mắt (mà bất lực)
+やって来る	đến, xuất hiện
+アメリカ人	người Mỹ
+アル中	nghiện rượu
+スペイン語	tiếng Tây Ban Nha
+スポーツ新聞	báo thể thao
+スワヒリ語	tiếng Swahili
+ト長調	giọng Sol trưởng
+ドイツ語	tiếng Đức
+ドラ息子	đứa con hư hỏng
+フランス語	tiếng Pháp
+ペン先	ngòi bút
+ラテン語	tiếng Latinh
+アメリカ合衆国	Hợp chủng quốc Hoa Kỳ
+愛国	yêu nước, ái quốc
+愛人	người yêu, nhân tình
+愛読	ưa đọc, mê đọc
+悪気	ác ý
+悪女	người đàn bà ác độc
+悪人	kẻ xấu, kẻ ác
+悪天候	thời tiết xấu
+握手	bắt tay
+安い	rẻ
+安っぽい	rẻ tiền, kém chất lượng
+安らか	bình yên, thanh thản
+安らぎ	sự bình yên, thanh thản
+安易	dễ dàng, đơn giản
+安価	giá rẻ
+安楽死	an tử, cái chết êm dịu
+安住	sống yên ổn
+安上がり	tiết kiệm, rẻ
+案外	bất ngờ, ngoài dự đoán
+以下	... trở xuống, dưới ...
+以外	ngoài ra, ngoại trừ
+以後	từ nay trở đi, sau này
+以上	... trở lên, trên ...
+以前	trước đây, trước kia
+以来	kể từ
+偉人	vĩ nhân
+偉大	vĩ đại
+委員会	ủy ban
+委員長	chủ tịch ủy ban
+意外	bất ngờ
+意気	tinh thần, khí phách
+意気込む	hăng hái, nhiệt tình
+意気地	ý chí, bản lĩnh
+意見	ý kiến
+椅子	ghế
+異口同音	đồng thanh, nhất trí
+異国	nước ngoài, dị quốc
+異名	biệt danh
+移行	chuyển đổi, chuyển sang
+維新	duy tân, cải cách
+衣食住	ăn mặc ở
+遺言	di ngôn, lời trăng trối
+遺書	di thư, thư tuyệt mệnh
+遺伝子	gene, di truyền
+医学	y học
+医学部	khoa y
+医師会	hội y khoa
+医大	đại học y
+医長	bác sĩ trưởng
+域外	ngoài khu vực
+一	một
+一つ	một (cái)
+一つ一つ	từng cái một
+一握り	một nhúm, một nắm
+一安心	tạm yên tâm, thở phào
+一位	hạng nhất, vị trí số một
+一員	một thành viên
+一因	một nguyên nhân, một lý do
+一円	một yên
+一気	một hơi
+一気に	một hơi, liền một mạch
+一休み	nghỉ một chút
+１月	tháng Một
+一月	một tháng
+一見	thoáng nhìn, nhìn qua
+一口	một miếng, một ngụm
+一国	một nước
+ひと時	một lát, chốc lát
+一時間	một giờ đồng hồ
+一時金	khoản tiền một lần
+一時的	tạm thời, nhất thời
+一手	một nước (cờ)
+一周年	tròn một năm
+一週間	một tuần
+一新	đổi mới hoàn toàn
+一人で	một mình
+一人前	một suất, đủ tư cách (người lớn)
+一人息子	con trai một
+一生懸命	hết sức, dốc lòng
+一石二鳥	một mũi tên trúng hai đích
+一千	một nghìn
+一足	một đôi (giày, tất)
+一大	một (sự kiện) lớn
+一男	con trai cả
+一日中	suốt cả ngày
+一年間	suốt một năm
+一年生	học sinh năm nhất
+一年中	quanh năm
+一番手	người đầu tiên
+一部分	một phần
+一分	một phần mười, một phần trăm
+一方通行	đường một chiều
+一本	một (cây, chai, cuộc gọi)
+一目	một cái nhìn, liếc qua
+逸話	giai thoại
+因子	nhân tố, yếu tố
+引き下げ	hạ xuống, giảm
+引き分け	hòa (trận đấu)
+引け目	mặc cảm, điểm yếu
+飲む	uống
+飲酒	uống rượu
+飲酒運転	lái xe khi say rượu
+飲食	ăn uống
+飲食店	quán ăn, nhà hàng
+飲料	đồ uống
+飲料水	nước uống
+院長	viện trưởng, giám đốc bệnh viện
+陰気	u ám, ảm đạm
+陰口	nói xấu sau lưng
+隠し引き出し	ngăn kéo bí mật
+隠語	tiếng lóng
+右	bên phải
+右往左往	chạy loạn xạ, lúng túng
+右下	góc dưới phải
+右手	tay phải
+右上	góc trên phải
+右折	rẽ phải
+右足	chân phải
+右派	phái hữu, cánh hữu
+宇宙空間	không gian vũ trụ
+宇宙飛行士	phi hành gia
+羽目	tấm ván tường
+雨	mưa
+雨雲	mây mưa
+雨具	đồ đi mưa
+雨戸	cửa chống mưa
+雨宿り	trú mưa
+雨天	trời mưa
+雨量	lượng mưa
+雨漏り	dột (mái nhà)
+渦中	xoáy nước, vòng xoáy (sự việc)
+運休	tạm dừng (chuyến tàu, xe)
+運行	vận hành (tuyến xe, tàu)
+運転手	tài xế
+運動会	hội thao
+運動不足	thiếu vận động
+雲行き	tình hình thời tiết, chiều hướng
+営業時間	giờ làm việc, giờ mở cửa
+英会話	hội thoại tiếng Anh
+英語	tiếng Anh
+英国	nước Anh
+英単語	từ vựng tiếng Anh
+英文学	văn học Anh
+衛生	vệ sinh
+駅	ga
+駅員	nhân viên nhà ga
+駅前	trước ga
+駅長	trưởng ga
+駅伝	chạy tiếp sức đường dài
+駅弁	cơm hộp bán ở ga
+越年	đón năm mới, qua năm
+円	yên (tiền tệ Nhật)
+円安	đồng yên giảm giá
+円建て	tính theo đồng yên
+円弧	cung tròn
+円高	đồng yên tăng giá
+円周	chu vi đường tròn
+円熟	chín muồi, thuần thục
+園長	chủ vườn, hiệu trưởng (mầm non)
+宴会	tiệc, yến tiệc
+延長	gia hạn, kéo dài
+沿道	ven đường
+演出	đạo diễn, dàn dựng
+演奏会	buổi hòa nhạc
+演目	tiết mục
+炎上	bùng cháy, bị "ném đá" online
+炎天	trời nắng gắt
+遠足	dã ngoại, đi chơi xa
+塩分	muối, độ mặn
+汚水	nước bẩn, nước thải
+汚名	tai tiếng, ô danh
+奥行き	chiều sâu
+奥山	núi sâu, núi xa
+往生	qua đời, vãng sinh
+往年	năm xưa, ngày xưa
+往来	đi lại, qua lại
+応分	tùy theo khả năng, phù hợp
+押し入る	đột nhập, xông vào
+横行	hoành hành, lan tràn
+横書き	viết ngang
+横断歩道	vạch sang đường, lối đi bộ
+横道	đường rẽ ngang, đường tắt
+横目	liếc nhìn (từ bên cạnh)
+王国	vương quốc
+王子	hoàng tử
+王女	công chúa
+王立	thuộc hoàng gia
+黄金	vàng
+黄金時代	thời kỳ hoàng kim
+屋外	ngoài trời
+屋上	sân thượng
+音読	đọc to, đọc thành tiếng
+音読み	âm đọc kiểu Hán (on-yomi)
+下	dưới, ở dưới
+下がる	hạ xuống, giảm xuống
+下げる	hạ, treo, đeo (đồ trang trí)
+下火	(lửa) tàn, suy giảm
+下見	khảo sát trước, xem trước
+下山	xuống núi
+下車	xuống xe
+下書き	bản nháp
+下水	nước thải
+下水道	hệ thống cống
+化学	hóa học
+化学肥料	phân bón hóa học
+化学兵器	vũ khí hóa học
+仮処分	lệnh tạm thời
+仮名遣い	cách viết kana
+何か	cái gì đó
+何しろ	dù sao thì, dù gì
+何だか	không hiểu sao, có vẻ
+何だかんだ	thế này thế kia
+何時	mấy giờ
+いつの間にか	không biết tự lúc nào
+何時の間にか	không biết tự lúc nào
+何千	hàng nghìn
+何日	ngày nào, mấy ngày
+何年	mấy năm, năm nào
+何百	hàng trăm
+何分	dù sao, có phần
+加入	gia nhập, tham gia
+可能性が高い	khả năng cao
+夏休み	kỳ nghỉ hè
+嫁入り	về nhà chồng
+家出	bỏ nhà ra đi
+家電	đồ điện gia dụng
+家来	gia thần, người hầu
+科学	khoa học
+科学技術	khoa học công nghệ
+架空	hư cấu, tưởng tượng
+河川	sông ngòi
+火	lửa
+火炎瓶	bom xăng
+火花	tia lửa
+火器	hỏa khí, súng
+火災	hỏa hoạn
+火災保険	bảo hiểm cháy nổ
+火山	núi lửa
+火山灰	tro núi lửa
+火曜日	thứ Ba
+ヶ月	(đếm) tháng
+花	hoa
+花びら	cánh hoa
+花屋	tiệm hoa
+花嫁	cô dâu
+花火	pháo hoa
+花形	họa tiết hoa, ngôi sao (nổi bật)
+花見	ngắm hoa anh đào
+花道	lối đi qua khán đài (sân khấu)
+課徴金	phí phạt, phí thu
+課長	trưởng phòng (cấp khoa)
+貨車	toa hàng
+過言	nói quá, cường điệu
+過小評価	đánh giá thấp
+過多	quá nhiều, dư thừa
+過大	quá đáng, quá mức
+過半数	đa số, quá bán
+芽生え	mầm non, sự nảy mầm
+介入	can thiệp
+会	cuộc họp, hội, buổi gặp
+会う	gặp, gặp gỡ
+会計年度	năm tài chính
+会見	cuộc gặp, họp báo
+会社	công ty
+会社員	nhân viên công ty
+会食	dùng bữa cùng nhau
+会話	hội thoại, trò chuyện
+解読	giải mã
+回り道	đường vòng
+回生	hồi sinh
+回目	lần thứ ...
+懐中電灯	đèn pin
+改札口	cửa soát vé
+改新	cải cách, đổi mới
+改名	đổi tên
+海外	hải ngoại, nước ngoài
+海上	trên biển
+海水	nước biển
+海水浴	tắm biển
+海水浴場	bãi tắm biển
+海中	dưới biển, trong biển
+皆目	hoàn toàn (không), một chút cũng không
+絵本	sách tranh
+空ける	để trống, làm trống
+開口	mở miệng, lỗ mở
+開校	khai trường
+開店	khai trương
+開発途上国	nước đang phát triển
+外見	bề ngoài
+外国	nước ngoài
+外車	xe nhập khẩu
+外出	đi ra ngoài
+外食	ăn ngoài
+外電	điện tín nước ngoài
+外来	đến từ bên ngoài, ngoại lai
+外来語	từ ngoại lai
+街道	đường lớn, quốc lộ
+垣間見る	thoáng thấy
+拡大	mở rộng
+確立	thiết lập, xác lập
+隔月	cách tháng
+革新	cách tân, đổi mới
+学校	trường học
+学生	học sinh, sinh viên
+学友	bạn học
+楽天家	người lạc quan
+楽天的	lạc quan
+割り出す	tính ra, suy ra
+渇水	thiếu nước
+株式会社	công ty cổ phần
+刈り入れ	mùa gặt, thu hoạch
+乾電池	pin khô
+寒中	giữa mùa đông
+刊行	xuất bản, phát hành
+寛大	khoan dung, độ lượng
+換金	đổi ra tiền
+甘言	lời ngọt, lời tâng bốc
+間口	mặt tiền (nhà, đất)
+間食	ăn vặt giữa bữa
+関西	vùng Kansai
+関西弁	tiếng Kansai
+関東	vùng Kanto
+岩山	núi đá
+顔立ち	đường nét khuôn mặt
+願書	đơn đăng ký
+基金	quỹ
+基本	cơ bản, nền tảng
+基本的	mang tính cơ bản
+寄り道	rẽ vào, ghé qua
+寄金	tiền đóng góp, quyên góp
+幾日	mấy ngày, bao nhiêu ngày
+期日	hạn cuối, ngày hẹn
+機関車	đầu máy xe lửa
+気に入る	thích, ưng ý
+気前	hào phóng
+汽車	tàu hỏa hơi nước
+希少	hiếm, quý hiếm
+紀元前	trước Công nguyên
+記入	điền vào, ghi vào
+記念日	ngày kỷ niệm
+貴社	quý công ty (kính ngữ)
+起立	đứng dậy
+義父	bố vợ, bố chồng, bố nuôi
+義母	mẹ vợ, mẹ chồng, mẹ nuôi
+喫茶店	quán cà phê
+客車	toa hành khách
+脚本	kịch bản
+逆輸入	nhập khẩu ngược lại
+逆立ち	trồng cây chuối
+休する	kết thúc
+休まる	được nghỉ ngơi, thư thái
+休み	nghỉ, ngày nghỉ
+休む	nghỉ, vắng mặt
+休校	nghỉ học (toàn trường)
+休日	ngày nghỉ
+救急車	xe cấp cứu
+救出	cứu thoát, giải cứu
+給食	bữa ăn (trường, công ty)
+旧正月	Tết âm lịch
+旧来	từ xưa, truyền thống
+巨大	khổng lồ
+虚空	không trung, hư không
+魚屋	tiệm cá, người bán cá
+魚介	hải sản
+魚介類	các loại hải sản
+魚群	đàn cá
+魚市場	chợ cá
+魚肉	thịt cá
+魚雷	ngư lôi
+魚類	loài cá
+供出	nộp (theo nghĩa vụ)
+共立	đồng sáng lập, chung
+境目	ranh giới
+教科書	sách giáo khoa
+教書	thông điệp (của tổng thống, thống đốc)
+狂言	kịch kyogen
+郷土	quê hương
+仰天	ngạc nhiên, sửng sốt
+極東	Viễn Đông
+勤め先	nơi làm việc
+筋書き	cốt truyện, dàn ý
+謹賀新年	cung chúc tân xuân
+九つ	chín (cái)
+九九	bảng cửu chương
+九月	tháng Chín
+９月	tháng Chín
+九州	Kyushu
+九重	chín lớp
+九日	ngày mùng 9
+句読点	dấu câu
+苦言	lời khuyên thẳng thắn
+駆け足	chạy nhanh, chạy bộ
+空	trống rỗng
+空き缶	lon rỗng
+空き地	đất trống
+空車	xe trống (không khách)
+空前	chưa từng có, vô tiền khoáng hậu
+空白	khoảng trống (trong văn bản)
+空母	tàu sân bay
+訓読み	âm đọc kiểu Nhật (kun-yomi)
+契約書	hợp đồng (văn bản)
+携帯電話	điện thoại di động
+稽古	luyện tập, rèn luyện
+軽食	bữa nhẹ
+芸名	nghệ danh
+潔白	trong sạch, vô tội
+結社	hội, hiệp hội
+血友病	bệnh máu khó đông
+月	mặt trăng, tháng
+月額	số tiền hàng tháng
+建立	xây dựng (đền, đài)
+献立	thực đơn
+見聞	kiến văn, hiểu biết
+見本	mẫu, hàng mẫu
+見本市	hội chợ triển lãm
+賢母	hiền mẫu
+軒先	hiên nhà, đầu hồi
+本	gốc, nguồn gốc
+減少	giảm sút
+古	cổ, thời xa xưa
+古い	cũ, cổ
+古語	từ cổ
+古今	xưa nay, cổ kim
+古参	người kỳ cựu
+古臭い	cổ lỗ, lỗi thời
+古書	sách cổ, sách cũ
+戸口	cửa ra vào
+五	năm
+五つ	năm (cái)
+五感	ngũ giác
+五月	tháng Năm
+五十音	bảng chữ cái Nhật (50 âm)
+五十三次	53 trạm dịch (Tokaido)
+五体	toàn thân
+五日	ngày mùng 5
+午	năm Ngọ
+午後	chiều, buổi chiều
+午前	sáng, buổi sáng
+午前中	trong buổi sáng
+後	sau, phía sau
+後ろ	phía sau, sau lưng
+後ろ姿	dáng nhìn từ sau lưng
+後ろ盾	chỗ dựa, người hậu thuẫn
+後遺症	di chứng
+後天的	hậu thiên, học được
+後半	nửa sau
+御社	quý công ty (kính ngữ)
+語り口	cách kể chuyện
+交友	bạn bè, kết giao
+公社	công ty công ích
+公社債	trái phiếu công
+公衆電話	điện thoại công cộng
+功名	công danh, thành tích
+口先	miệng lưỡi, lời nói suông
+広東	Quảng Đông
+更新	cập nhật, gia hạn
+校閲	hiệu đính, soát lỗi
+校歌	bài ca của trường
+校旗	cờ của trường
+校舎	tòa nhà trường học
+校正	hiệu đính, in thử
+甲高い	the thé, chói tai
+皇女	hoàng nữ, công chúa
+紅白	đỏ trắng (màu lễ hội)
+航空母艦	tàu sân bay
+荒木	gỗ thô, gỗ chưa xử lý
+行き先	đích đến
+購読	mua đọc, đặt mua (báo, tạp chí)
+購買	mua sắm, mua vào
+購買力	sức mua
+酵母	men, men nở
+鉱山	mỏ (khoáng sản)
+高い	cao, đắt
+高さ	chiều cao, độ cao
+高まる	dâng lên, tăng lên
+高める	nâng cao
+高圧	cao áp, áp lực cao
+高山	núi cao
+告白	thú nhận, tỏ tình
+国土	lãnh thổ, đất nước
+国名	tên nước
+黒木	gỗ chưa bóc vỏ
+今	bây giờ
+今に	chẳng bao lâu nữa
+今にも	sắp, sắp sửa
+今や	giờ đây
+今一	chưa đạt, hơi thiếu
+今夏	mùa hè này
+今回	lần này
+今週	tuần này
+懇話	trò chuyện thân mật
+左	bên trái
+左右	trái phải
+左記	như trên (trong văn bản)
+左手	tay trái
+左上	góc trên trái
+左折	rẽ trái
+左遷	giáng chức
+左足	chân trái
+再三	nhiều lần, lặp đi lặp lại
+再来週	tuần sau nữa
+最小	nhỏ nhất, tối thiểu
+最小限	tối thiểu, ít nhất
+最少	ít nhất, nhỏ nhất (số lượng)
+最新	mới nhất
+最先端	tiên tiến nhất, mũi nhọn
+材木	gỗ xây dựng
+雑木林	rừng cây tạp
+三つ	ba (cái)
+三回	ba lần
+三角	hình tam giác
+三月	tháng Ba
+三権	tam quyền
+三時	3 giờ
+三十日	ngày 30
+三十八度線	vĩ tuyến 38
+三女	con gái thứ ba
+三千	ba nghìn
+三男	con trai thứ ba (hoặc ba đứa con trai)
+三百	ba trăm
+山	núi
+山小屋	lều trên núi
+山川	núi sông
+四つ	bốn (cái)
+四つ角	ngã tư
+四角	hình vuông, tứ giác
+四角い	vuông, hình vuông
+四季	bốn mùa
+四球	đi bộ (bóng chày)
+四隅	bốn góc
+四月	tháng Tư
+四畳半	phòng 4 chiếu rưỡi
+四半期	quý (3 tháng)
+子女	con cái (trai và gái)
+指先	đầu ngón tay
+指名	chỉ định, đề cử
+支店	chi nhánh
+侍女	nữ tỳ, hầu nữ
+次女	con gái thứ hai
+次男	con trai thứ hai
+耳	tai
+耳障り	chói tai
+耳鼻科	khoa tai mũi họng
+耳目	mắt thấy tai nghe
+自白	thú tội
+七	bảy
+七つ	bảy (cái)
+七月	tháng Bảy
+七五三	lễ Shichi-go-san (cho trẻ 7, 5, 3 tuổi)
+七福神	thất phúc thần
+芝居小屋	rạp hát
+尺八	sáo trúc shakuhachi
+手足	tay chân
+樹木	cây cối
+終着駅	ga cuối
+終電	chuyến tàu cuối ngày
+週	tuần
+週刊	xuất bản hàng tuần
+週刊誌	tạp chí tuần
+週間	tuần
+週末	cuối tuần
+醜聞	bê bối
+充電	sạc điện
+十一	mười một
+十一月	tháng Mười Một
+十億	một tỷ
+十九	mười chín
+十二	mười hai
+十二月	tháng Mười Hai
+十二分	quá đủ, dư dả
+十八	mười tám
+１０万	một trăm nghìn
+十六	mười sáu
+淑女	quý cô
+縮小	thu nhỏ, cắt giảm
+出土	khai quật, đào lên
+書店	hiệu sách
+商店	cửa hàng
+商店街	khu phố mua sắm
+小さい	nhỏ
+少尉	thiếu úy
+小雨	mưa nhỏ, mưa phùn
+小川	suối nhỏ
+少し	một chút
+少しずつ	từng chút một
+少しも	không một chút nào
+少ない	ít, hiếm
+上半期	nửa đầu năm
+上半身	nửa thân trên
+浄土	tịnh độ, cõi cực lạc
+植木鉢	chậu cây
+新聞	báo (tin tức)
+新聞紙	giấy báo
+新聞社	tòa soạn báo
+真っ二つ	chia đôi đều nhau
+神父	linh mục
+親父	bố, ông già (gọi thân mật)
+親友	bạn thân
+数千	hàng nghìn
+数多く	rất nhiều, đông đảo
+数百	hàng trăm
+正午	giữa trưa
+聖母	Đức Mẹ, thánh mẫu
+西	tây
+西ドイツ	Tây Đức
+西瓜	dưa hấu
+西欧	Tây Âu
+西口	cửa tây
+西側	phía tây
+西南	tây nam
+青田買い	đặt mua trước (lúa còn xanh)
+青白い	xanh xao, tái nhợt
+折半	chia đôi
+千	nghìn
+千円札	tờ 1000 yên
+千秋楽	ngày diễn cuối
+千切る	xé vụn, xé nhỏ
+専門店	cửa hàng chuyên dụng
+川	sông
+川沿い	dọc bờ sông
+川下	hạ lưu
+川岸	bờ sông
+川上	thượng nguồn
+前代未聞	chưa từng nghe, chưa từng có
+前半戦	hiệp một
+全土	toàn quốc, toàn lãnh thổ
+祖父	ông nội, ông ngoại
+祖父母	ông bà
+多	đa, nhiều
+多い	nhiều
+多寡	nhiều ít
+多額	số lớn (tiền)
+多岐	đa dạng, nhiều mặt
+多元的	đa nguyên
+大男	người đàn ông to lớn
+大木	cây lớn
+第二	thứ hai
+男	đàn ông, nam giới
+男の子	con trai, bé trai
+男の人	người đàn ông
+男らしい	nam tính
+中耳	tai giữa
+中耳炎	viêm tai giữa
+中東	Trung Đông
+中南米	Trung và Nam Mỹ
+仲買	môi giới
+庭木	cây vườn
+土	đất
+土間	nền đất, sàn đất
+東	đông
+東欧	Đông Âu
+東海	vùng Tokai
+東宮	thái tử
+東南	đông nam
+東北	đông bắc
+読み	cách đọc
+南	nam
+南アフリカ	Nam Phi
+南緯	vĩ độ nam
+南海	biển nam
+南極	Nam Cực
+南北	bắc nam
+二	hai
+二つ	hai (cái)
+二百十日	ngày 210 (mùa bão)
+二百二十日	ngày 220 (cuối mùa bão)
+波乱万丈	đầy thăng trầm, sóng gió
+敗北	thua cuộc, bại trận
+買取	mua lại, thu mua
+買い出し	đi mua sắm, đi chợ
+買い入れる	mua vào, nhập về
+買う	mua
+白	trắng
+八つ当たり	trút giận lên người khác
+八月	tháng Tám
+八重桜	hoa anh đào kép
+八千代	muôn đời, ngàn năm
+八日	ngày mùng 8
+八百屋	tiệm rau quả
+百	trăm
+百億	mười tỷ
+１００万	một triệu
+父	cha, bố
+聞かす	cho nghe, kể (chuyện)
+北	bắc
+北北東	đông bắc bắc
+北アイルランド	Bắc Ireland
+北緯	vĩ độ bắc
+北欧	Bắc Âu
+毎	mỗi
+毎に	mỗi, từng
+毎回	mỗi lần
+毎時	mỗi giờ
+毎週	mỗi tuần
+毎朝	mỗi sáng
+毎度	mỗi lần (luôn luôn)
+万が一	lỡ như, nhỡ ra
+万一	trường hợp khẩn cấp
+万引き	trộm vặt (trong cửa hàng)
+万国	muôn nước, toàn cầu
+万事	mọi việc, tất cả
+盟友	bạn thề
+友	bạn, đồng chí
+友愛	tình bạn, tình huynh đệ
+友好	hữu nghị
+六月	tháng Sáu
+六十四分音符	nốt móc tư
+六日	ngày mùng 6
+九	chín
+七十	bảy mươi
+七日	ngày mùng 7
+七夕	lễ Tanabata (lễ thất tịch)
+六	sáu
+六つ	sáu (cái)
+飲み込む	nuốt
+耳元	bên tai
+耳より	tin vui, đáng mừng
+宿駅	trạm dịch
+六十	sáu mươi
+十六日	ngày 16

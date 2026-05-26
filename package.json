@@ -11,7 +11,10 @@
     "typecheck": "tsc --noEmit",
     "audit:signatures": "npm audit signatures",
     "seed:download": "tsx scripts/seed-n5/download.ts",
-    "seed:build": "tsx scripts/seed-n5/build.ts"
+    "seed:build": "tsx scripts/seed-n5/build.ts",
+    "seed:vi:stub": "tsx scripts/seed-n5/build-vi-stub.ts",
+    "seed:vi:populate": "tsx scripts/seed-n5/populate-vi.ts",
+    "seed:vi:merge": "tsx scripts/seed-n5/merge-vi.ts"
   },
   "dependencies": {
     "@fontsource/inter": "5.2.8",

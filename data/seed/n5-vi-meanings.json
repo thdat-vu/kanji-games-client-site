@@ -1,0 +1,7739 @@
+{
+  "明白": {
+    "reading": "めいはく",
+    "pos": "adj-na",
+    "en": "obvious; clear; plain; evident; apparent; explicit; overt",
+    "rank": 4,
+    "kanjiChars": [
+      "白"
+    ],
+    "vi": "rõ ràng, hiển nhiên"
+  },
+  "あっという間に": {
+    "reading": "あっというまに",
+    "pos": "exp",
+    "en": "in an instant; in a flash; in the blink of an eye; in no time at all; just like that",
+    "rank": 7,
+    "kanjiChars": [
+      "間"
+    ],
+    "vi": "trong chớp mắt"
+  },
+  "あの人": {
+    "reading": "あのひと",
+    "pos": "pn",
+    "en": "he; she; that person",
+    "rank": 10,
+    "kanjiChars": [
+      "人"
+    ],
+    "vi": "người đó, anh ấy / chị ấy"
+  },
+  "如何にも": {
+    "reading": "いかにも",
+    "pos": "adv",
+    "en": "indeed; really; truly; just (like)",
+    "rank": 18,
+    "kanjiChars": [
+      "何"
+    ],
+    "vi": "quả thật, đúng là"
+  },
+  "お菓子": {
+    "reading": "おかし",
+    "pos": "n",
+    "en": "confections; sweets; candy; cake",
+    "rank": 49,
+    "kanjiChars": [
+      "子"
+    ],
+    "vi": "bánh kẹo"
+  },
+  "お休みなさい": {
+    "reading": "おやすみなさい",
+    "pos": "exp",
+    "en": "good night",
+    "rank": 54,
+    "kanjiChars": [
+      "休"
+    ],
+    "vi": "chúc ngủ ngon"
+  },
+  "お金": {
+    "reading": "おかね",
+    "pos": "n",
+    "en": "money",
+    "rank": 55,
+    "kanjiChars": [
+      "金"
+    ],
+    "vi": "tiền"
+  },
+  "お子様": {
+    "reading": "おこさま",
+    "pos": "n",
+    "en": "(another's) child",
+    "rank": 64,
+    "kanjiChars": [
+      "子"
+    ],
+    "vi": "con (của người khác)"
+  },
+  "お手上げ": {
+    "reading": "おてあげ",
+    "pos": "n",
+    "en": "being done for; giving up; being in a hopeless situation; not knowing what to do; being brought to one's knees; throwing up (one's) hands",
+    "rank": 68,
+    "kanjiChars": [
+      "手",
+      "上"
+    ],
+    "vi": "bó tay, đầu hàng"
+  },
+  "お手洗い": {
+    "reading": "おてあらい",
+    "pos": "n",
+    "en": "toilet; restroom; lavatory; bathroom",
+    "rank": 69,
+    "kanjiChars": [
+      "手"
+    ],
+    "vi": "nhà vệ sinh"
+  },
+  "お手伝いさん": {
+    "reading": "おてつだいさん",
+    "pos": "n",
+    "en": "maid",
+    "rank": 70,
+    "kanjiChars": [
+      "手"
+    ],
+    "vi": "người giúp việc"
+  },
+  "お世話になる": {
+    "reading": "おせわになる",
+    "pos": "exp",
+    "en": "to receive favor; to receive assistance; to receive help; to be looked after; to be taken care of; to become dependent (on); to become much obliged (to someone); to become indebted",
+    "rank": 74,
+    "kanjiChars": [
+      "話"
+    ],
+    "vi": "được giúp đỡ, được chăm sóc"
+  },
+  "お先に": {
+    "reading": "おさきに",
+    "pos": "adv",
+    "en": "before; previously",
+    "rank": 75,
+    "kanjiChars": [
+      "先"
+    ],
+    "vi": "xin phép đi trước"
+  },
+  "お前": {
+    "reading": "おまえ",
+    "pos": "pn",
+    "en": "you",
+    "rank": 76,
+    "kanjiChars": [
+      "前"
+    ],
+    "vi": "mày, ngươi (xưng hô thân mật)"
+  },
+  "お祖父さん": {
+    "reading": "おじいさん",
+    "pos": "n",
+    "en": "grandfather",
+    "rank": 77,
+    "kanjiChars": [
+      "父"
+    ],
+    "vi": "ông"
+  },
+  "お祖母さん": {
+    "reading": "おばあさん",
+    "pos": "n",
+    "en": "grandmother",
+    "rank": 78,
+    "kanjiChars": [
+      "母"
+    ],
+    "vi": "bà"
+  },
+  "お大事に": {
+    "reading": "おだいじに",
+    "pos": "exp",
+    "en": "take care of yourself; get well soon",
+    "rank": 81,
+    "kanjiChars": [
+      "大"
+    ],
+    "vi": "giữ gìn sức khỏe, mau khỏe"
+  },
+  "お誕生日おめでとうございます": {
+    "reading": "おたんじょうびおめでとうございます",
+    "pos": "exp",
+    "en": "happy birthday",
+    "rank": 83,
+    "kanjiChars": [
+      "生",
+      "日"
+    ],
+    "vi": "chúc mừng sinh nhật"
+  },
+  "お天気": {
+    "reading": "おてんき",
+    "pos": "n",
+    "en": "weather",
+    "rank": 86,
+    "kanjiChars": [
+      "気",
+      "天"
+    ],
+    "vi": "thời tiết"
+  },
+  "お土産": {
+    "reading": "おみやげ",
+    "pos": "n",
+    "en": "local specialty or souvenir bought as a gift while traveling (travelling)",
+    "rank": 87,
+    "kanjiChars": [
+      "土"
+    ],
+    "vi": "quà lưu niệm"
+  },
+  "お父さん": {
+    "reading": "おとうさん",
+    "pos": "n",
+    "en": "father; dad; papa; pa; pop; daddy; dada",
+    "rank": 90,
+    "kanjiChars": [
+      "父"
+    ],
+    "vi": "bố, cha"
+  },
+  "お母さん": {
+    "reading": "おかあさん",
+    "pos": "n",
+    "en": "mother; mom; mum; ma",
+    "rank": 93,
+    "kanjiChars": [
+      "母"
+    ],
+    "vi": "mẹ"
+  },
+  "お話中": {
+    "reading": "おはなしちゅう",
+    "pos": "adj-no",
+    "en": "busy (phone)",
+    "rank": 95,
+    "kanjiChars": [
+      "中",
+      "話"
+    ],
+    "vi": "đang bận điện thoại"
+  },
+  "こう言う": {
+    "reading": "こういう",
+    "pos": "adj-pn",
+    "en": "such; this sort of; like this",
+    "rank": 155,
+    "kanjiChars": [
+      "言"
+    ],
+    "vi": "kiểu thế này, như vầy"
+  },
+  "ことが出来る": {
+    "reading": "ことができる",
+    "pos": "exp",
+    "en": "to be able (to); to be possible (to)",
+    "rank": 165,
+    "kanjiChars": [
+      "出",
+      "来"
+    ],
+    "vi": "có thể (làm được)"
+  },
+  "この外": {
+    "reading": "このほか",
+    "pos": "conj",
+    "en": "besides; moreover; in addition",
+    "rank": 170,
+    "kanjiChars": [
+      "外"
+    ],
+    "vi": "ngoài ra, hơn nữa"
+  },
+  "この間": {
+    "reading": "このあいだ",
+    "pos": "n",
+    "en": "the other day; lately; recently; during this period",
+    "rank": 171,
+    "kanjiChars": [
+      "間"
+    ],
+    "vi": "hôm trước, dạo gần đây"
+  },
+  "その上": {
+    "reading": "そのうえ",
+    "pos": "conj",
+    "en": "in addition; furthermore",
+    "rank": 249,
+    "kanjiChars": [
+      "上"
+    ],
+    "vi": "hơn nữa, ngoài ra"
+  },
+  "その外": {
+    "reading": "そのほか",
+    "pos": "exp",
+    "en": "the rest; the others",
+    "rank": 250,
+    "kanjiChars": [
+      "外"
+    ],
+    "vi": "những cái còn lại"
+  },
+  "と言うもの": {
+    "reading": "というもの",
+    "pos": "exp",
+    "en": "something like ...; something called ...",
+    "rank": 307,
+    "kanjiChars": [
+      "言"
+    ],
+    "vi": "cái gọi là, cái mà"
+  },
+  "と言えば": {
+    "reading": "といえば",
+    "pos": "exp",
+    "en": "speaking of ...",
+    "rank": 318,
+    "kanjiChars": [
+      "言"
+    ],
+    "vi": "nói đến, nhắc đến"
+  },
+  "何方でも": {
+    "reading": "どなたでも",
+    "pos": "adv",
+    "en": "anyone",
+    "rank": 333,
+    "kanjiChars": [
+      "何"
+    ],
+    "vi": "bất kỳ ai"
+  },
+  "何故なら": {
+    "reading": "なぜなら",
+    "pos": "conj",
+    "en": "because; the reason is; if you want to know why",
+    "rank": 343,
+    "kanjiChars": [
+      "何"
+    ],
+    "vi": "bởi vì"
+  },
+  "何故ならば": {
+    "reading": "なぜならば",
+    "pos": "conj",
+    "en": "because; for; the reason why is ...",
+    "rank": 344,
+    "kanjiChars": [
+      "何"
+    ],
+    "vi": "bởi vì, lý do là"
+  },
+  "ぶら下がる": {
+    "reading": "ぶらさがる",
+    "pos": "v5r",
+    "en": "to hang down (from); to dangle; to swing; to be suspended",
+    "rank": 403,
+    "kanjiChars": [
+      "下"
+    ],
+    "vi": "treo lủng lẳng, đu đưa"
+  },
+  "ぶら下げる": {
+    "reading": "ぶらさげる",
+    "pos": "v1",
+    "en": "to hang; to suspend; to dangle; to swing; to carry",
+    "rank": 404,
+    "kanjiChars": [
+      "下"
+    ],
+    "vi": "treo lên, đeo lủng lẳng"
+  },
+  "見す見す": {
+    "reading": "みすみす",
+    "pos": "adv",
+    "en": "before one's own eyes; from under one's very nose; without doing anything; without resistance; helplessly; negligently; knowingly",
+    "rank": 427,
+    "kanjiChars": [
+      "見"
+    ],
+    "vi": "ngay trước mắt (mà bất lực)"
+  },
+  "やって来る": {
+    "reading": "やってくる",
+    "pos": "exp",
+    "en": "to come along; to come around; to turn up",
+    "rank": 444,
+    "kanjiChars": [
+      "来"
+    ],
+    "vi": "đến, xuất hiện"
+  },
+  "アメリカ人": {
+    "reading": "アメリカじん",
+    "pos": "n",
+    "en": "American (person)",
+    "rank": 570,
+    "kanjiChars": [
+      "人"
+    ],
+    "vi": "người Mỹ"
+  },
+  "アル中": {
+    "reading": "アルちゅう",
+    "pos": "n",
+    "en": "alcoholism",
+    "rank": 591,
+    "kanjiChars": [
+      "中"
+    ],
+    "vi": "nghiện rượu"
+  },
+  "スペイン語": {
+    "reading": "スペインご",
+    "pos": "n",
+    "en": "Spanish (language)",
+    "rank": 2052,
+    "kanjiChars": [
+      "語"
+    ],
+    "vi": "tiếng Tây Ban Nha"
+  },
+  "スポーツ新聞": {
+    "reading": "スポーツしんぶん",
+    "pos": "n",
+    "en": "sports newspaper",
+    "rank": 2064,
+    "kanjiChars": [
+      "新",
+      "聞"
+    ],
+    "vi": "báo thể thao"
+  },
+  "スワヒリ語": {
+    "reading": "スワヒリご",
+    "pos": "n",
+    "en": "Swahili (language); Kiswahili",
+    "rank": 2104,
+    "kanjiChars": [
+      "語"
+    ],
+    "vi": "tiếng Swahili"
+  },
+  "ト長調": {
+    "reading": "トちょうちょう",
+    "pos": "n",
+    "en": "G major",
+    "rank": 2565,
+    "kanjiChars": [
+      "長"
+    ],
+    "vi": "giọng Sol trưởng"
+  },
+  "ドイツ語": {
+    "reading": "ドイツご",
+    "pos": "n",
+    "en": "German (language)",
+    "rank": 2572,
+    "kanjiChars": [
+      "語"
+    ],
+    "vi": "tiếng Đức"
+  },
+  "ドラ息子": {
+    "reading": "どらむすこ",
+    "pos": "n",
+    "en": "lazy son; profligate son",
+    "rank": 2597,
+    "kanjiChars": [
+      "子"
+    ],
+    "vi": "đứa con hư hỏng"
+  },
+  "フランス語": {
+    "reading": "フランスご",
+    "pos": "n",
+    "en": "French (language)",
+    "rank": 3312,
+    "kanjiChars": [
+      "語"
+    ],
+    "vi": "tiếng Pháp"
+  },
+  "ペン先": {
+    "reading": "ペンさき",
+    "pos": "n",
+    "en": "pen nibs",
+    "rank": 3633,
+    "kanjiChars": [
+      "先"
+    ],
+    "vi": "ngòi bút"
+  },
+  "ラテン語": {
+    "reading": "ラテンご",
+    "pos": "n",
+    "en": "Latin (language)",
+    "rank": 4198,
+    "kanjiChars": [
+      "語"
+    ],
+    "vi": "tiếng Latinh"
+  },
+  "アメリカ合衆国": {
+    "reading": "アメリカがっしゅうこく",
+    "pos": "n",
+    "en": "United States of America",
+    "rank": 4539,
+    "kanjiChars": [
+      "国"
+    ],
+    "vi": "Hợp chủng quốc Hoa Kỳ"
+  },
+  "愛国": {
+    "reading": "あいこく",
+    "pos": "n",
+    "en": "love of one's country; patriotism",
+    "rank": 4552,
+    "kanjiChars": [
+      "国"
+    ],
+    "vi": "yêu nước, ái quốc"
+  },
+  "愛人": {
+    "reading": "あいじん",
+    "pos": "n",
+    "en": "lover; mistress",
+    "rank": 4555,
+    "kanjiChars": [
+      "人"
+    ],
+    "vi": "người yêu, nhân tình"
+  },
+  "愛読": {
+    "reading": "あいどく",
+    "pos": "n",
+    "en": "reading with pleasure",
+    "rank": 4556,
+    "kanjiChars": [
+      "読"
+    ],
+    "vi": "ưa đọc, mê đọc"
+  },
+  "悪気": {
+    "reading": "わるぎ",
+    "pos": "n",
+    "en": "ill will; malice; evil intent",
+    "rank": 4567,
+    "kanjiChars": [
+      "気"
+    ],
+    "vi": "ác ý"
+  },
+  "悪女": {
+    "reading": "あくじょ",
+    "pos": "n",
+    "en": "wicked woman",
+    "rank": 4575,
+    "kanjiChars": [
+      "女"
+    ],
+    "vi": "người đàn bà ác độc"
+  },
+  "悪人": {
+    "reading": "あくにん",
+    "pos": "n",
+    "en": "bad person; villain; scoundrel; wrongdoer; wicked person",
+    "rank": 4576,
+    "kanjiChars": [
+      "人"
+    ],
+    "vi": "kẻ xấu, kẻ ác"
+  },
+  "悪天候": {
+    "reading": "あくてんこう",
+    "pos": "n",
+    "en": "bad weather",
+    "rank": 4578,
+    "kanjiChars": [
+      "天"
+    ],
+    "vi": "thời tiết xấu"
+  },
+  "握手": {
+    "reading": "あくしゅ",
+    "pos": "n",
+    "en": "handshake",
+    "rank": 4589,
+    "kanjiChars": [
+      "手"
+    ],
+    "vi": "bắt tay"
+  },
+  "安い": {
+    "reading": "やすい",
+    "pos": "adj-i",
+    "en": "cheap; inexpensive",
+    "rank": 4602,
+    "kanjiChars": [
+      "安"
+    ],
+    "vi": "rẻ"
+  },
+  "安っぽい": {
+    "reading": "やすっぽい",
+    "pos": "adj-i",
+    "en": "cheap-looking; tawdry; insignificant",
+    "rank": 4603,
+    "kanjiChars": [
+      "安"
+    ],
+    "vi": "rẻ tiền, kém chất lượng"
+  },
+  "安らか": {
+    "reading": "やすらか",
+    "pos": "adj-na",
+    "en": "peaceful; tranquil; calm; restful",
+    "rank": 4604,
+    "kanjiChars": [
+      "安"
+    ],
+    "vi": "bình yên, thanh thản"
+  },
+  "安らぎ": {
+    "reading": "やすらぎ",
+    "pos": "n",
+    "en": "peace (of mind); tranquility; tranquillity; serenity",
+    "rank": 4605,
+    "kanjiChars": [
+      "安"
+    ],
+    "vi": "sự bình yên, thanh thản"
+  },
+  "安易": {
+    "reading": "あんい",
+    "pos": "adj-na",
+    "en": "easy; simple",
+    "rank": 4606,
+    "kanjiChars": [
+      "安"
+    ],
+    "vi": "dễ dàng, đơn giản"
+  },
+  "安価": {
+    "reading": "あんか",
+    "pos": "adj-na",
+    "en": "low-priced; cheap; inexpensive",
+    "rank": 4607,
+    "kanjiChars": [
+      "安"
+    ],
+    "vi": "giá rẻ"
+  },
+  "安楽死": {
+    "reading": "あんらくし",
+    "pos": "n",
+    "en": "euthanasia",
+    "rank": 4608,
+    "kanjiChars": [
+      "安"
+    ],
+    "vi": "an tử, cái chết êm dịu"
+  },
+  "安住": {
+    "reading": "あんじゅう",
+    "pos": "n",
+    "en": "living in peace; living a quiet life",
+    "rank": 4609,
+    "kanjiChars": [
+      "安"
+    ],
+    "vi": "sống yên ổn"
+  },
+  "安上がり": {
+    "reading": "やすあがり",
+    "pos": "adj-na",
+    "en": "cheap; economical",
+    "rank": 4610,
+    "kanjiChars": [
+      "上"
+    ],
+    "vi": "tiết kiệm, rẻ"
+  },
+  "案外": {
+    "reading": "あんがい",
+    "pos": "adv",
+    "en": "unexpectedly; surprisingly",
+    "rank": 4638,
+    "kanjiChars": [
+      "外"
+    ],
+    "vi": "bất ngờ, ngoài dự đoán"
+  },
+  "以下": {
+    "reading": "いか",
+    "pos": "n-suf",
+    "en": "not exceeding ...; not more than ...; ... and under; ... and below; ... or fewer",
+    "rank": 4643,
+    "kanjiChars": [
+      "下"
+    ],
+    "vi": "... trở xuống, dưới ..."
+  },
+  "以外": {
+    "reading": "いがい",
+    "pos": "n-suf",
+    "en": "excluding; except (for); apart from; other than; besides; in addition to",
+    "rank": 4644,
+    "kanjiChars": [
+      "外"
+    ],
+    "vi": "ngoài ra, ngoại trừ"
+  },
+  "以後": {
+    "reading": "いご",
+    "pos": "n",
+    "en": "after this; from now on; hereafter",
+    "rank": 4645,
+    "kanjiChars": [
+      "後"
+    ],
+    "vi": "từ nay trở đi, sau này"
+  },
+  "以上": {
+    "reading": "いじょう",
+    "pos": "n-suf",
+    "en": "not less than ...; ... and over; ... and above; ... and upwards; ... or more",
+    "rank": 4647,
+    "kanjiChars": [
+      "上"
+    ],
+    "vi": "... trở lên, trên ..."
+  },
+  "以前": {
+    "reading": "いぜん",
+    "pos": "n-suf",
+    "en": "before; prior to; ago",
+    "rank": 4648,
+    "kanjiChars": [
+      "前"
+    ],
+    "vi": "trước đây, trước kia"
+  },
+  "以来": {
+    "reading": "いらい",
+    "pos": "n-suf",
+    "en": "since; henceforth",
+    "rank": 4650,
+    "kanjiChars": [
+      "来"
+    ],
+    "vi": "kể từ"
+  },
+  "偉人": {
+    "reading": "いじん",
+    "pos": "n",
+    "en": "great person; eminent figure",
+    "rank": 4660,
+    "kanjiChars": [
+      "人"
+    ],
+    "vi": "vĩ nhân"
+  },
+  "偉大": {
+    "reading": "いだい",
+    "pos": "adj-na",
+    "en": "great; grand; magnificent; outstanding; mighty",
+    "rank": 4661,
+    "kanjiChars": [
+      "大"
+    ],
+    "vi": "vĩ đại"
+  },
+  "委員会": {
+    "reading": "いいんかい",
+    "pos": "n",
+    "en": "committee; commission; board; panel; committee meeting",
+    "rank": 4668,
+    "kanjiChars": [
+      "会"
+    ],
+    "vi": "ủy ban"
+  },
+  "委員長": {
+    "reading": "いいんちょう",
+    "pos": "n",
+    "en": "chairperson (of a committee); chair; chairman; chairwoman; president",
+    "rank": 4669,
+    "kanjiChars": [
+      "長"
+    ],
+    "vi": "chủ tịch ủy ban"
+  },
+  "意外": {
+    "reading": "いがい",
+    "pos": "adj-na",
+    "en": "unexpected; surprising",
+    "rank": 4677,
+    "kanjiChars": [
+      "外"
+    ],
+    "vi": "bất ngờ"
+  },
+  "意気": {
+    "reading": "いき",
+    "pos": "n",
+    "en": "spirit; heart; disposition",
+    "rank": 4678,
+    "kanjiChars": [
+      "気"
+    ],
+    "vi": "tinh thần, khí phách"
+  },
+  "意気込む": {
+    "reading": "いきごむ",
+    "pos": "v5m",
+    "en": "to be enthusiastic (about); to be eager (to do); to be keen; to be intent (on); to be determined",
+    "rank": 4679,
+    "kanjiChars": [
+      "気"
+    ],
+    "vi": "hăng hái, nhiệt tình"
+  },
+  "意気地": {
+    "reading": "いくじ",
+    "pos": "n",
+    "en": "self-respect; self-confidence; guts; backbone; pride; drive; willpower",
+    "rank": 4680,
+    "kanjiChars": [
+      "気"
+    ],
+    "vi": "ý chí, bản lĩnh"
+  },
+  "意見": {
+    "reading": "いけん",
+    "pos": "n",
+    "en": "opinion; view; comment",
+    "rank": 4682,
+    "kanjiChars": [
+      "見"
+    ],
+    "vi": "ý kiến"
+  },
+  "椅子": {
+    "reading": "いす",
+    "pos": "n",
+    "en": "chair; seat; stool; bench",
+    "rank": 4702,
+    "kanjiChars": [
+      "子"
+    ],
+    "vi": "ghế"
+  },
+  "異口同音": {
+    "reading": "いくどうおん",
+    "pos": "n",
+    "en": "(saying) with one voice; unanimously; in chorus; in unison; as one",
+    "rank": 4715,
+    "kanjiChars": [
+      "口"
+    ],
+    "vi": "đồng thanh, nhất trí"
+  },
+  "異国": {
+    "reading": "いこく",
+    "pos": "n",
+    "en": "foreign country",
+    "rank": 4716,
+    "kanjiChars": [
+      "国"
+    ],
+    "vi": "nước ngoài, dị quốc"
+  },
+  "異名": {
+    "reading": "いみょう",
+    "pos": "n",
+    "en": "another name; nickname; alias",
+    "rank": 4726,
+    "kanjiChars": [
+      "名"
+    ],
+    "vi": "biệt danh"
+  },
+  "移行": {
+    "reading": "いこう",
+    "pos": "n",
+    "en": "transition; changeover; switchover; shift",
+    "rank": 4734,
+    "kanjiChars": [
+      "行"
+    ],
+    "vi": "chuyển đổi, chuyển sang"
+  },
+  "維新": {
+    "reading": "いしん",
+    "pos": "n",
+    "en": "reformation; revolution; renewal",
+    "rank": 4743,
+    "kanjiChars": [
+      "新"
+    ],
+    "vi": "duy tân, cải cách"
+  },
+  "衣食住": {
+    "reading": "いしょくじゅう",
+    "pos": "n",
+    "en": "food, clothing and shelter; necessities of life",
+    "rank": 4752,
+    "kanjiChars": [
+      "食"
+    ],
+    "vi": "ăn mặc ở"
+  },
+  "遺言": {
+    "reading": "ゆいごん",
+    "pos": "n",
+    "en": "will; testament; one's dying wish; one's last words",
+    "rank": 4763,
+    "kanjiChars": [
+      "言"
+    ],
+    "vi": "di ngôn, lời trăng trối"
+  },
+  "遺書": {
+    "reading": "いしょ",
+    "pos": "n",
+    "en": "note left by a dead person; suicide note; testamentary letter; will; testament",
+    "rank": 4772,
+    "kanjiChars": [
+      "書"
+    ],
+    "vi": "di thư, thư tuyệt mệnh"
+  },
+  "遺伝子": {
+    "reading": "いでんし",
+    "pos": "n",
+    "en": "gene",
+    "rank": 4777,
+    "kanjiChars": [
+      "子"
+    ],
+    "vi": "gene, di truyền"
+  },
+  "医学": {
+    "reading": "いがく",
+    "pos": "n",
+    "en": "medicine; medical science",
+    "rank": 4783,
+    "kanjiChars": [
+      "学"
+    ],
+    "vi": "y học"
+  },
+  "医学部": {
+    "reading": "いがくぶ",
+    "pos": "n",
+    "en": "faculty of medicine; college of medicine; department of medicine; school of medicine; medical school",
+    "rank": 4784,
+    "kanjiChars": [
+      "学"
+    ],
+    "vi": "khoa y"
+  },
+  "医師会": {
+    "reading": "いしかい",
+    "pos": "n",
+    "en": "medical association",
+    "rank": 4787,
+    "kanjiChars": [
+      "会"
+    ],
+    "vi": "hội y khoa"
+  },
+  "医大": {
+    "reading": "いだい",
+    "pos": "n",
+    "en": "medical university; medical college; medical school",
+    "rank": 4789,
+    "kanjiChars": [
+      "大"
+    ],
+    "vi": "đại học y"
+  },
+  "医長": {
+    "reading": "いちょう",
+    "pos": "n",
+    "en": "medical director; chief physician",
+    "rank": 4790,
+    "kanjiChars": [
+      "長"
+    ],
+    "vi": "bác sĩ trưởng"
+  },
+  "域外": {
+    "reading": "いきがい",
+    "pos": "n",
+    "en": "outside the area",
+    "rank": 4795,
+    "kanjiChars": [
+      "外"
+    ],
+    "vi": "ngoài khu vực"
+  },
+  "一": {
+    "reading": "いち",
+    "pos": "num",
+    "en": "one; 1",
+    "rank": 4802,
+    "kanjiChars": [
+      "一"
+    ],
+    "vi": "một"
+  },
+  "一つ": {
+    "reading": "ひとつ",
+    "pos": "num",
+    "en": "one",
+    "rank": 4803,
+    "kanjiChars": [
+      "一"
+    ],
+    "vi": "một (cái)"
+  },
+  "一つ一つ": {
+    "reading": "ひとつひとつ",
+    "pos": "adv",
+    "en": "one-by-one; separately; in detail",
+    "rank": 4804,
+    "kanjiChars": [
+      "一"
+    ],
+    "vi": "từng cái một"
+  },
+  "一握り": {
+    "reading": "ひとにぎり",
+    "pos": "n",
+    "en": "a handful (of)",
+    "rank": 4805,
+    "kanjiChars": [
+      "一"
+    ],
+    "vi": "một nhúm, một nắm"
+  },
+  "一安心": {
+    "reading": "ひとあんしん",
+    "pos": "n",
+    "en": "feeling of relief (for the time being); peace of mind (for now)",
+    "rank": 4806,
+    "kanjiChars": [
+      "一"
+    ],
+    "vi": "tạm yên tâm, thở phào"
+  },
+  "一位": {
+    "reading": "いちい",
+    "pos": "n",
+    "en": "first place; first rank",
+    "rank": 4807,
+    "kanjiChars": [
+      "一"
+    ],
+    "vi": "hạng nhất, vị trí số một"
+  },
+  "一員": {
+    "reading": "いちいん",
+    "pos": "n",
+    "en": "one person; one member",
+    "rank": 4808,
+    "kanjiChars": [
+      "一"
+    ],
+    "vi": "một thành viên"
+  },
+  "一因": {
+    "reading": "いちいん",
+    "pos": "n",
+    "en": "one cause; one reason; one factor",
+    "rank": 4809,
+    "kanjiChars": [
+      "一"
+    ],
+    "vi": "một nguyên nhân, một lý do"
+  },
+  "一円": {
+    "reading": "いちえん",
+    "pos": "n",
+    "en": "one yen",
+    "rank": 4810,
+    "kanjiChars": [
+      "円"
+    ],
+    "vi": "một yên"
+  },
+  "一気": {
+    "reading": "いっき",
+    "pos": "n",
+    "en": "one breath",
+    "rank": 4826,
+    "kanjiChars": [
+      "気"
+    ],
+    "vi": "một hơi"
+  },
+  "一気に": {
+    "reading": "いっきに",
+    "pos": "adv",
+    "en": "in one go; in one gulp; in one breath; without stopping; without pausing; without a rest; in one sitting; at a stretch",
+    "rank": 4827,
+    "kanjiChars": [
+      "気"
+    ],
+    "vi": "một hơi, liền một mạch"
+  },
+  "一休み": {
+    "reading": "ひとやすみ",
+    "pos": "n",
+    "en": "(short) rest; breather; break",
+    "rank": 4829,
+    "kanjiChars": [
+      "休"
+    ],
+    "vi": "nghỉ một chút"
+  },
+  "１月": {
+    "reading": "いちがつ",
+    "pos": "n",
+    "en": "January",
+    "rank": 4836,
+    "kanjiChars": [
+      "月"
+    ],
+    "vi": "tháng Một"
+  },
+  "一月": {
+    "reading": "ひとつき",
+    "pos": "n",
+    "en": "one month",
+    "rank": 4837,
+    "kanjiChars": [
+      "月"
+    ],
+    "vi": "một tháng"
+  },
+  "一見": {
+    "reading": "いっけん",
+    "pos": "n",
+    "en": "look; glimpse; glance",
+    "rank": 4839,
+    "kanjiChars": [
+      "見"
+    ],
+    "vi": "thoáng nhìn, nhìn qua"
+  },
+  "一口": {
+    "reading": "ひとくち",
+    "pos": "n",
+    "en": "mouthful; morsel; bite",
+    "rank": 4845,
+    "kanjiChars": [
+      "口"
+    ],
+    "vi": "một miếng, một ngụm"
+  },
+  "一国": {
+    "reading": "いっこく",
+    "pos": "n",
+    "en": "one country",
+    "rank": 4848,
+    "kanjiChars": [
+      "国"
+    ],
+    "vi": "một nước"
+  },
+  "ひと時": {
+    "reading": "ひととき",
+    "pos": "n",
+    "en": "a (short) time; a while; moment",
+    "rank": 4853,
+    "kanjiChars": [
+      "時"
+    ],
+    "vi": "một lát, chốc lát"
+  },
+  "一時間": {
+    "reading": "いちじかん",
+    "pos": "n",
+    "en": "one hour",
+    "rank": 4854,
+    "kanjiChars": [
+      "間",
+      "時"
+    ],
+    "vi": "một giờ đồng hồ"
+  },
+  "一時金": {
+    "reading": "いちじきん",
+    "pos": "n",
+    "en": "single amount (of money); one-off payment; lump sum",
+    "rank": 4855,
+    "kanjiChars": [
+      "金",
+      "時"
+    ],
+    "vi": "khoản tiền một lần"
+  },
+  "一時的": {
+    "reading": "いちじてき",
+    "pos": "adj-na",
+    "en": "temporary; transitory; short-lived",
+    "rank": 4856,
+    "kanjiChars": [
+      "時"
+    ],
+    "vi": "tạm thời, nhất thời"
+  },
+  "一手": {
+    "reading": "いって",
+    "pos": "n",
+    "en": "one move (in go, shogi, etc.)",
+    "rank": 4859,
+    "kanjiChars": [
+      "手"
+    ],
+    "vi": "một nước (cờ)"
+  },
+  "一周年": {
+    "reading": "いっしゅうねん",
+    "pos": "n",
+    "en": "one full year",
+    "rank": 4862,
+    "kanjiChars": [
+      "年"
+    ],
+    "vi": "tròn một năm"
+  },
+  "一週間": {
+    "reading": "いっしゅうかん",
+    "pos": "n",
+    "en": "one week",
+    "rank": 4863,
+    "kanjiChars": [
+      "間",
+      "週"
+    ],
+    "vi": "một tuần"
+  },
+  "一新": {
+    "reading": "いっしん",
+    "pos": "n",
+    "en": "complete change; reform; restoration; remodeling; remodelling; renewal",
+    "rank": 4872,
+    "kanjiChars": [
+      "新"
+    ],
+    "vi": "đổi mới hoàn toàn"
+  },
+  "一人で": {
+    "reading": "ひとりで",
+    "pos": "exp",
+    "en": "alone; by oneself; on one's own",
+    "rank": 4874,
+    "kanjiChars": [
+      "人"
+    ],
+    "vi": "một mình"
+  },
+  "一人前": {
+    "reading": "いちにんまえ",
+    "pos": "n",
+    "en": "one portion; one serving; one person",
+    "rank": 4875,
+    "kanjiChars": [
+      "人",
+      "前"
+    ],
+    "vi": "một suất, đủ tư cách (người lớn)"
+  },
+  "一人息子": {
+    "reading": "ひとりむすこ",
+    "pos": "n",
+    "en": "only son",
+    "rank": 4876,
+    "kanjiChars": [
+      "子",
+      "人"
+    ],
+    "vi": "con trai một"
+  },
+  "一生懸命": {
+    "reading": "いっしょうけんめい",
+    "pos": "adv",
+    "en": "very hard; with utmost effort; as hard as one can; with all one's might; for dear life; eagerly; desperately",
+    "rank": 4881,
+    "kanjiChars": [
+      "生"
+    ],
+    "vi": "hết sức, dốc lòng"
+  },
+  "一石二鳥": {
+    "reading": "いっせきにちょう",
+    "pos": "exp",
+    "en": "killing two birds with one stone",
+    "rank": 4886,
+    "kanjiChars": [
+      "二"
+    ],
+    "vi": "một mũi tên trúng hai đích"
+  },
+  "一千": {
+    "reading": "いっせん",
+    "pos": "num",
+    "en": "1,000; one thousand",
+    "rank": 4888,
+    "kanjiChars": [
+      "千"
+    ],
+    "vi": "một nghìn"
+  },
+  "一足": {
+    "reading": "いっそく",
+    "pos": "n",
+    "en": "a pair (of shoes or socks)",
+    "rank": 4894,
+    "kanjiChars": [
+      "足"
+    ],
+    "vi": "một đôi (giày, tất)"
+  },
+  "一大": {
+    "reading": "いちだい",
+    "pos": "n-pref",
+    "en": "one large ...; a great ...",
+    "rank": 4903,
+    "kanjiChars": [
+      "大"
+    ],
+    "vi": "một (sự kiện) lớn"
+  },
+  "一男": {
+    "reading": "いちなん",
+    "pos": "n",
+    "en": "boy; eldest son",
+    "rank": 4909,
+    "kanjiChars": [
+      "男"
+    ],
+    "vi": "con trai cả"
+  },
+  "一日中": {
+    "reading": "いちにちじゅう",
+    "pos": "adv",
+    "en": "all day long; all the day; throughout the day",
+    "rank": 4922,
+    "kanjiChars": [
+      "中",
+      "日"
+    ],
+    "vi": "suốt cả ngày"
+  },
+  "一年間": {
+    "reading": "いちねんかん",
+    "pos": "n",
+    "en": "(period of) one year",
+    "rank": 4924,
+    "kanjiChars": [
+      "間",
+      "年"
+    ],
+    "vi": "suốt một năm"
+  },
+  "一年生": {
+    "reading": "いちねんせい",
+    "pos": "n",
+    "en": "first-year student; first-year pupil",
+    "rank": 4925,
+    "kanjiChars": [
+      "生",
+      "年"
+    ],
+    "vi": "học sinh năm nhất"
+  },
+  "一年中": {
+    "reading": "いちねんじゅう",
+    "pos": "n",
+    "en": "all year round",
+    "rank": 4926,
+    "kanjiChars": [
+      "中",
+      "年"
+    ],
+    "vi": "quanh năm"
+  },
+  "一番手": {
+    "reading": "いちばんて",
+    "pos": "n",
+    "en": "first person (to do); person going first",
+    "rank": 4939,
+    "kanjiChars": [
+      "手"
+    ],
+    "vi": "người đầu tiên"
+  },
+  "一部分": {
+    "reading": "いちぶぶん",
+    "pos": "n",
+    "en": "one part; one portion; one section",
+    "rank": 4945,
+    "kanjiChars": [
+      "分"
+    ],
+    "vi": "một phần"
+  },
+  "一分": {
+    "reading": "いちぶ",
+    "pos": "n",
+    "en": "one tenth; one hundredth; one percent; one tenth of a sun; one quarter ryō (an old coin)",
+    "rank": 4947,
+    "kanjiChars": [
+      "分"
+    ],
+    "vi": "một phần mười, một phần trăm"
+  },
+  "一方通行": {
+    "reading": "いっぽうつうこう",
+    "pos": "n",
+    "en": "one-way traffic",
+    "rank": 4954,
+    "kanjiChars": [
+      "行"
+    ],
+    "vi": "đường một chiều"
+  },
+  "一本": {
+    "reading": "いっぽん",
+    "pos": "n",
+    "en": "one long cylindrical thing; one film, TV show, etc.; one goal, home run, etc.; one telephone call",
+    "rank": 4956,
+    "kanjiChars": [
+      "本"
+    ],
+    "vi": "một (cây, chai, cuộc gọi)"
+  },
+  "一目": {
+    "reading": "ひとめ",
+    "pos": "n",
+    "en": "glance; look; glimpse",
+    "rank": 4962,
+    "kanjiChars": [
+      "目"
+    ],
+    "vi": "một cái nhìn, liếc qua"
+  },
+  "逸話": {
+    "reading": "いつわ",
+    "pos": "n",
+    "en": "anecdote; story; episode",
+    "rank": 4981,
+    "kanjiChars": [
+      "話"
+    ],
+    "vi": "giai thoại"
+  },
+  "因子": {
+    "reading": "いんし",
+    "pos": "n",
+    "en": "factor",
+    "rank": 5003,
+    "kanjiChars": [
+      "子"
+    ],
+    "vi": "nhân tố, yếu tố"
+  },
+  "引き下げ": {
+    "reading": "ひきさげ",
+    "pos": "n",
+    "en": "reduction; cut",
+    "rank": 5005,
+    "kanjiChars": [
+      "下"
+    ],
+    "vi": "hạ xuống, giảm"
+  },
+  "引き分け": {
+    "reading": "ひきわけ",
+    "pos": "n",
+    "en": "draw (in competition); tie game",
+    "rank": 5012,
+    "kanjiChars": [
+      "分"
+    ],
+    "vi": "hòa (trận đấu)"
+  },
+  "引け目": {
+    "reading": "ひけめ",
+    "pos": "n",
+    "en": "sense of inferiority; one's weak point",
+    "rank": 5018,
+    "kanjiChars": [
+      "目"
+    ],
+    "vi": "mặc cảm, điểm yếu"
+  },
+  "飲む": {
+    "reading": "のむ",
+    "pos": "v5m",
+    "en": "to drink; to swallow; to take (medicine)",
+    "rank": 5028,
+    "kanjiChars": [
+      "飲"
+    ],
+    "vi": "uống"
+  },
+  "飲酒": {
+    "reading": "いんしゅ",
+    "pos": "n",
+    "en": "drinking alcohol",
+    "rank": 5029,
+    "kanjiChars": [
+      "飲"
+    ],
+    "vi": "uống rượu"
+  },
+  "飲酒運転": {
+    "reading": "いんしゅうんてん",
+    "pos": "n",
+    "en": "drunk driving; drink-driving; driving while intoxicated; drinking and driving; driving under the influence (of alcohol)",
+    "rank": 5030,
+    "kanjiChars": [
+      "飲"
+    ],
+    "vi": "lái xe khi say rượu"
+  },
+  "飲食": {
+    "reading": "いんしょく",
+    "pos": "n",
+    "en": "food and drink; eating and drinking",
+    "rank": 5031,
+    "kanjiChars": [
+      "飲",
+      "食"
+    ],
+    "vi": "ăn uống"
+  },
+  "飲食店": {
+    "reading": "いんしょくてん",
+    "pos": "n",
+    "en": "restaurant",
+    "rank": 5032,
+    "kanjiChars": [
+      "飲",
+      "食",
+      "店"
+    ],
+    "vi": "quán ăn, nhà hàng"
+  },
+  "飲料": {
+    "reading": "いんりょう",
+    "pos": "n",
+    "en": "beverage; drink",
+    "rank": 5033,
+    "kanjiChars": [
+      "飲"
+    ],
+    "vi": "đồ uống"
+  },
+  "飲料水": {
+    "reading": "いんりょうすい",
+    "pos": "n",
+    "en": "drinking water",
+    "rank": 5034,
+    "kanjiChars": [
+      "飲",
+      "水"
+    ],
+    "vi": "nước uống"
+  },
+  "院長": {
+    "reading": "いんちょう",
+    "pos": "n",
+    "en": "director (of a hospital, institution, academy, etc.); superintendent; rector",
+    "rank": 5035,
+    "kanjiChars": [
+      "長"
+    ],
+    "vi": "viện trưởng, giám đốc bệnh viện"
+  },
+  "陰気": {
+    "reading": "いんき",
+    "pos": "adj-na",
+    "en": "gloomy; dismal; miserable; melancholy",
+    "rank": 5036,
+    "kanjiChars": [
+      "気"
+    ],
+    "vi": "u ám, ảm đạm"
+  },
+  "陰口": {
+    "reading": "かげぐち",
+    "pos": "n",
+    "en": "malicious gossip; backbiting; speaking ill behind someone's back",
+    "rank": 5037,
+    "kanjiChars": [
+      "口"
+    ],
+    "vi": "nói xấu sau lưng"
+  },
+  "隠し引き出し": {
+    "reading": "かくしひきだし",
+    "pos": "n",
+    "en": "secret drawer; hidden drawer",
+    "rank": 5040,
+    "kanjiChars": [
+      "出"
+    ],
+    "vi": "ngăn kéo bí mật"
+  },
+  "隠語": {
+    "reading": "いんご",
+    "pos": "n",
+    "en": "secret language; jargon; cant; argot; slang",
+    "rank": 5044,
+    "kanjiChars": [
+      "語"
+    ],
+    "vi": "tiếng lóng"
+  },
+  "右": {
+    "reading": "みぎ",
+    "pos": "n",
+    "en": "right; right-hand side",
+    "rank": 5049,
+    "kanjiChars": [
+      "右"
+    ],
+    "vi": "bên phải"
+  },
+  "右往左往": {
+    "reading": "うおうさおう",
+    "pos": "n",
+    "en": "moving about in confusion; going every which way; going this way and that",
+    "rank": 5050,
+    "kanjiChars": [
+      "右",
+      "左"
+    ],
+    "vi": "chạy loạn xạ, lúng túng"
+  },
+  "右下": {
+    "reading": "みぎした",
+    "pos": "n",
+    "en": "lower right",
+    "rank": 5051,
+    "kanjiChars": [
+      "右",
+      "下"
+    ],
+    "vi": "góc dưới phải"
+  },
+  "右手": {
+    "reading": "みぎて",
+    "pos": "n",
+    "en": "right hand",
+    "rank": 5052,
+    "kanjiChars": [
+      "右",
+      "手"
+    ],
+    "vi": "tay phải"
+  },
+  "右上": {
+    "reading": "みぎうえ",
+    "pos": "n",
+    "en": "upper right",
+    "rank": 5053,
+    "kanjiChars": [
+      "右",
+      "上"
+    ],
+    "vi": "góc trên phải"
+  },
+  "右折": {
+    "reading": "うせつ",
+    "pos": "n",
+    "en": "turning to the right; right turn",
+    "rank": 5054,
+    "kanjiChars": [
+      "右"
+    ],
+    "vi": "rẽ phải"
+  },
+  "右足": {
+    "reading": "みぎあし",
+    "pos": "n",
+    "en": "right foot",
+    "rank": 5055,
+    "kanjiChars": [
+      "右",
+      "足"
+    ],
+    "vi": "chân phải"
+  },
+  "右派": {
+    "reading": "うは",
+    "pos": "n",
+    "en": "right wing",
+    "rank": 5056,
+    "kanjiChars": [
+      "右"
+    ],
+    "vi": "phái hữu, cánh hữu"
+  },
+  "宇宙空間": {
+    "reading": "うちゅうくうかん",
+    "pos": "n",
+    "en": "(outer) space",
+    "rank": 5061,
+    "kanjiChars": [
+      "間",
+      "空"
+    ],
+    "vi": "không gian vũ trụ"
+  },
+  "宇宙飛行士": {
+    "reading": "うちゅうひこうし",
+    "pos": "n",
+    "en": "astronaut",
+    "rank": 5062,
+    "kanjiChars": [
+      "行"
+    ],
+    "vi": "phi hành gia"
+  },
+  "羽目": {
+    "reading": "はめ",
+    "pos": "n",
+    "en": "panel; wainscoting; wainscotting",
+    "rank": 5069,
+    "kanjiChars": [
+      "目"
+    ],
+    "vi": "tấm ván tường"
+  },
+  "雨": {
+    "reading": "あめ",
+    "pos": "n",
+    "en": "rain",
+    "rank": 5070,
+    "kanjiChars": [
+      "雨"
+    ],
+    "vi": "mưa"
+  },
+  "雨雲": {
+    "reading": "あまぐも",
+    "pos": "n",
+    "en": "rain cloud",
+    "rank": 5071,
+    "kanjiChars": [
+      "雨"
+    ],
+    "vi": "mây mưa"
+  },
+  "雨具": {
+    "reading": "あまぐ",
+    "pos": "n",
+    "en": "rain gear",
+    "rank": 5072,
+    "kanjiChars": [
+      "雨"
+    ],
+    "vi": "đồ đi mưa"
+  },
+  "雨戸": {
+    "reading": "あまど",
+    "pos": "n",
+    "en": "sliding storm shutter",
+    "rank": 5073,
+    "kanjiChars": [
+      "雨"
+    ],
+    "vi": "cửa chống mưa"
+  },
+  "雨宿り": {
+    "reading": "あまやどり",
+    "pos": "n",
+    "en": "taking shelter from rain",
+    "rank": 5074,
+    "kanjiChars": [
+      "雨"
+    ],
+    "vi": "trú mưa"
+  },
+  "雨天": {
+    "reading": "うてん",
+    "pos": "n",
+    "en": "rainy weather",
+    "rank": 5075,
+    "kanjiChars": [
+      "雨",
+      "天"
+    ],
+    "vi": "trời mưa"
+  },
+  "雨量": {
+    "reading": "うりょう",
+    "pos": "n",
+    "en": "(amount of) rainfall",
+    "rank": 5076,
+    "kanjiChars": [
+      "雨"
+    ],
+    "vi": "lượng mưa"
+  },
+  "雨漏り": {
+    "reading": "あまもり",
+    "pos": "n",
+    "en": "roof leak",
+    "rank": 5077,
+    "kanjiChars": [
+      "雨"
+    ],
+    "vi": "dột (mái nhà)"
+  },
+  "渦中": {
+    "reading": "かちゅう",
+    "pos": "n",
+    "en": "vortex; maelstrom; whirlpool",
+    "rank": 5081,
+    "kanjiChars": [
+      "中"
+    ],
+    "vi": "xoáy nước, vòng xoáy (sự việc)"
+  },
+  "運休": {
+    "reading": "うんきゅう",
+    "pos": "n",
+    "en": "suspension (of a transportation service); cancellation; stoppage",
+    "rank": 5092,
+    "kanjiChars": [
+      "休"
+    ],
+    "vi": "tạm dừng (chuyến tàu, xe)"
+  },
+  "運行": {
+    "reading": "うんこう",
+    "pos": "n",
+    "en": "operation (of a bus or train service); service; running",
+    "rank": 5094,
+    "kanjiChars": [
+      "行"
+    ],
+    "vi": "vận hành (tuyến xe, tàu)"
+  },
+  "運転手": {
+    "reading": "うんてんしゅ",
+    "pos": "n",
+    "en": "driver; chauffeur",
+    "rank": 5098,
+    "kanjiChars": [
+      "手"
+    ],
+    "vi": "tài xế"
+  },
+  "運動会": {
+    "reading": "うんどうかい",
+    "pos": "n",
+    "en": "athletic meet (esp. at a school); sports day; field day; sports festival",
+    "rank": 5101,
+    "kanjiChars": [
+      "会"
+    ],
+    "vi": "hội thao"
+  },
+  "運動不足": {
+    "reading": "うんどうぶそく",
+    "pos": "n",
+    "en": "lack of physical exercise; insufficient exercise; inactivity",
+    "rank": 5103,
+    "kanjiChars": [
+      "足"
+    ],
+    "vi": "thiếu vận động"
+  },
+  "雲行き": {
+    "reading": "くもゆき",
+    "pos": "n",
+    "en": "weather; look of the sky",
+    "rank": 5110,
+    "kanjiChars": [
+      "行"
+    ],
+    "vi": "tình hình thời tiết, chiều hướng"
+  },
+  "営業時間": {
+    "reading": "えいぎょうじかん",
+    "pos": "n",
+    "en": "business hours; opening hours; office hours",
+    "rank": 5117,
+    "kanjiChars": [
+      "間",
+      "時"
+    ],
+    "vi": "giờ làm việc, giờ mở cửa"
+  },
+  "英会話": {
+    "reading": "えいかいわ",
+    "pos": "n",
+    "en": "English conversation",
+    "rank": 5142,
+    "kanjiChars": [
+      "会",
+      "話"
+    ],
+    "vi": "hội thoại tiếng Anh"
+  },
+  "英語": {
+    "reading": "えいご",
+    "pos": "n",
+    "en": "English (language)",
+    "rank": 5144,
+    "kanjiChars": [
+      "語"
+    ],
+    "vi": "tiếng Anh"
+  },
+  "英国": {
+    "reading": "えいこく",
+    "pos": "n",
+    "en": "United Kingdom; Britain; Great Britain",
+    "rank": 5145,
+    "kanjiChars": [
+      "国"
+    ],
+    "vi": "nước Anh"
+  },
+  "英単語": {
+    "reading": "えいたんご",
+    "pos": "n",
+    "en": "English word",
+    "rank": 5148,
+    "kanjiChars": [
+      "語"
+    ],
+    "vi": "từ vựng tiếng Anh"
+  },
+  "英文学": {
+    "reading": "えいぶんがく",
+    "pos": "n",
+    "en": "English(-language) literature",
+    "rank": 5150,
+    "kanjiChars": [
+      "学"
+    ],
+    "vi": "văn học Anh"
+  },
+  "衛生": {
+    "reading": "えいせい",
+    "pos": "n",
+    "en": "hygiene; sanitation; cleanliness; health",
+    "rank": 5155,
+    "kanjiChars": [
+      "生"
+    ],
+    "vi": "vệ sinh"
+  },
+  "駅": {
+    "reading": "えき",
+    "pos": "n",
+    "en": "railway station; train station",
+    "rank": 5165,
+    "kanjiChars": [
+      "駅"
+    ],
+    "vi": "ga"
+  },
+  "駅員": {
+    "reading": "えきいん",
+    "pos": "n",
+    "en": "(train) station attendant; station employee; station staff",
+    "rank": 5166,
+    "kanjiChars": [
+      "駅"
+    ],
+    "vi": "nhân viên nhà ga"
+  },
+  "駅前": {
+    "reading": "えきまえ",
+    "pos": "n",
+    "en": "in front of a station",
+    "rank": 5167,
+    "kanjiChars": [
+      "駅",
+      "前"
+    ],
+    "vi": "trước ga"
+  },
+  "駅長": {
+    "reading": "えきちょう",
+    "pos": "n",
+    "en": "station master",
+    "rank": 5168,
+    "kanjiChars": [
+      "駅",
+      "長"
+    ],
+    "vi": "trưởng ga"
+  },
+  "駅伝": {
+    "reading": "えきでん",
+    "pos": "n",
+    "en": "long-distance relay race",
+    "rank": 5169,
+    "kanjiChars": [
+      "駅"
+    ],
+    "vi": "chạy tiếp sức đường dài"
+  },
+  "駅弁": {
+    "reading": "えきべん",
+    "pos": "n",
+    "en": "boxed lunch bought at a station (often a local specialty)",
+    "rank": 5170,
+    "kanjiChars": [
+      "駅"
+    ],
+    "vi": "cơm hộp bán ở ga"
+  },
+  "越年": {
+    "reading": "えつねん",
+    "pos": "n",
+    "en": "seeing the old year out; greeting the New Year; passing the winter; hibernation",
+    "rank": 5175,
+    "kanjiChars": [
+      "年"
+    ],
+    "vi": "đón năm mới, qua năm"
+  },
+  "円": {
+    "reading": "えん",
+    "pos": "n",
+    "en": "yen (currency of Japan)",
+    "rank": 5177,
+    "kanjiChars": [
+      "円"
+    ],
+    "vi": "yên (tiền tệ Nhật)"
+  },
+  "円安": {
+    "reading": "えんやす",
+    "pos": "n",
+    "en": "depreciation of the yen; weak yen",
+    "rank": 5178,
+    "kanjiChars": [
+      "円"
+    ],
+    "vi": "đồng yên giảm giá"
+  },
+  "円建て": {
+    "reading": "えんだて",
+    "pos": "n",
+    "en": "yen basis (for trade, exchange, etc.)",
+    "rank": 5179,
+    "kanjiChars": [
+      "円"
+    ],
+    "vi": "tính theo đồng yên"
+  },
+  "円弧": {
+    "reading": "えんこ",
+    "pos": "n",
+    "en": "arc",
+    "rank": 5180,
+    "kanjiChars": [
+      "円"
+    ],
+    "vi": "cung tròn"
+  },
+  "円高": {
+    "reading": "えんだか",
+    "pos": "n",
+    "en": "appreciation of the yen; strong yen",
+    "rank": 5181,
+    "kanjiChars": [
+      "円",
+      "高"
+    ],
+    "vi": "đồng yên tăng giá"
+  },
+  "円周": {
+    "reading": "えんしゅう",
+    "pos": "n",
+    "en": "circumference",
+    "rank": 5182,
+    "kanjiChars": [
+      "円"
+    ],
+    "vi": "chu vi đường tròn"
+  },
+  "円熟": {
+    "reading": "えんじゅく",
+    "pos": "n",
+    "en": "ripeness; mellowness; maturity",
+    "rank": 5183,
+    "kanjiChars": [
+      "円"
+    ],
+    "vi": "chín muồi, thuần thục"
+  },
+  "園長": {
+    "reading": "えんちょう",
+    "pos": "n",
+    "en": "head of a garden; kindergarten principal; nursery school principal; park director; zoo director; head of a plantation",
+    "rank": 5192,
+    "kanjiChars": [
+      "長"
+    ],
+    "vi": "chủ vườn, hiệu trưởng (mầm non)"
+  },
+  "宴会": {
+    "reading": "えんかい",
+    "pos": "n",
+    "en": "party; banquet; reception; feast; dinner",
+    "rank": 5194,
+    "kanjiChars": [
+      "会"
+    ],
+    "vi": "tiệc, yến tiệc"
+  },
+  "延長": {
+    "reading": "えんちょう",
+    "pos": "n",
+    "en": "extension; elongation; prolongation; lengthening",
+    "rank": 5199,
+    "kanjiChars": [
+      "長"
+    ],
+    "vi": "gia hạn, kéo dài"
+  },
+  "沿道": {
+    "reading": "えんどう",
+    "pos": "n",
+    "en": "roadside; wayside; route",
+    "rank": 5209,
+    "kanjiChars": [
+      "道"
+    ],
+    "vi": "ven đường"
+  },
+  "演出": {
+    "reading": "えんしゅつ",
+    "pos": "n",
+    "en": "direction (of a play, film, etc.); production",
+    "rank": 5218,
+    "kanjiChars": [
+      "出"
+    ],
+    "vi": "đạo diễn, dàn dựng"
+  },
+  "演奏会": {
+    "reading": "えんそうかい",
+    "pos": "n",
+    "en": "concert; recital",
+    "rank": 5220,
+    "kanjiChars": [
+      "会"
+    ],
+    "vi": "buổi hòa nhạc"
+  },
+  "演目": {
+    "reading": "えんもく",
+    "pos": "n",
+    "en": "program (musical, concert, theatrical, etc.); programme",
+    "rank": 5222,
+    "kanjiChars": [
+      "目"
+    ],
+    "vi": "tiết mục"
+  },
+  "炎上": {
+    "reading": "えんじょう",
+    "pos": "n",
+    "en": "going up in flames; destruction by fire (esp. of a large building)",
+    "rank": 5225,
+    "kanjiChars": [
+      "上"
+    ],
+    "vi": "bùng cháy, bị \"ném đá\" online"
+  },
+  "炎天": {
+    "reading": "えんてん",
+    "pos": "n",
+    "en": "blazing heat; scorching sun",
+    "rank": 5226,
+    "kanjiChars": [
+      "天"
+    ],
+    "vi": "trời nắng gắt"
+  },
+  "遠足": {
+    "reading": "えんそく",
+    "pos": "n",
+    "en": "school trip; field trip; excursion; outing",
+    "rank": 5249,
+    "kanjiChars": [
+      "足"
+    ],
+    "vi": "dã ngoại, đi chơi xa"
+  },
+  "塩分": {
+    "reading": "えんぶん",
+    "pos": "n",
+    "en": "salt; salt content",
+    "rank": 5259,
+    "kanjiChars": [
+      "分"
+    ],
+    "vi": "muối, độ mặn"
+  },
+  "汚水": {
+    "reading": "おすい",
+    "pos": "n",
+    "en": "filthy water; sewage",
+    "rank": 5265,
+    "kanjiChars": [
+      "水"
+    ],
+    "vi": "nước bẩn, nước thải"
+  },
+  "汚名": {
+    "reading": "おめい",
+    "pos": "n",
+    "en": "bad name; bad reputation; disgrace; dishonour; dishonor; stigma; infamy",
+    "rank": 5270,
+    "kanjiChars": [
+      "名"
+    ],
+    "vi": "tai tiếng, ô danh"
+  },
+  "奥行き": {
+    "reading": "おくゆき",
+    "pos": "n",
+    "en": "depth; length",
+    "rank": 5276,
+    "kanjiChars": [
+      "行"
+    ],
+    "vi": "chiều sâu"
+  },
+  "奥山": {
+    "reading": "おくやま",
+    "pos": "n",
+    "en": "remote mountain; mountain recesses",
+    "rank": 5277,
+    "kanjiChars": [
+      "山"
+    ],
+    "vi": "núi sâu, núi xa"
+  },
+  "往生": {
+    "reading": "おうじょう",
+    "pos": "n",
+    "en": "passing on to the next life",
+    "rank": 5280,
+    "kanjiChars": [
+      "生"
+    ],
+    "vi": "qua đời, vãng sinh"
+  },
+  "往年": {
+    "reading": "おうねん",
+    "pos": "n",
+    "en": "years gone by; earlier years; former years; the past",
+    "rank": 5281,
+    "kanjiChars": [
+      "年"
+    ],
+    "vi": "năm xưa, ngày xưa"
+  },
+  "往来": {
+    "reading": "おうらい",
+    "pos": "n",
+    "en": "coming and going; traffic",
+    "rank": 5283,
+    "kanjiChars": [
+      "来"
+    ],
+    "vi": "đi lại, qua lại"
+  },
+  "応分": {
+    "reading": "おうぶん",
+    "pos": "adj-na",
+    "en": "according to one's abilities; appropriate; reasonable",
+    "rank": 5293,
+    "kanjiChars": [
+      "分"
+    ],
+    "vi": "tùy theo khả năng, phù hợp"
+  },
+  "押し入る": {
+    "reading": "おしいる",
+    "pos": "v5r",
+    "en": "to push in; to force into; to break in (e.g. into a house); to intrude",
+    "rank": 5300,
+    "kanjiChars": [
+      "入"
+    ],
+    "vi": "đột nhập, xông vào"
+  },
+  "横行": {
+    "reading": "おうこう",
+    "pos": "n",
+    "en": "being rampant; being widespread; being prevalent",
+    "rank": 5310,
+    "kanjiChars": [
+      "行"
+    ],
+    "vi": "hoành hành, lan tràn"
+  },
+  "横書き": {
+    "reading": "よこがき",
+    "pos": "n",
+    "en": "writing horizontally; horizontal writing",
+    "rank": 5312,
+    "kanjiChars": [
+      "書"
+    ],
+    "vi": "viết ngang"
+  },
+  "横断歩道": {
+    "reading": "おうだんほどう",
+    "pos": "n",
+    "en": "pedestrian crossing; crosswalk",
+    "rank": 5316,
+    "kanjiChars": [
+      "道"
+    ],
+    "vi": "vạch sang đường, lối đi bộ"
+  },
+  "横道": {
+    "reading": "よこみち",
+    "pos": "n",
+    "en": "byway; side street; cross street",
+    "rank": 5319,
+    "kanjiChars": [
+      "道"
+    ],
+    "vi": "đường rẽ ngang, đường tắt"
+  },
+  "横目": {
+    "reading": "よこめ",
+    "pos": "n",
+    "en": "sidelong glance",
+    "rank": 5324,
+    "kanjiChars": [
+      "目"
+    ],
+    "vi": "liếc nhìn (từ bên cạnh)"
+  },
+  "王国": {
+    "reading": "おうこく",
+    "pos": "n",
+    "en": "kingdom; monarchy",
+    "rank": 5333,
+    "kanjiChars": [
+      "国"
+    ],
+    "vi": "vương quốc"
+  },
+  "王子": {
+    "reading": "おうじ",
+    "pos": "n",
+    "en": "prince",
+    "rank": 5335,
+    "kanjiChars": [
+      "子"
+    ],
+    "vi": "hoàng tử"
+  },
+  "王女": {
+    "reading": "おうじょ",
+    "pos": "n",
+    "en": "princess",
+    "rank": 5339,
+    "kanjiChars": [
+      "女"
+    ],
+    "vi": "công chúa"
+  },
+  "王立": {
+    "reading": "おうりつ",
+    "pos": "adj-no",
+    "en": "royal (institution)",
+    "rank": 5345,
+    "kanjiChars": [
+      "立"
+    ],
+    "vi": "thuộc hoàng gia"
+  },
+  "黄金": {
+    "reading": "おうごん",
+    "pos": "n",
+    "en": "gold (Au)",
+    "rank": 5348,
+    "kanjiChars": [
+      "金"
+    ],
+    "vi": "vàng"
+  },
+  "黄金時代": {
+    "reading": "おうごんじだい",
+    "pos": "n",
+    "en": "golden age",
+    "rank": 5349,
+    "kanjiChars": [
+      "金",
+      "時"
+    ],
+    "vi": "thời kỳ hoàng kim"
+  },
+  "屋外": {
+    "reading": "おくがい",
+    "pos": "n",
+    "en": "outdoors; outside",
+    "rank": 5356,
+    "kanjiChars": [
+      "外"
+    ],
+    "vi": "ngoài trời"
+  },
+  "屋上": {
+    "reading": "おくじょう",
+    "pos": "n",
+    "en": "rooftop",
+    "rank": 5358,
+    "kanjiChars": [
+      "上"
+    ],
+    "vi": "sân thượng"
+  },
+  "音読": {
+    "reading": "おんどく",
+    "pos": "n",
+    "en": "reading aloud",
+    "rank": 5398,
+    "kanjiChars": [
+      "読"
+    ],
+    "vi": "đọc to, đọc thành tiếng"
+  },
+  "音読み": {
+    "reading": "おんよみ",
+    "pos": "n",
+    "en": "on reading; on'yomi; Chinese-derived reading of a kanji",
+    "rank": 5399,
+    "kanjiChars": [
+      "読"
+    ],
+    "vi": "âm đọc kiểu Hán (on-yomi)"
+  },
+  "下": {
+    "reading": "した",
+    "pos": "n",
+    "en": "below; down; under; younger (e.g. daughter)",
+    "rank": 5402,
+    "kanjiChars": [
+      "下"
+    ],
+    "vi": "dưới, ở dưới"
+  },
+  "下がる": {
+    "reading": "さがる",
+    "pos": "v5r",
+    "en": "to come down; to go down; to fall; to drop; to sink; to get lower",
+    "rank": 5403,
+    "kanjiChars": [
+      "下"
+    ],
+    "vi": "hạ xuống, giảm xuống"
+  },
+  "下げる": {
+    "reading": "さげる",
+    "pos": "v1",
+    "en": "to hang; to suspend; to wear (e.g. decoration)",
+    "rank": 5404,
+    "kanjiChars": [
+      "下"
+    ],
+    "vi": "hạ, treo, đeo (đồ trang trí)"
+  },
+  "下火": {
+    "reading": "したび",
+    "pos": "n",
+    "en": "burning low; waning; declining",
+    "rank": 5415,
+    "kanjiChars": [
+      "火"
+    ],
+    "vi": "(lửa) tàn, suy giảm"
+  },
+  "下見": {
+    "reading": "したみ",
+    "pos": "n",
+    "en": "preliminary inspection; having a look in advance",
+    "rank": 5420,
+    "kanjiChars": [
+      "見"
+    ],
+    "vi": "khảo sát trước, xem trước"
+  },
+  "下山": {
+    "reading": "げざん",
+    "pos": "n",
+    "en": "descending a mountain; descent",
+    "rank": 5424,
+    "kanjiChars": [
+      "山"
+    ],
+    "vi": "xuống núi"
+  },
+  "下車": {
+    "reading": "げしゃ",
+    "pos": "n",
+    "en": "alighting (from a train, bus, etc.); getting off; getting out (of a car)",
+    "rank": 5426,
+    "kanjiChars": [
+      "車"
+    ],
+    "vi": "xuống xe"
+  },
+  "下書き": {
+    "reading": "したがき",
+    "pos": "n",
+    "en": "draft; rough copy",
+    "rank": 5433,
+    "kanjiChars": [
+      "書"
+    ],
+    "vi": "bản nháp"
+  },
+  "下水": {
+    "reading": "げすい",
+    "pos": "n",
+    "en": "drainage; ditch; gutter; sewerage",
+    "rank": 5434,
+    "kanjiChars": [
+      "水"
+    ],
+    "vi": "nước thải"
+  },
+  "下水道": {
+    "reading": "げすいどう",
+    "pos": "n",
+    "en": "sewer; sewer system; sewerage; drain",
+    "rank": 5435,
+    "kanjiChars": [
+      "水",
+      "道"
+    ],
+    "vi": "hệ thống cống"
+  },
+  "化学": {
+    "reading": "かがく",
+    "pos": "n",
+    "en": "chemistry",
+    "rank": 5452,
+    "kanjiChars": [
+      "学"
+    ],
+    "vi": "hóa học"
+  },
+  "化学肥料": {
+    "reading": "かがくひりょう",
+    "pos": "n",
+    "en": "chemical fertilizer; chemical fertiliser",
+    "rank": 5453,
+    "kanjiChars": [
+      "学"
+    ],
+    "vi": "phân bón hóa học"
+  },
+  "化学兵器": {
+    "reading": "かがくへいき",
+    "pos": "n",
+    "en": "chemical weapon",
+    "rank": 5454,
+    "kanjiChars": [
+      "学"
+    ],
+    "vi": "vũ khí hóa học"
+  },
+  "仮処分": {
+    "reading": "かりしょぶん",
+    "pos": "n",
+    "en": "provisional disposition; temporary injunction",
+    "rank": 5462,
+    "kanjiChars": [
+      "分"
+    ],
+    "vi": "lệnh tạm thời"
+  },
+  "仮名遣い": {
+    "reading": "かなづかい",
+    "pos": "n",
+    "en": "kana orthography; syllabary spelling",
+    "rank": 5467,
+    "kanjiChars": [
+      "名"
+    ],
+    "vi": "cách viết kana"
+  },
+  "何か": {
+    "reading": "なにか",
+    "pos": "pn",
+    "en": "something; some; any",
+    "rank": 5469,
+    "kanjiChars": [
+      "何"
+    ],
+    "vi": "cái gì đó"
+  },
+  "何しろ": {
+    "reading": "なにしろ",
+    "pos": "adv",
+    "en": "in any case; at any rate; anyhow; anyway; as you know; for you see; particularly",
+    "rank": 5470,
+    "kanjiChars": [
+      "何"
+    ],
+    "vi": "dù sao thì, dù gì"
+  },
+  "何だか": {
+    "reading": "なんだか",
+    "pos": "adv",
+    "en": "(a) little; somewhat; somehow",
+    "rank": 5471,
+    "kanjiChars": [
+      "何"
+    ],
+    "vi": "không hiểu sao, có vẻ"
+  },
+  "何だかんだ": {
+    "reading": "なんだかんだ",
+    "pos": "adv",
+    "en": "something or other; one thing or another; this or that",
+    "rank": 5472,
+    "kanjiChars": [
+      "何"
+    ],
+    "vi": "thế này thế kia"
+  },
+  "何時": {
+    "reading": "なんじ",
+    "pos": "n",
+    "en": "what time; which hour",
+    "rank": 5487,
+    "kanjiChars": [
+      "時"
+    ],
+    "vi": "mấy giờ"
+  },
+  "いつの間にか": {
+    "reading": "いつのまにか",
+    "pos": "adv",
+    "en": "before one knows; before one becomes aware of; unnoticed; unawares",
+    "rank": 5488,
+    "kanjiChars": [
+      "間"
+    ],
+    "vi": "không biết tự lúc nào"
+  },
+  "何時の間にか": {
+    "reading": "いつのまにか",
+    "pos": "adv",
+    "en": "before one knows; before one becomes aware of; unnoticed; unawares",
+    "rank": 5488,
+    "kanjiChars": [
+      "時"
+    ],
+    "vi": "không biết tự lúc nào"
+  },
+  "何千": {
+    "reading": "なんぜん",
+    "pos": "n",
+    "en": "many thousands",
+    "rank": 5497,
+    "kanjiChars": [
+      "千"
+    ],
+    "vi": "hàng nghìn"
+  },
+  "何日": {
+    "reading": "なんにち",
+    "pos": "n",
+    "en": "what day",
+    "rank": 5503,
+    "kanjiChars": [
+      "日"
+    ],
+    "vi": "ngày nào, mấy ngày"
+  },
+  "何年": {
+    "reading": "なんねん",
+    "pos": "n",
+    "en": "how many years; how long",
+    "rank": 5504,
+    "kanjiChars": [
+      "年"
+    ],
+    "vi": "mấy năm, năm nào"
+  },
+  "何百": {
+    "reading": "なんびゃく",
+    "pos": "n",
+    "en": "hundreds",
+    "rank": 5506,
+    "kanjiChars": [
+      "百"
+    ],
+    "vi": "hàng trăm"
+  },
+  "何分": {
+    "reading": "なにぶん",
+    "pos": "n",
+    "en": "some; any; (a) little; of some kind; of some sort",
+    "rank": 5507,
+    "kanjiChars": [
+      "分"
+    ],
+    "vi": "dù sao, có phần"
+  },
+  "加入": {
+    "reading": "かにゅう",
+    "pos": "n",
+    "en": "joining (a club, organization, etc.); becoming a member; entry; admission; subscription; affiliation; signing (e.g. a treaty); taking out (insurance)",
+    "rank": 5526,
+    "kanjiChars": [
+      "入"
+    ],
+    "vi": "gia nhập, tham gia"
+  },
+  "可能性が高い": {
+    "reading": "かのうせいがたかい",
+    "pos": "exp",
+    "en": "very likely; very probable",
+    "rank": 5539,
+    "kanjiChars": [
+      "高"
+    ],
+    "vi": "khả năng cao"
+  },
+  "夏休み": {
+    "reading": "なつやすみ",
+    "pos": "n",
+    "en": "summer vacation; summer holiday",
+    "rank": 5543,
+    "kanjiChars": [
+      "休"
+    ],
+    "vi": "kỳ nghỉ hè"
+  },
+  "嫁入り": {
+    "reading": "よめいり",
+    "pos": "n",
+    "en": "marriage; wedding",
+    "rank": 5551,
+    "kanjiChars": [
+      "入"
+    ],
+    "vi": "về nhà chồng"
+  },
+  "家出": {
+    "reading": "いえで",
+    "pos": "n",
+    "en": "running away from home; elopement",
+    "rank": 5566,
+    "kanjiChars": [
+      "出"
+    ],
+    "vi": "bỏ nhà ra đi"
+  },
+  "家電": {
+    "reading": "かでん",
+    "pos": "n",
+    "en": "household (electrical) appliances; home appliances; consumer electronics",
+    "rank": 5578,
+    "kanjiChars": [
+      "電"
+    ],
+    "vi": "đồ điện gia dụng"
+  },
+  "家来": {
+    "reading": "けらい",
+    "pos": "n",
+    "en": "retainer; vassal; follower",
+    "rank": 5581,
+    "kanjiChars": [
+      "来"
+    ],
+    "vi": "gia thần, người hầu"
+  },
+  "科学": {
+    "reading": "かがく",
+    "pos": "n",
+    "en": "science",
+    "rank": 5586,
+    "kanjiChars": [
+      "学"
+    ],
+    "vi": "khoa học"
+  },
+  "科学技術": {
+    "reading": "かがくぎじゅつ",
+    "pos": "n",
+    "en": "science and technology; technology; scientific techniques",
+    "rank": 5587,
+    "kanjiChars": [
+      "学"
+    ],
+    "vi": "khoa học công nghệ"
+  },
+  "架空": {
+    "reading": "かくう",
+    "pos": "adj-no",
+    "en": "fictitious; imaginary; fanciful; fabricated",
+    "rank": 5601,
+    "kanjiChars": [
+      "空"
+    ],
+    "vi": "hư cấu, tưởng tượng"
+  },
+  "河川": {
+    "reading": "かせん",
+    "pos": "n",
+    "en": "rivers",
+    "rank": 5615,
+    "kanjiChars": [
+      "川"
+    ],
+    "vi": "sông ngòi"
+  },
+  "火": {
+    "reading": "ひ",
+    "pos": "n",
+    "en": "fire; flame; blaze",
+    "rank": 5617,
+    "kanjiChars": [
+      "火"
+    ],
+    "vi": "lửa"
+  },
+  "火炎瓶": {
+    "reading": "かえんびん",
+    "pos": "n",
+    "en": "Molotov cocktail; petrol bomb; gasoline bomb",
+    "rank": 5618,
+    "kanjiChars": [
+      "火"
+    ],
+    "vi": "bom xăng"
+  },
+  "火花": {
+    "reading": "ひばな",
+    "pos": "n",
+    "en": "spark",
+    "rank": 5619,
+    "kanjiChars": [
+      "火",
+      "花"
+    ],
+    "vi": "tia lửa"
+  },
+  "火器": {
+    "reading": "かき",
+    "pos": "n",
+    "en": "firearms; guns",
+    "rank": 5620,
+    "kanjiChars": [
+      "火"
+    ],
+    "vi": "hỏa khí, súng"
+  },
+  "火災": {
+    "reading": "かさい",
+    "pos": "n",
+    "en": "conflagration; fire",
+    "rank": 5621,
+    "kanjiChars": [
+      "火"
+    ],
+    "vi": "hỏa hoạn"
+  },
+  "火災保険": {
+    "reading": "かさいほけん",
+    "pos": "n",
+    "en": "fire insurance",
+    "rank": 5622,
+    "kanjiChars": [
+      "火"
+    ],
+    "vi": "bảo hiểm cháy nổ"
+  },
+  "火山": {
+    "reading": "かざん",
+    "pos": "n",
+    "en": "volcano",
+    "rank": 5623,
+    "kanjiChars": [
+      "火",
+      "山"
+    ],
+    "vi": "núi lửa"
+  },
+  "火山灰": {
+    "reading": "かざんばい",
+    "pos": "n",
+    "en": "volcanic ash",
+    "rank": 5624,
+    "kanjiChars": [
+      "山"
+    ],
+    "vi": "tro núi lửa"
+  },
+  "火曜日": {
+    "reading": "かようび",
+    "pos": "n",
+    "en": "Tuesday",
+    "rank": 5632,
+    "kanjiChars": [
+      "日"
+    ],
+    "vi": "thứ Ba"
+  },
+  "ヶ月": {
+    "reading": "かげつ",
+    "pos": "ctr",
+    "en": "counter for months",
+    "rank": 5639,
+    "kanjiChars": [
+      "月"
+    ],
+    "vi": "(đếm) tháng"
+  },
+  "花": {
+    "reading": "はな",
+    "pos": "n",
+    "en": "flower; blossom; bloom; petal",
+    "rank": 5640,
+    "kanjiChars": [
+      "花"
+    ],
+    "vi": "hoa"
+  },
+  "花びら": {
+    "reading": "はなびら",
+    "pos": "n",
+    "en": "petal",
+    "rank": 5641,
+    "kanjiChars": [
+      "花"
+    ],
+    "vi": "cánh hoa"
+  },
+  "花屋": {
+    "reading": "はなや",
+    "pos": "n",
+    "en": "florist; flower shop",
+    "rank": 5642,
+    "kanjiChars": [
+      "花"
+    ],
+    "vi": "tiệm hoa"
+  },
+  "花嫁": {
+    "reading": "はなよめ",
+    "pos": "n",
+    "en": "bride",
+    "rank": 5643,
+    "kanjiChars": [
+      "花"
+    ],
+    "vi": "cô dâu"
+  },
+  "花火": {
+    "reading": "はなび",
+    "pos": "n",
+    "en": "fireworks",
+    "rank": 5644,
+    "kanjiChars": [
+      "花"
+    ],
+    "vi": "pháo hoa"
+  },
+  "花形": {
+    "reading": "はながた",
+    "pos": "n",
+    "en": "floral pattern; flourish; ornament",
+    "rank": 5645,
+    "kanjiChars": [
+      "花"
+    ],
+    "vi": "họa tiết hoa, ngôi sao (nổi bật)"
+  },
+  "花見": {
+    "reading": "はなみ",
+    "pos": "n",
+    "en": "cherry blossom viewing; flower viewing",
+    "rank": 5646,
+    "kanjiChars": [
+      "花",
+      "見"
+    ],
+    "vi": "ngắm hoa anh đào"
+  },
+  "花道": {
+    "reading": "はなみち",
+    "pos": "n",
+    "en": "elevated walkway through the audience to the stage",
+    "rank": 5650,
+    "kanjiChars": [
+      "道"
+    ],
+    "vi": "lối đi qua khán đài (sân khấu)"
+  },
+  "課徴金": {
+    "reading": "かちょうきん",
+    "pos": "n",
+    "en": "charges (i.e. fees)",
+    "rank": 5675,
+    "kanjiChars": [
+      "金"
+    ],
+    "vi": "phí phạt, phí thu"
+  },
+  "課長": {
+    "reading": "かちょう",
+    "pos": "n",
+    "en": "section manager; section chief",
+    "rank": 5676,
+    "kanjiChars": [
+      "長"
+    ],
+    "vi": "trưởng phòng (cấp khoa)"
+  },
+  "貨車": {
+    "reading": "かしゃ",
+    "pos": "n",
+    "en": "freight car; van",
+    "rank": 5678,
+    "kanjiChars": [
+      "車"
+    ],
+    "vi": "toa hàng"
+  },
+  "過言": {
+    "reading": "かごん",
+    "pos": "n",
+    "en": "exaggeration; overstatement; saying too much",
+    "rank": 5688,
+    "kanjiChars": [
+      "言"
+    ],
+    "vi": "nói quá, cường điệu"
+  },
+  "過小評価": {
+    "reading": "かしょうひょうか",
+    "pos": "n",
+    "en": "underestimation; undervaluation",
+    "rank": 5690,
+    "kanjiChars": [
+      "小"
+    ],
+    "vi": "đánh giá thấp"
+  },
+  "過多": {
+    "reading": "かた",
+    "pos": "n",
+    "en": "excess; surplus; superabundance",
+    "rank": 5693,
+    "kanjiChars": [
+      "多"
+    ],
+    "vi": "quá nhiều, dư thừa"
+  },
+  "過大": {
+    "reading": "かだい",
+    "pos": "adj-na",
+    "en": "excessive; too much; unreasonable",
+    "rank": 5694,
+    "kanjiChars": [
+      "大"
+    ],
+    "vi": "quá đáng, quá mức"
+  },
+  "過半数": {
+    "reading": "かはんすう",
+    "pos": "n",
+    "en": "majority",
+    "rank": 5701,
+    "kanjiChars": [
+      "半"
+    ],
+    "vi": "đa số, quá bán"
+  },
+  "芽生え": {
+    "reading": "めばえ",
+    "pos": "n",
+    "en": "bud; sprout",
+    "rank": 5723,
+    "kanjiChars": [
+      "生"
+    ],
+    "vi": "mầm non, sự nảy mầm"
+  },
+  "介入": {
+    "reading": "かいにゅう",
+    "pos": "n",
+    "en": "intervention",
+    "rank": 5730,
+    "kanjiChars": [
+      "入"
+    ],
+    "vi": "can thiệp"
+  },
+  "会": {
+    "reading": "かい",
+    "pos": "n",
+    "en": "meeting; assembly; party; gathering; conference; athletic meet",
+    "rank": 5731,
+    "kanjiChars": [
+      "会"
+    ],
+    "vi": "cuộc họp, hội, buổi gặp"
+  },
+  "会う": {
+    "reading": "あう",
+    "pos": "v5u",
+    "en": "to meet; to encounter; to see",
+    "rank": 5732,
+    "kanjiChars": [
+      "会"
+    ],
+    "vi": "gặp, gặp gỡ"
+  },
+  "会計年度": {
+    "reading": "かいけいねんど",
+    "pos": "n",
+    "en": "fiscal year",
+    "rank": 5739,
+    "kanjiChars": [
+      "年"
+    ],
+    "vi": "năm tài chính"
+  },
+  "会見": {
+    "reading": "かいけん",
+    "pos": "n",
+    "en": "interview; audience; meeting; (viewing) party",
+    "rank": 5740,
+    "kanjiChars": [
+      "見"
+    ],
+    "vi": "cuộc gặp, họp báo"
+  },
+  "会社": {
+    "reading": "かいしゃ",
+    "pos": "n",
+    "en": "company; corporation; firm",
+    "rank": 5742,
+    "kanjiChars": [
+      "社"
+    ],
+    "vi": "công ty"
+  },
+  "会社員": {
+    "reading": "かいしゃいん",
+    "pos": "n",
+    "en": "company employee; office worker; white-collar worker",
+    "rank": 5743,
+    "kanjiChars": [
+      "社"
+    ],
+    "vi": "nhân viên công ty"
+  },
+  "会食": {
+    "reading": "かいしょく",
+    "pos": "n",
+    "en": "eating together; dining together; having a meal together",
+    "rank": 5746,
+    "kanjiChars": [
+      "食"
+    ],
+    "vi": "dùng bữa cùng nhau"
+  },
+  "会話": {
+    "reading": "かいわ",
+    "pos": "n",
+    "en": "conversation; talk; chat",
+    "rank": 5755,
+    "kanjiChars": [
+      "話"
+    ],
+    "vi": "hội thoại, trò chuyện"
+  },
+  "解読": {
+    "reading": "かいどく",
+    "pos": "n",
+    "en": "deciphering; decoding",
+    "rank": 5772,
+    "kanjiChars": [
+      "読"
+    ],
+    "vi": "giải mã"
+  },
+  "回り道": {
+    "reading": "まわりみち",
+    "pos": "n",
+    "en": "detour; circuitous route; diversion",
+    "rank": 5783,
+    "kanjiChars": [
+      "道"
+    ],
+    "vi": "đường vòng"
+  },
+  "回生": {
+    "reading": "かいせい",
+    "pos": "n",
+    "en": "resurrection; resuscitation; coming back to life",
+    "rank": 5791,
+    "kanjiChars": [
+      "生"
+    ],
+    "vi": "hồi sinh"
+  },
+  "回目": {
+    "reading": "かいめ",
+    "pos": "suf",
+    "en": "nth time",
+    "rank": 5799,
+    "kanjiChars": [
+      "目"
+    ],
+    "vi": "lần thứ ..."
+  },
+  "懐中電灯": {
+    "reading": "かいちゅうでんとう",
+    "pos": "n",
+    "en": "(electric) torch; flashlight",
+    "rank": 5831,
+    "kanjiChars": [
+      "中",
+      "電"
+    ],
+    "vi": "đèn pin"
+  },
+  "改札口": {
+    "reading": "かいさつぐち",
+    "pos": "n",
+    "en": "ticket barrier; ticket gate; wicket",
+    "rank": 5842,
+    "kanjiChars": [
+      "口"
+    ],
+    "vi": "cửa soát vé"
+  },
+  "改新": {
+    "reading": "かいしん",
+    "pos": "n",
+    "en": "reformation",
+    "rank": 5845,
+    "kanjiChars": [
+      "新"
+    ],
+    "vi": "cải cách, đổi mới"
+  },
+  "改名": {
+    "reading": "かいめい",
+    "pos": "n",
+    "en": "name change",
+    "rank": 5857,
+    "kanjiChars": [
+      "名"
+    ],
+    "vi": "đổi tên"
+  },
+  "海外": {
+    "reading": "かいがい",
+    "pos": "n",
+    "en": "foreign; abroad; overseas",
+    "rank": 5864,
+    "kanjiChars": [
+      "外"
+    ],
+    "vi": "hải ngoại, nước ngoài"
+  },
+  "海上": {
+    "reading": "かいじょう",
+    "pos": "n",
+    "en": "(on the) sea; surface of the sea",
+    "rank": 5871,
+    "kanjiChars": [
+      "上"
+    ],
+    "vi": "trên biển"
+  },
+  "海水": {
+    "reading": "かいすい",
+    "pos": "n",
+    "en": "seawater; saltwater",
+    "rank": 5872,
+    "kanjiChars": [
+      "水"
+    ],
+    "vi": "nước biển"
+  },
+  "海水浴": {
+    "reading": "かいすいよく",
+    "pos": "n",
+    "en": "swimming in the ocean; sea bathing; seawater bath; going for a dip in the ocean",
+    "rank": 5873,
+    "kanjiChars": [
+      "水"
+    ],
+    "vi": "tắm biển"
+  },
+  "海水浴場": {
+    "reading": "かいすいよくじょう",
+    "pos": "n",
+    "en": "swimming area (in the ocean); swimming beach; seawater baths",
+    "rank": 5874,
+    "kanjiChars": [
+      "水"
+    ],
+    "vi": "bãi tắm biển"
+  },
+  "海中": {
+    "reading": "かいちゅう",
+    "pos": "n",
+    "en": "in the sea",
+    "rank": 5878,
+    "kanjiChars": [
+      "中"
+    ],
+    "vi": "dưới biển, trong biển"
+  },
+  "皆目": {
+    "reading": "かいもく",
+    "pos": "adv",
+    "en": "entirely; (not) at all",
+    "rank": 5897,
+    "kanjiChars": [
+      "目"
+    ],
+    "vi": "hoàn toàn (không), một chút cũng không"
+  },
+  "絵本": {
+    "reading": "えほん",
+    "pos": "n",
+    "en": "picture book",
+    "rank": 5905,
+    "kanjiChars": [
+      "本"
+    ],
+    "vi": "sách tranh"
+  },
+  "空ける": {
+    "reading": "あける",
+    "pos": "v1",
+    "en": "to empty; to remove; to make space; to make room",
+    "rank": 5910,
+    "kanjiChars": [
+      "空"
+    ],
+    "vi": "để trống, làm trống"
+  },
+  "開口": {
+    "reading": "かいこう",
+    "pos": "n",
+    "en": "opening; aperture (e.g. camera)",
+    "rank": 5919,
+    "kanjiChars": [
+      "口"
+    ],
+    "vi": "mở miệng, lỗ mở"
+  },
+  "開校": {
+    "reading": "かいこう",
+    "pos": "n",
+    "en": "opening a school",
+    "rank": 5920,
+    "kanjiChars": [
+      "校"
+    ],
+    "vi": "khai trường"
+  },
+  "開店": {
+    "reading": "かいてん",
+    "pos": "n",
+    "en": "opening a new shop",
+    "rank": 5934,
+    "kanjiChars": [
+      "店"
+    ],
+    "vi": "khai trương"
+  },
+  "開発途上国": {
+    "reading": "かいはつとじょうこく",
+    "pos": "n",
+    "en": "developing country",
+    "rank": 5936,
+    "kanjiChars": [
+      "国"
+    ],
+    "vi": "nước đang phát triển"
+  },
+  "外見": {
+    "reading": "がいけん",
+    "pos": "n",
+    "en": "outward appearance; looks",
+    "rank": 5963,
+    "kanjiChars": [
+      "見"
+    ],
+    "vi": "bề ngoài"
+  },
+  "外国": {
+    "reading": "がいこく",
+    "pos": "n",
+    "en": "foreign country",
+    "rank": 5966,
+    "kanjiChars": [
+      "国"
+    ],
+    "vi": "nước ngoài"
+  },
+  "外車": {
+    "reading": "がいしゃ",
+    "pos": "n",
+    "en": "foreign-made car; imported car",
+    "rank": 5970,
+    "kanjiChars": [
+      "車"
+    ],
+    "vi": "xe nhập khẩu"
+  },
+  "外出": {
+    "reading": "がいしゅつ",
+    "pos": "n",
+    "en": "going out; outing; leaving (one's home, office, etc.)",
+    "rank": 5972,
+    "kanjiChars": [
+      "出"
+    ],
+    "vi": "đi ra ngoài"
+  },
+  "外食": {
+    "reading": "がいしょく",
+    "pos": "n",
+    "en": "eating out; dining out",
+    "rank": 5974,
+    "kanjiChars": [
+      "食"
+    ],
+    "vi": "ăn ngoài"
+  },
+  "外電": {
+    "reading": "がいでん",
+    "pos": "n",
+    "en": "foreign telegram",
+    "rank": 5978,
+    "kanjiChars": [
+      "電"
+    ],
+    "vi": "điện tín nước ngoài"
+  },
+  "外来": {
+    "reading": "がいらい",
+    "pos": "adj-no",
+    "en": "foreign; imported",
+    "rank": 5990,
+    "kanjiChars": [
+      "来"
+    ],
+    "vi": "đến từ bên ngoài, ngoại lai"
+  },
+  "外来語": {
+    "reading": "がいらいご",
+    "pos": "n",
+    "en": "loanword (in Japanese, esp. one of Western origin); word of foreign origin",
+    "rank": 5991,
+    "kanjiChars": [
+      "来"
+    ],
+    "vi": "từ ngoại lai"
+  },
+  "街道": {
+    "reading": "かいどう",
+    "pos": "n",
+    "en": "highway (esp. one existing from the Edo period); main road",
+    "rank": 6007,
+    "kanjiChars": [
+      "道"
+    ],
+    "vi": "đường lớn, quốc lộ"
+  },
+  "垣間見る": {
+    "reading": "かいまみる",
+    "pos": "v1",
+    "en": "to take a peep at; to catch a glimpse of",
+    "rank": 6014,
+    "kanjiChars": [
+      "見"
+    ],
+    "vi": "thoáng thấy"
+  },
+  "拡大": {
+    "reading": "かくだい",
+    "pos": "n",
+    "en": "expansion; extension",
+    "rank": 6025,
+    "kanjiChars": [
+      "大"
+    ],
+    "vi": "mở rộng"
+  },
+  "確立": {
+    "reading": "かくりつ",
+    "pos": "n",
+    "en": "establishment; settlement",
+    "rank": 6060,
+    "kanjiChars": [
+      "立"
+    ],
+    "vi": "thiết lập, xác lập"
+  },
+  "隔月": {
+    "reading": "かくげつ",
+    "pos": "n",
+    "en": "every second month; every other month",
+    "rank": 6078,
+    "kanjiChars": [
+      "月"
+    ],
+    "vi": "cách tháng"
+  },
+  "革新": {
+    "reading": "かくしん",
+    "pos": "n",
+    "en": "reform; innovation",
+    "rank": 6081,
+    "kanjiChars": [
+      "新"
+    ],
+    "vi": "cách tân, đổi mới"
+  },
+  "学校": {
+    "reading": "がっこう",
+    "pos": "n",
+    "en": "school",
+    "rank": 6097,
+    "kanjiChars": [
+      "校"
+    ],
+    "vi": "trường học"
+  },
+  "学生": {
+    "reading": "がくせい",
+    "pos": "n",
+    "en": "student (esp. a university student)",
+    "rank": 6103,
+    "kanjiChars": [
+      "生"
+    ],
+    "vi": "học sinh, sinh viên"
+  },
+  "学友": {
+    "reading": "がくゆう",
+    "pos": "n",
+    "en": "school friend",
+    "rank": 6115,
+    "kanjiChars": [
+      "友"
+    ],
+    "vi": "bạn học"
+  },
+  "楽天家": {
+    "reading": "らくてんか",
+    "pos": "n",
+    "en": "optimist; easy-going person",
+    "rank": 6133,
+    "kanjiChars": [
+      "天"
+    ],
+    "vi": "người lạc quan"
+  },
+  "楽天的": {
+    "reading": "らくてんてき",
+    "pos": "adj-na",
+    "en": "optimistic",
+    "rank": 6134,
+    "kanjiChars": [
+      "天"
+    ],
+    "vi": "lạc quan"
+  },
+  "割り出す": {
+    "reading": "わりだす",
+    "pos": "v5s",
+    "en": "to calculate; to compute",
+    "rank": 6148,
+    "kanjiChars": [
+      "出"
+    ],
+    "vi": "tính ra, suy ra"
+  },
+  "渇水": {
+    "reading": "かっすい",
+    "pos": "n",
+    "en": "water shortage",
+    "rank": 6171,
+    "kanjiChars": [
+      "水"
+    ],
+    "vi": "thiếu nước"
+  },
+  "株式会社": {
+    "reading": "かぶしきがいしゃ",
+    "pos": "n",
+    "en": "stock company; corporation; kabushiki kaisha; KK",
+    "rank": 6190,
+    "kanjiChars": [
+      "社"
+    ],
+    "vi": "công ty cổ phần"
+  },
+  "刈り入れ": {
+    "reading": "かりいれ",
+    "pos": "n",
+    "en": "harvest",
+    "rank": 6201,
+    "kanjiChars": [
+      "入"
+    ],
+    "vi": "mùa gặt, thu hoạch"
+  },
+  "乾電池": {
+    "reading": "かんでんち",
+    "pos": "n",
+    "en": "dry cell battery",
+    "rank": 6208,
+    "kanjiChars": [
+      "電"
+    ],
+    "vi": "pin khô"
+  },
+  "寒中": {
+    "reading": "かんちゅう",
+    "pos": "n",
+    "en": "mid-winter; cold season",
+    "rank": 6215,
+    "kanjiChars": [
+      "中"
+    ],
+    "vi": "giữa mùa đông"
+  },
+  "刊行": {
+    "reading": "かんこう",
+    "pos": "n",
+    "en": "publication; issue",
+    "rank": 6218,
+    "kanjiChars": [
+      "行"
+    ],
+    "vi": "xuất bản, phát hành"
+  },
+  "寛大": {
+    "reading": "かんだい",
+    "pos": "adj-na",
+    "en": "tolerant; generous; lenient; broad-minded; magnanimous",
+    "rank": 6260,
+    "kanjiChars": [
+      "大"
+    ],
+    "vi": "khoan dung, độ lượng"
+  },
+  "換金": {
+    "reading": "かんきん",
+    "pos": "n",
+    "en": "realization (of goods into money); conversion (into money); liquidation",
+    "rank": 6303,
+    "kanjiChars": [
+      "金"
+    ],
+    "vi": "đổi ra tiền"
+  },
+  "甘言": {
+    "reading": "かんげん",
+    "pos": "n",
+    "en": "sweet words; smooth talk; cajolery; flattery; sycophancy",
+    "rank": 6331,
+    "kanjiChars": [
+      "言"
+    ],
+    "vi": "lời ngọt, lời tâng bốc"
+  },
+  "間口": {
+    "reading": "まぐち",
+    "pos": "n",
+    "en": "frontage; width (of a building, plot of land, etc.)",
+    "rank": 6418,
+    "kanjiChars": [
+      "口"
+    ],
+    "vi": "mặt tiền (nhà, đất)"
+  },
+  "間食": {
+    "reading": "かんしょく",
+    "pos": "n",
+    "en": "eating between meals; snacking",
+    "rank": 6422,
+    "kanjiChars": [
+      "食"
+    ],
+    "vi": "ăn vặt giữa bữa"
+  },
+  "関西": {
+    "reading": "かんさい",
+    "pos": "n",
+    "en": "Kansai (region comprising Kyoto, Osaka, Kobe and surrounding prefectures)",
+    "rank": 6437,
+    "kanjiChars": [
+      "西"
+    ],
+    "vi": "vùng Kansai"
+  },
+  "関西弁": {
+    "reading": "かんさいべん",
+    "pos": "n",
+    "en": "Kansai dialect",
+    "rank": 6438,
+    "kanjiChars": [
+      "西"
+    ],
+    "vi": "tiếng Kansai"
+  },
+  "関東": {
+    "reading": "かんとう",
+    "pos": "n",
+    "en": "Kantō (region comprising Tokyo and surrounding prefectures)",
+    "rank": 6442,
+    "kanjiChars": [
+      "東"
+    ],
+    "vi": "vùng Kanto"
+  },
+  "岩山": {
+    "reading": "いわやま",
+    "pos": "n",
+    "en": "rocky mountain",
+    "rank": 6479,
+    "kanjiChars": [
+      "山"
+    ],
+    "vi": "núi đá"
+  },
+  "顔立ち": {
+    "reading": "かおだち",
+    "pos": "n",
+    "en": "looks; features",
+    "rank": 6494,
+    "kanjiChars": [
+      "立"
+    ],
+    "vi": "đường nét khuôn mặt"
+  },
+  "願書": {
+    "reading": "がんしょ",
+    "pos": "n",
+    "en": "(written) application; written request; petition",
+    "rank": 6498,
+    "kanjiChars": [
+      "書"
+    ],
+    "vi": "đơn đăng ký"
+  },
+  "基金": {
+    "reading": "ききん",
+    "pos": "n",
+    "en": "fund; foundation",
+    "rank": 6529,
+    "kanjiChars": [
+      "金"
+    ],
+    "vi": "quỹ"
+  },
+  "基本": {
+    "reading": "きほん",
+    "pos": "n",
+    "en": "basics; fundamentals; basis; foundation",
+    "rank": 6534,
+    "kanjiChars": [
+      "本"
+    ],
+    "vi": "cơ bản, nền tảng"
+  },
+  "基本的": {
+    "reading": "きほんてき",
+    "pos": "adj-na",
+    "en": "fundamental; basic",
+    "rank": 6535,
+    "kanjiChars": [
+      "本"
+    ],
+    "vi": "mang tính cơ bản"
+  },
+  "寄り道": {
+    "reading": "よりみち",
+    "pos": "n",
+    "en": "dropping in on the way; stopping off at; making a side trip",
+    "rank": 6549,
+    "kanjiChars": [
+      "道"
+    ],
+    "vi": "rẽ vào, ghé qua"
+  },
+  "寄金": {
+    "reading": "ききん",
+    "pos": "n",
+    "en": "contribution; donation",
+    "rank": 6551,
+    "kanjiChars": [
+      "金"
+    ],
+    "vi": "tiền đóng góp, quyên góp"
+  },
+  "幾日": {
+    "reading": "いくにち",
+    "pos": "n",
+    "en": "(for) how many days",
+    "rank": 6566,
+    "kanjiChars": [
+      "日"
+    ],
+    "vi": "mấy ngày, bao nhiêu ngày"
+  },
+  "期日": {
+    "reading": "きじつ",
+    "pos": "n",
+    "en": "fixed date; appointed date; set date",
+    "rank": 6590,
+    "kanjiChars": [
+      "日"
+    ],
+    "vi": "hạn cuối, ngày hẹn"
+  },
+  "機関車": {
+    "reading": "きかんしゃ",
+    "pos": "n",
+    "en": "locomotive; engine",
+    "rank": 6601,
+    "kanjiChars": [
+      "車"
+    ],
+    "vi": "đầu máy xe lửa"
+  },
+  "気に入る": {
+    "reading": "きにいる",
+    "pos": "exp",
+    "en": "to like; to be pleased with; to be delighted with; to take a liking to; to suit one's fancy",
+    "rank": 6633,
+    "kanjiChars": [
+      "入"
+    ],
+    "vi": "thích, ưng ý"
+  },
+  "気前": {
+    "reading": "きまえ",
+    "pos": "n",
+    "en": "generosity",
+    "rank": 6664,
+    "kanjiChars": [
+      "前"
+    ],
+    "vi": "hào phóng"
+  },
+  "汽車": {
+    "reading": "きしゃ",
+    "pos": "n",
+    "en": "steam locomotive; steam train",
+    "rank": 6676,
+    "kanjiChars": [
+      "車"
+    ],
+    "vi": "tàu hỏa hơi nước"
+  },
+  "希少": {
+    "reading": "きしょう",
+    "pos": "adj-na",
+    "en": "scarce; rare",
+    "rank": 6687,
+    "kanjiChars": [
+      "少"
+    ],
+    "vi": "hiếm, quý hiếm"
+  },
+  "紀元前": {
+    "reading": "きげんぜん",
+    "pos": "n",
+    "en": "pre-era; BC; BCE",
+    "rank": 6689,
+    "kanjiChars": [
+      "前"
+    ],
+    "vi": "trước Công nguyên"
+  },
+  "記入": {
+    "reading": "きにゅう",
+    "pos": "n",
+    "en": "entry (in a form, register, diary, etc.); filling in; filling out",
+    "rank": 6709,
+    "kanjiChars": [
+      "入"
+    ],
+    "vi": "điền vào, ghi vào"
+  },
+  "記念日": {
+    "reading": "きねんび",
+    "pos": "n",
+    "en": "memorial day; commemoration day; anniversary",
+    "rank": 6711,
+    "kanjiChars": [
+      "日"
+    ],
+    "vi": "ngày kỷ niệm"
+  },
+  "貴社": {
+    "reading": "きしゃ",
+    "pos": "n",
+    "en": "your company",
+    "rank": 6715,
+    "kanjiChars": [
+      "社"
+    ],
+    "vi": "quý công ty (kính ngữ)"
+  },
+  "起立": {
+    "reading": "きりつ",
+    "pos": "n",
+    "en": "standing up",
+    "rank": 6737,
+    "kanjiChars": [
+      "立"
+    ],
+    "vi": "đứng dậy"
+  },
+  "義父": {
+    "reading": "ぎふ",
+    "pos": "n",
+    "en": "father-in-law",
+    "rank": 6797,
+    "kanjiChars": [
+      "父"
+    ],
+    "vi": "bố vợ, bố chồng, bố nuôi"
+  },
+  "義母": {
+    "reading": "ぎぼ",
+    "pos": "n",
+    "en": "mother-in-law",
+    "rank": 6798,
+    "kanjiChars": [
+      "母"
+    ],
+    "vi": "mẹ vợ, mẹ chồng, mẹ nuôi"
+  },
+  "喫茶店": {
+    "reading": "きっさてん",
+    "pos": "n",
+    "en": "coffee shop; tearoom; coffee lounge; coffeehouse; cafe",
+    "rank": 6826,
+    "kanjiChars": [
+      "店"
+    ],
+    "vi": "quán cà phê"
+  },
+  "客車": {
+    "reading": "きゃくしゃ",
+    "pos": "n",
+    "en": "passenger car; passenger carriage",
+    "rank": 6842,
+    "kanjiChars": [
+      "車"
+    ],
+    "vi": "toa hành khách"
+  },
+  "脚本": {
+    "reading": "きゃくほん",
+    "pos": "n",
+    "en": "script; screenplay; scenario",
+    "rank": 6846,
+    "kanjiChars": [
+      "本"
+    ],
+    "vi": "kịch bản"
+  },
+  "逆輸入": {
+    "reading": "ぎゃくゆにゅう",
+    "pos": "n",
+    "en": "reimportation; reimport; reverse import; importing back",
+    "rank": 6861,
+    "kanjiChars": [
+      "入"
+    ],
+    "vi": "nhập khẩu ngược lại"
+  },
+  "逆立ち": {
+    "reading": "さかだち",
+    "pos": "n",
+    "en": "handstand; headstand",
+    "rank": 6862,
+    "kanjiChars": [
+      "立"
+    ],
+    "vi": "trồng cây chuối"
+  },
+  "休する": {
+    "reading": "きゅうする",
+    "pos": "vs-s",
+    "en": "to come to an end",
+    "rank": 6866,
+    "kanjiChars": [
+      "休"
+    ],
+    "vi": "kết thúc"
+  },
+  "休まる": {
+    "reading": "やすまる",
+    "pos": "v5r",
+    "en": "to be rested; to feel at ease; to repose; to be relieved",
+    "rank": 6867,
+    "kanjiChars": [
+      "休"
+    ],
+    "vi": "được nghỉ ngơi, thư thái"
+  },
+  "休み": {
+    "reading": "やすみ",
+    "pos": "n",
+    "en": "rest; recess; respite",
+    "rank": 6868,
+    "kanjiChars": [
+      "休"
+    ],
+    "vi": "nghỉ, ngày nghỉ"
+  },
+  "休む": {
+    "reading": "やすむ",
+    "pos": "v5m",
+    "en": "to be absent; to take a day off",
+    "rank": 6869,
+    "kanjiChars": [
+      "休"
+    ],
+    "vi": "nghỉ, vắng mặt"
+  },
+  "休校": {
+    "reading": "きゅうこう",
+    "pos": "n",
+    "en": "(temporary) closure of school",
+    "rank": 6878,
+    "kanjiChars": [
+      "校"
+    ],
+    "vi": "nghỉ học (toàn trường)"
+  },
+  "休日": {
+    "reading": "きゅうじつ",
+    "pos": "n",
+    "en": "holiday; day off",
+    "rank": 6885,
+    "kanjiChars": [
+      "日"
+    ],
+    "vi": "ngày nghỉ"
+  },
+  "救急車": {
+    "reading": "きゅうきゅうしゃ",
+    "pos": "n",
+    "en": "ambulance",
+    "rank": 6929,
+    "kanjiChars": [
+      "車"
+    ],
+    "vi": "xe cấp cứu"
+  },
+  "救出": {
+    "reading": "きゅうしゅつ",
+    "pos": "n",
+    "en": "rescue; extricate; reclaim; deliverance",
+    "rank": 6932,
+    "kanjiChars": [
+      "出"
+    ],
+    "vi": "cứu thoát, giải cứu"
+  },
+  "給食": {
+    "reading": "きゅうしょく",
+    "pos": "n",
+    "en": "provision of lunch (e.g. at office, school, etc.); providing a meal; lunch service",
+    "rank": 6960,
+    "kanjiChars": [
+      "食"
+    ],
+    "vi": "bữa ăn (trường, công ty)"
+  },
+  "旧正月": {
+    "reading": "きゅうしょうがつ",
+    "pos": "n",
+    "en": "lunar New Year (esp. the Chinese New Year)",
+    "rank": 6971,
+    "kanjiChars": [
+      "月"
+    ],
+    "vi": "Tết âm lịch"
+  },
+  "旧来": {
+    "reading": "きゅうらい",
+    "pos": "adj-no",
+    "en": "traditional; from ancient times; formerly",
+    "rank": 6974,
+    "kanjiChars": [
+      "来"
+    ],
+    "vi": "từ xưa, truyền thống"
+  },
+  "巨大": {
+    "reading": "きょだい",
+    "pos": "adj-na",
+    "en": "huge; gigantic; enormous",
+    "rank": 6997,
+    "kanjiChars": [
+      "大"
+    ],
+    "vi": "khổng lồ"
+  },
+  "虚空": {
+    "reading": "こくう",
+    "pos": "n",
+    "en": "empty space; empty sky",
+    "rank": 7008,
+    "kanjiChars": [
+      "空"
+    ],
+    "vi": "không trung, hư không"
+  },
+  "魚屋": {
+    "reading": "さかなや",
+    "pos": "n",
+    "en": "fish market; fish dealer; fishmonger",
+    "rank": 7028,
+    "kanjiChars": [
+      "魚"
+    ],
+    "vi": "tiệm cá, người bán cá"
+  },
+  "魚介": {
+    "reading": "ぎょかい",
+    "pos": "n",
+    "en": "marine products; seafood; fish and shellfish",
+    "rank": 7029,
+    "kanjiChars": [
+      "魚"
+    ],
+    "vi": "hải sản"
+  },
+  "魚介類": {
+    "reading": "ぎょかいるい",
+    "pos": "n",
+    "en": "marine products; seafood; fish and shellfish",
+    "rank": 7030,
+    "kanjiChars": [
+      "魚"
+    ],
+    "vi": "các loại hải sản"
+  },
+  "魚群": {
+    "reading": "ぎょぐん",
+    "pos": "n",
+    "en": "school of fish; shoal of fish",
+    "rank": 7031,
+    "kanjiChars": [
+      "魚"
+    ],
+    "vi": "đàn cá"
+  },
+  "魚市場": {
+    "reading": "うおいちば",
+    "pos": "n",
+    "en": "fish market",
+    "rank": 7032,
+    "kanjiChars": [
+      "魚"
+    ],
+    "vi": "chợ cá"
+  },
+  "魚肉": {
+    "reading": "ぎょにく",
+    "pos": "n",
+    "en": "fish meat",
+    "rank": 7033,
+    "kanjiChars": [
+      "魚"
+    ],
+    "vi": "thịt cá"
+  },
+  "魚雷": {
+    "reading": "ぎょらい",
+    "pos": "n",
+    "en": "torpedo",
+    "rank": 7034,
+    "kanjiChars": [
+      "魚"
+    ],
+    "vi": "ngư lôi"
+  },
+  "魚類": {
+    "reading": "ぎょるい",
+    "pos": "n",
+    "en": "fish; fishes",
+    "rank": 7035,
+    "kanjiChars": [
+      "魚"
+    ],
+    "vi": "loài cá"
+  },
+  "供出": {
+    "reading": "きょうしゅつ",
+    "pos": "n",
+    "en": "obligatory supply (of goods to the government, e.g. during wartime); delivery (to the government at a fixed price, e.g. of rice)",
+    "rank": 7042,
+    "kanjiChars": [
+      "出"
+    ],
+    "vi": "nộp (theo nghĩa vụ)"
+  },
+  "共立": {
+    "reading": "きょうりつ",
+    "pos": "n",
+    "en": "joint; common",
+    "rank": 7087,
+    "kanjiChars": [
+      "立"
+    ],
+    "vi": "đồng sáng lập, chung"
+  },
+  "境目": {
+    "reading": "さかいめ",
+    "pos": "n",
+    "en": "borderline; boundary",
+    "rank": 7109,
+    "kanjiChars": [
+      "目"
+    ],
+    "vi": "ranh giới"
+  },
+  "教科書": {
+    "reading": "きょうかしょ",
+    "pos": "n",
+    "en": "textbook; coursebook; schoolbook",
+    "rank": 7158,
+    "kanjiChars": [
+      "書"
+    ],
+    "vi": "sách giáo khoa"
+  },
+  "教書": {
+    "reading": "きょうしょ",
+    "pos": "n",
+    "en": "message (delivered by the US president or a state governor); address",
+    "rank": 7169,
+    "kanjiChars": [
+      "書"
+    ],
+    "vi": "thông điệp (của tổng thống, thống đốc)"
+  },
+  "狂言": {
+    "reading": "きょうげん",
+    "pos": "n",
+    "en": "kyogen; farce presented between noh plays or during the interlude of a noh play",
+    "rank": 7184,
+    "kanjiChars": [
+      "言"
+    ],
+    "vi": "kịch kyogen"
+  },
+  "郷土": {
+    "reading": "きょうど",
+    "pos": "n",
+    "en": "native place; birth-place; one's old home",
+    "rank": 7210,
+    "kanjiChars": [
+      "土"
+    ],
+    "vi": "quê hương"
+  },
+  "仰天": {
+    "reading": "ぎょうてん",
+    "pos": "n",
+    "en": "being amazed; being horrified; being taken aback",
+    "rank": 7225,
+    "kanjiChars": [
+      "天"
+    ],
+    "vi": "ngạc nhiên, sửng sốt"
+  },
+  "極東": {
+    "reading": "きょくとう",
+    "pos": "n",
+    "en": "Far East",
+    "rank": 7263,
+    "kanjiChars": [
+      "東"
+    ],
+    "vi": "Viễn Đông"
+  },
+  "勤め先": {
+    "reading": "つとめさき",
+    "pos": "n",
+    "en": "place of work",
+    "rank": 7276,
+    "kanjiChars": [
+      "先"
+    ],
+    "vi": "nơi làm việc"
+  },
+  "筋書き": {
+    "reading": "すじがき",
+    "pos": "n",
+    "en": "synopsis; outline; plot",
+    "rank": 7301,
+    "kanjiChars": [
+      "書"
+    ],
+    "vi": "cốt truyện, dàn ý"
+  },
+  "謹賀新年": {
+    "reading": "きんがしんねん",
+    "pos": "exp",
+    "en": "Happy New Year",
+    "rank": 7312,
+    "kanjiChars": [
+      "新"
+    ],
+    "vi": "cung chúc tân xuân"
+  },
+  "九つ": {
+    "reading": "ここのつ",
+    "pos": "num",
+    "en": "nine",
+    "rank": 7366,
+    "kanjiChars": [
+      "九"
+    ],
+    "vi": "chín (cái)"
+  },
+  "九九": {
+    "reading": "くく",
+    "pos": "n",
+    "en": "multiplication table; times table",
+    "rank": 7367,
+    "kanjiChars": [
+      "九"
+    ],
+    "vi": "bảng cửu chương"
+  },
+  "九月": {
+    "reading": "くがつ",
+    "pos": "n",
+    "en": "September",
+    "rank": 7368,
+    "kanjiChars": [
+      "九"
+    ],
+    "vi": "tháng Chín"
+  },
+  "９月": {
+    "reading": "くがつ",
+    "pos": "n",
+    "en": "September",
+    "rank": 7368,
+    "kanjiChars": [
+      "月"
+    ],
+    "vi": "tháng Chín"
+  },
+  "九州": {
+    "reading": "きゅうしゅう",
+    "pos": "n",
+    "en": "Kyūshū (southernmost of the four main islands of Japan)",
+    "rank": 7369,
+    "kanjiChars": [
+      "九"
+    ],
+    "vi": "Kyushu"
+  },
+  "九重": {
+    "reading": "ここのえ",
+    "pos": "n",
+    "en": "ninefold",
+    "rank": 7370,
+    "kanjiChars": [
+      "九"
+    ],
+    "vi": "chín lớp"
+  },
+  "九日": {
+    "reading": "ここのか",
+    "pos": "n",
+    "en": "9th day of the month",
+    "rank": 7371,
+    "kanjiChars": [
+      "九"
+    ],
+    "vi": "ngày mùng 9"
+  },
+  "句読点": {
+    "reading": "くとうてん",
+    "pos": "n",
+    "en": "punctuation mark",
+    "rank": 7375,
+    "kanjiChars": [
+      "読"
+    ],
+    "vi": "dấu câu"
+  },
+  "苦言": {
+    "reading": "くげん",
+    "pos": "n",
+    "en": "candid advice; frank advice; honest opinion; exhortation; harsh but honest advice",
+    "rank": 7393,
+    "kanjiChars": [
+      "言"
+    ],
+    "vi": "lời khuyên thẳng thắn"
+  },
+  "駆け足": {
+    "reading": "かけあし",
+    "pos": "n",
+    "en": "running fast; double time",
+    "rank": 7412,
+    "kanjiChars": [
+      "足"
+    ],
+    "vi": "chạy nhanh, chạy bộ"
+  },
+  "空": {
+    "reading": "から",
+    "pos": "n",
+    "en": "emptiness; being empty",
+    "rank": 7429,
+    "kanjiChars": [
+      "空"
+    ],
+    "vi": "trống rỗng"
+  },
+  "空き缶": {
+    "reading": "あきかん",
+    "pos": "n",
+    "en": "empty can",
+    "rank": 7431,
+    "kanjiChars": [
+      "空"
+    ],
+    "vi": "lon rỗng"
+  },
+  "空き地": {
+    "reading": "あきち",
+    "pos": "n",
+    "en": "vacant land; unoccupied ground; empty lot",
+    "rank": 7432,
+    "kanjiChars": [
+      "空"
+    ],
+    "vi": "đất trống"
+  },
+  "空車": {
+    "reading": "くうしゃ",
+    "pos": "n",
+    "en": "empty conveyance; empty taxi; free taxi",
+    "rank": 7440,
+    "kanjiChars": [
+      "車"
+    ],
+    "vi": "xe trống (không khách)"
+  },
+  "空前": {
+    "reading": "くうぜん",
+    "pos": "adj-no",
+    "en": "unprecedented; record-breaking",
+    "rank": 7444,
+    "kanjiChars": [
+      "前"
+    ],
+    "vi": "chưa từng có, vô tiền khoáng hậu"
+  },
+  "空白": {
+    "reading": "くうはく",
+    "pos": "n",
+    "en": "blank space (in a document)",
+    "rank": 7451,
+    "kanjiChars": [
+      "白"
+    ],
+    "vi": "khoảng trống (trong văn bản)"
+  },
+  "空母": {
+    "reading": "くうぼ",
+    "pos": "n",
+    "en": "aircraft carrier",
+    "rank": 7453,
+    "kanjiChars": [
+      "母"
+    ],
+    "vi": "tàu sân bay"
+  },
+  "訓読み": {
+    "reading": "くんよみ",
+    "pos": "n",
+    "en": "kun reading; kun'yomi; native Japanese reading of a Chinese character",
+    "rank": 7494,
+    "kanjiChars": [
+      "読"
+    ],
+    "vi": "âm đọc kiểu Nhật (kun-yomi)"
+  },
+  "契約書": {
+    "reading": "けいやくしょ",
+    "pos": "n",
+    "en": "(written) contract; agreement",
+    "rank": 7550,
+    "kanjiChars": [
+      "書"
+    ],
+    "vi": "hợp đồng (văn bản)"
+  },
+  "携帯電話": {
+    "reading": "けいたいでんわ",
+    "pos": "n",
+    "en": "mobile phone; cell phone",
+    "rank": 7578,
+    "kanjiChars": [
+      "電",
+      "話"
+    ],
+    "vi": "điện thoại di động"
+  },
+  "稽古": {
+    "reading": "けいこ",
+    "pos": "n",
+    "en": "practice; practising; training; study",
+    "rank": 7594,
+    "kanjiChars": [
+      "古"
+    ],
+    "vi": "luyện tập, rèn luyện"
+  },
+  "軽食": {
+    "reading": "けいしょく",
+    "pos": "n",
+    "en": "light meal; snack; refreshments",
+    "rank": 7659,
+    "kanjiChars": [
+      "食"
+    ],
+    "vi": "bữa nhẹ"
+  },
+  "芸名": {
+    "reading": "げいめい",
+    "pos": "n",
+    "en": "stage name",
+    "rank": 7676,
+    "kanjiChars": [
+      "名"
+    ],
+    "vi": "nghệ danh"
+  },
+  "潔白": {
+    "reading": "けっぱく",
+    "pos": "n",
+    "en": "innocence; guiltlessness; purity; uprightness; integrity",
+    "rank": 7740,
+    "kanjiChars": [
+      "白"
+    ],
+    "vi": "trong sạch, vô tội"
+  },
+  "結社": {
+    "reading": "けっしゃ",
+    "pos": "n",
+    "en": "association; society",
+    "rank": 7756,
+    "kanjiChars": [
+      "社"
+    ],
+    "vi": "hội, hiệp hội"
+  },
+  "血友病": {
+    "reading": "けつゆうびょう",
+    "pos": "n",
+    "en": "hemophilia; haemophilia",
+    "rank": 7773,
+    "kanjiChars": [
+      "友"
+    ],
+    "vi": "bệnh máu khó đông"
+  },
+  "月": {
+    "reading": "つき",
+    "pos": "n",
+    "en": "Moon",
+    "rank": 7774,
+    "kanjiChars": [
+      "月"
+    ],
+    "vi": "mặt trăng, tháng"
+  },
+  "月額": {
+    "reading": "げつがく",
+    "pos": "n",
+    "en": "monthly sum; monthly amount",
+    "rank": 7775,
+    "kanjiChars": [
+      "月"
+    ],
+    "vi": "số tiền hàng tháng"
+  },
+  "建立": {
+    "reading": "こんりゅう",
+    "pos": "n",
+    "en": "(act of) building (temple, monument, etc.); erection",
+    "rank": 7844,
+    "kanjiChars": [
+      "立"
+    ],
+    "vi": "xây dựng (đền, đài)"
+  },
+  "献立": {
+    "reading": "こんだて",
+    "pos": "n",
+    "en": "menu; bill of fare",
+    "rank": 7881,
+    "kanjiChars": [
+      "立"
+    ],
+    "vi": "thực đơn"
+  },
+  "見聞": {
+    "reading": "けんぶん",
+    "pos": "n",
+    "en": "information; experience; knowledge; observation",
+    "rank": 7948,
+    "kanjiChars": [
+      "聞"
+    ],
+    "vi": "kiến văn, hiểu biết"
+  },
+  "見本": {
+    "reading": "みほん",
+    "pos": "n",
+    "en": "sample; specimen; pattern",
+    "rank": 7952,
+    "kanjiChars": [
+      "本"
+    ],
+    "vi": "mẫu, hàng mẫu"
+  },
+  "見本市": {
+    "reading": "みほんいち",
+    "pos": "n",
+    "en": "trade fair",
+    "rank": 7953,
+    "kanjiChars": [
+      "本"
+    ],
+    "vi": "hội chợ triển lãm"
+  },
+  "賢母": {
+    "reading": "けんぼ",
+    "pos": "n",
+    "en": "wise mother",
+    "rank": 7959,
+    "kanjiChars": [
+      "母"
+    ],
+    "vi": "hiền mẫu"
+  },
+  "軒先": {
+    "reading": "のきさき",
+    "pos": "n",
+    "en": "edge of the eaves; house frontage",
+    "rank": 7962,
+    "kanjiChars": [
+      "先"
+    ],
+    "vi": "hiên nhà, đầu hồi"
+  },
+  "本": {
+    "reading": "もと",
+    "pos": "n",
+    "en": "origin; source; beginning",
+    "rank": 7973,
+    "kanjiChars": [
+      "本"
+    ],
+    "vi": "gốc, nguồn gốc"
+  },
+  "減少": {
+    "reading": "げんしょう",
+    "pos": "n",
+    "en": "decrease; reduction; decline",
+    "rank": 8048,
+    "kanjiChars": [
+      "少"
+    ],
+    "vi": "giảm sút"
+  },
+  "古": {
+    "reading": "いにしえ",
+    "pos": "n",
+    "en": "antiquity; ancient times; bygone days; former times",
+    "rank": 8119,
+    "kanjiChars": [
+      "古"
+    ],
+    "vi": "cổ, thời xa xưa"
+  },
+  "古い": {
+    "reading": "ふるい",
+    "pos": "adj-i",
+    "en": "old; aged; ancient; antiquated; antique; timeworn",
+    "rank": 8120,
+    "kanjiChars": [
+      "古"
+    ],
+    "vi": "cũ, cổ"
+  },
+  "古語": {
+    "reading": "こご",
+    "pos": "n",
+    "en": "archaic word; obsolete word; archaism",
+    "rank": 8121,
+    "kanjiChars": [
+      "古"
+    ],
+    "vi": "từ cổ"
+  },
+  "古今": {
+    "reading": "ここん",
+    "pos": "n",
+    "en": "ancient and modern times; all ages; past and present",
+    "rank": 8122,
+    "kanjiChars": [
+      "古",
+      "今"
+    ],
+    "vi": "xưa nay, cổ kim"
+  },
+  "古参": {
+    "reading": "こさん",
+    "pos": "n",
+    "en": "senior; veteran; old-timer",
+    "rank": 8123,
+    "kanjiChars": [
+      "古"
+    ],
+    "vi": "người kỳ cựu"
+  },
+  "古臭い": {
+    "reading": "ふるくさい",
+    "pos": "adj-i",
+    "en": "stale; old fashioned; hackneyed; trite; antiquated; obsolete; musty; outdated",
+    "rank": 8124,
+    "kanjiChars": [
+      "古"
+    ],
+    "vi": "cổ lỗ, lỗi thời"
+  },
+  "古書": {
+    "reading": "こしょ",
+    "pos": "n",
+    "en": "old book; rare book; classic",
+    "rank": 8125,
+    "kanjiChars": [
+      "古"
+    ],
+    "vi": "sách cổ, sách cũ"
+  },
+  "戸口": {
+    "reading": "とぐち",
+    "pos": "n",
+    "en": "door; doorway",
+    "rank": 8165,
+    "kanjiChars": [
+      "口"
+    ],
+    "vi": "cửa ra vào"
+  },
+  "五": {
+    "reading": "ご",
+    "pos": "num",
+    "en": "five; 5",
+    "rank": 8206,
+    "kanjiChars": [
+      "五"
+    ],
+    "vi": "năm"
+  },
+  "五つ": {
+    "reading": "いつつ",
+    "pos": "num",
+    "en": "five",
+    "rank": 8207,
+    "kanjiChars": [
+      "五"
+    ],
+    "vi": "năm (cái)"
+  },
+  "五感": {
+    "reading": "ごかん",
+    "pos": "n",
+    "en": "the five senses",
+    "rank": 8208,
+    "kanjiChars": [
+      "五"
+    ],
+    "vi": "ngũ giác"
+  },
+  "五月": {
+    "reading": "ごがつ",
+    "pos": "n",
+    "en": "May",
+    "rank": 8209,
+    "kanjiChars": [
+      "五"
+    ],
+    "vi": "tháng Năm"
+  },
+  "五十音": {
+    "reading": "ごじゅうおん",
+    "pos": "n",
+    "en": "the Japanese syllabary",
+    "rank": 8210,
+    "kanjiChars": [
+      "五",
+      "十"
+    ],
+    "vi": "bảng chữ cái Nhật (50 âm)"
+  },
+  "五十三次": {
+    "reading": "ごじゅうさんつぎ",
+    "pos": "n",
+    "en": "fifty-three stations on the Tōkaidō (Edo-Kyoto highway in Edo-period Japan)",
+    "rank": 8211,
+    "kanjiChars": [
+      "五",
+      "三",
+      "十"
+    ],
+    "vi": "53 trạm dịch (Tokaido)"
+  },
+  "五体": {
+    "reading": "ごたい",
+    "pos": "n",
+    "en": "the whole body",
+    "rank": 8212,
+    "kanjiChars": [
+      "五"
+    ],
+    "vi": "toàn thân"
+  },
+  "五日": {
+    "reading": "いつか",
+    "pos": "n",
+    "en": "5th day of the month",
+    "rank": 8213,
+    "kanjiChars": [
+      "五"
+    ],
+    "vi": "ngày mùng 5"
+  },
+  "午": {
+    "reading": "うま",
+    "pos": "n",
+    "en": "the Horse (seventh sign of the Chinese zodiac)",
+    "rank": 8222,
+    "kanjiChars": [
+      "午"
+    ],
+    "vi": "năm Ngọ"
+  },
+  "午後": {
+    "reading": "ごご",
+    "pos": "n",
+    "en": "afternoon; p.m.",
+    "rank": 8223,
+    "kanjiChars": [
+      "午",
+      "後"
+    ],
+    "vi": "chiều, buổi chiều"
+  },
+  "午前": {
+    "reading": "ごぜん",
+    "pos": "n",
+    "en": "morning; a.m.",
+    "rank": 8224,
+    "kanjiChars": [
+      "午",
+      "前"
+    ],
+    "vi": "sáng, buổi sáng"
+  },
+  "午前中": {
+    "reading": "ごぜんちゅう",
+    "pos": "n",
+    "en": "in the morning; during the morning",
+    "rank": 8225,
+    "kanjiChars": [
+      "午"
+    ],
+    "vi": "trong buổi sáng"
+  },
+  "後": {
+    "reading": "あと",
+    "pos": "n",
+    "en": "behind; rear",
+    "rank": 8231,
+    "kanjiChars": [
+      "後"
+    ],
+    "vi": "sau, phía sau"
+  },
+  "後ろ": {
+    "reading": "うしろ",
+    "pos": "n",
+    "en": "back; behind; rear",
+    "rank": 8233,
+    "kanjiChars": [
+      "後"
+    ],
+    "vi": "phía sau, sau lưng"
+  },
+  "後ろ姿": {
+    "reading": "うしろすがた",
+    "pos": "n",
+    "en": "(a person's) appearance from behind; person as seen from behind; back view; retreating figure",
+    "rank": 8234,
+    "kanjiChars": [
+      "後"
+    ],
+    "vi": "dáng nhìn từ sau lưng"
+  },
+  "後ろ盾": {
+    "reading": "うしろだて",
+    "pos": "n",
+    "en": "backing; support; backer; supporter; patron; sponsor",
+    "rank": 8235,
+    "kanjiChars": [
+      "後"
+    ],
+    "vi": "chỗ dựa, người hậu thuẫn"
+  },
+  "後遺症": {
+    "reading": "こういしょう",
+    "pos": "n",
+    "en": "prognostic symptoms; after-effect; sequela",
+    "rank": 8236,
+    "kanjiChars": [
+      "後"
+    ],
+    "vi": "di chứng"
+  },
+  "後天的": {
+    "reading": "こうてんてき",
+    "pos": "adj-na",
+    "en": "acquired (e.g. characteristic); learned (e.g. behaviour)",
+    "rank": 8253,
+    "kanjiChars": [
+      "天"
+    ],
+    "vi": "hậu thiên, học được"
+  },
+  "後半": {
+    "reading": "こうはん",
+    "pos": "n",
+    "en": "second half; latter half",
+    "rank": 8258,
+    "kanjiChars": [
+      "半"
+    ],
+    "vi": "nửa sau"
+  },
+  "御社": {
+    "reading": "おんしゃ",
+    "pos": "n",
+    "en": "your company",
+    "rank": 8269,
+    "kanjiChars": [
+      "社"
+    ],
+    "vi": "quý công ty (kính ngữ)"
+  },
+  "語り口": {
+    "reading": "かたりくち",
+    "pos": "n",
+    "en": "way of reciting; way of telling a story",
+    "rank": 8297,
+    "kanjiChars": [
+      "口"
+    ],
+    "vi": "cách kể chuyện"
+  },
+  "交友": {
+    "reading": "こうゆう",
+    "pos": "n",
+    "en": "friend; companion; acquaintance",
+    "rank": 8342,
+    "kanjiChars": [
+      "友"
+    ],
+    "vi": "bạn bè, kết giao"
+  },
+  "公社": {
+    "reading": "こうしゃ",
+    "pos": "n",
+    "en": "public corporation",
+    "rank": 8386,
+    "kanjiChars": [
+      "社"
+    ],
+    "vi": "công ty công ích"
+  },
+  "公社債": {
+    "reading": "こうしゃさい",
+    "pos": "n",
+    "en": "public bonds",
+    "rank": 8387,
+    "kanjiChars": [
+      "社"
+    ],
+    "vi": "trái phiếu công"
+  },
+  "公衆電話": {
+    "reading": "こうしゅうでんわ",
+    "pos": "n",
+    "en": "public telephone; pay phone",
+    "rank": 8391,
+    "kanjiChars": [
+      "電",
+      "話"
+    ],
+    "vi": "điện thoại công cộng"
+  },
+  "功名": {
+    "reading": "こうみょう",
+    "pos": "n",
+    "en": "great achievement; glorious deed; (gaining) fame; (earning) distinction",
+    "rank": 8428,
+    "kanjiChars": [
+      "名"
+    ],
+    "vi": "công danh, thành tích"
+  },
+  "口先": {
+    "reading": "くちさき",
+    "pos": "n",
+    "en": "lip service; mere words; professions",
+    "rank": 8462,
+    "kanjiChars": [
+      "先"
+    ],
+    "vi": "miệng lưỡi, lời nói suông"
+  },
+  "広東": {
+    "reading": "カントン",
+    "pos": "n",
+    "en": "Guangdong (China); Kwangtung",
+    "rank": 8533,
+    "kanjiChars": [
+      "東"
+    ],
+    "vi": "Quảng Đông"
+  },
+  "更新": {
+    "reading": "こうしん",
+    "pos": "n",
+    "en": "renewal; update; replacement; renovation; breaking (a record)",
+    "rank": 8570,
+    "kanjiChars": [
+      "新"
+    ],
+    "vi": "cập nhật, gia hạn"
+  },
+  "校閲": {
+    "reading": "こうえつ",
+    "pos": "n",
+    "en": "revision; proofreading",
+    "rank": 8576,
+    "kanjiChars": [
+      "校"
+    ],
+    "vi": "hiệu đính, soát lỗi"
+  },
+  "校歌": {
+    "reading": "こうか",
+    "pos": "n",
+    "en": "school song; college song; school anthem",
+    "rank": 8577,
+    "kanjiChars": [
+      "校"
+    ],
+    "vi": "bài ca của trường"
+  },
+  "校旗": {
+    "reading": "こうき",
+    "pos": "n",
+    "en": "school flag",
+    "rank": 8578,
+    "kanjiChars": [
+      "校"
+    ],
+    "vi": "cờ của trường"
+  },
+  "校舎": {
+    "reading": "こうしゃ",
+    "pos": "n",
+    "en": "school building; schoolhouse",
+    "rank": 8579,
+    "kanjiChars": [
+      "校"
+    ],
+    "vi": "tòa nhà trường học"
+  },
+  "校正": {
+    "reading": "こうせい",
+    "pos": "n",
+    "en": "proofreading",
+    "rank": 8580,
+    "kanjiChars": [
+      "校"
+    ],
+    "vi": "hiệu đính, in thử"
+  },
+  "甲高い": {
+    "reading": "かんだかい",
+    "pos": "adj-i",
+    "en": "high-pitched; shrill",
+    "rank": 8604,
+    "kanjiChars": [
+      "高"
+    ],
+    "vi": "the thé, chói tai"
+  },
+  "皇女": {
+    "reading": "こうじょ",
+    "pos": "n",
+    "en": "imperial princess",
+    "rank": 8612,
+    "kanjiChars": [
+      "女"
+    ],
+    "vi": "hoàng nữ, công chúa"
+  },
+  "紅白": {
+    "reading": "こうはく",
+    "pos": "n",
+    "en": "red and white; colours for festive or auspicious occasions (colors)",
+    "rank": 8629,
+    "kanjiChars": [
+      "白"
+    ],
+    "vi": "đỏ trắng (màu lễ hội)"
+  },
+  "航空母艦": {
+    "reading": "こうくうぼかん",
+    "pos": "n",
+    "en": "aircraft carrier",
+    "rank": 8659,
+    "kanjiChars": [
+      "母"
+    ],
+    "vi": "tàu sân bay"
+  },
+  "荒木": {
+    "reading": "あらき",
+    "pos": "n",
+    "en": "logs in bark; rough wood; unseasoned timber; new lumber",
+    "rank": 8669,
+    "kanjiChars": [
+      "木"
+    ],
+    "vi": "gỗ thô, gỗ chưa xử lý"
+  },
+  "行き先": {
+    "reading": "いきさき",
+    "pos": "n",
+    "en": "destination",
+    "rank": 8671,
+    "kanjiChars": [
+      "先"
+    ],
+    "vi": "đích đến"
+  },
+  "購読": {
+    "reading": "こうどく",
+    "pos": "n",
+    "en": "buying and reading (book, magazine, etc.); subscribing (incl. free subscriptions); taking (e.g. newspaper)",
+    "rank": 8701,
+    "kanjiChars": [
+      "読"
+    ],
+    "vi": "mua đọc, đặt mua (báo, tạp chí)"
+  },
+  "購買": {
+    "reading": "こうばい",
+    "pos": "n",
+    "en": "procurement; purchase; buying",
+    "rank": 8703,
+    "kanjiChars": [
+      "買"
+    ],
+    "vi": "mua sắm, mua vào"
+  },
+  "購買力": {
+    "reading": "こうばいりょく",
+    "pos": "n",
+    "en": "buying power; purchasing power",
+    "rank": 8704,
+    "kanjiChars": [
+      "買"
+    ],
+    "vi": "sức mua"
+  },
+  "酵母": {
+    "reading": "こうぼ",
+    "pos": "n",
+    "en": "yeast; leaven",
+    "rank": 8707,
+    "kanjiChars": [
+      "母"
+    ],
+    "vi": "men, men nở"
+  },
+  "鉱山": {
+    "reading": "こうざん",
+    "pos": "n",
+    "en": "mine (ore)",
+    "rank": 8709,
+    "kanjiChars": [
+      "山"
+    ],
+    "vi": "mỏ (khoáng sản)"
+  },
+  "高い": {
+    "reading": "たかい",
+    "pos": "adj-i",
+    "en": "high; tall",
+    "rank": 8729,
+    "kanjiChars": [
+      "高"
+    ],
+    "vi": "cao, đắt"
+  },
+  "高さ": {
+    "reading": "たかさ",
+    "pos": "n",
+    "en": "height; altitude; elevation; level",
+    "rank": 8730,
+    "kanjiChars": [
+      "高"
+    ],
+    "vi": "chiều cao, độ cao"
+  },
+  "高まる": {
+    "reading": "たかまる",
+    "pos": "v5r",
+    "en": "to rise; to swell; to be promoted",
+    "rank": 8731,
+    "kanjiChars": [
+      "高"
+    ],
+    "vi": "dâng lên, tăng lên"
+  },
+  "高める": {
+    "reading": "たかめる",
+    "pos": "v1",
+    "en": "to raise; to lift; to boost; to enhance",
+    "rank": 8732,
+    "kanjiChars": [
+      "高"
+    ],
+    "vi": "nâng cao"
+  },
+  "高圧": {
+    "reading": "こうあつ",
+    "pos": "n",
+    "en": "high voltage; high pressure",
+    "rank": 8733,
+    "kanjiChars": [
+      "高"
+    ],
+    "vi": "cao áp, áp lực cao"
+  },
+  "高山": {
+    "reading": "こうざん",
+    "pos": "n",
+    "en": "high mountain; alpine mountain",
+    "rank": 8750,
+    "kanjiChars": [
+      "山"
+    ],
+    "vi": "núi cao"
+  },
+  "告白": {
+    "reading": "こくはく",
+    "pos": "n",
+    "en": "confession (to a crime, wrongdoing, etc.); admission",
+    "rank": 8830,
+    "kanjiChars": [
+      "白"
+    ],
+    "vi": "thú nhận, tỏ tình"
+  },
+  "国土": {
+    "reading": "こくど",
+    "pos": "n",
+    "en": "country; territory; domain; realm",
+    "rank": 8865,
+    "kanjiChars": [
+      "土"
+    ],
+    "vi": "lãnh thổ, đất nước"
+  },
+  "国名": {
+    "reading": "こくめい",
+    "pos": "n",
+    "en": "country name",
+    "rank": 8881,
+    "kanjiChars": [
+      "名"
+    ],
+    "vi": "tên nước"
+  },
+  "黒木": {
+    "reading": "くろき",
+    "pos": "n",
+    "en": "unbarked lumber",
+    "rank": 8906,
+    "kanjiChars": [
+      "木"
+    ],
+    "vi": "gỗ chưa bóc vỏ"
+  },
+  "今": {
+    "reading": "いま",
+    "pos": "n",
+    "en": "now; the present time; just now; soon; immediately",
+    "rank": 8926,
+    "kanjiChars": [
+      "今"
+    ],
+    "vi": "bây giờ"
+  },
+  "今に": {
+    "reading": "いまに",
+    "pos": "adv",
+    "en": "before long; even now",
+    "rank": 8927,
+    "kanjiChars": [
+      "今"
+    ],
+    "vi": "chẳng bao lâu nữa"
+  },
+  "今にも": {
+    "reading": "いまにも",
+    "pos": "adv",
+    "en": "at any moment (now); at any minute; on the verge of (doing); just about to",
+    "rank": 8928,
+    "kanjiChars": [
+      "今"
+    ],
+    "vi": "sắp, sắp sửa"
+  },
+  "今や": {
+    "reading": "いまや",
+    "pos": "adv",
+    "en": "now (esp. in contrast to the past); now at last; at present; right now",
+    "rank": 8929,
+    "kanjiChars": [
+      "今"
+    ],
+    "vi": "giờ đây"
+  },
+  "今一": {
+    "reading": "いまいち",
+    "pos": "adv",
+    "en": "not quite (right); not very good; somewhat (lacking)",
+    "rank": 8930,
+    "kanjiChars": [
+      "今"
+    ],
+    "vi": "chưa đạt, hơi thiếu"
+  },
+  "今夏": {
+    "reading": "こんか",
+    "pos": "n",
+    "en": "this summer; next summer; last summer",
+    "rank": 8931,
+    "kanjiChars": [
+      "今"
+    ],
+    "vi": "mùa hè này"
+  },
+  "今回": {
+    "reading": "こんかい",
+    "pos": "n",
+    "en": "this time; now",
+    "rank": 8932,
+    "kanjiChars": [
+      "今"
+    ],
+    "vi": "lần này"
+  },
+  "今週": {
+    "reading": "こんしゅう",
+    "pos": "n",
+    "en": "this week",
+    "rank": 8940,
+    "kanjiChars": [
+      "週"
+    ],
+    "vi": "tuần này"
+  },
+  "懇話": {
+    "reading": "こんわ",
+    "pos": "n",
+    "en": "friendly talk; chat",
+    "rank": 8963,
+    "kanjiChars": [
+      "話"
+    ],
+    "vi": "trò chuyện thân mật"
+  },
+  "左": {
+    "reading": "ひだり",
+    "pos": "n",
+    "en": "left; left-hand side",
+    "rank": 8997,
+    "kanjiChars": [
+      "左"
+    ],
+    "vi": "bên trái"
+  },
+  "左右": {
+    "reading": "さゆう",
+    "pos": "n",
+    "en": "left and right; right and left",
+    "rank": 8998,
+    "kanjiChars": [
+      "左"
+    ],
+    "vi": "trái phải"
+  },
+  "左記": {
+    "reading": "さき",
+    "pos": "n",
+    "en": "undermentioned (statement); the following; at left",
+    "rank": 8999,
+    "kanjiChars": [
+      "左"
+    ],
+    "vi": "như trên (trong văn bản)"
+  },
+  "左手": {
+    "reading": "ひだりて",
+    "pos": "n",
+    "en": "left hand",
+    "rank": 9000,
+    "kanjiChars": [
+      "左"
+    ],
+    "vi": "tay trái"
+  },
+  "左上": {
+    "reading": "ひだりうえ",
+    "pos": "n",
+    "en": "upper left",
+    "rank": 9001,
+    "kanjiChars": [
+      "左"
+    ],
+    "vi": "góc trên trái"
+  },
+  "左折": {
+    "reading": "させつ",
+    "pos": "n",
+    "en": "turning to the left; left turn",
+    "rank": 9002,
+    "kanjiChars": [
+      "左"
+    ],
+    "vi": "rẽ trái"
+  },
+  "左遷": {
+    "reading": "させん",
+    "pos": "n",
+    "en": "demotion; relegation; reduction in rank; degradation; downward move",
+    "rank": 9003,
+    "kanjiChars": [
+      "左"
+    ],
+    "vi": "giáng chức"
+  },
+  "左足": {
+    "reading": "ひだりあし",
+    "pos": "n",
+    "en": "left foot",
+    "rank": 9005,
+    "kanjiChars": [
+      "足"
+    ],
+    "vi": "chân trái"
+  },
+  "再三": {
+    "reading": "さいさん",
+    "pos": "adv",
+    "en": "again and again; repeatedly",
+    "rank": 9074,
+    "kanjiChars": [
+      "三"
+    ],
+    "vi": "nhiều lần, lặp đi lặp lại"
+  },
+  "再来週": {
+    "reading": "さらいしゅう",
+    "pos": "n",
+    "en": "week after next",
+    "rank": 9086,
+    "kanjiChars": [
+      "週"
+    ],
+    "vi": "tuần sau nữa"
+  },
+  "最小": {
+    "reading": "さいしょう",
+    "pos": "adj-no",
+    "en": "smallest (in size, degree, etc.); least; minimum; minimal",
+    "rank": 9102,
+    "kanjiChars": [
+      "小"
+    ],
+    "vi": "nhỏ nhất, tối thiểu"
+  },
+  "最小限": {
+    "reading": "さいしょうげん",
+    "pos": "adj-no",
+    "en": "minimum; lowest; minimal; least",
+    "rank": 9103,
+    "kanjiChars": [
+      "小"
+    ],
+    "vi": "tối thiểu, ít nhất"
+  },
+  "最少": {
+    "reading": "さいしょう",
+    "pos": "adj-no",
+    "en": "fewest; least; smallest (number); lowest; minimum",
+    "rank": 9104,
+    "kanjiChars": [
+      "少"
+    ],
+    "vi": "ít nhất, nhỏ nhất (số lượng)"
+  },
+  "最新": {
+    "reading": "さいしん",
+    "pos": "n",
+    "en": "latest; newest; late-breaking (news)",
+    "rank": 9105,
+    "kanjiChars": [
+      "新"
+    ],
+    "vi": "mới nhất"
+  },
+  "最先端": {
+    "reading": "さいせんたん",
+    "pos": "n",
+    "en": "cutting edge; leading edge; forefront; state of the art",
+    "rank": 9107,
+    "kanjiChars": [
+      "先"
+    ],
+    "vi": "tiên tiến nhất, mũi nhọn"
+  },
+  "材木": {
+    "reading": "ざいもく",
+    "pos": "n",
+    "en": "wood (for building); lumber; timber",
+    "rank": 9199,
+    "kanjiChars": [
+      "木"
+    ],
+    "vi": "gỗ xây dựng"
+  },
+  "雑木林": {
+    "reading": "ぞうきばやし",
+    "pos": "n",
+    "en": "grove of miscellaneous trees; copse; coppice; thicket",
+    "rank": 9295,
+    "kanjiChars": [
+      "木"
+    ],
+    "vi": "rừng cây tạp"
+  },
+  "三つ": {
+    "reading": "みっつ",
+    "pos": "num",
+    "en": "three",
+    "rank": 9301,
+    "kanjiChars": [
+      "三"
+    ],
+    "vi": "ba (cái)"
+  },
+  "三回": {
+    "reading": "さんかい",
+    "pos": "n",
+    "en": "three times",
+    "rank": 9302,
+    "kanjiChars": [
+      "三"
+    ],
+    "vi": "ba lần"
+  },
+  "三角": {
+    "reading": "さんかく",
+    "pos": "n",
+    "en": "triangle; triangular shape",
+    "rank": 9303,
+    "kanjiChars": [
+      "三"
+    ],
+    "vi": "hình tam giác"
+  },
+  "三月": {
+    "reading": "さんがつ",
+    "pos": "n",
+    "en": "March",
+    "rank": 9304,
+    "kanjiChars": [
+      "三"
+    ],
+    "vi": "tháng Ba"
+  },
+  "三権": {
+    "reading": "さんけん",
+    "pos": "n",
+    "en": "the three powers of government (legislative, executive and judicial)",
+    "rank": 9305,
+    "kanjiChars": [
+      "三"
+    ],
+    "vi": "tam quyền"
+  },
+  "三時": {
+    "reading": "さんじ",
+    "pos": "n",
+    "en": "3 o'clock",
+    "rank": 9306,
+    "kanjiChars": [
+      "三"
+    ],
+    "vi": "3 giờ"
+  },
+  "三十日": {
+    "reading": "さんじゅうにち",
+    "pos": "n",
+    "en": "30th day of the month",
+    "rank": 9308,
+    "kanjiChars": [
+      "十"
+    ],
+    "vi": "ngày 30"
+  },
+  "三十八度線": {
+    "reading": "さんじゅうはちどせん",
+    "pos": "n",
+    "en": "38th parallel (that demarcates North Korea and South Korea)",
+    "rank": 9309,
+    "kanjiChars": [
+      "十",
+      "八"
+    ],
+    "vi": "vĩ tuyến 38"
+  },
+  "三女": {
+    "reading": "さんじょ",
+    "pos": "n",
+    "en": "third daughter",
+    "rank": 9310,
+    "kanjiChars": [
+      "女"
+    ],
+    "vi": "con gái thứ ba"
+  },
+  "三千": {
+    "reading": "さんぜん",
+    "pos": "num",
+    "en": "3000; three thousand",
+    "rank": 9314,
+    "kanjiChars": [
+      "千"
+    ],
+    "vi": "ba nghìn"
+  },
+  "三男": {
+    "reading": "さんなん",
+    "pos": "n",
+    "en": "three sons",
+    "rank": 9316,
+    "kanjiChars": [
+      "男"
+    ],
+    "vi": "con trai thứ ba (hoặc ba đứa con trai)"
+  },
+  "三百": {
+    "reading": "さんびゃく",
+    "pos": "num",
+    "en": "300; three hundred",
+    "rank": 9319,
+    "kanjiChars": [
+      "百"
+    ],
+    "vi": "ba trăm"
+  },
+  "山": {
+    "reading": "やま",
+    "pos": "n",
+    "en": "mountain; hill",
+    "rank": 9350,
+    "kanjiChars": [
+      "山"
+    ],
+    "vi": "núi"
+  },
+  "山小屋": {
+    "reading": "やまごや",
+    "pos": "n",
+    "en": "mountain hut (esp. one that offers lodging to climbers and hikers); mountain cottage; mountain shanty",
+    "rank": 9359,
+    "kanjiChars": [
+      "小"
+    ],
+    "vi": "lều trên núi"
+  },
+  "山川": {
+    "reading": "さんせん",
+    "pos": "n",
+    "en": "mountains and rivers",
+    "rank": 9360,
+    "kanjiChars": [
+      "川"
+    ],
+    "vi": "núi sông"
+  },
+  "四つ": {
+    "reading": "よっつ",
+    "pos": "num",
+    "en": "four; 4",
+    "rank": 9489,
+    "kanjiChars": [
+      "四"
+    ],
+    "vi": "bốn (cái)"
+  },
+  "四つ角": {
+    "reading": "よつかど",
+    "pos": "n",
+    "en": "four corners",
+    "rank": 9490,
+    "kanjiChars": [
+      "四"
+    ],
+    "vi": "ngã tư"
+  },
+  "四角": {
+    "reading": "しかく",
+    "pos": "adj-na",
+    "en": "quadrilateral; square",
+    "rank": 9491,
+    "kanjiChars": [
+      "四"
+    ],
+    "vi": "hình vuông, tứ giác"
+  },
+  "四角い": {
+    "reading": "しかくい",
+    "pos": "adj-i",
+    "en": "square; rectangular",
+    "rank": 9492,
+    "kanjiChars": [
+      "四"
+    ],
+    "vi": "vuông, hình vuông"
+  },
+  "四季": {
+    "reading": "しき",
+    "pos": "n",
+    "en": "the four seasons",
+    "rank": 9493,
+    "kanjiChars": [
+      "四"
+    ],
+    "vi": "bốn mùa"
+  },
+  "四球": {
+    "reading": "しきゅう",
+    "pos": "n",
+    "en": "base on balls; walk; pass",
+    "rank": 9494,
+    "kanjiChars": [
+      "四"
+    ],
+    "vi": "đi bộ (bóng chày)"
+  },
+  "四隅": {
+    "reading": "よすみ",
+    "pos": "n",
+    "en": "four corners",
+    "rank": 9495,
+    "kanjiChars": [
+      "四"
+    ],
+    "vi": "bốn góc"
+  },
+  "四月": {
+    "reading": "しがつ",
+    "pos": "n",
+    "en": "April",
+    "rank": 9496,
+    "kanjiChars": [
+      "四"
+    ],
+    "vi": "tháng Tư"
+  },
+  "四畳半": {
+    "reading": "よじょうはん",
+    "pos": "n",
+    "en": "four and a half tatami mats; four-and-a-half-mat room",
+    "rank": 9502,
+    "kanjiChars": [
+      "半"
+    ],
+    "vi": "phòng 4 chiếu rưỡi"
+  },
+  "四半期": {
+    "reading": "しはんき",
+    "pos": "n",
+    "en": "quarter (of a year)",
+    "rank": 9504,
+    "kanjiChars": [
+      "半"
+    ],
+    "vi": "quý (3 tháng)"
+  },
+  "子女": {
+    "reading": "しじょ",
+    "pos": "n",
+    "en": "sons and daughters; children",
+    "rank": 9531,
+    "kanjiChars": [
+      "女"
+    ],
+    "vi": "con cái (trai và gái)"
+  },
+  "指先": {
+    "reading": "ゆびさき",
+    "pos": "n",
+    "en": "fingertip; finger",
+    "rank": 9597,
+    "kanjiChars": [
+      "先"
+    ],
+    "vi": "đầu ngón tay"
+  },
+  "指名": {
+    "reading": "しめい",
+    "pos": "n",
+    "en": "naming; nominating; designating",
+    "rank": 9603,
+    "kanjiChars": [
+      "名"
+    ],
+    "vi": "chỉ định, đề cử"
+  },
+  "支店": {
+    "reading": "してん",
+    "pos": "n",
+    "en": "branch office; branch store",
+    "rank": 9617,
+    "kanjiChars": [
+      "店"
+    ],
+    "vi": "chi nhánh"
+  },
+  "侍女": {
+    "reading": "じじょ",
+    "pos": "n",
+    "en": "lady attendant; female servant; lady's maid; waiting maid",
+    "rank": 9799,
+    "kanjiChars": [
+      "女"
+    ],
+    "vi": "nữ tỳ, hầu nữ"
+  },
+  "次女": {
+    "reading": "じじょ",
+    "pos": "n",
+    "en": "second daughter",
+    "rank": 9863,
+    "kanjiChars": [
+      "女"
+    ],
+    "vi": "con gái thứ hai"
+  },
+  "次男": {
+    "reading": "じなん",
+    "pos": "n",
+    "en": "second son",
+    "rank": 9868,
+    "kanjiChars": [
+      "男"
+    ],
+    "vi": "con trai thứ hai"
+  },
+  "耳": {
+    "reading": "みみ",
+    "pos": "n",
+    "en": "ear",
+    "rank": 9884,
+    "kanjiChars": [
+      "耳"
+    ],
+    "vi": "tai"
+  },
+  "耳障り": {
+    "reading": "みみざわり",
+    "pos": "adj-na",
+    "en": "hard (on the ears); offensive (to the ear); rasping; rough; harsh; grating; jarring; cacophonous",
+    "rank": 9885,
+    "kanjiChars": [
+      "耳"
+    ],
+    "vi": "chói tai"
+  },
+  "耳鼻科": {
+    "reading": "じびか",
+    "pos": "n",
+    "en": "otolaryngology; ear, nose, and throat department",
+    "rank": 9886,
+    "kanjiChars": [
+      "耳"
+    ],
+    "vi": "khoa tai mũi họng"
+  },
+  "耳目": {
+    "reading": "じもく",
+    "pos": "n",
+    "en": "eyes and ears; seeing and hearing",
+    "rank": 9887,
+    "kanjiChars": [
+      "耳"
+    ],
+    "vi": "mắt thấy tai nghe"
+  },
+  "自白": {
+    "reading": "じはく",
+    "pos": "n",
+    "en": "confession; admission",
+    "rank": 9940,
+    "kanjiChars": [
+      "白"
+    ],
+    "vi": "thú tội"
+  },
+  "七": {
+    "reading": "しち",
+    "pos": "num",
+    "en": "seven",
+    "rank": 9975,
+    "kanjiChars": [
+      "七"
+    ],
+    "vi": "bảy"
+  },
+  "七つ": {
+    "reading": "ななつ",
+    "pos": "num",
+    "en": "seven",
+    "rank": 9976,
+    "kanjiChars": [
+      "七"
+    ],
+    "vi": "bảy (cái)"
+  },
+  "七月": {
+    "reading": "しちがつ",
+    "pos": "n",
+    "en": "July",
+    "rank": 9977,
+    "kanjiChars": [
+      "七"
+    ],
+    "vi": "tháng Bảy"
+  },
+  "七五三": {
+    "reading": "しちごさん",
+    "pos": "n",
+    "en": "shichi-go-san; 7-5-3 day; festival day for children aged 7, 5 and 3 held on or around November 15",
+    "rank": 9978,
+    "kanjiChars": [
+      "七"
+    ],
+    "vi": "lễ Shichi-go-san (cho trẻ 7, 5, 3 tuổi)"
+  },
+  "七福神": {
+    "reading": "しちふくじん",
+    "pos": "n",
+    "en": "Seven Gods of Fortune; Seven Deities of Good Luck; Seven Lucky Gods",
+    "rank": 9979,
+    "kanjiChars": [
+      "七"
+    ],
+    "vi": "thất phúc thần"
+  },
+  "芝居小屋": {
+    "reading": "しばいごや",
+    "pos": "n",
+    "en": "playhouse; theatre; theater",
+    "rank": 10075,
+    "kanjiChars": [
+      "小"
+    ],
+    "vi": "rạp hát"
+  },
+  "尺八": {
+    "reading": "しゃくはち",
+    "pos": "n",
+    "en": "shakuhachi; end-blown fippleless bamboo flute",
+    "rank": 10158,
+    "kanjiChars": [
+      "八"
+    ],
+    "vi": "sáo trúc shakuhachi"
+  },
+  "手足": {
+    "reading": "てあし",
+    "pos": "n",
+    "en": "hands and feet; limbs",
+    "rank": 10297,
+    "kanjiChars": [
+      "足"
+    ],
+    "vi": "tay chân"
+  },
+  "樹木": {
+    "reading": "じゅもく",
+    "pos": "n",
+    "en": "tree; trees and shrubs",
+    "rank": 10404,
+    "kanjiChars": [
+      "木"
+    ],
+    "vi": "cây cối"
+  },
+  "終着駅": {
+    "reading": "しゅうちゃくえき",
+    "pos": "n",
+    "en": "terminal station",
+    "rank": 10476,
+    "kanjiChars": [
+      "駅"
+    ],
+    "vi": "ga cuối"
+  },
+  "終電": {
+    "reading": "しゅうでん",
+    "pos": "n",
+    "en": "last train (of the day)",
+    "rank": 10478,
+    "kanjiChars": [
+      "電"
+    ],
+    "vi": "chuyến tàu cuối ngày"
+  },
+  "週": {
+    "reading": "しゅう",
+    "pos": "n",
+    "en": "week",
+    "rank": 10498,
+    "kanjiChars": [
+      "週"
+    ],
+    "vi": "tuần"
+  },
+  "週刊": {
+    "reading": "しゅうかん",
+    "pos": "n",
+    "en": "weekly publication",
+    "rank": 10499,
+    "kanjiChars": [
+      "週"
+    ],
+    "vi": "xuất bản hàng tuần"
+  },
+  "週刊誌": {
+    "reading": "しゅうかんし",
+    "pos": "n",
+    "en": "weekly (publication); weekly magazine; weekly journal",
+    "rank": 10500,
+    "kanjiChars": [
+      "週"
+    ],
+    "vi": "tạp chí tuần"
+  },
+  "週間": {
+    "reading": "しゅうかん",
+    "pos": "n",
+    "en": "week",
+    "rank": 10501,
+    "kanjiChars": [
+      "週"
+    ],
+    "vi": "tuần"
+  },
+  "週末": {
+    "reading": "しゅうまつ",
+    "pos": "adv",
+    "en": "weekend",
+    "rank": 10502,
+    "kanjiChars": [
+      "週"
+    ],
+    "vi": "cuối tuần"
+  },
+  "醜聞": {
+    "reading": "しゅうぶん",
+    "pos": "n",
+    "en": "scandal",
+    "rank": 10521,
+    "kanjiChars": [
+      "聞"
+    ],
+    "vi": "bê bối"
+  },
+  "充電": {
+    "reading": "じゅうでん",
+    "pos": "n",
+    "en": "charging (electrically)",
+    "rank": 10540,
+    "kanjiChars": [
+      "電"
+    ],
+    "vi": "sạc điện"
+  },
+  "十一": {
+    "reading": "じゅういち",
+    "pos": "num",
+    "en": "eleven; 11",
+    "rank": 10543,
+    "kanjiChars": [
+      "十"
+    ],
+    "vi": "mười một"
+  },
+  "十一月": {
+    "reading": "じゅういちがつ",
+    "pos": "n",
+    "en": "November",
+    "rank": 10544,
+    "kanjiChars": [
+      "十"
+    ],
+    "vi": "tháng Mười Một"
+  },
+  "十億": {
+    "reading": "じゅうおく",
+    "pos": "num",
+    "en": "1,000,000,000; billion",
+    "rank": 10545,
+    "kanjiChars": [
+      "十"
+    ],
+    "vi": "một tỷ"
+  },
+  "十九": {
+    "reading": "じゅうきゅう",
+    "pos": "num",
+    "en": "nineteen; 19",
+    "rank": 10546,
+    "kanjiChars": [
+      "九",
+      "十"
+    ],
+    "vi": "mười chín"
+  },
+  "十二": {
+    "reading": "じゅうに",
+    "pos": "num",
+    "en": "twelve; 12",
+    "rank": 10553,
+    "kanjiChars": [
+      "二"
+    ],
+    "vi": "mười hai"
+  },
+  "十二月": {
+    "reading": "じゅうにがつ",
+    "pos": "n",
+    "en": "December",
+    "rank": 10554,
+    "kanjiChars": [
+      "二"
+    ],
+    "vi": "tháng Mười Hai"
+  },
+  "十二分": {
+    "reading": "じゅうにぶん",
+    "pos": "adj-na",
+    "en": "more than enough; more than ample; exhaustive",
+    "rank": 10555,
+    "kanjiChars": [
+      "二"
+    ],
+    "vi": "quá đủ, dư dả"
+  },
+  "十八": {
+    "reading": "じゅうはち",
+    "pos": "num",
+    "en": "eighteen; 18",
+    "rank": 10557,
+    "kanjiChars": [
+      "八"
+    ],
+    "vi": "mười tám"
+  },
+  "１０万": {
+    "reading": "じゅうまん",
+    "pos": "num",
+    "en": "100,000; hundred thousand",
+    "rank": 10559,
+    "kanjiChars": [
+      "万"
+    ],
+    "vi": "một trăm nghìn"
+  },
+  "十六": {
+    "reading": "じゅうろく",
+    "pos": "num",
+    "en": "sixteen; 16",
+    "rank": 10561,
+    "kanjiChars": [
+      "六"
+    ],
+    "vi": "mười sáu"
+  },
+  "淑女": {
+    "reading": "しゅくじょ",
+    "pos": "n",
+    "en": "lady",
+    "rank": 10628,
+    "kanjiChars": [
+      "女"
+    ],
+    "vi": "quý cô"
+  },
+  "縮小": {
+    "reading": "しゅくしょう",
+    "pos": "n",
+    "en": "reduction; curtailment; cut; cutback; scaling down; contraction; shrinkage",
+    "rank": 10644,
+    "kanjiChars": [
+      "小"
+    ],
+    "vi": "thu nhỏ, cắt giảm"
+  },
+  "出土": {
+    "reading": "しゅつど",
+    "pos": "n",
+    "en": "archeological excavation (archaeological)",
+    "rank": 10699,
+    "kanjiChars": [
+      "土"
+    ],
+    "vi": "khai quật, đào lên"
+  },
+  "書店": {
+    "reading": "しょてん",
+    "pos": "n",
+    "en": "bookshop; bookstore",
+    "rank": 10861,
+    "kanjiChars": [
+      "店"
+    ],
+    "vi": "hiệu sách"
+  },
+  "商店": {
+    "reading": "しょうてん",
+    "pos": "n",
+    "en": "shop; store; firm",
+    "rank": 10955,
+    "kanjiChars": [
+      "店"
+    ],
+    "vi": "cửa hàng"
+  },
+  "商店街": {
+    "reading": "しょうてんがい",
+    "pos": "n",
+    "en": "shopping district; shopping street; downtown",
+    "rank": 10956,
+    "kanjiChars": [
+      "店"
+    ],
+    "vi": "khu phố mua sắm"
+  },
+  "小さい": {
+    "reading": "ちいさい",
+    "pos": "adj-i",
+    "en": "small; little; tiny",
+    "rank": 10976,
+    "kanjiChars": [
+      "小"
+    ],
+    "vi": "nhỏ"
+  },
+  "少尉": {
+    "reading": "しょうい",
+    "pos": "n",
+    "en": "second lieutenant; sublieutenant; ensign",
+    "rank": 10977,
+    "kanjiChars": [
+      "少"
+    ],
+    "vi": "thiếu úy"
+  },
+  "小雨": {
+    "reading": "こさめ",
+    "pos": "n",
+    "en": "light rain; drizzle",
+    "rank": 10978,
+    "kanjiChars": [
+      "小"
+    ],
+    "vi": "mưa nhỏ, mưa phùn"
+  },
+  "小川": {
+    "reading": "おがわ",
+    "pos": "n",
+    "en": "stream; brook; creek",
+    "rank": 11005,
+    "kanjiChars": [
+      "川"
+    ],
+    "vi": "suối nhỏ"
+  },
+  "少し": {
+    "reading": "すこし",
+    "pos": "adv",
+    "en": "a little; a bit; a small amount; a few; some; slightly; somewhat",
+    "rank": 11020,
+    "kanjiChars": [
+      "少"
+    ],
+    "vi": "một chút"
+  },
+  "少しずつ": {
+    "reading": "すこしずつ",
+    "pos": "adv",
+    "en": "little by little; bit by bit",
+    "rank": 11021,
+    "kanjiChars": [
+      "少"
+    ],
+    "vi": "từng chút một"
+  },
+  "少しも": {
+    "reading": "すこしも",
+    "pos": "adv",
+    "en": "(not) at all; (not) a bit; (not) in the least; (not) in the slightest",
+    "rank": 11022,
+    "kanjiChars": [
+      "少"
+    ],
+    "vi": "không một chút nào"
+  },
+  "少ない": {
+    "reading": "すくない",
+    "pos": "adj-i",
+    "en": "few; little; small (amount); low; scarce; insufficient; seldom; rare",
+    "rank": 11023,
+    "kanjiChars": [
+      "少"
+    ],
+    "vi": "ít, hiếm"
+  },
+  "上半期": {
+    "reading": "かみはんき",
+    "pos": "n",
+    "en": "first half of the year; first half of the fiscal year",
+    "rank": 11198,
+    "kanjiChars": [
+      "半"
+    ],
+    "vi": "nửa đầu năm"
+  },
+  "上半身": {
+    "reading": "じょうはんしん",
+    "pos": "n",
+    "en": "upper half of the body; upper body",
+    "rank": 11199,
+    "kanjiChars": [
+      "半"
+    ],
+    "vi": "nửa thân trên"
+  },
+  "浄土": {
+    "reading": "じょうど",
+    "pos": "n",
+    "en": "pure land (esp. the Western Pure Land paradise of Amitabha); (Buddhist) paradise",
+    "rank": 11271,
+    "kanjiChars": [
+      "土"
+    ],
+    "vi": "tịnh độ, cõi cực lạc"
+  },
+  "植木鉢": {
+    "reading": "うえきばち",
+    "pos": "n",
+    "en": "flowerpot; plant pot",
+    "rank": 11303,
+    "kanjiChars": [
+      "木"
+    ],
+    "vi": "chậu cây"
+  },
+  "新聞": {
+    "reading": "しんぶん",
+    "pos": "n",
+    "en": "newspaper",
+    "rank": 11491,
+    "kanjiChars": [
+      "聞"
+    ],
+    "vi": "báo (tin tức)"
+  },
+  "新聞紙": {
+    "reading": "しんぶんし",
+    "pos": "n",
+    "en": "newsprint; newspaper used for wrapping, packing, etc.",
+    "rank": 11492,
+    "kanjiChars": [
+      "聞"
+    ],
+    "vi": "giấy báo"
+  },
+  "新聞社": {
+    "reading": "しんぶんしゃ",
+    "pos": "n",
+    "en": "newspaper company",
+    "rank": 11493,
+    "kanjiChars": [
+      "聞"
+    ],
+    "vi": "tòa soạn báo"
+  },
+  "真っ二つ": {
+    "reading": "まっぷたつ",
+    "pos": "n",
+    "en": "in two equal parts",
+    "rank": 11530,
+    "kanjiChars": [
+      "二"
+    ],
+    "vi": "chia đôi đều nhau"
+  },
+  "神父": {
+    "reading": "しんぷ",
+    "pos": "n",
+    "en": "Catholic priest; abbe; reverend father; minister; padre",
+    "rank": 11571,
+    "kanjiChars": [
+      "父"
+    ],
+    "vi": "linh mục"
+  },
+  "親父": {
+    "reading": "おやじ",
+    "pos": "n",
+    "en": "one's father; one's old man; dad; pops",
+    "rank": 11597,
+    "kanjiChars": [
+      "父"
+    ],
+    "vi": "bố, ông già (gọi thân mật)"
+  },
+  "親友": {
+    "reading": "しんゆう",
+    "pos": "n",
+    "en": "close friend; bosom friend; buddy; crony; chum",
+    "rank": 11602,
+    "kanjiChars": [
+      "友"
+    ],
+    "vi": "bạn thân"
+  },
+  "数千": {
+    "reading": "すうせん",
+    "pos": "n",
+    "en": "thousands; several thousand",
+    "rank": 11863,
+    "kanjiChars": [
+      "千"
+    ],
+    "vi": "hàng nghìn"
+  },
+  "数多く": {
+    "reading": "かずおおく",
+    "pos": "exp",
+    "en": "in great numbers",
+    "rank": 11864,
+    "kanjiChars": [
+      "多"
+    ],
+    "vi": "rất nhiều, đông đảo"
+  },
+  "数百": {
+    "reading": "すうひゃく",
+    "pos": "n",
+    "en": "several hundred; hundreds (of)",
+    "rank": 11868,
+    "kanjiChars": [
+      "百"
+    ],
+    "vi": "hàng trăm"
+  },
+  "正午": {
+    "reading": "しょうご",
+    "pos": "n",
+    "en": "noon; midday",
+    "rank": 12004,
+    "kanjiChars": [
+      "午"
+    ],
+    "vi": "giữa trưa"
+  },
+  "聖母": {
+    "reading": "せいぼ",
+    "pos": "n",
+    "en": "mother of a holy person",
+    "rank": 12124,
+    "kanjiChars": [
+      "母"
+    ],
+    "vi": "Đức Mẹ, thánh mẫu"
+  },
+  "西": {
+    "reading": "にし",
+    "pos": "n",
+    "en": "west",
+    "rank": 12141,
+    "kanjiChars": [
+      "西"
+    ],
+    "vi": "tây"
+  },
+  "西ドイツ": {
+    "reading": "にしドイツ",
+    "pos": "n",
+    "en": "West Germany (1949-1990); Federal Republic of Germany",
+    "rank": 12142,
+    "kanjiChars": [
+      "西"
+    ],
+    "vi": "Tây Đức"
+  },
+  "西瓜": {
+    "reading": "すいか",
+    "pos": "n",
+    "en": "watermelon (Citrullus lanatus)",
+    "rank": 12143,
+    "kanjiChars": [
+      "西"
+    ],
+    "vi": "dưa hấu"
+  },
+  "西欧": {
+    "reading": "せいおう",
+    "pos": "n",
+    "en": "Western Europe",
+    "rank": 12144,
+    "kanjiChars": [
+      "西"
+    ],
+    "vi": "Tây Âu"
+  },
+  "西口": {
+    "reading": "にしぐち",
+    "pos": "n",
+    "en": "west entrance; west exit",
+    "rank": 12145,
+    "kanjiChars": [
+      "西"
+    ],
+    "vi": "cửa tây"
+  },
+  "西側": {
+    "reading": "にしがわ",
+    "pos": "n",
+    "en": "west side; west bank",
+    "rank": 12146,
+    "kanjiChars": [
+      "西"
+    ],
+    "vi": "phía tây"
+  },
+  "西南": {
+    "reading": "せいなん",
+    "pos": "n",
+    "en": "south-west",
+    "rank": 12147,
+    "kanjiChars": [
+      "南"
+    ],
+    "vi": "tây nam"
+  },
+  "青田買い": {
+    "reading": "あおたがい",
+    "pos": "n",
+    "en": "speculatively buying a rice harvest, while the fields are still green",
+    "rank": 12173,
+    "kanjiChars": [
+      "買"
+    ],
+    "vi": "đặt mua trước (lúa còn xanh)"
+  },
+  "青白い": {
+    "reading": "あおじろい",
+    "pos": "adj-i",
+    "en": "pale; pallid",
+    "rank": 12176,
+    "kanjiChars": [
+      "白"
+    ],
+    "vi": "xanh xao, tái nhợt"
+  },
+  "折半": {
+    "reading": "せっぱん",
+    "pos": "n",
+    "en": "halving; splitting evenly; sharing equally",
+    "rank": 12292,
+    "kanjiChars": [
+      "半"
+    ],
+    "vi": "chia đôi"
+  },
+  "千": {
+    "reading": "せん",
+    "pos": "num",
+    "en": "thousand; 1,000",
+    "rank": 12378,
+    "kanjiChars": [
+      "千"
+    ],
+    "vi": "nghìn"
+  },
+  "千円札": {
+    "reading": "せんえんさつ",
+    "pos": "n",
+    "en": "1,000 yen bill",
+    "rank": 12380,
+    "kanjiChars": [
+      "千"
+    ],
+    "vi": "tờ 1000 yên"
+  },
+  "千秋楽": {
+    "reading": "せんしゅうらく",
+    "pos": "n",
+    "en": "final day of a performance; closing date; final show",
+    "rank": 12381,
+    "kanjiChars": [
+      "千"
+    ],
+    "vi": "ngày diễn cuối"
+  },
+  "千切る": {
+    "reading": "ちぎる",
+    "pos": "v5r",
+    "en": "to tear to pieces; to tear to shreds; to tear up",
+    "rank": 12382,
+    "kanjiChars": [
+      "千"
+    ],
+    "vi": "xé vụn, xé nhỏ"
+  },
+  "専門店": {
+    "reading": "せんもんてん",
+    "pos": "n",
+    "en": "specialist shop; shop specializing in a particular type of product",
+    "rank": 12412,
+    "kanjiChars": [
+      "店"
+    ],
+    "vi": "cửa hàng chuyên dụng"
+  },
+  "川": {
+    "reading": "かわ",
+    "pos": "n",
+    "en": "river; stream",
+    "rank": 12414,
+    "kanjiChars": [
+      "川"
+    ],
+    "vi": "sông"
+  },
+  "川沿い": {
+    "reading": "かわぞい",
+    "pos": "adj-no",
+    "en": "along the river; riverside",
+    "rank": 12415,
+    "kanjiChars": [
+      "川"
+    ],
+    "vi": "dọc bờ sông"
+  },
+  "川下": {
+    "reading": "かわしも",
+    "pos": "n",
+    "en": "downstream",
+    "rank": 12416,
+    "kanjiChars": [
+      "川"
+    ],
+    "vi": "hạ lưu"
+  },
+  "川岸": {
+    "reading": "かわぎし",
+    "pos": "n",
+    "en": "riverbank; riverside",
+    "rank": 12417,
+    "kanjiChars": [
+      "川"
+    ],
+    "vi": "bờ sông"
+  },
+  "川上": {
+    "reading": "かわかみ",
+    "pos": "n",
+    "en": "upper reaches of a river; upstream",
+    "rank": 12418,
+    "kanjiChars": [
+      "川"
+    ],
+    "vi": "thượng nguồn"
+  },
+  "前代未聞": {
+    "reading": "ぜんだいみもん",
+    "pos": "n",
+    "en": "unheard-of; unprecedented; unparalleled in history (unparallelled); record-breaking",
+    "rank": 12539,
+    "kanjiChars": [
+      "聞"
+    ],
+    "vi": "chưa từng nghe, chưa từng có"
+  },
+  "前半戦": {
+    "reading": "ぜんはんせん",
+    "pos": "n",
+    "en": "first half of a game; first half of a match",
+    "rank": 12549,
+    "kanjiChars": [
+      "半"
+    ],
+    "vi": "hiệp một"
+  },
+  "全土": {
+    "reading": "ぜんど",
+    "pos": "n",
+    "en": "whole nation; whole land; whole country",
+    "rank": 12594,
+    "kanjiChars": [
+      "土"
+    ],
+    "vi": "toàn quốc, toàn lãnh thổ"
+  },
+  "祖父": {
+    "reading": "そふ",
+    "pos": "n",
+    "en": "grandfather",
+    "rank": 12630,
+    "kanjiChars": [
+      "父"
+    ],
+    "vi": "ông nội, ông ngoại"
+  },
+  "祖父母": {
+    "reading": "そふぼ",
+    "pos": "n",
+    "en": "grandparents",
+    "rank": 12631,
+    "kanjiChars": [
+      "父"
+    ],
+    "vi": "ông bà"
+  },
+  "多": {
+    "reading": "た",
+    "pos": "n",
+    "en": "multi-",
+    "rank": 13002,
+    "kanjiChars": [
+      "多"
+    ],
+    "vi": "đa, nhiều"
+  },
+  "多い": {
+    "reading": "おおい",
+    "pos": "adj-i",
+    "en": "many; numerous; a lot",
+    "rank": 13003,
+    "kanjiChars": [
+      "多"
+    ],
+    "vi": "nhiều"
+  },
+  "多寡": {
+    "reading": "たか",
+    "pos": "n",
+    "en": "degree (of something); greatness or smallness (of something); quantity; number; amount; size",
+    "rank": 13004,
+    "kanjiChars": [
+      "多"
+    ],
+    "vi": "nhiều ít"
+  },
+  "多額": {
+    "reading": "たがく",
+    "pos": "adj-no",
+    "en": "large (amount of money); huge; hefty; expensive",
+    "rank": 13005,
+    "kanjiChars": [
+      "多"
+    ],
+    "vi": "số lớn (tiền)"
+  },
+  "多岐": {
+    "reading": "たき",
+    "pos": "adj-no",
+    "en": "diverse; various; wide-ranging",
+    "rank": 13006,
+    "kanjiChars": [
+      "多"
+    ],
+    "vi": "đa dạng, nhiều mặt"
+  },
+  "多元的": {
+    "reading": "たげんてき",
+    "pos": "adj-na",
+    "en": "pluralistic; plural",
+    "rank": 13007,
+    "kanjiChars": [
+      "多"
+    ],
+    "vi": "đa nguyên"
+  },
+  "大男": {
+    "reading": "おおおとこ",
+    "pos": "n",
+    "en": "big man; large man; tall man; giant",
+    "rank": 13285,
+    "kanjiChars": [
+      "男"
+    ],
+    "vi": "người đàn ông to lớn"
+  },
+  "大木": {
+    "reading": "たいぼく",
+    "pos": "n",
+    "en": "large tree",
+    "rank": 13309,
+    "kanjiChars": [
+      "木"
+    ],
+    "vi": "cây lớn"
+  },
+  "第二": {
+    "reading": "だいに",
+    "pos": "n",
+    "en": "second",
+    "rank": 13320,
+    "kanjiChars": [
+      "二"
+    ],
+    "vi": "thứ hai"
+  },
+  "男": {
+    "reading": "おとこ",
+    "pos": "n",
+    "en": "man; male",
+    "rank": 13498,
+    "kanjiChars": [
+      "男"
+    ],
+    "vi": "đàn ông, nam giới"
+  },
+  "男の子": {
+    "reading": "おとこのこ",
+    "pos": "exp",
+    "en": "boy; son; baby boy",
+    "rank": 13499,
+    "kanjiChars": [
+      "男"
+    ],
+    "vi": "con trai, bé trai"
+  },
+  "男の人": {
+    "reading": "おとこのひと",
+    "pos": "exp",
+    "en": "man",
+    "rank": 13500,
+    "kanjiChars": [
+      "男"
+    ],
+    "vi": "người đàn ông"
+  },
+  "男らしい": {
+    "reading": "おとこらしい",
+    "pos": "adj-i",
+    "en": "manly; masculine; like a man",
+    "rank": 13501,
+    "kanjiChars": [
+      "男"
+    ],
+    "vi": "nam tính"
+  },
+  "中耳": {
+    "reading": "ちゅうじ",
+    "pos": "n",
+    "en": "middle ear; tympanum",
+    "rank": 13669,
+    "kanjiChars": [
+      "耳"
+    ],
+    "vi": "tai giữa"
+  },
+  "中耳炎": {
+    "reading": "ちゅうじえん",
+    "pos": "n",
+    "en": "otitis media; middle-ear infection",
+    "rank": 13670,
+    "kanjiChars": [
+      "耳"
+    ],
+    "vi": "viêm tai giữa"
+  },
+  "中東": {
+    "reading": "ちゅうとう",
+    "pos": "n",
+    "en": "Middle East",
+    "rank": 13691,
+    "kanjiChars": [
+      "東"
+    ],
+    "vi": "Trung Đông"
+  },
+  "中南米": {
+    "reading": "ちゅうなんべい",
+    "pos": "n",
+    "en": "Central and South America",
+    "rank": 13695,
+    "kanjiChars": [
+      "南"
+    ],
+    "vi": "Trung và Nam Mỹ"
+  },
+  "仲買": {
+    "reading": "なかがい",
+    "pos": "n",
+    "en": "brokerage; broker",
+    "rank": 13712,
+    "kanjiChars": [
+      "買"
+    ],
+    "vi": "môi giới"
+  },
+  "庭木": {
+    "reading": "にわき",
+    "pos": "n",
+    "en": "garden tree",
+    "rank": 14094,
+    "kanjiChars": [
+      "木"
+    ],
+    "vi": "cây vườn"
+  },
+  "土": {
+    "reading": "つち",
+    "pos": "n",
+    "en": "earth; soil; dirt; clay; mud",
+    "rank": 14365,
+    "kanjiChars": [
+      "土"
+    ],
+    "vi": "đất"
+  },
+  "土間": {
+    "reading": "どま",
+    "pos": "n",
+    "en": "dirt floor; room with dirt floor",
+    "rank": 14366,
+    "kanjiChars": [
+      "土"
+    ],
+    "vi": "nền đất, sàn đất"
+  },
+  "東": {
+    "reading": "ひがし",
+    "pos": "n",
+    "en": "east",
+    "rank": 14445,
+    "kanjiChars": [
+      "東"
+    ],
+    "vi": "đông"
+  },
+  "東欧": {
+    "reading": "とうおう",
+    "pos": "n",
+    "en": "Eastern Europe",
+    "rank": 14446,
+    "kanjiChars": [
+      "東"
+    ],
+    "vi": "Đông Âu"
+  },
+  "東海": {
+    "reading": "とうかい",
+    "pos": "n",
+    "en": "Tōkai region (of Honshu; incl. Aichi, Shizuoka, Mie and southern Gifu prefectures)",
+    "rank": 14447,
+    "kanjiChars": [
+      "東"
+    ],
+    "vi": "vùng Tokai"
+  },
+  "東宮": {
+    "reading": "とうぐう",
+    "pos": "n",
+    "en": "crown prince",
+    "rank": 14448,
+    "kanjiChars": [
+      "東"
+    ],
+    "vi": "thái tử"
+  },
+  "東南": {
+    "reading": "とうなん",
+    "pos": "n",
+    "en": "south-east",
+    "rank": 14454,
+    "kanjiChars": [
+      "南"
+    ],
+    "vi": "đông nam"
+  },
+  "東北": {
+    "reading": "とうほく",
+    "pos": "n",
+    "en": "north-east",
+    "rank": 14458,
+    "kanjiChars": [
+      "北"
+    ],
+    "vi": "đông bắc"
+  },
+  "読み": {
+    "reading": "よみ",
+    "pos": "n",
+    "en": "reading",
+    "rank": 14760,
+    "kanjiChars": [
+      "読"
+    ],
+    "vi": "cách đọc"
+  },
+  "南": {
+    "reading": "みなみ",
+    "pos": "n",
+    "en": "south",
+    "rank": 14848,
+    "kanjiChars": [
+      "南"
+    ],
+    "vi": "nam"
+  },
+  "南アフリカ": {
+    "reading": "みなみアフリカ",
+    "pos": "n",
+    "en": "South Africa",
+    "rank": 14849,
+    "kanjiChars": [
+      "南"
+    ],
+    "vi": "Nam Phi"
+  },
+  "南緯": {
+    "reading": "なんい",
+    "pos": "n",
+    "en": "southern latitude",
+    "rank": 14850,
+    "kanjiChars": [
+      "南"
+    ],
+    "vi": "vĩ độ nam"
+  },
+  "南海": {
+    "reading": "なんかい",
+    "pos": "n",
+    "en": "southern sea",
+    "rank": 14851,
+    "kanjiChars": [
+      "南"
+    ],
+    "vi": "biển nam"
+  },
+  "南極": {
+    "reading": "なんきょく",
+    "pos": "n",
+    "en": "South Pole",
+    "rank": 14852,
+    "kanjiChars": [
+      "南"
+    ],
+    "vi": "Nam Cực"
+  },
+  "南北": {
+    "reading": "なんぼく",
+    "pos": "n",
+    "en": "north and south; north to south",
+    "rank": 14858,
+    "kanjiChars": [
+      "北"
+    ],
+    "vi": "bắc nam"
+  },
+  "二": {
+    "reading": "に",
+    "pos": "num",
+    "en": "two; 2",
+    "rank": 14880,
+    "kanjiChars": [
+      "二"
+    ],
+    "vi": "hai"
+  },
+  "二つ": {
+    "reading": "ふたつ",
+    "pos": "num",
+    "en": "two",
+    "rank": 14881,
+    "kanjiChars": [
+      "二"
+    ],
+    "vi": "hai (cái)"
+  },
+  "二百十日": {
+    "reading": "にひゃくとおか",
+    "pos": "n",
+    "en": "210th day (from the first day of spring according to the lunar calendar); the storm day",
+    "rank": 14906,
+    "kanjiChars": [
+      "百"
+    ],
+    "vi": "ngày 210 (mùa bão)"
+  },
+  "二百二十日": {
+    "reading": "にひゃくはつか",
+    "pos": "n",
+    "en": "220th day; end of the storm period",
+    "rank": 14907,
+    "kanjiChars": [
+      "百"
+    ],
+    "vi": "ngày 220 (cuối mùa bão)"
+  },
+  "波乱万丈": {
+    "reading": "はらんばんじょう",
+    "pos": "adj-no",
+    "en": "stormy and full of drama; full of ups and downs; with many vicissitudes",
+    "rank": 15186,
+    "kanjiChars": [
+      "万"
+    ],
+    "vi": "đầy thăng trầm, sóng gió"
+  },
+  "敗北": {
+    "reading": "はいぼく",
+    "pos": "n",
+    "en": "defeat; loss; reverse; setback",
+    "rank": 15238,
+    "kanjiChars": [
+      "北"
+    ],
+    "vi": "thua cuộc, bại trận"
+  },
+  "買取": {
+    "reading": "かいとり",
+    "pos": "n",
+    "en": "purchase; buying; buying out",
+    "rank": 15286,
+    "kanjiChars": [
+      "買"
+    ],
+    "vi": "mua lại, thu mua"
+  },
+  "買い出し": {
+    "reading": "かいだし",
+    "pos": "n",
+    "en": "going out to shop; going shopping",
+    "rank": 15287,
+    "kanjiChars": [
+      "買"
+    ],
+    "vi": "đi mua sắm, đi chợ"
+  },
+  "買い入れる": {
+    "reading": "かいいれる",
+    "pos": "v1",
+    "en": "to purchase; to buy in",
+    "rank": 15288,
+    "kanjiChars": [
+      "買"
+    ],
+    "vi": "mua vào, nhập về"
+  },
+  "買う": {
+    "reading": "かう",
+    "pos": "v5u",
+    "en": "to buy; to purchase",
+    "rank": 15289,
+    "kanjiChars": [
+      "買"
+    ],
+    "vi": "mua"
+  },
+  "白": {
+    "reading": "しろ",
+    "pos": "n",
+    "en": "white",
+    "rank": 15329,
+    "kanjiChars": [
+      "白"
+    ],
+    "vi": "trắng"
+  },
+  "八つ当たり": {
+    "reading": "やつあたり",
+    "pos": "n",
+    "en": "venting one's anger (on someone or something); taking out one's anger on",
+    "rank": 15382,
+    "kanjiChars": [
+      "八"
+    ],
+    "vi": "trút giận lên người khác"
+  },
+  "八月": {
+    "reading": "はちがつ",
+    "pos": "n",
+    "en": "August",
+    "rank": 15383,
+    "kanjiChars": [
+      "八"
+    ],
+    "vi": "tháng Tám"
+  },
+  "八重桜": {
+    "reading": "やえざくら",
+    "pos": "n",
+    "en": "double-flowered cherry tree; double cherry blossoms",
+    "rank": 15384,
+    "kanjiChars": [
+      "八"
+    ],
+    "vi": "hoa anh đào kép"
+  },
+  "八千代": {
+    "reading": "やちよ",
+    "pos": "n",
+    "en": "very long period; forever",
+    "rank": 15385,
+    "kanjiChars": [
+      "八"
+    ],
+    "vi": "muôn đời, ngàn năm"
+  },
+  "八日": {
+    "reading": "ようか",
+    "pos": "n",
+    "en": "8th day of the month",
+    "rank": 15386,
+    "kanjiChars": [
+      "八"
+    ],
+    "vi": "ngày mùng 8"
+  },
+  "八百屋": {
+    "reading": "やおや",
+    "pos": "n",
+    "en": "greengrocer; fruit and vegetable shop",
+    "rank": 15387,
+    "kanjiChars": [
+      "百"
+    ],
+    "vi": "tiệm rau quả"
+  },
+  "百": {
+    "reading": "ひゃく",
+    "pos": "num",
+    "en": "hundred; 100",
+    "rank": 15746,
+    "kanjiChars": [
+      "百"
+    ],
+    "vi": "trăm"
+  },
+  "百億": {
+    "reading": "ひゃくおく",
+    "pos": "num",
+    "en": "10,000,000,000; ten billion",
+    "rank": 15747,
+    "kanjiChars": [
+      "百"
+    ],
+    "vi": "mười tỷ"
+  },
+  "１００万": {
+    "reading": "ひゃくまん",
+    "pos": "num",
+    "en": "1,000,000; one million; million",
+    "rank": 15751,
+    "kanjiChars": [
+      "万"
+    ],
+    "vi": "một triệu"
+  },
+  "父": {
+    "reading": "ちち",
+    "pos": "n",
+    "en": "father",
+    "rank": 16020,
+    "kanjiChars": [
+      "父"
+    ],
+    "vi": "cha, bố"
+  },
+  "聞かす": {
+    "reading": "きかす",
+    "pos": "v5s",
+    "en": "to let (someone) hear; to tell (e.g. a story); to inform (of)",
+    "rank": 16294,
+    "kanjiChars": [
+      "聞"
+    ],
+    "vi": "cho nghe, kể (chuyện)"
+  },
+  "北": {
+    "reading": "きた",
+    "pos": "n",
+    "en": "north",
+    "rank": 16747,
+    "kanjiChars": [
+      "北"
+    ],
+    "vi": "bắc"
+  },
+  "北北東": {
+    "reading": "ほくほくとう",
+    "pos": "n",
+    "en": "north-northeast; north-north-east",
+    "rank": 16748,
+    "kanjiChars": [
+      "北"
+    ],
+    "vi": "đông bắc bắc"
+  },
+  "北アイルランド": {
+    "reading": "きたアイルランド",
+    "pos": "n",
+    "en": "Northern Ireland",
+    "rank": 16749,
+    "kanjiChars": [
+      "北"
+    ],
+    "vi": "Bắc Ireland"
+  },
+  "北緯": {
+    "reading": "ほくい",
+    "pos": "n",
+    "en": "north latitude",
+    "rank": 16750,
+    "kanjiChars": [
+      "北"
+    ],
+    "vi": "vĩ độ bắc"
+  },
+  "北欧": {
+    "reading": "ほくおう",
+    "pos": "n",
+    "en": "Northern Europe; Nordic countries; Scandinavia",
+    "rank": 16751,
+    "kanjiChars": [
+      "北"
+    ],
+    "vi": "Bắc Âu"
+  },
+  "毎": {
+    "reading": "ごと",
+    "pos": "n",
+    "en": "each; every",
+    "rank": 16879,
+    "kanjiChars": [
+      "毎"
+    ],
+    "vi": "mỗi"
+  },
+  "毎に": {
+    "reading": "ごとに",
+    "pos": "exp",
+    "en": "one by one; each; every; at intervals of",
+    "rank": 16881,
+    "kanjiChars": [
+      "毎"
+    ],
+    "vi": "mỗi, từng"
+  },
+  "毎回": {
+    "reading": "まいかい",
+    "pos": "n",
+    "en": "every time; each round",
+    "rank": 16882,
+    "kanjiChars": [
+      "毎"
+    ],
+    "vi": "mỗi lần"
+  },
+  "毎時": {
+    "reading": "まいじ",
+    "pos": "n",
+    "en": "every hour; hourly",
+    "rank": 16883,
+    "kanjiChars": [
+      "毎"
+    ],
+    "vi": "mỗi giờ"
+  },
+  "毎週": {
+    "reading": "まいしゅう",
+    "pos": "n",
+    "en": "every week",
+    "rank": 16884,
+    "kanjiChars": [
+      "毎"
+    ],
+    "vi": "mỗi tuần"
+  },
+  "毎朝": {
+    "reading": "まいあさ",
+    "pos": "n",
+    "en": "every morning",
+    "rank": 16885,
+    "kanjiChars": [
+      "毎"
+    ],
+    "vi": "mỗi sáng"
+  },
+  "毎度": {
+    "reading": "まいど",
+    "pos": "adv",
+    "en": "each time; every time; always; often",
+    "rank": 16886,
+    "kanjiChars": [
+      "毎"
+    ],
+    "vi": "mỗi lần (luôn luôn)"
+  },
+  "万が一": {
+    "reading": "まんがいち",
+    "pos": "adv",
+    "en": "(if) by some chance; by some possibility; in the unlikely event that; 10000 to 1",
+    "rank": 16912,
+    "kanjiChars": [
+      "万"
+    ],
+    "vi": "lỡ như, nhỡ ra"
+  },
+  "万一": {
+    "reading": "まんいち",
+    "pos": "n",
+    "en": "(unlikely event of) emergency; the worst(-case scenario); 10000 to 1",
+    "rank": 16913,
+    "kanjiChars": [
+      "万"
+    ],
+    "vi": "trường hợp khẩn cấp"
+  },
+  "万引き": {
+    "reading": "まんびき",
+    "pos": "n",
+    "en": "shoplifting; shoplifter",
+    "rank": 16914,
+    "kanjiChars": [
+      "万"
+    ],
+    "vi": "trộm vặt (trong cửa hàng)"
+  },
+  "万国": {
+    "reading": "ばんこく",
+    "pos": "n",
+    "en": "all countries; the whole world; universal; all nations",
+    "rank": 16915,
+    "kanjiChars": [
+      "万"
+    ],
+    "vi": "muôn nước, toàn cầu"
+  },
+  "万事": {
+    "reading": "ばんじ",
+    "pos": "n",
+    "en": "all; everything",
+    "rank": 16916,
+    "kanjiChars": [
+      "万"
+    ],
+    "vi": "mọi việc, tất cả"
+  },
+  "盟友": {
+    "reading": "めいゆう",
+    "pos": "n",
+    "en": "sworn friend",
+    "rank": 17166,
+    "kanjiChars": [
+      "友"
+    ],
+    "vi": "bạn thề"
+  },
+  "友": {
+    "reading": "とも",
+    "pos": "n",
+    "en": "friend; companion; comrade; pal",
+    "rank": 17421,
+    "kanjiChars": [
+      "友"
+    ],
+    "vi": "bạn, đồng chí"
+  },
+  "友愛": {
+    "reading": "ゆうあい",
+    "pos": "n",
+    "en": "fraternity; friendship",
+    "rank": 17422,
+    "kanjiChars": [
+      "友"
+    ],
+    "vi": "tình bạn, tình huynh đệ"
+  },
+  "友好": {
+    "reading": "ゆうこう",
+    "pos": "n",
+    "en": "friendship",
+    "rank": 17423,
+    "kanjiChars": [
+      "友"
+    ],
+    "vi": "hữu nghị"
+  },
+  "六月": {
+    "reading": "ろくがつ",
+    "pos": "n",
+    "en": "June",
+    "rank": 18190,
+    "kanjiChars": [
+      "六"
+    ],
+    "vi": "tháng Sáu"
+  },
+  "六十四分音符": {
+    "reading": "ろくじゅうしぶおんぷ",
+    "pos": "n",
+    "en": "64th note; hemidemisemiquaver; semidemisemiquaver",
+    "rank": 18191,
+    "kanjiChars": [
+      "六"
+    ],
+    "vi": "nốt móc tư"
+  },
+  "六日": {
+    "reading": "むいか",
+    "pos": "n",
+    "en": "6th day of the month",
+    "rank": 18192,
+    "kanjiChars": [
+      "六"
+    ],
+    "vi": "ngày mùng 6"
+  },
+  "九": {
+    "reading": "きゅう",
+    "pos": "num",
+    "en": "nine; 9",
+    "rank": 18471,
+    "kanjiChars": [
+      "九"
+    ],
+    "vi": "chín"
+  },
+  "七十": {
+    "reading": "しちじゅう",
+    "pos": "num",
+    "en": "seventy; 70",
+    "rank": 18541,
+    "kanjiChars": [
+      "七"
+    ],
+    "vi": "bảy mươi"
+  },
+  "七日": {
+    "reading": "なのか",
+    "pos": "n",
+    "en": "7th day of the month",
+    "rank": 18542,
+    "kanjiChars": [
+      "七"
+    ],
+    "vi": "ngày mùng 7"
+  },
+  "七夕": {
+    "reading": "たなばた",
+    "pos": "n",
+    "en": "Star Festival (held in July or August); Tanabata; Festival of the Weaver",
+    "rank": 18543,
+    "kanjiChars": [
+      "七"
+    ],
+    "vi": "lễ Tanabata (lễ thất tịch)"
+  },
+  "六": {
+    "reading": "ろく",
+    "pos": "num",
+    "en": "six; 6",
+    "rank": 18803,
+    "kanjiChars": [
+      "六"
+    ],
+    "vi": "sáu"
+  },
+  "六つ": {
+    "reading": "むっつ",
+    "pos": "num",
+    "en": "six",
+    "rank": 18804,
+    "kanjiChars": [
+      "六"
+    ],
+    "vi": "sáu (cái)"
+  },
+  "飲み込む": {
+    "reading": "のみこむ",
+    "pos": "v5m",
+    "en": "to swallow; to gulp down",
+    "rank": 19446,
+    "kanjiChars": [
+      "飲"
+    ],
+    "vi": "nuốt"
+  },
+  "耳元": {
+    "reading": "みみもと",
+    "pos": "n",
+    "en": "close to the ear",
+    "rank": 20035,
+    "kanjiChars": [
+      "耳"
+    ],
+    "vi": "bên tai"
+  },
+  "耳より": {
+    "reading": "みみより",
+    "pos": "adj-na",
+    "en": "welcome (news); inviting; encouraging; tempting; hopeful",
+    "rank": 20036,
+    "kanjiChars": [
+      "耳"
+    ],
+    "vi": "tin vui, đáng mừng"
+  },
+  "宿駅": {
+    "reading": "しゅくえき",
+    "pos": "n",
+    "en": "relay station; post station; stage",
+    "rank": 20720,
+    "kanjiChars": [
+      "駅"
+    ],
+    "vi": "trạm dịch"
+  },
+  "六十": {
+    "reading": "ろくじゅう",
+    "pos": "num",
+    "en": "sixty; 60",
+    "rank": 21370,
+    "kanjiChars": [
+      "六"
+    ],
+    "vi": "sáu mươi"
+  },
+  "十六日": {
+    "reading": "じゅうろくにち",
+    "pos": "n",
+    "en": "16th day of the month",
+    "rank": 22322,
+    "kanjiChars": [
+      "六"
+    ],
+    "vi": "ngày 16"
+  }
+}
