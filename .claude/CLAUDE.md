@@ -85,6 +85,22 @@ Web app: gamified kanji learning. **Solo developer, ship-focused.** Target users
 - `add-game-mode` — scaffold a new mini-game (route + component + types)
 - `i18n-key` — add a translation key in VI + EN simultaneously
 
+## ECC skills to invoke (v2.0.0-rc.1)
+
+Stack-relevant ECC skills. Invoke explicitly via the Skill tool when the topic matches; do not auto-invoke for unrelated work.
+
+- **`ecc:nextjs-turbopack`** — Next 16+/Turbopack, dev speed, when Turbopack vs webpack.
+- **`ecc:postgres-patterns`** — Supabase/Postgres query, schema, indexing.
+- **`ecc:database-migrations`** — schema/data migrations, zero-downtime.
+- **`ecc:frontend-patterns`** + **`ecc:frontend-a11y`** + **`ecc:accessibility`** — RSC patterns + WCAG 2.2 AA.
+- **`ecc:coding-standards`** — baseline naming/readability.
+- **`ecc:git-workflow`** — branching/commit conventions (already enforced by `guard-bash`).
+- **`ecc:safety-guard`** — destructive-op gate when touching Supabase prod.
+- **`ecc:design-system`** — visual consistency audit for the watercolor aesthetic.
+- **`ecc:code-tour`** — `.tour` walkthroughs (use post-MVP for onboarding).
+
+ECC also wires PreToolUse hooks (`gateguard-fact-force`, `governance-capture`, `mcp-health-check`, `suggest-compact`, etc.). They coexist with the project's `guard-bash` / `guard-env` / `guard-secrets`. If `gateguard-fact-force` slows a known multi-file edit pass, set `ECC_GATEGUARD_DISABLED=1` for that session.
+
 ## Pointers
 
 - Product vision: [README.md](README.md)
