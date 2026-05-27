@@ -5,6 +5,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import "../globals.css";
 import "@fontsource/inter/vietnamese.css";
 import { AuthProvider } from "@/context/auth-context";
+import { AttributionFooter } from "@/components/AttributionFooter";
 import { routing } from "@/i18n/routing";
 
 export function generateStaticParams() {
@@ -39,7 +40,12 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body className="antialiased">
         <NextIntlClientProvider>
-          <AuthProvider>{children}</AuthProvider>
+          <AuthProvider>
+            <div className="flex min-h-screen flex-col">
+              <div className="flex-1">{children}</div>
+              <AttributionFooter />
+            </div>
+          </AuthProvider>
         </NextIntlClientProvider>
       </body>
     </html>
