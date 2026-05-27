@@ -56,7 +56,7 @@ export default function Home() {
               alt={t("mascotAlt")}
               width={350}
               height={350}
-              className="w-[280px] rounded-3xl shadow-[0_8px_32px_#79696222]"
+              className="w-[280px] rounded-3xl shadow-[var(--shadow-card)]"
               priority
             />
           </section>
@@ -93,7 +93,7 @@ export default function Home() {
             alt={t("mascotAlt")}
             width={350}
             height={350}
-            className="w-[350px] rounded-3xl shadow-[0_8px_32px_#79696222]"
+            className="w-[350px] rounded-3xl shadow-[var(--shadow-card)]"
             priority
           />
         </section>
