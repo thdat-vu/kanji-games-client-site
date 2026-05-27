@@ -1,0 +1,106 @@
+# N5 kanji Vietnamese meanings (first-pass).
+# Format: char<TAB>vi
+# Edit values, then `npm run seed:build:kanji` regenerates n5-kanji.tsv preserving these.
+安	yên, an, rẻ
+一	một, nhất
+飲	uống
+右	phải, hữu
+雨	mưa
+駅	ga, trạm
+円	tròn, yên (tiền)
+下	dưới, hạ
+何	gì, hà
+火	lửa, hỏa
+花	hoa
+会	gặp, hội
+外	ngoài, ngoại
+学	học
+間	khoảng, giữa, gian
+気	khí, tinh thần
+休	nghỉ, hưu
+魚	cá, ngư
+金	vàng, kim, tiền
+九	chín, cửu
+空	trống, không, bầu trời
+月	tháng, mặt trăng, nguyệt
+見	thấy, nhìn, kiến
+言	nói, ngôn
+古	cũ, cổ
+五	năm, ngũ
+午	giờ Ngọ, trưa
+後	sau, hậu
+語	ngôn ngữ, từ, ngữ
+口	miệng, cửa, khẩu
+校	trường, hiệu đính
+行	đi, hành, dòng
+高	cao, đắt
+国	nước, quốc
+今	bây giờ, kim
+左	trái, tả
+三	ba, tam
+山	núi, sơn
+四	bốn, tứ
+子	con, đứa trẻ, tử
+時	thời, giờ
+耳	tai, nhĩ
+七	bảy, thất
+社	công ty, đền, xã
+車	xe, xa
+手	tay, thủ
+週	tuần
+十	mười, thập
+出	ra, xuất
+書	viết, sách, thư
+女	nữ, phụ nữ
+小	nhỏ, tiểu
+少	ít, thiếu
+上	trên, thượng
+食	ăn, thực phẩm
+新	mới, tân
+人	người, nhân
+水	nước, thủy
+生	sống, sinh
+西	tây, phương Tây
+先	trước, tiên
+千	nghìn, thiên
+川	sông, suối, xuyên
+前	trước, tiền
+足	chân, đủ, túc
+多	nhiều, đa
+大	lớn, đại
+男	nam, đàn ông
+中	trong, giữa, trung
+長	dài, trưởng
+天	trời, thiên
+店	cửa hàng, tiệm, điếm
+電	điện
+土	đất, thổ
+東	đông, phương Đông
+道	đường, đạo
+読	đọc, độc
+南	nam, phương Nam
+二	hai, nhị
+日	ngày, mặt trời, nhật
+入	vào, nhập
+年	năm, niên
+買	mua, mãi
+白	trắng, bạch
+八	tám, bát
+半	nửa, bán
+百	trăm, bách
+父	cha, phụ
+分	phần, phút, phân
+聞	nghe, hỏi, văn
+母	mẹ, mẫu
+北	bắc, phương Bắc
+本	sách, gốc, bản
+毎	mỗi, mọi
+万	vạn, mười nghìn
+名	tên, danh
+木	cây, gỗ, mộc
+目	mắt, mục
+友	bạn, hữu
+来	đến, lai
+立	đứng, lập
+六	sáu, lục
+話	chuyện, lời, thoại
