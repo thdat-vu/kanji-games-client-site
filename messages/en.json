@@ -34,9 +34,20 @@
     "back": "Back",
     "retry": "Retry",
     "loading": "Loading...",
+    "loadingKanji": "Loading kanji set...",
+    "loadingWord": "Loading word...",
     "notFound": "We couldn't find that word.",
     "correctAnswer": "Correct answer",
     "yourAnswer": "Your answer",
+    "empty": {
+      "title": "No kanji yet",
+      "sub": "The kanji set is being prepared, please check back later."
+    },
+    "error": {
+      "title": "Something went wrong",
+      "sub": "We couldn't load the kanji data. Please try again.",
+      "retry": "Try again"
+    },
     "result": {
       "correctTitle": "Correct!",
       "correctSub": "Nice work, keep it up!",

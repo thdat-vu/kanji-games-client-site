@@ -34,9 +34,20 @@
     "back": "Quay lại",
     "retry": "Chơi lại",
     "loading": "Đang tải...",
+    "loadingKanji": "Đang tải bộ Kanji...",
+    "loadingWord": "Đang tải từ vựng...",
     "notFound": "Không tìm thấy từ này trong dữ liệu.",
     "correctAnswer": "Đáp án đúng",
     "yourAnswer": "Câu trả lời của bạn",
+    "empty": {
+      "title": "Chưa có Kanji nào",
+      "sub": "Dữ liệu Kanji đang được chuẩn bị, vui lòng quay lại sau."
+    },
+    "error": {
+      "title": "Đã có lỗi xảy ra",
+      "sub": "Không tải được dữ liệu Kanji. Hãy thử lại nhé.",
+      "retry": "Thử lại"
+    },
     "result": {
       "correctTitle": "Chính xác!",
       "correctSub": "Bạn giỏi lắm, tiếp tục nhé!",
