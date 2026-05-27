@@ -3,7 +3,6 @@ import { JLPT_LEVELS, type JLPTLevel } from "@/constants/constants";
 import type {
   KanjiEntry,
   KanjiLevel,
-  KanjiSummary,
   KanjiWord,
 } from "@/lib/types/kanji";
 
@@ -26,35 +25,17 @@ function toWord(row: WordRow): KanjiWord {
   };
 }
 
-export async function listKanji(): Promise<KanjiSummary[]> {
+export async function listKanjiWithLevels(): Promise<KanjiEntry[]> {
   const supabase = await createClient();
-  const { data, error } = await supabase
-    .from("kanji")
-    .select("char")
-    .order("char");
-  if (error) throw error;
-  return (data ?? []).map((r) => ({ kanji: r.char }));
-}
+  const [kanjiRes, linksRes] = await Promise.all([
+    supabase.from("kanji").select("char").order("char"),
+    supabase
+      .from("kanji_words")
+      .select("kanji_char, words(word, reading, jlpt_level, meaning_vi)"),
+  ]);
+  if (kanjiRes.error) throw kanjiRes.error;
+  if (linksRes.error) throw linksRes.error;
 
-export async function getKanjiWithLevels(
-  char: string
-): Promise<KanjiEntry | null> {
-  const supabase = await createClient();
-  const { data: kanjiRow, error: kanjiErr } = await supabase
-    .from("kanji")
-    .select("char")
-    .eq("char", char)
-    .maybeSingle();
-  if (kanjiErr) throw kanjiErr;
-  if (!kanjiRow) return null;
-
-  const { data: linkRows, error: linkErr } = await supabase
-    .from("kanji_words")
-    .select("words(word, reading, jlpt_level, meaning_vi)")
-    .eq("kanji_char", char);
-  if (linkErr) throw linkErr;
-
-  const levels = emptyLevels();
   const indexByLevel: Record<JLPTLevel, number> = JLPT_LEVELS.reduce(
     (acc, l, i) => {
       acc[l] = i;
@@ -63,18 +44,24 @@ export async function getKanjiWithLevels(
     {} as Record<JLPTLevel, number>
   );
 
-  for (const row of linkRows ?? []) {
-    // supabase-js types the joined table as object | array; normalize.
+  const entries = new Map<string, KanjiEntry>();
+  for (const k of kanjiRes.data ?? []) {
+    entries.set(k.char, { kanji: k.char, levels: emptyLevels() });
+  }
+
+  for (const row of linksRes.data ?? []) {
+    const entry = entries.get(row.kanji_char);
+    if (!entry) continue;
     const w = (Array.isArray(row.words) ? row.words[0] : row.words) as
       | WordRow
       | null;
     if (!w) continue;
     const idx = indexByLevel[w.jlpt_level];
     if (idx === undefined) continue;
-    levels[idx].words.push(toWord(w));
+    entry.levels[idx].words.push(toWord(w));
   }
 
-  return { kanji: char, levels };
+  return [...entries.values()];
 }
 
 export async function findWord(
