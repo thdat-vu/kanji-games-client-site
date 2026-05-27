@@ -6,6 +6,17 @@
   --color-background: #F5EEE6;
   --color-white: #FFFFFF;
   --color-text: #796962;
+  --color-accent: #B8472E;
+
+  --window-bg: #E8DDD4;
+  --window-border: #B8A89A;
+  --window-titlebar-from: #C4B5A7;
+  --window-titlebar-to: #D6CBBF;
+  --window-close: #C0392B;
+
+  --shadow-soft: 0 4px 16px rgba(121, 105, 98, 0.08);
+  --shadow-card: 0 8px 32px rgba(121, 105, 98, 0.12);
+  --shadow-window: 0 12px 40px rgba(121, 105, 98, 0.18);
 }
 
 @theme inline {
@@ -23,7 +34,12 @@
 }
 
 body {
-  background: var(--color-background);
+  background-color: var(--color-background);
+  background-image:
+    radial-gradient(at 8% 12%, rgba(223, 211, 195, 0.45) 0, transparent 42%),
+    radial-gradient(at 92% 88%, rgba(184, 168, 154, 0.28) 0, transparent 38%),
+    radial-gradient(at 50% 50%, rgba(255, 255, 255, 0.35) 0, transparent 60%);
+  background-attachment: fixed;
   color: var(--color-text);
   font-family: 'Inter', Tahoma, Arial, Helvetica, sans-serif;
   margin: 0;
@@ -36,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-button, .btn {
+.btn {
   background: var(--color-primary);
   color: var(--color-white);
   border: none;
@@ -45,9 +61,31 @@ button, .btn {
   font-size: 1.1rem;
   font-weight: bold;
   cursor: pointer;
-  transition: background 0.2s;
+  box-shadow: var(--shadow-soft);
+  transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
 }
-button:hover, .btn:hover {
+.btn:hover {
   background: var(--color-secondary);
   color: var(--color-primary);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-card);
+}
+.btn:active {
+  transform: translateY(0);
+  box-shadow: var(--shadow-soft);
+}
+
+:where(button, a, input, [role="button"]):focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
 }

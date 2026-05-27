@@ -85,26 +85,27 @@ export function GameRound({ kanji, word, reading, meaning }: GameRoundProps) {
   return (
     <div className="min-h-screen bg-[var(--color-background)] text-[var(--color-text)] flex flex-col">
       <header className="flex items-center justify-between px-6 py-4">
-        <div className="bg-[#F5EEE6] border-2 border-[var(--color-primary)] rounded-xl px-3 py-1 shadow">
-          <p className="text-[10px] text-[var(--color-primary)]">
+        <div className="bg-white/70 border-2 border-[var(--color-primary)] rounded-xl px-3 py-1 shadow-[var(--shadow-soft)]">
+          <p className="text-[10px] text-[var(--color-primary)]/80">
             {tc("kanjiBadge")}
           </p>
-          <p className="text-2xl font-bold text-red-800 leading-tight">
+          <p className="text-2xl font-bold text-[var(--color-accent)] leading-tight">
             {kanji}
           </p>
         </div>
         <button
           onClick={() => router.back()}
-          className="w-8 h-8 rounded-full bg-[#c0392b] text-white font-bold text-sm flex items-center justify-center
-            hover:bg-red-700 transition-colors shadow"
+          aria-label={t("back")}
+          className="w-8 h-8 rounded-full bg-[var(--window-close)] text-white font-bold text-sm flex items-center justify-center
+            hover:brightness-110 transition shadow-[var(--shadow-soft)]"
         >
-          X
+          ×
         </button>
       </header>
 
       <main className="flex-1 flex flex-col items-center justify-center px-6 gap-6">
-        <div className="bg-[#F5EEE6] border-2 border-[var(--color-secondary)] rounded-2xl shadow-lg px-8 py-6 w-full max-w-xs text-center space-y-2">
-          <p className="text-lg text-[var(--color-primary)]">{reading}</p>
+        <div className="bg-white/70 border-2 border-[var(--color-secondary)] rounded-2xl shadow-[var(--shadow-card)] px-8 py-6 w-full max-w-xs text-center space-y-2">
+          <p className="text-lg text-[var(--color-primary)]/80">{reading}</p>
           <p className="text-4xl font-extrabold text-[var(--color-primary)]">
             {word}
           </p>
@@ -112,10 +113,16 @@ export function GameRound({ kanji, word, reading, meaning }: GameRoundProps) {
 
         <div className="flex flex-col items-center gap-2 w-full max-w-xs">
           <div className="flex items-center gap-2">
-            <span className="text-2xl">⏳</span>
+            <span className="text-2xl" aria-hidden="true">⏳</span>
             <span className="text-lg font-bold tabular-nums">{timeLeft}s</span>
           </div>
-          <div className="w-full h-2 bg-[var(--color-secondary)] rounded-full overflow-hidden">
+          <div
+            className="w-full h-2 bg-[var(--color-secondary)] rounded-full overflow-hidden"
+            role="progressbar"
+            aria-valuenow={timeLeft}
+            aria-valuemin={0}
+            aria-valuemax={30}
+          >
             <div
               className="h-full bg-[var(--color-primary)] rounded-full transition-all duration-1000 ease-linear"
               style={{ width: `${percent}%` }}
@@ -133,8 +140,10 @@ export function GameRound({ kanji, word, reading, meaning }: GameRoundProps) {
                 e.key === "Enter" && userAnswer.trim() && handleReveal()
               }
               placeholder={t("answerPlaceholder")}
+              aria-label={t("answerPlaceholder")}
               className="w-full px-4 py-3 rounded-xl border-2 border-[var(--color-secondary)] bg-white/80
-                text-[var(--color-primary)] placeholder:text-[#796962aa] focus:outline-none focus:border-[var(--color-primary)]"
+                text-[var(--color-primary)] placeholder:text-[var(--color-primary)]/60
+                focus:outline-none focus:border-[var(--color-primary)] focus:bg-white transition"
             />
             <button onClick={handleReveal} className="btn w-full">
               {t("submit")}
@@ -142,7 +151,7 @@ export function GameRound({ kanji, word, reading, meaning }: GameRoundProps) {
           </div>
         ) : (
           <div className="w-full max-w-xs space-y-4">
-            <div className={`rounded-2xl px-5 py-4 text-center shadow-md ${bannerStyles}`}>
+            <div className={`rounded-2xl px-5 py-4 text-center shadow-[var(--shadow-card)] ${bannerStyles}`}>
               <p className={`text-3xl font-extrabold mb-1 ${titleColor}`}>
                 {resultTitle}
               </p>
@@ -151,7 +160,7 @@ export function GameRound({ kanji, word, reading, meaning }: GameRoundProps) {
 
             {isWrong && userAnswer.trim() && (
               <div className="bg-white/80 border-2 border-red-300 rounded-xl px-4 py-3 text-center">
-                <p className="text-sm text-[#796962cc]">{t("yourAnswer")}</p>
+                <p className="text-sm text-[var(--color-primary)]/80">{t("yourAnswer")}</p>
                 <p className="text-xl font-bold text-red-600 line-through">
                   {userAnswer}
                 </p>
@@ -163,7 +172,7 @@ export function GameRound({ kanji, word, reading, meaning }: GameRoundProps) {
                 isCorrect ? "border-green-300" : "border-[var(--color-secondary)]"
               }`}
             >
-              <p className="text-sm text-[#796962cc]">{t("correctAnswer")}</p>
+              <p className="text-sm text-[var(--color-primary)]/80">{t("correctAnswer")}</p>
               <p className="text-xl font-bold text-green-700">{meaning}</p>
             </div>
 

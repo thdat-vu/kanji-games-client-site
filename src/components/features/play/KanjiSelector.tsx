@@ -47,12 +47,16 @@ export function KanjiSelector({ entries }: KanjiSelectorProps) {
             <button
               key={entry.kanji}
               onClick={() => setSelectedKanji(entry)}
-              className="flex flex-col items-center gap-1 bg-white/70 rounded-2xl border-2 border-[var(--color-secondary)]
-                px-4 py-5 shadow hover:shadow-lg hover:border-[var(--color-primary)]
-                hover:scale-105 transition-all duration-150"
+              className="flex flex-col items-center gap-1 bg-white/80 rounded-2xl border-2 border-[var(--color-secondary)]
+                px-4 py-5 shadow-[var(--shadow-soft)]
+                hover:shadow-[var(--shadow-card)] hover:border-[var(--color-primary)] hover:-translate-y-0.5
+                active:translate-y-0
+                transition duration-150"
             >
-              <span className="text-xs text-[var(--color-primary)]">{tc("kanjiBadge")}</span>
-              <span className="text-4xl font-bold text-red-800">
+              <span className="text-xs text-[var(--color-primary)]/80">
+                {tc("kanjiBadge")}
+              </span>
+              <span className="text-4xl font-bold text-[var(--color-accent)]">
                 {entry.kanji}
               </span>
             </button>
@@ -67,7 +71,7 @@ export function KanjiSelector({ entries }: KanjiSelectorProps) {
       <section className="px-6 py-8 max-w-md mx-auto">
         <button
           onClick={handleBack}
-          className="text-sm text-[var(--color-primary)] mb-4 underline underline-offset-4 bg-transparent"
+          className="text-sm text-[var(--color-primary)] mb-4 underline underline-offset-4 bg-transparent hover:text-[var(--color-accent)] transition-colors"
         >
           {t("selectOther")}
         </button>
