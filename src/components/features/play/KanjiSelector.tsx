@@ -37,6 +37,20 @@ export function KanjiSelector({ entries }: KanjiSelectorProps) {
   }
 
   if (!selectedKanji) {
+    if (entries.length === 0) {
+      return (
+        <section
+          className="px-6 py-12 max-w-md mx-auto text-center space-y-3"
+          aria-live="polite"
+        >
+          <p className="text-5xl" aria-hidden="true">🎴</p>
+          <h1 className="text-xl font-bold">{t("empty.title")}</h1>
+          <p className="text-sm text-[var(--color-primary)]/80">
+            {t("empty.sub")}
+          </p>
+        </section>
+      );
+    }
     return (
       <section className="px-6 py-8 max-w-md mx-auto">
         <h1 className="text-2xl font-extrabold mb-6 text-center">
