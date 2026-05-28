@@ -17,7 +17,9 @@
     "checkingAuth": "Đang kiểm tra đăng nhập...",
     "greeting": "Xin chào,",
     "guestName": "người chơi",
-    "mascotAlt": "Linh vật Kanjido"
+    "mascotAlt": "Linh vật Kanjido",
+    "streakKeptToday": "Streak hôm nay đã được giữ.",
+    "streakComeBack": "Học 1 bài hôm nay để giữ streak."
   },
   "auth": {
     "loginHeading": "Đăng nhập Kanjido",

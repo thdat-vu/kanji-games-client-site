@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { useAuth } from "@/context/auth-context";
+import { HomeStreakStrip } from "@/components/features/streak/HomeStreakStrip";
 
 function Header() {
   const { user, loading } = useAuth();
@@ -47,6 +48,7 @@ export default function Home() {
   return (
     <div className="min-h-screen flex flex-col bg-[var(--color-background)] text-[var(--color-text)] font-sans">
       <Header />
+      <HomeStreakStrip />
 
       <main className="flex-1 w-full md:hidden">
         <div className="h-full max-w-[500px] mx-auto px-6 pt-4 pb-24 flex flex-col">

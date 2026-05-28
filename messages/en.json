@@ -17,7 +17,9 @@
     "checkingAuth": "Checking your session...",
     "greeting": "Hello,",
     "guestName": "player",
-    "mascotAlt": "Kanjido mascot"
+    "mascotAlt": "Kanjido mascot",
+    "streakKeptToday": "Today's streak is safe.",
+    "streakComeBack": "Play one lesson today to keep your streak."
   },
   "auth": {
     "loginHeading": "Sign in to Kanjido",
