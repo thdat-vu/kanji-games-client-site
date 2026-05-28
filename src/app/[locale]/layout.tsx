@@ -1,12 +1,18 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { Inter } from "next/font/google";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import "../globals.css";
-import "@fontsource/inter/vietnamese.css";
 import { AuthProvider } from "@/context/auth-context";
 import { AttributionFooter } from "@/components/AttributionFooter";
 import { routing } from "@/i18n/routing";
+
+const inter = Inter({
+  subsets: ["latin", "vietnamese"],
+  variable: "--font-sans",
+  display: "swap",
+});
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -37,7 +43,7 @@ export default async function LocaleLayout({
   setRequestLocale(locale);
 
   return (
-    <html lang={locale}>
+    <html lang={locale} className={inter.variable}>
       <body className="antialiased">
         <NextIntlClientProvider>
           <AuthProvider>
