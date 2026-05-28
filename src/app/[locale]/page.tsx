@@ -11,7 +11,7 @@ function Header() {
   const tc = useTranslations("common");
 
   return (
-    <header className="grid grid-cols-3 items-center px-6 pt-6 pb-4 md:flex md:justify-between md:px-12 md:pt-8">
+    <header className="grid grid-cols-3 items-center px-6 pt-6 pb-4 md:flex md:justify-between md:px-12 md:pt-8 md:max-w-5xl md:mx-auto md:w-full">
       <div className="text-xl font-bold tracking-wider text-[var(--color-primary)] justify-self-center md:justify-self-auto md:text-2xl">
         {tc("appName")}
       </div>
