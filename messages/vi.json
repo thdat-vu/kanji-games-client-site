@@ -29,6 +29,10 @@
   "play": {
     "selectKanji": "Chọn chữ Kanji",
     "selectOther": "← Chọn chữ khác",
+    "selectLesson": "Chọn bài học",
+    "lessonsHint": "Mỗi bài là một chủ đề Kanji.",
+    "backToLessons": "← Quay lại bài học",
+    "kanjiCount": "{count, plural, one {# Kanji} other {# Kanji}}",
     "answerPlaceholder": "Nhập nghĩa tiếng Việt...",
     "submit": "Trả lời",
     "back": "Quay lại",
@@ -39,6 +43,16 @@
     "notFound": "Không tìm thấy từ này trong dữ liệu.",
     "correctAnswer": "Đáp án đúng",
     "yourAnswer": "Câu trả lời của bạn",
+    "themes": {
+      "numbers": "Số đếm",
+      "time": "Thời gian",
+      "people": "Con người",
+      "body": "Cơ thể",
+      "nature": "Thiên nhiên",
+      "place": "Vị trí",
+      "verbs": "Động từ",
+      "daily_life": "Đời sống"
+    },
     "empty": {
       "title": "Chưa có Kanji nào",
       "sub": "Dữ liệu Kanji đang được chuẩn bị, vui lòng quay lại sau."
