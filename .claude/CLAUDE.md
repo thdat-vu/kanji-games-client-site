@@ -103,6 +103,7 @@ ECC also wires PreToolUse hooks (`gateguard-fact-force`, `governance-capture`, `
 
 ## Pointers
 
+- Project status (living doc): [docs/PROJECT_STATUS.md](docs/PROJECT_STATUS.md) — update after every merged PR
 - Product vision: [README.md](README.md)
 - Current game flow: [src/components/features/play/](src/components/features/play/)
 - Demo data (placeholder): [src/lib/data/kanji-demo.ts](src/lib/data/kanji-demo.ts) — to be replaced by Supabase queries
