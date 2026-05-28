@@ -10,14 +10,14 @@ interface LessonSelectorProps {
 export async function LessonSelector({ lessons }: LessonSelectorProps) {
   const t = await getTranslations("play");
   return (
-    <section className="px-6 py-8 max-w-md mx-auto">
-      <h1 className="text-2xl font-extrabold mb-1 text-center">
+    <section className="px-6 py-8 max-w-md md:max-w-3xl lg:max-w-5xl mx-auto">
+      <h1 className="text-2xl md:text-3xl font-extrabold mb-1 text-center">
         {t("selectLesson")}
       </h1>
-      <p className="text-sm text-center text-[var(--color-primary)]/80 mb-6">
+      <p className="text-sm md:text-base text-center text-[var(--color-primary)]/80 mb-6 md:mb-8">
         {t("lessonsHint")}
       </p>
-      <ul className="grid grid-cols-2 gap-4">
+      <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
         {lessons.map((l) => (
           <li key={l.theme}>
             <Link

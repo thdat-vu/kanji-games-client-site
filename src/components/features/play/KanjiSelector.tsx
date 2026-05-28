@@ -52,11 +52,11 @@ export function KanjiSelector({ entries }: KanjiSelectorProps) {
       );
     }
     return (
-      <section className="px-6 py-8 max-w-md mx-auto">
-        <h1 className="text-2xl font-extrabold mb-6 text-center">
+      <section className="px-6 py-8 max-w-md md:max-w-3xl lg:max-w-5xl mx-auto">
+        <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-center">
           {t("selectKanji")}
         </h1>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-4 md:gap-5">
           {entries.map((entry) => (
             <button
               key={entry.kanji}
@@ -82,7 +82,7 @@ export function KanjiSelector({ entries }: KanjiSelectorProps) {
 
   return (
     <>
-      <section className="px-6 py-8 max-w-md mx-auto">
+      <section className="px-6 py-8 max-w-md md:max-w-2xl mx-auto">
         <button
           onClick={handleBack}
           className="text-sm text-[var(--color-primary)] mb-4 underline underline-offset-4 bg-transparent hover:text-[var(--color-accent)] transition-colors"

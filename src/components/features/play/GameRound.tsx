@@ -88,7 +88,7 @@ export function GameRound({ kanji, word, reading, meaning }: GameRoundProps) {
 
   return (
     <div className="min-h-screen bg-[var(--color-background)] text-[var(--color-text)] flex flex-col">
-      <header className="flex items-center justify-between px-6 py-4">
+      <header className="flex items-center justify-between px-6 md:px-12 py-4 md:py-6 max-w-5xl mx-auto w-full">
         <div className="bg-white/70 border-2 border-[var(--color-primary)] rounded-xl px-3 py-1 shadow-[var(--shadow-soft)]">
           <p className="text-[10px] text-[var(--color-primary)]/80">
             {tc("kanjiBadge")}
@@ -107,15 +107,15 @@ export function GameRound({ kanji, word, reading, meaning }: GameRoundProps) {
         </button>
       </header>
 
-      <main className="flex-1 flex flex-col items-center justify-center px-6 gap-6">
-        <div className="bg-white/70 border-2 border-[var(--color-secondary)] rounded-2xl shadow-[var(--shadow-card)] px-8 py-6 w-full max-w-xs text-center space-y-2">
-          <p className="text-lg text-[var(--color-primary)]/80">{reading}</p>
-          <p className="text-4xl font-extrabold text-[var(--color-primary)]">
+      <main className="flex-1 flex flex-col items-center justify-center px-6 gap-6 md:gap-8">
+        <div className="bg-white/70 border-2 border-[var(--color-secondary)] rounded-2xl shadow-[var(--shadow-card)] px-8 py-6 md:px-12 md:py-8 w-full max-w-xs md:max-w-md text-center space-y-2">
+          <p className="text-lg md:text-xl text-[var(--color-primary)]/80">{reading}</p>
+          <p className="text-4xl md:text-5xl font-extrabold text-[var(--color-primary)]">
             {word}
           </p>
         </div>
 
-        <div className="flex flex-col items-center gap-2 w-full max-w-xs">
+        <div className="flex flex-col items-center gap-2 w-full max-w-xs md:max-w-md">
           <div className="flex items-center gap-2">
             <span className="text-2xl" aria-hidden="true">⏳</span>
             <span className="text-lg font-bold tabular-nums">{timeLeft}s</span>
@@ -135,7 +135,7 @@ export function GameRound({ kanji, word, reading, meaning }: GameRoundProps) {
         </div>
 
         {!revealed ? (
-          <div className="w-full max-w-xs space-y-3">
+          <div className="w-full max-w-xs md:max-w-md space-y-3">
             <input
               type="text"
               value={userAnswer}
@@ -154,7 +154,7 @@ export function GameRound({ kanji, word, reading, meaning }: GameRoundProps) {
             </button>
           </div>
         ) : (
-          <div className="w-full max-w-xs space-y-4">
+          <div className="w-full max-w-xs md:max-w-md space-y-4">
             <div className={`rounded-2xl px-5 py-4 text-center shadow-[var(--shadow-card)] ${bannerStyles} ${bannerAnimation}`}>
               <p className={`text-3xl font-extrabold mb-1 ${titleColor}`}>
                 {resultTitle}
