@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { findWord } from "@/lib/queries/kanji";
 import { GameRound } from "@/components/features/play/GameRound";
+import { KANJI_TO_THEME } from "@/constants/themes";
 
 interface PageProps {
   searchParams: Promise<{ kanji?: string; word?: string }>;
@@ -38,6 +39,7 @@ export default async function GamePage({ searchParams, params }: PageProps) {
       word={wordData.word}
       reading={wordData.reading}
       meaning={wordData.meaning}
+      theme={KANJI_TO_THEME[kanji] ?? null}
     />
   );
 }

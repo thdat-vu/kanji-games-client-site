@@ -1,7 +1,10 @@
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { LessonSelector } from "@/components/features/play/LessonSelector";
+import { StreakBadge } from "@/components/features/streak/StreakBadge";
 import { listThemes } from "@/lib/queries/kanji";
+import { getLessonCompletions, getUserStreak } from "@/lib/queries/streak";
+import type { Theme } from "@/constants/themes";
 
 export const dynamic = "force-dynamic";
 
@@ -13,7 +16,15 @@ export default async function PlayPage({
   const { locale } = await params;
   const tc = await getTranslations({ locale, namespace: "common" });
 
-  const lessons = await listThemes();
+  const [lessons, streak, completions] = await Promise.all([
+    listThemes(),
+    getUserStreak(),
+    getLessonCompletions(),
+  ]);
+
+  const completedThemes: ReadonlySet<Theme> = new Set(
+    completions.map((c) => c.theme)
+  );
 
   return (
     <div className="min-h-screen bg-[var(--color-background)] text-[var(--color-text)]">
@@ -24,9 +35,10 @@ export default async function PlayPage({
         >
           {tc("appName")}
         </Link>
+        <StreakBadge streak={streak?.currentStreak ?? null} />
       </header>
 
-      <LessonSelector lessons={lessons} />
+      <LessonSelector lessons={lessons} completedThemes={completedThemes} />
     </div>
   );
 }
