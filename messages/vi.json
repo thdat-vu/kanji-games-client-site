@@ -69,6 +69,16 @@
       "wrongSub": "Đừng nản, thử lại nhé!",
       "timeoutTitle": "Hết giờ!",
       "timeoutSub": "Bạn chưa kịp trả lời."
+    },
+    "streak": {
+      "ariaLabel": "Chuỗi ngày học: {count} ngày",
+      "label": "{count, plural, one {# ngày} other {# ngày}}",
+      "incrementToast": "🔥 Streak {count}! Giữ vững nhé.",
+      "freezeToast": "Đã dùng vé băng để giữ streak. Đừng nghỉ ngày mai!",
+      "lessonProgress": "Đã thuộc {correct}/{threshold} từ",
+      "lessonComplete": "Hoàn thành bài học! 🎉",
+      "stampLabel": "Đã hoàn thành",
+      "loginPrompt": "Đăng nhập để theo dõi streak."
     }
   },
   "footer": {

@@ -69,6 +69,16 @@
       "wrongSub": "Don't give up — try again.",
       "timeoutTitle": "Time's up!",
       "timeoutSub": "You ran out of time."
+    },
+    "streak": {
+      "ariaLabel": "Daily streak: {count} days",
+      "label": "{count, plural, one {# day} other {# days}}",
+      "incrementToast": "🔥 Streak {count}! Keep it going.",
+      "freezeToast": "Streak saved with a freeze. Don't miss tomorrow!",
+      "lessonProgress": "{correct}/{threshold} words mastered",
+      "lessonComplete": "Lesson cleared! 🎉",
+      "stampLabel": "Completed",
+      "loginPrompt": "Sign in to track your streak."
     }
   },
   "footer": {

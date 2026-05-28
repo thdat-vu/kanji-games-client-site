@@ -1,29 +1,38 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { useRouter } from "@/i18n/navigation";
 import { useGameTimer } from "@/hooks/useGameTimer";
+import { useAuth } from "@/context/auth-context";
+import { markWordCorrect } from "@/lib/queries/streak";
+import type { Theme } from "@/constants/themes";
+import type { MarkWordCorrectResult } from "@/lib/types/streak";
 
 interface GameRoundProps {
   kanji: string;
   word: string;
   reading: string;
   meaning: string;
+  theme: Theme | null;
 }
 
 function normalize(s: string) {
   return s.trim().toLowerCase().replace(/\s+/g, " ");
 }
 
-export function GameRound({ kanji, word, reading, meaning }: GameRoundProps) {
+export function GameRound({ kanji, word, reading, meaning, theme }: GameRoundProps) {
   const router = useRouter();
   const t = useTranslations("play");
   const tc = useTranslations("common");
+  const tStreak = useTranslations("play.streak");
+  const { user } = useAuth();
   const { timeLeft, percent, expired, stop, reset } = useGameTimer();
 
   const [revealed, setRevealed] = useState(false);
   const [userAnswer, setUserAnswer] = useState("");
+  const [streakResult, setStreakResult] =
+    useState<MarkWordCorrectResult | null>(null);
 
   const handleReveal = useCallback(() => {
     stop();
@@ -33,6 +42,7 @@ export function GameRound({ kanji, word, reading, meaning }: GameRoundProps) {
   const handleReset = useCallback(() => {
     setRevealed(false);
     setUserAnswer("");
+    setStreakResult(null);
     reset();
   }, [reset]);
 
@@ -49,6 +59,21 @@ export function GameRound({ kanji, word, reading, meaning }: GameRoundProps) {
 
   const isTimedOut = revealed && expired && userAnswer.trim() === "";
   const isWrong = revealed && !isCorrect && !isTimedOut;
+
+  useEffect(() => {
+    if (!isCorrect || !user || !theme) return;
+    const tz =
+      Intl.DateTimeFormat().resolvedOptions().timeZone || "UTC";
+    let cancelled = false;
+    markWordCorrect(theme, word, tz)
+      .then((res) => {
+        if (!cancelled && res) setStreakResult(res);
+      })
+      .catch(() => {});
+    return () => {
+      cancelled = true;
+    };
+  }, [isCorrect, user, theme, word]);
 
   const resultTitle = isCorrect
     ? t("result.correctTitle")
@@ -85,6 +110,17 @@ export function GameRound({ kanji, word, reading, meaning }: GameRoundProps) {
     amber: "text-amber-700",
     red: "text-red-700",
   }[resultColor];
+
+  const showStreakToast =
+    streakResult &&
+    (streakResult.streakDelta.kind === "increment" ||
+      streakResult.streakDelta.kind === "freeze_used");
+  const streakToastText =
+    streakResult?.streakDelta.kind === "freeze_used"
+      ? tStreak("freezeToast")
+      : streakResult
+        ? tStreak("incrementToast", { count: streakResult.currentStreak })
+        : "";
 
   return (
     <div className="min-h-screen bg-[var(--color-background)] text-[var(--color-text)] flex flex-col">
@@ -161,6 +197,49 @@ export function GameRound({ kanji, word, reading, meaning }: GameRoundProps) {
               </p>
               <p className={`text-sm ${subColor}`}>{resultSub}</p>
             </div>
+
+            {isCorrect && streakResult && (
+              <div className="bg-white/80 border-2 border-[var(--color-secondary)] rounded-xl px-4 py-3 text-center space-y-2">
+                <p className="text-sm text-[var(--color-primary)]/80">
+                  {tStreak("lessonProgress", {
+                    correct: streakResult.wordsCorrect,
+                    threshold: streakResult.threshold,
+                  })}
+                </p>
+                <div
+                  className="w-full h-2 bg-[var(--color-secondary)] rounded-full overflow-hidden"
+                  role="progressbar"
+                  aria-valuenow={Math.min(streakResult.wordsCorrect, streakResult.threshold)}
+                  aria-valuemin={0}
+                  aria-valuemax={streakResult.threshold}
+                >
+                  <div
+                    className="h-full bg-green-500 rounded-full transition-all duration-500"
+                    style={{
+                      width: `${Math.min(100, (streakResult.wordsCorrect / streakResult.threshold) * 100)}%`,
+                    }}
+                  />
+                </div>
+                {streakResult.lessonJustCompleted && (
+                  <p className="text-base font-bold text-green-700">
+                    {tStreak("lessonComplete")}
+                  </p>
+                )}
+                {showStreakToast && (
+                  <p className="text-sm font-bold text-[var(--color-accent)] animate-[successPulse_0.5s_ease-out]">
+                    {streakToastText}
+                  </p>
+                )}
+              </div>
+            )}
+
+            {isCorrect && !user && theme && (
+              <div className="bg-white/80 border-2 border-[var(--color-secondary)] rounded-xl px-4 py-3 text-center">
+                <p className="text-sm text-[var(--color-primary)]/80">
+                  {tStreak("loginPrompt")}
+                </p>
+              </div>
+            )}
 
             {isWrong && userAnswer.trim() && (
               <div className="bg-white/80 border-2 border-red-300 rounded-xl px-4 py-3 text-center">
