@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { useAuth } from "@/context/auth-context";
 import { HomeStreakStrip } from "@/components/features/streak/HomeStreakStrip";
+import { UserMenu } from "@/components/features/auth/UserMenu";
 
 function Header() {
   const { user, loading } = useAuth();
@@ -22,12 +23,7 @@ function Header() {
             {t("checkingAuth")}
           </span>
         ) : user ? (
-          <span className="text-xs text-[var(--color-primary)]/90 md:text-sm">
-            {t("greeting")}{" "}
-            <span className="font-semibold">
-              {user.user_metadata.full_name || user.email || t("guestName")}
-            </span>
-          </span>
+          <UserMenu />
         ) : (
           <Link
             href="/auth/login"

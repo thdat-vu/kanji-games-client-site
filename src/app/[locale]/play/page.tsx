@@ -2,6 +2,7 @@ import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { LessonSelector } from "@/components/features/play/LessonSelector";
 import { StreakBadge } from "@/components/features/streak/StreakBadge";
+import { UserMenu } from "@/components/features/auth/UserMenu";
 import { listThemes } from "@/lib/queries/kanji";
 import { getLessonCompletions, getUserStreak } from "@/lib/queries/streak";
 import type { Theme } from "@/constants/themes";
@@ -35,7 +36,10 @@ export default async function PlayPage({
         >
           {tc("appName")}
         </Link>
-        <StreakBadge streak={streak?.currentStreak ?? null} />
+        <div className="flex items-center gap-3">
+          <StreakBadge streak={streak?.currentStreak ?? null} />
+          <UserMenu />
+        </div>
       </header>
 
       <LessonSelector lessons={lessons} completedThemes={completedThemes} />

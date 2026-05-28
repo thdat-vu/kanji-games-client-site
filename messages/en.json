@@ -26,7 +26,10 @@
     "loginSubtitle": "Sign in to save your kanji learning progress.",
     "signInWithGoogle": "Sign in with Google",
     "redirecting": "Redirecting...",
-    "genericError": "Something went wrong, please try again."
+    "genericError": "Something went wrong, please try again.",
+    "menuLabel": "Open account menu",
+    "signOut": "Sign out",
+    "signingOut": "Signing out..."
   },
   "play": {
     "selectKanji": "Pick a kanji",
