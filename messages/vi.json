@@ -26,7 +26,10 @@
     "loginSubtitle": "Đăng nhập để lưu tiến trình học Kanji của bạn.",
     "signInWithGoogle": "Đăng nhập bằng Google",
     "redirecting": "Đang chuyển hướng...",
-    "genericError": "Có lỗi xảy ra, vui lòng thử lại."
+    "genericError": "Có lỗi xảy ra, vui lòng thử lại.",
+    "menuLabel": "Mở menu tài khoản",
+    "signOut": "Đăng xuất",
+    "signingOut": "Đang đăng xuất..."
   },
   "play": {
     "selectKanji": "Chọn chữ Kanji",
