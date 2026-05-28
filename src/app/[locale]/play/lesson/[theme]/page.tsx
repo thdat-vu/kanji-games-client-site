@@ -25,10 +25,10 @@ export default async function LessonPage({
 
   return (
     <div className="min-h-screen bg-[var(--color-background)] text-[var(--color-text)]">
-      <header className="flex items-center justify-between px-6 py-4">
+      <header className="flex items-center justify-between px-6 md:px-12 py-4 md:py-6 max-w-5xl mx-auto w-full">
         <Link
           href="/"
-          className="text-lg font-bold tracking-wider text-[var(--color-primary)] no-underline"
+          className="text-lg md:text-xl font-bold tracking-wider text-[var(--color-primary)] no-underline"
         >
           {tc("appName")}
         </Link>
@@ -40,7 +40,7 @@ export default async function LessonPage({
         </Link>
       </header>
 
-      <h2 className="text-center text-xl font-bold text-[var(--color-primary)]">
+      <h2 className="text-center text-xl md:text-2xl font-bold text-[var(--color-primary)]">
         {tp(`themes.${theme}`)}
       </h2>
 
