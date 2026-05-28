@@ -33,7 +33,7 @@ export function WordListModal({
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 px-4 backdrop-blur-sm"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 px-4 backdrop-blur-sm animate-[fadeIn_0.18s_ease-out]"
       onClick={onClose}
       role="dialog"
       aria-modal="true"
@@ -41,7 +41,7 @@ export function WordListModal({
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="bg-[var(--window-bg)] border-2 border-[var(--window-border)] rounded shadow-[var(--shadow-window)] w-full max-w-xs"
+        className="bg-[var(--window-bg)] border-2 border-[var(--window-border)] rounded shadow-[var(--shadow-window)] w-full max-w-xs animate-[scaleIn_0.22s_ease-out]"
       >
         <div className="flex items-center justify-between bg-gradient-to-r from-[var(--window-titlebar-from)] to-[var(--window-titlebar-to)] px-3 py-1.5 border-b border-[var(--window-border)]">
           <div className="flex items-center gap-2">

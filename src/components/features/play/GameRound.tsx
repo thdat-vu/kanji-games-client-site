@@ -70,6 +70,10 @@ export function GameRound({ kanji, word, reading, meaning }: GameRoundProps) {
     red: "bg-red-100 border-2 border-red-400",
   }[resultColor];
 
+  const bannerAnimation = isCorrect
+    ? "animate-[successPulse_0.5s_ease-out]"
+    : "animate-[shake_0.4s_ease-out]";
+
   const titleColor = {
     green: "text-green-600",
     amber: "text-amber-600",
@@ -151,7 +155,7 @@ export function GameRound({ kanji, word, reading, meaning }: GameRoundProps) {
           </div>
         ) : (
           <div className="w-full max-w-xs space-y-4">
-            <div className={`rounded-2xl px-5 py-4 text-center shadow-[var(--shadow-card)] ${bannerStyles}`}>
+            <div className={`rounded-2xl px-5 py-4 text-center shadow-[var(--shadow-card)] ${bannerStyles} ${bannerAnimation}`}>
               <p className={`text-3xl font-extrabold mb-1 ${titleColor}`}>
                 {resultTitle}
               </p>
