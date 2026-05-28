@@ -1,5 +1,6 @@
 import { createClient } from "@/lib/supabase/server";
 import { JLPT_LEVELS, type JLPTLevel } from "@/constants/constants";
+import { KANJI_TO_THEME, THEMES, type Theme } from "@/constants/themes";
 import type {
   KanjiEntry,
   KanjiLevel,
@@ -82,4 +83,35 @@ export async function findWord(
     | WordRow
     | null;
   return w ? toWord(w) : null;
+}
+
+export interface LessonSummary {
+  theme: Theme;
+  kanjiCount: number;
+}
+
+export async function listThemes(): Promise<LessonSummary[]> {
+  const supabase = await createClient();
+  const { data, error } = await supabase.from("kanji").select("char");
+  if (error) throw error;
+
+  const counts: Record<Theme, number> = THEMES.reduce(
+    (acc, t) => {
+      acc[t] = 0;
+      return acc;
+    },
+    {} as Record<Theme, number>
+  );
+
+  for (const row of data ?? []) {
+    const theme = KANJI_TO_THEME[row.char];
+    if (theme) counts[theme] += 1;
+  }
+
+  return THEMES.map((theme) => ({ theme, kanjiCount: counts[theme] }));
+}
+
+export async function listKanjiByTheme(theme: Theme): Promise<KanjiEntry[]> {
+  const all = await listKanjiWithLevels();
+  return all.filter((entry) => KANJI_TO_THEME[entry.kanji] === theme);
 }

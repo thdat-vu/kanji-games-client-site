@@ -29,6 +29,10 @@
   "play": {
     "selectKanji": "Pick a kanji",
     "selectOther": "← Pick another",
+    "selectLesson": "Pick a lesson",
+    "lessonsHint": "Each lesson is a kanji theme.",
+    "backToLessons": "← Back to lessons",
+    "kanjiCount": "{count, plural, one {# kanji} other {# kanji}}",
     "answerPlaceholder": "Type the meaning in English...",
     "submit": "Answer",
     "back": "Back",
@@ -39,6 +43,16 @@
     "notFound": "We couldn't find that word.",
     "correctAnswer": "Correct answer",
     "yourAnswer": "Your answer",
+    "themes": {
+      "numbers": "Numbers",
+      "time": "Time",
+      "people": "People",
+      "body": "Body",
+      "nature": "Nature",
+      "place": "Place",
+      "verbs": "Verbs",
+      "daily_life": "Daily life"
+    },
     "empty": {
       "title": "No kanji yet",
       "sub": "The kanji set is being prepared, please check back later."

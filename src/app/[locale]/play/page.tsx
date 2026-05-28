@@ -1,7 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { KanjiSelector } from "@/components/features/play/KanjiSelector";
-import { listKanjiWithLevels } from "@/lib/queries/kanji";
+import { LessonSelector } from "@/components/features/play/LessonSelector";
+import { listThemes } from "@/lib/queries/kanji";
 
 export const dynamic = "force-dynamic";
 
@@ -13,7 +13,7 @@ export default async function PlayPage({
   const { locale } = await params;
   const tc = await getTranslations({ locale, namespace: "common" });
 
-  const entries = await listKanjiWithLevels();
+  const lessons = await listThemes();
 
   return (
     <div className="min-h-screen bg-[var(--color-background)] text-[var(--color-text)]">
@@ -26,7 +26,7 @@ export default async function PlayPage({
         </Link>
       </header>
 
-      <KanjiSelector entries={entries} />
+      <LessonSelector lessons={lessons} />
     </div>
   );
 }
