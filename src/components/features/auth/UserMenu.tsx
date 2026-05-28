@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { useRouter, usePathname } from "@/i18n/navigation";
 import { useAuth } from "@/context/auth-context";
@@ -15,6 +14,7 @@ export function UserMenu() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [signingOut, setSigningOut] = useState(false);
+  const [avatarBroken, setAvatarBroken] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -63,14 +63,16 @@ export function UserMenu() {
         onClick={() => setOpen((v) => !v)}
         className="flex items-center gap-2 rounded-full bg-white/80 border-2 border-[var(--color-secondary)] pl-1 pr-3 py-1 shadow-[var(--shadow-soft)] hover:border-[var(--color-primary)] transition-colors"
       >
-        {avatarUrl ? (
-          <Image
+        {avatarUrl && !avatarBroken ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
             src={avatarUrl}
             alt=""
             width={28}
             height={28}
             className="rounded-full"
-            unoptimized
+            referrerPolicy="no-referrer"
+            onError={() => setAvatarBroken(true)}
           />
         ) : (
           <span className="w-7 h-7 rounded-full bg-[var(--color-primary)] text-white font-bold text-sm flex items-center justify-center">
