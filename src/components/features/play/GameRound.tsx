@@ -6,6 +6,7 @@ import { useRouter } from "@/i18n/navigation";
 import { useGameTimer } from "@/hooks/useGameTimer";
 import { useAuth } from "@/context/auth-context";
 import { markWordCorrect } from "@/lib/queries/streak";
+import { isAnswerCorrect } from "@/lib/play/answer";
 import type { Theme } from "@/constants/themes";
 import type { MarkWordCorrectResult } from "@/lib/types/streak";
 
@@ -15,10 +16,6 @@ interface GameRoundProps {
   reading: string;
   meaning: string;
   theme: Theme | null;
-}
-
-function normalize(s: string) {
-  return s.trim().toLowerCase().replace(/\s+/g, " ");
 }
 
 export function GameRound({ kanji, word, reading, meaning, theme }: GameRoundProps) {
@@ -51,11 +48,7 @@ export function GameRound({ kanji, word, reading, meaning, theme }: GameRoundPro
   }
 
   const isCorrect =
-    revealed &&
-    userAnswer.trim() !== "" &&
-    normalize(meaning)
-      .split(",")
-      .some((part) => normalize(userAnswer) === normalize(part));
+    revealed && userAnswer.trim() !== "" && isAnswerCorrect(userAnswer, meaning);
 
   const isTimedOut = revealed && expired && userAnswer.trim() === "";
   const isWrong = revealed && !isCorrect && !isTimedOut;
