@@ -55,7 +55,7 @@
       "lead": "Mỗi Kanji có nhiều cấp JLPT N5 → N1. Bắt đầu từ cấp dễ nhất.",
       "s1": "Bấm vào 1 chữ Kanji để xem các cấp độ N5 → N1.",
       "s2": "Bấm vào cấp có sẵn từ vựng để vào màn chơi.",
-      "s3": "Cấp chưa mở khóa nghĩa là chưa có dữ liệu — quay lại sau nhé.",
+      "s3": "Cấp ghi 'Sắp có' nghĩa là chưa có từ vựng cho cấp đó — quay lại sau nhé.",
       "tip": "Mẹo: bắt đầu từ N5 rồi tiến dần lên — không cần ép từ N1 ngay."
     },
     "game": {
@@ -84,7 +84,7 @@
     "levelMap": {
       "ariaLabel": "Cấp độ JLPT",
       "wordCount": "{count, plural, =0 {Chưa có từ} other {# từ}}",
-      "locked": "Chưa mở khoá",
+      "locked": "Sắp có",
       "label": {
         "N5": "Sơ cấp",
         "N4": "Sơ trung cấp",
