@@ -15,6 +15,7 @@ export function UserMenu() {
   const [open, setOpen] = useState(false);
   const [signingOut, setSigningOut] = useState(false);
   const [avatarBroken, setAvatarBroken] = useState(false);
+  const [tutorialResetMsg, setTutorialResetMsg] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -51,6 +52,19 @@ export function UserMenu() {
     setSigningOut(false);
     router.replace(pathname);
     router.refresh();
+  }
+
+  function handleResetTutorial() {
+    if (typeof window === "undefined") return;
+    const keys = Object.keys(window.localStorage).filter((k) =>
+      k.startsWith("kanjido_onboarded_")
+    );
+    for (const k of keys) window.localStorage.removeItem(k);
+    setTutorialResetMsg(true);
+    window.setTimeout(() => {
+      setTutorialResetMsg(false);
+      setOpen(false);
+    }, 1400);
   }
 
   return (
@@ -102,6 +116,14 @@ export function UserMenu() {
               </p>
             )}
           </div>
+          <button
+            role="menuitem"
+            onClick={handleResetTutorial}
+            disabled={tutorialResetMsg}
+            className="w-full text-left px-4 py-3 text-sm font-medium text-[var(--color-primary)] hover:bg-[var(--color-secondary)]/40 transition-colors disabled:opacity-60 border-b border-[var(--color-secondary)]/60 cursor-pointer"
+          >
+            {tutorialResetMsg ? t("tutorialReset") : t("resetTutorial")}
+          </button>
           <button
             role="menuitem"
             onClick={handleSignOut}

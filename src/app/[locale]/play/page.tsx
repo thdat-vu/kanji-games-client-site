@@ -4,6 +4,7 @@ import { StreakBadge } from "@/components/features/streak/StreakBadge";
 import { UserMenu } from "@/components/features/auth/UserMenu";
 import { LocaleSwitcher } from "@/components/LocaleSwitcher";
 import { BrandTypewriter } from "@/components/BrandTypewriter";
+import { HelpButton } from "@/components/HelpButton";
 import { listThemes } from "@/lib/queries/kanji";
 import { getLessonCompletions, getUserStreak } from "@/lib/queries/streak";
 import type { Theme } from "@/constants/themes";
@@ -38,6 +39,7 @@ export default async function PlayPage({
         </Link>
         <div className="flex items-center gap-3">
           <StreakBadge streak={streak?.currentStreak ?? null} />
+          <HelpButton screen="play" />
           <LocaleSwitcher />
           <UserMenu />
         </div>

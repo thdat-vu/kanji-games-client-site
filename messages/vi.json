@@ -34,7 +34,45 @@
     "genericError": "Có lỗi xảy ra, vui lòng thử lại.",
     "menuLabel": "Mở menu tài khoản",
     "signOut": "Đăng xuất",
-    "signingOut": "Đang đăng xuất..."
+    "signingOut": "Đang đăng xuất...",
+    "resetTutorial": "Xem lại hướng dẫn",
+    "tutorialReset": "Đã bật lại hướng dẫn cho lần chơi tới."
+  },
+  "help": {
+    "openLabel": "Xem hướng dẫn",
+    "close": "Đóng",
+    "ok": "Đã hiểu",
+    "play": {
+      "title": "Cách chọn bài học",
+      "lead": "Mỗi ô là một chủ đề Kanji. Hoàn thành đủ từ để đóng dấu ✓.",
+      "s1": "Chọn 1 chủ đề bất kỳ — bắt đầu với chủ đề bạn thấy quen.",
+      "s2": "Mỗi ngày chơi ít nhất 1 bài để giữ chuỗi 🔥 streak.",
+      "s3": "Hoàn thành 5 từ khác nhau trong cùng chủ đề để đóng dấu bài học.",
+      "tip": "Mẹo: thanh streak đầu trang nhắc bạn hôm nay đã chơi chưa."
+    },
+    "lesson": {
+      "title": "Cách chọn Kanji & cấp độ",
+      "lead": "Mỗi Kanji có nhiều cấp JLPT N5 → N1. Bắt đầu từ cấp dễ nhất.",
+      "s1": "Bấm vào 1 chữ Kanji để xem các cấp độ N5 → N1.",
+      "s2": "Bấm vào cấp có sẵn từ vựng để vào màn chơi.",
+      "s3": "Cấp chưa mở khóa nghĩa là chưa có dữ liệu — quay lại sau nhé.",
+      "tip": "Mẹo: bắt đầu từ N5 rồi tiến dần lên — không cần ép từ N1 ngay."
+    },
+    "game": {
+      "title": "Cách chơi vòng đấu",
+      "lead": "Trả lời trước khi đồng hồ về 0 để ghi sao.",
+      "s1": "Chọn chế độ Nghĩa hoặc Cách đọc — đồng hồ chỉ chạy sau khi chọn.",
+      "s2": "Gõ câu trả lời rồi bấm Trả lời. Nhiều biến thể đều được chấp nhận.",
+      "s3": "Còn ≥20s = 3⭐, ≥10s = 2⭐, đúng = 1⭐, sai/hết giờ = 0⭐.",
+      "s4": "Trả lời đúng 5 từ khác nhau trong chủ đề để hoàn thành bài học.",
+      "tip": "Mẹo: ở chế độ Cách đọc chỉ cần gõ phần đọc của ô trống bên trên."
+    },
+    "banner": {
+      "title": "Mới chơi lần đầu?",
+      "body": "Bấm vào icon ❓ ở góc trên để xem cách chơi bất cứ lúc nào.",
+      "openCta": "Xem hướng dẫn",
+      "dismiss": "Đã hiểu"
+    }
   },
   "play": {
     "selectKanji": "Chọn chữ Kanji",
