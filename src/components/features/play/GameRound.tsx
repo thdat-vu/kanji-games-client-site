@@ -12,6 +12,8 @@ import { isReadingCorrect, displayReadings } from "@/lib/play/reading";
 import { gradeStars } from "@/lib/play/stars";
 import { StarRow } from "@/components/features/play/StarRow";
 import { LocaleSwitcher } from "@/components/LocaleSwitcher";
+import { HelpButton } from "@/components/HelpButton";
+import { GameOnboardingBanner } from "@/components/features/play/GameOnboardingBanner";
 import type { Theme } from "@/constants/themes";
 import type { MarkWordCorrectResult } from "@/lib/types/streak";
 
@@ -216,6 +218,7 @@ export function GameRound({
           </p>
         </div>
         <div className="flex items-center gap-3">
+          <HelpButton screen="game" />
           <LocaleSwitcher />
           <button
             onClick={() => router.back()}
@@ -231,6 +234,7 @@ export function GameRound({
       <main className="flex-1 flex flex-col items-center justify-center px-6 pb-10 md:pb-14 gap-6 md:gap-8">
         {mode === null ? (
           <div className="w-full max-w-md flex flex-col items-center gap-5 text-center">
+            <GameOnboardingBanner />
             <h2 className="text-xl md:text-2xl font-bold text-[var(--color-primary)]">
               {tMode("pickPrompt")}
             </h2>

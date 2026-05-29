@@ -34,7 +34,45 @@
     "genericError": "Something went wrong, please try again.",
     "menuLabel": "Open account menu",
     "signOut": "Sign out",
-    "signingOut": "Signing out..."
+    "signingOut": "Signing out...",
+    "resetTutorial": "Replay tutorial",
+    "tutorialReset": "Tutorial will show again next time you play."
+  },
+  "help": {
+    "openLabel": "Open tutorial",
+    "close": "Close",
+    "ok": "Got it",
+    "play": {
+      "title": "How to pick a lesson",
+      "lead": "Each tile is a kanji theme. Master enough words to stamp it ✓.",
+      "s1": "Pick any theme — start with one that feels familiar.",
+      "s2": "Play at least one lesson a day to keep your 🔥 streak.",
+      "s3": "Get 5 distinct words right in a theme to stamp the lesson.",
+      "tip": "Tip: the streak chip in the header reminds you whether you've played today."
+    },
+    "lesson": {
+      "title": "How to pick a kanji & level",
+      "lead": "Each kanji has multiple JLPT levels N5 → N1. Start with the easiest.",
+      "s1": "Tap a kanji to reveal levels N5 → N1.",
+      "s2": "Tap a level that has words to start a round.",
+      "s3": "Locked levels just have no data yet — come back later.",
+      "tip": "Tip: start at N5 and climb up gradually — no need to jump to N1."
+    },
+    "game": {
+      "title": "How a round works",
+      "lead": "Answer before the timer runs out to earn stars.",
+      "s1": "Pick Meaning or Reading — the timer only starts after you choose.",
+      "s2": "Type your answer and submit. Many phrasings are accepted.",
+      "s3": "≥20s = 3⭐, ≥10s = 2⭐, correct = 1⭐, wrong/timeout = 0⭐.",
+      "s4": "Get 5 distinct words right in the theme to complete the lesson.",
+      "tip": "Tip: in Reading mode you only need to type the reading of the blanked-out cell."
+    },
+    "banner": {
+      "title": "First time here?",
+      "body": "Tap the ❓ icon at the top anytime to see how to play.",
+      "openCta": "Show tutorial",
+      "dismiss": "Got it"
+    }
   },
   "play": {
     "selectKanji": "Pick a kanji",

@@ -4,6 +4,7 @@ import { Link } from "@/i18n/navigation";
 import { KanjiSelector } from "@/components/features/play/KanjiSelector";
 import { LocaleSwitcher } from "@/components/LocaleSwitcher";
 import { BrandTypewriter } from "@/components/BrandTypewriter";
+import { HelpButton } from "@/components/HelpButton";
 import { listKanjiByTheme } from "@/lib/queries/kanji";
 import { THEMES, type Theme } from "@/constants/themes";
 
@@ -34,6 +35,7 @@ export default async function LessonPage({
           <BrandTypewriter />
         </Link>
         <div className="flex items-center gap-3">
+          <HelpButton screen="lesson" />
           <LocaleSwitcher />
           <Link
             href="/play"
