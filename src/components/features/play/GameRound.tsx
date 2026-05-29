@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState, useCallback, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { useRouter } from "@/i18n/navigation";
@@ -243,7 +244,14 @@ export function GameRound({
                   hover:border-[var(--color-primary)] hover:-translate-y-0.5 active:translate-y-0
                   transition flex flex-col items-center gap-2"
               >
-                <span className="text-3xl" aria-hidden="true">📖</span>
+                <Image
+                  src="/assets/icons/meaning.png"
+                  alt=""
+                  width={48}
+                  height={48}
+                  className="h-12 w-12 object-contain"
+                  aria-hidden="true"
+                />
                 <span className="text-base font-bold text-[var(--color-primary)]">
                   {tMode("meaning")}
                 </span>
@@ -259,7 +267,14 @@ export function GameRound({
                   transition flex flex-col items-center gap-2
                   disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:border-[var(--color-secondary)] disabled:hover:translate-y-0"
               >
-                <span className="text-3xl" aria-hidden="true">🔊</span>
+                <Image
+                  src="/assets/icons/reading.png"
+                  alt=""
+                  width={48}
+                  height={48}
+                  className="h-12 w-12 object-contain"
+                  aria-hidden="true"
+                />
                 <span className="text-base font-bold text-[var(--color-primary)]">
                   {tMode("reading")}
                 </span>
