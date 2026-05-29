@@ -12,7 +12,7 @@ A gamified kanji learning web app for Vietnamese and international JLPT learners
 
 ## ▶︎ Try it live
 
-**Kanjido runs in your browser at `<deployed Vercel URL — set GITHUB_REPO_URL in .env to surface in footer>`.** Anonymous works — no sign-in needed for the core flow. Optional Google sign-in (Supabase Auth) unlocks the streak loop, lesson stamps, and star-grading per word.
+**Kanjido runs in your browser at `https://kanjido.vercel.app/`.** Anonymous works — no sign-in needed for the core flow. Optional Google sign-in (Supabase Auth) unlocks the streak loop, lesson stamps, and star-grading per word.
 
 Suggested first run:
 
