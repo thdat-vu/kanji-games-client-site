@@ -70,7 +70,7 @@ export default function Home() {
           <section className="pt-4 text-center">
             <h1 className="text-3xl font-extrabold leading-tight text-[var(--color-primary)]">
               {t("heroTitleStart")}{" "}
-              <span className="text-[var(--color-accent)]">
+              <span className="text-[var(--color-accent-soft)]">
                 {t("heroTitleHighlight")}
               </span>
               .
@@ -83,7 +83,7 @@ export default function Home() {
         <section className="max-w-[560px]">
           <h1 className="text-[3.5rem] font-extrabold leading-tight text-[var(--color-primary)]">
             {t("heroTitleStart")}{" "}
-            <span className="text-[var(--color-accent)]">
+            <span className="text-[var(--color-accent-soft)]">
               {t("heroTitleHighlight")}
             </span>
             .
