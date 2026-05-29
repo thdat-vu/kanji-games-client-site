@@ -43,6 +43,18 @@
     "lessonsHint": "Mỗi bài là một chủ đề Kanji.",
     "backToLessons": "← Quay lại bài học",
     "kanjiCount": "{count, plural, one {# Kanji} other {# Kanji}}",
+    "levelMap": {
+      "ariaLabel": "Cấp độ JLPT",
+      "wordCount": "{count, plural, =0 {Chưa có từ} other {# từ}}",
+      "locked": "Chưa mở khoá",
+      "label": {
+        "N5": "Sơ cấp",
+        "N4": "Sơ trung cấp",
+        "N3": "Trung cấp",
+        "N2": "Cao cấp",
+        "N1": "Thượng cấp"
+      }
+    },
     "answerPlaceholder": "Nhập nghĩa tiếng Việt...",
     "readingPlaceholder": "Nhập cách đọc (hiragana)...",
     "readingHint": "Đọc chữ Kanji được che",

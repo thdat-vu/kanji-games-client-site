@@ -10,11 +10,3 @@ export const LEVEL_COLORS: Record<JLPTLevel, string> = {
   N2: "bg-stone-600 text-white",
   N1: "bg-stone-800 text-white",
 };
-
-export const LEVEL_POSITIONS = [
-  "col-start-1 row-start-3",
-  "col-start-3 row-start-3",
-  "col-start-2 row-start-2",
-  "col-start-1 row-start-1",
-  "col-start-3 row-start-1",
-] as const;
