@@ -128,7 +128,7 @@ export function GameRound({ kanji, word, reading, meaning, theme }: GameRoundPro
   const displayStars = (streakResult?.stars ?? localStars) as 0 | 1 | 2 | 3;
 
   return (
-    <div className="min-h-screen bg-[var(--color-background)] text-[var(--color-text)] flex flex-col">
+    <div className="min-h-screen text-[var(--color-text)] flex flex-col">
       <header className="flex items-center justify-between px-6 md:px-12 py-4 md:py-6 max-w-5xl mx-auto w-full">
         <div className="bg-white/70 border-2 border-[var(--color-primary)] rounded-xl px-3 py-1 shadow-[var(--shadow-soft)]">
           <p className="text-[10px] text-[var(--color-primary)]/80">

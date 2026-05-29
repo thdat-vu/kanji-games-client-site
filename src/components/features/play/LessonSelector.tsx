@@ -1,6 +1,7 @@
+import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { THEME_ICONS, type Theme } from "@/constants/themes";
+import { THEME_ICON_SRC, type Theme } from "@/constants/themes";
 import type { LessonSummary } from "@/lib/queries/kanji";
 
 interface LessonSelectorProps {
@@ -42,9 +43,14 @@ export async function LessonSelector({
                     ✓
                   </span>
                 )}
-                <span className="text-3xl" aria-hidden="true">
-                  {THEME_ICONS[l.theme]}
-                </span>
+                <Image
+                  src={THEME_ICON_SRC[l.theme]}
+                  alt=""
+                  width={48}
+                  height={48}
+                  className="h-12 w-12 object-contain"
+                  aria-hidden="true"
+                />
                 <span className="text-base font-bold text-[var(--color-primary)] text-center">
                   {t(`themes.${l.theme}`)}
                 </span>

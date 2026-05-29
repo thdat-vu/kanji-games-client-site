@@ -18,7 +18,7 @@ export default function LessonError({ error, reset }: ErrorProps) {
   }, [error]);
 
   return (
-    <div className="min-h-screen bg-[var(--color-background)] text-[var(--color-text)] flex items-center justify-center px-4">
+    <div className="min-h-screen text-[var(--color-text)] flex items-center justify-center px-4">
       <div className="max-w-sm w-full bg-white/80 rounded-2xl border-2 border-[var(--color-secondary)] shadow-[var(--shadow-card)] p-8 text-center space-y-3">
         <p className="text-5xl" aria-hidden="true">🍵</p>
         <h2 className="text-xl font-bold">{t("title")}</h2>

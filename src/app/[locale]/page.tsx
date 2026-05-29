@@ -42,7 +42,12 @@ export default function Home() {
   const t = useTranslations("home");
 
   return (
-    <div className="min-h-screen flex flex-col bg-[var(--color-background)] text-[var(--color-text)] font-sans">
+    <div className="relative min-h-screen flex flex-col text-[var(--color-text)] font-sans">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 -z-10 bg-cover bg-center bg-no-repeat opacity-60"
+        style={{ backgroundImage: "url('/assets/images/landinghero_kanjido.png')" }}
+      />
       <Header />
       <HomeStreakStrip />
 
@@ -50,11 +55,11 @@ export default function Home() {
         <div className="h-full max-w-[500px] mx-auto px-6 pt-4 pb-24 flex flex-col">
           <section className="flex-1 flex items-end justify-center pb-4">
             <Image
-              src="/assets/images/avatar.jpeg"
+              src="/assets/images/mascot.png"
               alt={t("mascotAlt")}
               width={350}
               height={350}
-              className="w-[280px] rounded-3xl shadow-[var(--shadow-card)]"
+              className="w-[280px] drop-shadow-[0_8px_32px_rgba(121,105,98,0.18)]"
               priority
             />
           </section>
@@ -87,11 +92,11 @@ export default function Home() {
         </section>
         <section className="flex items-center justify-center">
           <Image
-            src="/assets/images/avatar.jpeg"
+            src="/assets/images/mascot.png"
             alt={t("mascotAlt")}
             width={350}
             height={350}
-            className="w-[350px] rounded-3xl shadow-[var(--shadow-card)]"
+            className="w-[350px] drop-shadow-[0_12px_40px_rgba(121,105,98,0.2)]"
             priority
           />
         </section>

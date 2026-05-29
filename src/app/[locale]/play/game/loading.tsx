@@ -3,7 +3,7 @@ import { getTranslations } from "next-intl/server";
 export default async function GameLoading() {
   const t = await getTranslations("play");
   return (
-    <div className="min-h-screen bg-[var(--color-background)] text-[var(--color-text)] flex flex-col">
+    <div className="min-h-screen text-[var(--color-text)] flex flex-col">
       <header className="flex items-center justify-between px-6 py-4">
         <div className="h-12 w-16 rounded-xl bg-[var(--color-secondary)]/70 animate-pulse" />
         <div className="h-8 w-8 rounded-full bg-[var(--color-secondary)]/70 animate-pulse" />
