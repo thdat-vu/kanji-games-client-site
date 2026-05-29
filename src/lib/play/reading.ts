@@ -41,3 +41,18 @@ export function isReadingCorrect(
   if (!input) return false;
   return buildReadingSet(on, kun).has(input);
 }
+
+export function displayReadings(
+  on: readonly string[],
+  kun: readonly string[]
+): string[] {
+  const seen = new Set<string>();
+  const out: string[] = [];
+  for (const r of [...on, ...kun]) {
+    const n = normalizeReading(r);
+    if (!n || seen.has(n)) continue;
+    seen.add(n);
+    out.push(n);
+  }
+  return out;
+}

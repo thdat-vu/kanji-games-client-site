@@ -7,7 +7,7 @@ import { useGameTimer } from "@/hooks/useGameTimer";
 import { useAuth } from "@/context/auth-context";
 import { markWordCorrect } from "@/lib/queries/streak";
 import { isAnswerCorrect } from "@/lib/play/answer";
-import { isReadingCorrect } from "@/lib/play/reading";
+import { isReadingCorrect, displayReadings } from "@/lib/play/reading";
 import { gradeStars } from "@/lib/play/stars";
 import { StarRow } from "@/components/features/play/StarRow";
 import { LocaleSwitcher } from "@/components/LocaleSwitcher";
@@ -26,8 +26,33 @@ interface GameRoundProps {
   kunReadings: string[];
 }
 
-function maskKanjiInWord(word: string, kanji: string): string {
-  return word.replaceAll(kanji, "◯");
+function WordWithBlankAbove({ word, kanji }: { word: string; kanji: string }) {
+  const chars = Array.from(word);
+  return (
+    <div className="flex items-end justify-center gap-1 pt-10">
+      {chars.map((ch, i) => {
+        const isTarget = ch === kanji;
+        return (
+          <span
+            key={i}
+            className={`relative inline-flex items-center justify-center text-4xl md:text-5xl font-extrabold leading-none ${
+              isTarget
+                ? "text-[var(--color-accent)]"
+                : "text-[var(--color-primary)]/70"
+            }`}
+          >
+            {isTarget && (
+              <span
+                aria-hidden
+                className="absolute -top-9 md:-top-10 left-1/2 -translate-x-1/2 w-12 h-8 md:w-14 md:h-10 rounded-md border-2 border-dashed border-[var(--color-primary)]/60 bg-white/70"
+              />
+            )}
+            {ch}
+          </span>
+        );
+      })}
+    </div>
+  );
 }
 
 export function GameRound({
@@ -82,7 +107,9 @@ export function GameRound({
   }
 
   const correctAnswerForMode =
-    mode === "meaning" ? meaning : [...onReadings, ...kunReadings].join(", ");
+    mode === "meaning"
+      ? meaning
+      : displayReadings(onReadings, kunReadings).join(", ");
 
   const isCorrect =
     revealed &&
@@ -233,9 +260,7 @@ export function GameRound({
               <p className="text-xs uppercase tracking-widest text-[var(--color-primary)]/60">
                 {t("readingHint")}
               </p>
-              <p className="text-4xl md:text-5xl font-extrabold text-[var(--color-primary)]">
-                {revealed ? word : maskKanjiInWord(word, kanji)}
-              </p>
+              <WordWithBlankAbove word={word} kanji={kanji} />
               {revealed && (
                 <p className="text-lg md:text-xl text-[var(--color-primary)]/80">
                   {reading}
