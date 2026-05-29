@@ -52,7 +52,11 @@
     "modeToggle": {
       "ariaLabel": "Choose game mode",
       "meaning": "Meaning",
-      "reading": "Reading"
+      "reading": "Reading",
+      "pickPrompt": "Pick a mode to start",
+      "pickHint": "The timer only starts after you choose.",
+      "meaningDesc": "Guess the word's meaning",
+      "readingDesc": "Guess the kanji reading"
     },
     "loading": "Loading...",
     "loadingKanji": "Loading kanji set...",

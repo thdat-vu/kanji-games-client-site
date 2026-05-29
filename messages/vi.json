@@ -52,7 +52,11 @@
     "modeToggle": {
       "ariaLabel": "Chọn chế độ chơi",
       "meaning": "Nghĩa",
-      "reading": "Cách đọc"
+      "reading": "Cách đọc",
+      "pickPrompt": "Chọn chế độ để bắt đầu",
+      "pickHint": "Đồng hồ chỉ chạy sau khi bạn chọn.",
+      "meaningDesc": "Đoán nghĩa từ vựng",
+      "readingDesc": "Đoán cách đọc Kanji"
     },
     "loading": "Đang tải...",
     "loadingKanji": "Đang tải bộ Kanji...",

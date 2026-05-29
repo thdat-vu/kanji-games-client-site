@@ -14,9 +14,7 @@ import { LocaleSwitcher } from "@/components/LocaleSwitcher";
 import type { Theme } from "@/constants/themes";
 import type { MarkWordCorrectResult } from "@/lib/types/streak";
 
-type GameMode = "meaning" | "reading";
-
-interface GameRoundProps {
+type GameMode = "meaning" | "reading";interface GameRoundProps {
   kanji: string;
   word: string;
   reading: string;
@@ -70,9 +68,10 @@ export function GameRound({
   const tStreak = useTranslations("play.streak");
   const tMode = useTranslations("play.modeToggle");
   const { user } = useAuth();
-  const { timeLeft, percent, expired, stop, reset } = useGameTimer();
+  const { timeLeft, percent, expired, started, start, stop, reset } =
+    useGameTimer();
 
-  const [mode, setMode] = useState<GameMode>("meaning");
+  const [mode, setMode] = useState<GameMode | null>(null);
   const [revealed, setRevealed] = useState(false);
   const [userAnswer, setUserAnswer] = useState("");
   const [streakResult, setStreakResult] =
@@ -93,6 +92,15 @@ export function GameRound({
     reset();
   }, [reset]);
 
+  const pickMode = useCallback(
+    (next: GameMode) => {
+      setMode(next);
+      handleReset();
+      start();
+    },
+    [handleReset, start]
+  );
+
   const switchMode = useCallback(
     (next: GameMode) => {
       if (next === mode) return;
@@ -102,7 +110,7 @@ export function GameRound({
     [mode, handleReset]
   );
 
-  if (!revealed && expired) {
+  if (!revealed && started && expired) {
     setRevealed(true);
   }
 
@@ -220,6 +228,49 @@ export function GameRound({
       </header>
 
       <main className="flex-1 flex flex-col items-center justify-center px-6 pb-10 md:pb-14 gap-6 md:gap-8">
+        {mode === null ? (
+          <div className="w-full max-w-md flex flex-col items-center gap-5 text-center">
+            <h2 className="text-xl md:text-2xl font-bold text-[var(--color-primary)]">
+              {tMode("pickPrompt")}
+            </h2>
+            <p className="text-sm text-[var(--color-primary)]/70">
+              {tMode("pickHint")}
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full pt-2">
+              <button
+                onClick={() => pickMode("meaning")}
+                className="bg-white/80 border-2 border-[var(--color-secondary)] rounded-2xl px-6 py-6 shadow-[var(--shadow-soft)]
+                  hover:border-[var(--color-primary)] hover:-translate-y-0.5 active:translate-y-0
+                  transition flex flex-col items-center gap-2"
+              >
+                <span className="text-3xl" aria-hidden="true">📖</span>
+                <span className="text-base font-bold text-[var(--color-primary)]">
+                  {tMode("meaning")}
+                </span>
+                <span className="text-xs text-[var(--color-primary)]/70">
+                  {tMode("meaningDesc")}
+                </span>
+              </button>
+              <button
+                onClick={() => pickMode("reading")}
+                disabled={!readingsAvailable}
+                className="bg-white/80 border-2 border-[var(--color-secondary)] rounded-2xl px-6 py-6 shadow-[var(--shadow-soft)]
+                  hover:border-[var(--color-primary)] hover:-translate-y-0.5 active:translate-y-0
+                  transition flex flex-col items-center gap-2
+                  disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:border-[var(--color-secondary)] disabled:hover:translate-y-0"
+              >
+                <span className="text-3xl" aria-hidden="true">🔊</span>
+                <span className="text-base font-bold text-[var(--color-primary)]">
+                  {tMode("reading")}
+                </span>
+                <span className="text-xs text-[var(--color-primary)]/70">
+                  {tMode("readingDesc")}
+                </span>
+              </button>
+            </div>
+          </div>
+        ) : (
+          <>
         <div
           role="tablist"
           aria-label={tMode("ariaLabel")}
@@ -409,6 +460,8 @@ export function GameRound({
               </button>
             </div>
           </div>
+        )}
+          </>
         )}
       </main>
     </div>
