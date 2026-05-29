@@ -7,16 +7,23 @@ import { useAuth } from "@/context/auth-context";
 import { HomeStreakStrip } from "@/components/features/streak/HomeStreakStrip";
 import { UserMenu } from "@/components/features/auth/UserMenu";
 import { LocaleSwitcher } from "@/components/LocaleSwitcher";
+import { BrandTypewriter } from "@/components/BrandTypewriter";
+import { Typewriter } from "@/components/Typewriter";
+
+const HERO_PHRASES = [
+  "Vừa chơi vừa học, nhớ lâu vượt trội.",
+  "遊んで学ぼう、記憶もずっと長く。",
+  "Play first, learn deeper, remember longer.",
+];
 
 function Header() {
   const { user, loading } = useAuth();
   const t = useTranslations("home");
-  const tc = useTranslations("common");
 
   return (
     <header className="grid grid-cols-3 items-center px-6 pt-6 pb-4 md:flex md:justify-between md:px-12 md:pt-8 md:max-w-5xl md:mx-auto md:w-full">
       <div className="text-xl font-bold tracking-wider text-[var(--color-primary)] justify-self-center md:justify-self-auto md:text-2xl">
-        {tc("appName")}
+        <BrandTypewriter />
       </div>
       <nav className="flex items-center gap-2 justify-self-end md:gap-3">
         <LocaleSwitcher />
@@ -69,13 +76,14 @@ export default function Home() {
               priority
             />
           </section>
-          <section className="pt-4 text-center">
+          <section className="pt-4 text-center min-h-[5rem]">
             <h1 className="text-3xl font-extrabold leading-tight text-[var(--color-primary)]">
-              {t("heroTitleStart")}{" "}
-              <span className="text-[var(--color-accent-soft)]">
-                {t("heroTitleHighlight")}
-              </span>
-              .
+              <Typewriter
+                phrases={HERO_PHRASES}
+                typeMs={45}
+                eraseMs={25}
+                holdMs={1800}
+              />
             </h1>
           </section>
         </div>
@@ -83,12 +91,13 @@ export default function Home() {
 
       <main className="hidden md:flex flex-1 flex-row items-center justify-center px-12 py-8 gap-12">
         <section className="max-w-[560px]">
-          <h1 className="text-[3.5rem] font-extrabold leading-tight text-[var(--color-primary)]">
-            {t("heroTitleStart")}{" "}
-            <span className="text-[var(--color-accent-soft)]">
-              {t("heroTitleHighlight")}
-            </span>
-            .
+          <h1 className="text-[3.5rem] font-extrabold leading-tight text-[var(--color-primary)] min-h-[8.4rem]">
+            <Typewriter
+              phrases={HERO_PHRASES}
+              typeMs={50}
+              eraseMs={28}
+              holdMs={2000}
+            />
           </h1>
           <div className="mt-8">
             <Link href="/play" className="btn no-underline">

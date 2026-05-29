@@ -3,6 +3,7 @@ import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { KanjiSelector } from "@/components/features/play/KanjiSelector";
 import { LocaleSwitcher } from "@/components/LocaleSwitcher";
+import { BrandTypewriter } from "@/components/BrandTypewriter";
 import { listKanjiByTheme } from "@/lib/queries/kanji";
 import { THEMES, type Theme } from "@/constants/themes";
 
@@ -20,7 +21,6 @@ export default async function LessonPage({
   const { locale, theme } = await params;
   if (!isTheme(theme)) notFound();
 
-  const tc = await getTranslations({ locale, namespace: "common" });
   const tp = await getTranslations({ locale, namespace: "play" });
   const entries = await listKanjiByTheme(theme);
 
@@ -31,7 +31,7 @@ export default async function LessonPage({
           href="/"
           className="text-lg md:text-xl font-bold tracking-wider text-[var(--color-primary)] no-underline"
         >
-          {tc("appName")}
+          <BrandTypewriter />
         </Link>
         <div className="flex items-center gap-3">
           <LocaleSwitcher />

@@ -1,9 +1,9 @@
-import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { LessonSelector } from "@/components/features/play/LessonSelector";
 import { StreakBadge } from "@/components/features/streak/StreakBadge";
 import { UserMenu } from "@/components/features/auth/UserMenu";
 import { LocaleSwitcher } from "@/components/LocaleSwitcher";
+import { BrandTypewriter } from "@/components/BrandTypewriter";
 import { listThemes } from "@/lib/queries/kanji";
 import { getLessonCompletions, getUserStreak } from "@/lib/queries/streak";
 import type { Theme } from "@/constants/themes";
@@ -15,8 +15,7 @@ export default async function PlayPage({
 }: {
   params: Promise<{ locale: string }>;
 }) {
-  const { locale } = await params;
-  const tc = await getTranslations({ locale, namespace: "common" });
+  await params;
 
   const [lessons, streak, completions] = await Promise.all([
     listThemes(),
@@ -35,7 +34,7 @@ export default async function PlayPage({
           href="/"
           className="text-lg md:text-xl font-bold tracking-wider text-[var(--color-primary)] no-underline"
         >
-          {tc("appName")}
+          <BrandTypewriter />
         </Link>
         <div className="flex items-center gap-3">
           <StreakBadge streak={streak?.currentStreak ?? null} />
