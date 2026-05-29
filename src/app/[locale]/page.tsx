@@ -22,10 +22,10 @@ function Header() {
 
   return (
     <header className="grid grid-cols-3 items-center px-6 pt-6 pb-4 md:flex md:justify-between md:px-12 md:pt-8 md:max-w-5xl md:mx-auto md:w-full">
-      <div className="text-xl font-bold tracking-wider text-[var(--color-primary)] justify-self-center md:justify-self-auto md:text-2xl">
+      <div className="col-start-2 text-xl font-bold tracking-wider text-[var(--color-primary)] justify-self-center md:col-start-auto md:justify-self-auto md:text-2xl">
         <BrandTypewriter />
       </div>
-      <nav className="flex items-center gap-2 justify-self-end md:gap-3">
+      <nav className="col-start-3 flex items-center gap-2 justify-self-end md:col-start-auto md:gap-3">
         <LocaleSwitcher />
         {loading ? (
           <span className="text-xs text-[var(--color-primary)]/80 md:text-sm">
