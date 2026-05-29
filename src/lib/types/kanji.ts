@@ -4,6 +4,8 @@ export interface KanjiWord {
   word: string;
   reading: string;
   meaning: string;
+  meaningVi: string;
+  meaningEn: string;
 }
 
 export interface KanjiLevel {

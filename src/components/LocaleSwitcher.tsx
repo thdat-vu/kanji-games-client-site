@@ -42,7 +42,9 @@ export function LocaleSwitcher() {
       setOpen(false);
       return;
     }
-    router.replace(pathname, { locale: next });
+    const search = typeof window !== "undefined" ? window.location.search : "";
+    const target = search ? `${pathname}${search}` : pathname;
+    router.replace(target, { locale: next });
     setOpen(false);
   }
 
