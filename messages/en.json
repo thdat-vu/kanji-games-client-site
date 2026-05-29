@@ -112,6 +112,10 @@
     "dataLine": "Kanji & vocabulary data:",
     "edrdg": "JMdict & KANJIDIC2 © Electronic Dictionary Research and Development Group, licensed under CC BY-SA 4.0.",
     "unihan": "Hán-Việt readings from the Unicode Unihan Database © Unicode, Inc.",
-    "license": "Source code under PolyForm Noncommercial 1.0.0."
+    "license": "Source code under PolyForm Noncommercial 1.0.0.",
+    "github": "View source on GitHub",
+    "developedBy": "Built by",
+    "authorName": "Vu Thanh Dat",
+    "authorReading": "(ヴ・タイン・ダット)"
   }
 }

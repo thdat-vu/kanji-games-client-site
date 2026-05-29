@@ -112,6 +112,10 @@
     "dataLine": "Dữ liệu Kanji/từ vựng:",
     "edrdg": "JMdict & KANJIDIC2 © Electronic Dictionary Research and Development Group, theo giấy phép CC BY-SA 4.0.",
     "unihan": "Hán-Việt từ Unicode Unihan Database © Unicode, Inc.",
-    "license": "Mã nguồn theo giấy phép PolyForm Noncommercial 1.0.0."
+    "license": "Mã nguồn theo giấy phép PolyForm Noncommercial 1.0.0.",
+    "github": "Xem mã nguồn trên GitHub",
+    "developedBy": "Phát triển bởi",
+    "authorName": "Vu Thanh Dat",
+    "authorReading": "(ヴ・タイン・ダット)"
   }
 }
