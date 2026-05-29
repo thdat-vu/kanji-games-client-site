@@ -35,7 +35,7 @@ export async function AttributionFooter() {
 
   return (
     <footer className="border-t border-[var(--color-secondary)]/60 bg-[var(--color-background)]/80 backdrop-blur-sm text-[11px] leading-relaxed text-[var(--color-primary)]/70">
-      <div className="mx-auto max-w-5xl px-6 py-5 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+      <div className="mx-auto max-w-5xl px-6 py-5 flex flex-col gap-3 md:flex-row md:items-center md:gap-6">
         <p className="flex flex-wrap items-center gap-x-2 gap-y-1">
           <span className="font-semibold uppercase tracking-[0.14em] text-[var(--color-primary)]/80">
             {t("dataLine")}
@@ -59,7 +59,7 @@ export async function AttributionFooter() {
             </span>
           ))}
         </p>
-        <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
+        <div className="flex flex-wrap items-center gap-x-3 gap-y-1 md:ml-auto">
           <span>{t("license")}</span>
           <span aria-hidden className="text-[var(--color-primary)]/40">
             ·
@@ -84,19 +84,19 @@ export async function AttributionFooter() {
               {t("authorReading")}
             </span>
           </span>
-          {repoUrl && (
-            <a
-              href={repoUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={t("github")}
-              title={t("github")}
-              className="inline-flex items-center justify-center w-8 h-8 rounded-full text-[var(--color-primary)]/70 hover:text-[var(--color-primary)] hover:bg-[var(--color-secondary)]/40 transition"
-            >
-              <GitHubMark />
-            </a>
-          )}
         </div>
+        {repoUrl && (
+          <a
+            href={repoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={t("github")}
+            title={t("github")}
+            className="inline-flex items-center justify-center w-8 h-8 rounded-full text-[var(--color-primary)]/70 hover:text-[var(--color-primary)] hover:bg-[var(--color-secondary)]/40 transition self-start md:self-auto md:ml-2"
+          >
+            <GitHubMark />
+          </a>
+        )}
       </div>
     </footer>
   );
