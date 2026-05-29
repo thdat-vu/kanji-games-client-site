@@ -7,11 +7,14 @@ import { useGameTimer } from "@/hooks/useGameTimer";
 import { useAuth } from "@/context/auth-context";
 import { markWordCorrect } from "@/lib/queries/streak";
 import { isAnswerCorrect } from "@/lib/play/answer";
+import { isReadingCorrect } from "@/lib/play/reading";
 import { gradeStars } from "@/lib/play/stars";
 import { StarRow } from "@/components/features/play/StarRow";
 import { LocaleSwitcher } from "@/components/LocaleSwitcher";
 import type { Theme } from "@/constants/themes";
 import type { MarkWordCorrectResult } from "@/lib/types/streak";
+
+type GameMode = "meaning" | "reading";
 
 interface GameRoundProps {
   kanji: string;
@@ -19,16 +22,32 @@ interface GameRoundProps {
   reading: string;
   meaning: string;
   theme: Theme | null;
+  onReadings: string[];
+  kunReadings: string[];
 }
 
-export function GameRound({ kanji, word, reading, meaning, theme }: GameRoundProps) {
+function maskKanjiInWord(word: string, kanji: string): string {
+  return word.replaceAll(kanji, "◯");
+}
+
+export function GameRound({
+  kanji,
+  word,
+  reading,
+  meaning,
+  theme,
+  onReadings,
+  kunReadings,
+}: GameRoundProps) {
   const router = useRouter();
   const t = useTranslations("play");
   const tc = useTranslations("common");
   const tStreak = useTranslations("play.streak");
+  const tMode = useTranslations("play.modeToggle");
   const { user } = useAuth();
   const { timeLeft, percent, expired, stop, reset } = useGameTimer();
 
+  const [mode, setMode] = useState<GameMode>("meaning");
   const [revealed, setRevealed] = useState(false);
   const [userAnswer, setUserAnswer] = useState("");
   const [streakResult, setStreakResult] =
@@ -49,12 +68,28 @@ export function GameRound({ kanji, word, reading, meaning, theme }: GameRoundPro
     reset();
   }, [reset]);
 
+  const switchMode = useCallback(
+    (next: GameMode) => {
+      if (next === mode) return;
+      setMode(next);
+      handleReset();
+    },
+    [mode, handleReset]
+  );
+
   if (!revealed && expired) {
     setRevealed(true);
   }
 
+  const correctAnswerForMode =
+    mode === "meaning" ? meaning : [...onReadings, ...kunReadings].join(", ");
+
   const isCorrect =
-    revealed && userAnswer.trim() !== "" && isAnswerCorrect(userAnswer, meaning);
+    revealed &&
+    userAnswer.trim() !== "" &&
+    (mode === "meaning"
+      ? isAnswerCorrect(userAnswer, meaning)
+      : isReadingCorrect(userAnswer, onReadings, kunReadings));
 
   const isTimedOut = revealed && expired && userAnswer.trim() === "";
   const isWrong = revealed && !isCorrect && !isTimedOut;
@@ -128,6 +163,11 @@ export function GameRound({ kanji, word, reading, meaning, theme }: GameRoundPro
     : 0;
   const displayStars = (streakResult?.stars ?? localStars) as 0 | 1 | 2 | 3;
 
+  const placeholder =
+    mode === "meaning" ? t("answerPlaceholder") : t("readingPlaceholder");
+
+  const readingsAvailable = onReadings.length + kunReadings.length > 0;
+
   return (
     <div className="min-h-screen text-[var(--color-text)] flex flex-col">
       <header className="flex items-center justify-between px-6 md:px-12 py-4 md:py-6 max-w-5xl mx-auto w-full">
@@ -153,11 +193,56 @@ export function GameRound({ kanji, word, reading, meaning, theme }: GameRoundPro
       </header>
 
       <main className="flex-1 flex flex-col items-center justify-center px-6 gap-6 md:gap-8">
+        <div
+          role="tablist"
+          aria-label={tMode("ariaLabel")}
+          className="inline-flex items-center bg-white/70 border-2 border-[var(--color-secondary)] rounded-full p-1 shadow-[var(--shadow-soft)]"
+        >
+          {(["meaning", "reading"] as const).map((m) => {
+            const active = mode === m;
+            const disabled = m === "reading" && !readingsAvailable;
+            return (
+              <button
+                key={m}
+                role="tab"
+                aria-selected={active}
+                disabled={disabled}
+                onClick={() => switchMode(m)}
+                className={`px-4 py-1.5 text-xs md:text-sm font-bold rounded-full transition disabled:opacity-40 disabled:cursor-not-allowed ${
+                  active
+                    ? "bg-[var(--color-primary)] text-white shadow-[var(--shadow-soft)]"
+                    : "text-[var(--color-primary)] hover:bg-[var(--color-secondary)]/40"
+                }`}
+              >
+                {tMode(m)}
+              </button>
+            );
+          })}
+        </div>
+
         <div className="bg-white/70 border-2 border-[var(--color-secondary)] rounded-2xl shadow-[var(--shadow-card)] px-8 py-6 md:px-12 md:py-8 w-full max-w-xs md:max-w-md text-center space-y-2">
-          <p className="text-lg md:text-xl text-[var(--color-primary)]/80">{reading}</p>
-          <p className="text-4xl md:text-5xl font-extrabold text-[var(--color-primary)]">
-            {word}
-          </p>
+          {mode === "meaning" ? (
+            <>
+              <p className="text-lg md:text-xl text-[var(--color-primary)]/80">{reading}</p>
+              <p className="text-4xl md:text-5xl font-extrabold text-[var(--color-primary)]">
+                {word}
+              </p>
+            </>
+          ) : (
+            <>
+              <p className="text-xs uppercase tracking-widest text-[var(--color-primary)]/60">
+                {t("readingHint")}
+              </p>
+              <p className="text-4xl md:text-5xl font-extrabold text-[var(--color-primary)]">
+                {revealed ? word : maskKanjiInWord(word, kanji)}
+              </p>
+              {revealed && (
+                <p className="text-lg md:text-xl text-[var(--color-primary)]/80">
+                  {reading}
+                </p>
+              )}
+            </>
+          )}
         </div>
 
         <div className="flex flex-col items-center gap-2 w-full max-w-xs md:max-w-md">
@@ -188,8 +273,13 @@ export function GameRound({ kanji, word, reading, meaning, theme }: GameRoundPro
               onKeyDown={(e) =>
                 e.key === "Enter" && userAnswer.trim() && handleReveal()
               }
-              placeholder={t("answerPlaceholder")}
-              aria-label={t("answerPlaceholder")}
+              placeholder={placeholder}
+              aria-label={placeholder}
+              lang={mode === "reading" ? "ja" : undefined}
+              inputMode={mode === "reading" ? "text" : undefined}
+              autoCapitalize="off"
+              autoCorrect="off"
+              spellCheck={false}
               className="w-full px-4 py-3 rounded-xl border-2 border-[var(--color-secondary)] bg-white/80
                 text-[var(--color-primary)] placeholder:text-[var(--color-primary)]/60
                 focus:outline-none focus:border-[var(--color-primary)] focus:bg-white transition"
@@ -279,7 +369,7 @@ export function GameRound({ kanji, word, reading, meaning, theme }: GameRoundPro
               }`}
             >
               <p className="text-sm text-[var(--color-primary)]/80">{t("correctAnswer")}</p>
-              <p className="text-xl font-bold text-green-700">{meaning}</p>
+              <p className="text-xl font-bold text-green-700">{correctAnswerForMode}</p>
             </div>
 
             <div className="flex gap-3">

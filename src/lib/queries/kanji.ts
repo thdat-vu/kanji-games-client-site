@@ -85,6 +85,28 @@ export async function findWord(
   return w ? toWord(w) : null;
 }
 
+export interface KanjiReadings {
+  on: string[];
+  kun: string[];
+}
+
+export async function getKanjiReadings(
+  kanjiChar: string
+): Promise<KanjiReadings | null> {
+  const supabase = await createClient();
+  const { data, error } = await supabase
+    .from("kanji")
+    .select("on_readings, kun_readings")
+    .eq("char", kanjiChar)
+    .maybeSingle();
+  if (error) throw error;
+  if (!data) return null;
+  return {
+    on: data.on_readings ?? [],
+    kun: data.kun_readings ?? [],
+  };
+}
+
 export interface LessonSummary {
   theme: Theme;
   kanjiCount: number;

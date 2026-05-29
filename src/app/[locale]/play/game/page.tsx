@@ -1,5 +1,5 @@
 import { getTranslations } from "next-intl/server";
-import { findWord } from "@/lib/queries/kanji";
+import { findWord, getKanjiReadings } from "@/lib/queries/kanji";
 import { GameRound } from "@/components/features/play/GameRound";
 import { KANJI_TO_THEME } from "@/constants/themes";
 
@@ -23,7 +23,10 @@ export default async function GamePage({ searchParams, params }: PageProps) {
     );
   }
 
-  const wordData = await findWord(kanji, wordParam);
+  const [wordData, readings] = await Promise.all([
+    findWord(kanji, wordParam),
+    getKanjiReadings(kanji),
+  ]);
 
   if (!wordData) {
     return (
@@ -40,6 +43,8 @@ export default async function GamePage({ searchParams, params }: PageProps) {
       reading={wordData.reading}
       meaning={wordData.meaning}
       theme={KANJI_TO_THEME[kanji] ?? null}
+      onReadings={readings?.on ?? []}
+      kunReadings={readings?.kun ?? []}
     />
   );
 }
