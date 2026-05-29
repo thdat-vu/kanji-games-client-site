@@ -46,6 +46,11 @@ Answer validation:
 - Treats parens in meaning as optional (`ba (cái)`, `ba cái`, `ba` all accepted)
 - Vietnamese diacritics preserved (`tho phao` ≠ `thở phào`)
 
+Star grading:
+- 3⭐ correct with ≥20s left, 2⭐ ≥10s, 1⭐ correct, 0⭐ wrong/timeout
+- `user_word_progress` stores `best_stars` + `best_time_left_seconds` (only upgrades)
+- Result banner shows earned stars + "Kỷ lục mới!" or "Kỷ lục: X⭐"
+
 i18n:
 - All strings in `messages/vi.json` + `messages/en.json`
 - ICU plurals for `kanjiCount`, `streak.label`
@@ -59,7 +64,7 @@ i18n:
 | `words` | 774 | Vocab entries from JMdict + first-pass VI meanings |
 | `kanji_words` | 821 | Many-to-many join |
 | `user_streaks` | per user | current/longest, last_active_local_date, freeze_available, user_timezone |
-| `user_word_progress` | per (user, theme, word) | distinct correct answers per theme |
+| `user_word_progress` | per (user, theme, word) | distinct correct answers per theme + best_stars / best_time_left_seconds |
 | `lesson_completions` | per (user, theme) | stamp + completion_count |
 | `attempts` | (legacy, unused yet) | per-attempt log |
 | `profiles` | per user | display_name + locale (unused yet) |
@@ -68,6 +73,7 @@ RLS on all tables. User-data tables policy `auth.uid() = user_id`.
 
 ## Recent shipped PRs
 
+- **#46** feat(play): stars 1–3 per round (best per user/word) — 2026-05-28
 - **#44** fix(play): treat parens in meaning as optional clarification — 2026-05-28
 - **#43** fix(play): accept partial answers when meaning has multiple parts — 2026-05-28
 - **#42** fix(auth): plain `<img>` + referrerPolicy=no-referrer for Google avatar — 2026-05-28
@@ -85,7 +91,7 @@ Order by leverage, not effort.
 
 1. **Manual smoke test (no PR)** — replay 一安心 / 三つ / a multi-part word, confirm streak end-to-end with a real account, sanity-check Supabase rows.
 2. **Rebrand `kanji-games` → `Kanjido`** — repo name, package.json, README. Mechanical refactor, no behavior change. Memory-noted as deferred.
-3. **Stars 1–3 ⭐ per round** — accuracy + speed grade per word, store best per user/word. Replay loop deepens. Needs `attempts` table or new `user_word_stars` table.
+3. **Stars 1–3 ⭐ per round** — ✅ shipped #46. Followups: surface stars on kanji/word grid + lesson stamp, optional 3⭐ confetti.
 4. **Settings page** — change locale, change timezone (currently auto-detected only), see streak/longest streak. Small surface.
 5. **Polish: confetti on lesson unlock + sound on correct** — adds game feel. Adds 1 dep (`canvas-confetti`).
 6. **N4 dataset** — extend from 103 → ~500 kanji. Big content lift, blocks until N5 product feel is right.

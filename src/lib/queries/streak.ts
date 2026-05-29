@@ -10,6 +10,7 @@ import {
 import { THEMES, type Theme } from "@/constants/themes";
 import { applyDailyActivity, type StreakState } from "@/lib/streak/streak-logic";
 import { localDateInTimeZone } from "@/lib/streak/dates";
+import { gradeStars, type Stars } from "@/lib/play/stars";
 
 function isTheme(value: string): value is Theme {
   return (THEMES as readonly string[]).includes(value);
@@ -88,7 +89,8 @@ export async function getThemeProgress(theme: Theme): Promise<number> {
 export async function markWordCorrect(
   theme: string,
   word: string,
-  clientTimezone: string
+  clientTimezone: string,
+  timeLeftSeconds: number
 ): Promise<MarkWordCorrectResult | null> {
   if (!isTheme(theme)) return null;
   if (!word.trim()) return null;
@@ -99,11 +101,42 @@ export async function markWordCorrect(
   const userId = auth.user.id;
   const tz = clientTimezone || "UTC";
 
+  const stars = gradeStars(timeLeftSeconds, true);
+  const safeTimeLeft = Math.max(0, Math.min(60, Math.floor(timeLeftSeconds)));
+
+  const { data: existingProgress } = await supabase
+    .from("user_word_progress")
+    .select("best_stars, best_time_left_seconds")
+    .eq("user_id", userId)
+    .eq("theme", theme)
+    .eq("word", word)
+    .maybeSingle();
+
+  const prevBest = (existingProgress?.best_stars ?? 0) as Stars;
+  const prevBestTimeLeft = existingProgress?.best_time_left_seconds ?? 0;
+
+  let bestStars: Stars = prevBest;
+  let bestTimeLeft = prevBestTimeLeft;
+  let isNewBest = false;
+  if (stars > prevBest) {
+    bestStars = stars;
+    bestTimeLeft = safeTimeLeft;
+    isNewBest = true;
+  } else if (stars === prevBest) {
+    bestTimeLeft = Math.max(prevBestTimeLeft, safeTimeLeft);
+  }
+
   await supabase
     .from("user_word_progress")
     .upsert(
-      { user_id: userId, theme, word },
-      { onConflict: "user_id,theme,word", ignoreDuplicates: true }
+      {
+        user_id: userId,
+        theme,
+        word,
+        best_stars: bestStars,
+        best_time_left_seconds: bestTimeLeft,
+      },
+      { onConflict: "user_id,theme,word" }
     );
 
   const { count, error: countError } = await supabase
@@ -120,6 +153,9 @@ export async function markWordCorrect(
     lessonJustCompleted: false,
     streakDelta: { kind: "noop" },
     currentStreak: 0,
+    stars,
+    bestStars,
+    isNewBest,
   };
 
   if (wordsCorrect < LESSON_COMPLETION_THRESHOLD) {

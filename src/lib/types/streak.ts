@@ -37,4 +37,7 @@ export interface MarkWordCorrectResult {
   lessonJustCompleted: boolean;
   streakDelta: StreakDelta;
   currentStreak: number;
+  stars: 0 | 1 | 2 | 3;
+  bestStars: 0 | 1 | 2 | 3;
+  isNewBest: boolean;
 }

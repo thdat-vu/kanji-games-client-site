@@ -7,6 +7,8 @@ import { useGameTimer } from "@/hooks/useGameTimer";
 import { useAuth } from "@/context/auth-context";
 import { markWordCorrect } from "@/lib/queries/streak";
 import { isAnswerCorrect } from "@/lib/play/answer";
+import { gradeStars } from "@/lib/play/stars";
+import { StarRow } from "@/components/features/play/StarRow";
 import type { Theme } from "@/constants/themes";
 import type { MarkWordCorrectResult } from "@/lib/types/streak";
 
@@ -30,16 +32,19 @@ export function GameRound({ kanji, word, reading, meaning, theme }: GameRoundPro
   const [userAnswer, setUserAnswer] = useState("");
   const [streakResult, setStreakResult] =
     useState<MarkWordCorrectResult | null>(null);
+  const [submittedTimeLeft, setSubmittedTimeLeft] = useState<number | null>(null);
 
   const handleReveal = useCallback(() => {
+    setSubmittedTimeLeft(timeLeft);
     stop();
     setRevealed(true);
-  }, [stop]);
+  }, [stop, timeLeft]);
 
   const handleReset = useCallback(() => {
     setRevealed(false);
     setUserAnswer("");
     setStreakResult(null);
+    setSubmittedTimeLeft(null);
     reset();
   }, [reset]);
 
@@ -57,8 +62,9 @@ export function GameRound({ kanji, word, reading, meaning, theme }: GameRoundPro
     if (!isCorrect || !user || !theme) return;
     const tz =
       Intl.DateTimeFormat().resolvedOptions().timeZone || "UTC";
+    const tLeft = submittedTimeLeft ?? 0;
     let cancelled = false;
-    markWordCorrect(theme, word, tz)
+    markWordCorrect(theme, word, tz, tLeft)
       .then((res) => {
         if (!cancelled && res) setStreakResult(res);
       })
@@ -66,7 +72,7 @@ export function GameRound({ kanji, word, reading, meaning, theme }: GameRoundPro
     return () => {
       cancelled = true;
     };
-  }, [isCorrect, user, theme, word]);
+  }, [isCorrect, user, theme, word, submittedTimeLeft]);
 
   const resultTitle = isCorrect
     ? t("result.correctTitle")
@@ -114,6 +120,12 @@ export function GameRound({ kanji, word, reading, meaning, theme }: GameRoundPro
       : streakResult
         ? tStreak("incrementToast", { count: streakResult.currentStreak })
         : "";
+
+  const tStars = useTranslations("play.stars");
+  const localStars = isCorrect
+    ? gradeStars(submittedTimeLeft ?? 0, true)
+    : 0;
+  const displayStars = (streakResult?.stars ?? localStars) as 0 | 1 | 2 | 3;
 
   return (
     <div className="min-h-screen bg-[var(--color-background)] text-[var(--color-text)] flex flex-col">
@@ -189,6 +201,20 @@ export function GameRound({ kanji, word, reading, meaning, theme }: GameRoundPro
                 {resultTitle}
               </p>
               <p className={`text-sm ${subColor}`}>{resultSub}</p>
+              {isCorrect && (
+                <div className="mt-3 space-y-1">
+                  <StarRow earned={displayStars} />
+                  {streakResult?.isNewBest ? (
+                    <p className="text-xs font-bold text-amber-600 animate-[successPulse_0.5s_ease-out]">
+                      {tStars("newBest")}
+                    </p>
+                  ) : streakResult && streakResult.bestStars > 0 ? (
+                    <p className="text-xs text-[var(--color-primary)]/70">
+                      {tStars("best", { count: streakResult.bestStars })}
+                    </p>
+                  ) : null}
+                </div>
+              )}
             </div>
 
             {isCorrect && streakResult && (
