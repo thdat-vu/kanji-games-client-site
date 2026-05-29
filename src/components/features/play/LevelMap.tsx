@@ -10,18 +10,10 @@ interface LevelMapProps {
   onSelectLevel: (level: KanjiLevel) => void;
 }
 
-const ROW_OFFSETS = [
-  "ml-0",
-  "ml-8 sm:ml-12",
-  "ml-16 sm:ml-24",
-  "ml-8 sm:ml-12",
-  "ml-0",
-] as const;
-
 export function LevelMap({ kanji, levels, onSelectLevel }: LevelMapProps) {
   const tc = useTranslations("common");
   const tp = useTranslations("play");
-  const ascending = [...levels].reverse(); // N1 → N5 visually top-to-bottom; reverse for N5 first
+  const ascending = [...levels].reverse();
 
   return (
     <div className="flex flex-col items-center gap-8">
@@ -35,25 +27,22 @@ export function LevelMap({ kanji, levels, onSelectLevel }: LevelMapProps) {
       </div>
 
       <ol
-        className="relative flex flex-col items-start gap-3 w-full max-w-md"
+        className="relative flex flex-col items-center gap-4 w-full max-w-sm"
         aria-label={tp("levelMap.ariaLabel")}
       >
         <span
           aria-hidden
           className="absolute left-1/2 top-3 bottom-3 -translate-x-1/2 border-l-2 border-dashed border-[var(--color-primary)]/30"
         />
-        {ascending.map((lvl, i) => {
+        {ascending.map((lvl) => {
           const hasWords = lvl.words.length > 0;
           return (
-            <li
-              key={lvl.level}
-              className={`relative ${ROW_OFFSETS[i] ?? "ml-0"} z-10`}
-            >
+            <li key={lvl.level} className="relative z-10 w-full max-w-[18rem]">
               <button
                 onClick={() => onSelectLevel(lvl)}
                 disabled={!hasWords}
                 aria-label={`${lvl.level} — ${tp("levelMap.wordCount", { count: lvl.words.length })}`}
-                className={`flex items-center gap-3 rounded-2xl px-5 py-3 shadow-[var(--shadow-soft)]
+                className={`w-full flex items-center gap-3 rounded-2xl px-4 py-3 shadow-[var(--shadow-soft)]
                   transition duration-150
                   ${
                     hasWords
@@ -62,12 +51,12 @@ export function LevelMap({ kanji, levels, onSelectLevel }: LevelMapProps) {
                   }`}
               >
                 <span
-                  className={`${LEVEL_COLORS[lvl.level]} rounded-xl px-3 py-1 text-base font-extrabold shadow-inner`}
+                  className={`${LEVEL_COLORS[lvl.level]} shrink-0 rounded-xl w-12 py-1 text-center text-base font-extrabold shadow-inner`}
                 >
                   {lvl.level}
                 </span>
-                <span className="flex flex-col items-start text-left">
-                  <span className="text-sm font-semibold text-[var(--color-primary)]">
+                <span className="flex flex-col items-start text-left flex-1 min-w-0">
+                  <span className="text-sm font-semibold text-[var(--color-primary)] truncate">
                     {tp(`levelMap.label.${lvl.level}`)}
                   </span>
                   <span className="text-xs text-[var(--color-primary)]/70">
@@ -84,3 +73,4 @@ export function LevelMap({ kanji, levels, onSelectLevel }: LevelMapProps) {
     </div>
   );
 }
+
