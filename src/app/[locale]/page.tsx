@@ -61,9 +61,9 @@ export default function Home() {
             <Image
               src="/assets/images/mascot.png"
               alt={t("mascotAlt")}
-              width={350}
-              height={350}
-              className="w-[280px] drop-shadow-[0_8px_32px_rgba(121,105,98,0.18)]"
+              width={760}
+              height={1042}
+              className="w-[240px] h-auto drop-shadow-[0_8px_32px_rgba(121,105,98,0.18)]"
               priority
             />
           </section>
@@ -98,9 +98,9 @@ export default function Home() {
           <Image
             src="/assets/images/mascot.png"
             alt={t("mascotAlt")}
-            width={350}
-            height={350}
-            className="w-[350px] drop-shadow-[0_12px_40px_rgba(121,105,98,0.2)]"
+            width={760}
+            height={1042}
+            className="w-[320px] h-auto drop-shadow-[0_12px_40px_rgba(121,105,98,0.2)]"
             priority
           />
         </section>
