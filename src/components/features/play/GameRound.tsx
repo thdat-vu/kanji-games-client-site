@@ -219,7 +219,7 @@ export function GameRound({
         </div>
       </header>
 
-      <main className="flex-1 flex flex-col items-center justify-center px-6 gap-6 md:gap-8">
+      <main className="flex-1 flex flex-col items-center justify-center px-6 pb-10 md:pb-14 gap-6 md:gap-8">
         <div
           role="tablist"
           aria-label={tMode("ariaLabel")}
