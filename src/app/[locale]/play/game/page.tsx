@@ -41,7 +41,7 @@ export default async function GamePage({ searchParams, params }: PageProps) {
       kanji={kanji}
       word={wordData.word}
       reading={wordData.reading}
-      meaning={wordData.meaning}
+      meaning={locale === "en" ? wordData.meaningEn || wordData.meaningVi : wordData.meaningVi || wordData.meaningEn}
       theme={KANJI_TO_THEME[kanji] ?? null}
       onReadings={readings?.on ?? []}
       kunReadings={readings?.kun ?? []}

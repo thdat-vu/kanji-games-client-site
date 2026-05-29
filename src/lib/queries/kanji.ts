@@ -12,6 +12,7 @@ interface WordRow {
   reading: string;
   jlpt_level: JLPTLevel;
   meaning_vi: string | null;
+  meaning_en: string | null;
 }
 
 function emptyLevels(): KanjiLevel[] {
@@ -19,10 +20,14 @@ function emptyLevels(): KanjiLevel[] {
 }
 
 function toWord(row: WordRow): KanjiWord {
+  const vi = row.meaning_vi ?? "";
+  const en = row.meaning_en ?? "";
   return {
     word: row.word,
     reading: row.reading,
-    meaning: row.meaning_vi ?? "",
+    meaning: vi,
+    meaningVi: vi,
+    meaningEn: en,
   };
 }
 
@@ -32,7 +37,7 @@ export async function listKanjiWithLevels(): Promise<KanjiEntry[]> {
     supabase.from("kanji").select("char").order("char"),
     supabase
       .from("kanji_words")
-      .select("kanji_char, words(word, reading, jlpt_level, meaning_vi)"),
+      .select("kanji_char, words(word, reading, jlpt_level, meaning_vi, meaning_en)"),
   ]);
   if (kanjiRes.error) throw kanjiRes.error;
   if (linksRes.error) throw linksRes.error;
@@ -72,7 +77,7 @@ export async function findWord(
   const supabase = await createClient();
   const { data, error } = await supabase
     .from("kanji_words")
-    .select("words!inner(word, reading, jlpt_level, meaning_vi)")
+    .select("words!inner(word, reading, jlpt_level, meaning_vi, meaning_en)")
     .eq("kanji_char", kanjiChar)
     .eq("words.word", wordStr)
     .limit(1);
