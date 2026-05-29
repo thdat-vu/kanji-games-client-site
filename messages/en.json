@@ -75,6 +75,12 @@
       "timeoutTitle": "Time's up!",
       "timeoutSub": "You ran out of time."
     },
+    "stars": {
+      "ariaLabel": "{count, plural, one {# star} other {# stars}} out of 3",
+      "newBest": "New best!",
+      "best": "Best: {count, plural, one {# star} other {# stars}}",
+      "earned": "You earned {count, plural, one {# star} other {# stars}}"
+    },
     "streak": {
       "ariaLabel": "Daily streak: {count} days",
       "label": "{count, plural, one {# day} other {# days}}",
