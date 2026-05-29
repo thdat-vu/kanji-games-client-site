@@ -61,8 +61,8 @@ i18n:
 | Table | Rows | Purpose |
 |---|---|---|
 | `kanji` | 103 | N5 chars + theme + meaning_vi/en + Hán-Việt + readings |
-| `words` | 774 | Vocab entries from JMdict + first-pass VI meanings |
-| `kanji_words` | 821 | Many-to-many join |
+| `words` | 1,836 | N5 (774, vi+en) + N4 (1,062, en-only) JMdict entries |
+| `kanji_words` | 1,932 | Many-to-many join (links N4 words back into N5 kanji) |
 | `user_streaks` | per user | current/longest, last_active_local_date, freeze_available, user_timezone |
 | `user_word_progress` | per (user, theme, word) | distinct correct answers per theme + best_stars / best_time_left_seconds |
 | `lesson_completions` | per (user, theme) | stamp + completion_count |
@@ -70,6 +70,8 @@ i18n:
 | `profiles` | per user | display_name + locale (unused yet) |
 
 RLS on all tables. User-data tables policy `auth.uid() = user_id`.
+
+N4 vocabulary is wired in as a follow-up unlock layer over the existing N5 kanji set: each N5 kanji's level map exposes the next ~10 less-frequent JMdict words containing it. EN only for now; VI curation will land later.
 
 ## Recent shipped PRs
 

@@ -16,7 +16,9 @@
     "seed:vi:stub": "tsx scripts/seed-n5/build-vi-stub.ts",
     "seed:vi:populate": "tsx scripts/seed-n5/populate-vi.ts",
     "seed:vi:merge": "tsx scripts/seed-n5/merge-vi.ts",
-    "seed:db": "tsx scripts/seed-n5/seed-db.ts"
+    "seed:db": "tsx scripts/seed-n5/seed-db.ts",
+    "seed:n4:build": "tsx scripts/seed-n4/build.ts",
+    "seed:n4:db": "tsx scripts/seed-n4/seed-db.ts"
   },
   "dependencies": {
     "@supabase/ssr": "0.9.0",
