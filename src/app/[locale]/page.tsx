@@ -42,7 +42,16 @@ export default function Home() {
   const t = useTranslations("home");
 
   return (
-    <div className="min-h-screen flex flex-col bg-[var(--color-background)] text-[var(--color-text)] font-sans">
+    <div className="relative min-h-screen flex flex-col text-[var(--color-text)] font-sans">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 -z-20 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/assets/images/landinghero_kanjido.png')" }}
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 -z-10 bg-[var(--color-background)]/55 md:bg-gradient-to-r md:from-[var(--color-background)]/90 md:via-[var(--color-background)]/70 md:to-[var(--color-background)]/30"
+      />
       <Header />
       <HomeStreakStrip />
 
@@ -50,18 +59,18 @@ export default function Home() {
         <div className="h-full max-w-[500px] mx-auto px-6 pt-4 pb-24 flex flex-col">
           <section className="flex-1 flex items-end justify-center pb-4">
             <Image
-              src="/assets/images/avatar.jpeg"
+              src="/assets/images/mascot.png"
               alt={t("mascotAlt")}
-              width={350}
-              height={350}
-              className="w-[280px] rounded-3xl shadow-[var(--shadow-card)]"
+              width={760}
+              height={1042}
+              className="w-[240px] h-auto drop-shadow-[0_8px_32px_rgba(121,105,98,0.18)]"
               priority
             />
           </section>
           <section className="pt-4 text-center">
             <h1 className="text-3xl font-extrabold leading-tight text-[var(--color-primary)]">
               {t("heroTitleStart")}{" "}
-              <span className="text-[var(--color-secondary)]">
+              <span className="text-[var(--color-accent-soft)]">
                 {t("heroTitleHighlight")}
               </span>
               .
@@ -74,7 +83,7 @@ export default function Home() {
         <section className="max-w-[560px]">
           <h1 className="text-[3.5rem] font-extrabold leading-tight text-[var(--color-primary)]">
             {t("heroTitleStart")}{" "}
-            <span className="text-[var(--color-secondary)]">
+            <span className="text-[var(--color-accent-soft)]">
               {t("heroTitleHighlight")}
             </span>
             .
@@ -87,11 +96,11 @@ export default function Home() {
         </section>
         <section className="flex items-center justify-center">
           <Image
-            src="/assets/images/avatar.jpeg"
+            src="/assets/images/mascot.png"
             alt={t("mascotAlt")}
-            width={350}
-            height={350}
-            className="w-[350px] rounded-3xl shadow-[var(--shadow-card)]"
+            width={760}
+            height={1042}
+            className="w-[320px] h-auto drop-shadow-[0_12px_40px_rgba(121,105,98,0.2)]"
             priority
           />
         </section>

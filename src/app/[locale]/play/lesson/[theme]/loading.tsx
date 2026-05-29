@@ -3,7 +3,7 @@ import { getTranslations } from "next-intl/server";
 export default async function LessonLoading() {
   const t = await getTranslations("play");
   return (
-    <div className="min-h-screen bg-[var(--color-background)] text-[var(--color-text)]">
+    <div className="min-h-screen text-[var(--color-text)]">
       <header className="flex items-center justify-between px-6 md:px-12 py-4 md:py-6 max-w-5xl mx-auto w-full">
         <span className="h-6 w-24 rounded-full bg-[var(--color-secondary)]/70 animate-pulse" />
         <span className="h-4 w-16 rounded-full bg-[var(--color-secondary)]/70 animate-pulse" />

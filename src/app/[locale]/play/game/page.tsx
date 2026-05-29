@@ -17,7 +17,7 @@ export default async function GamePage({ searchParams, params }: PageProps) {
 
   if (!kanji || !wordParam) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-[var(--color-background)] text-[var(--color-text)]">
+      <div className="min-h-screen flex items-center justify-center text-[var(--color-text)]">
         <p>{t("notFound")}</p>
       </div>
     );
@@ -27,7 +27,7 @@ export default async function GamePage({ searchParams, params }: PageProps) {
 
   if (!wordData) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-[var(--color-background)] text-[var(--color-text)]">
+      <div className="min-h-screen flex items-center justify-center text-[var(--color-text)]">
         <p>{t("notFound")}</p>
       </div>
     );

@@ -12,7 +12,8 @@
       {
         "matcher": "Edit|Write|MultiEdit",
         "hooks": [
-          { "type": "command", "command": ".claude/hooks/guard-env.sh" }
+          { "type": "command", "command": ".claude/hooks/guard-env.sh" },
+          { "type": "command", "command": ".claude/hooks/guard-hardcode.sh" }
         ]
       }
     ]

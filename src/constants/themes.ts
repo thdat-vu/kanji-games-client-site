@@ -35,13 +35,13 @@ export const KANJI_TO_THEME: Record<string, Theme> = (() => {
   return map;
 })();
 
-export const THEME_ICONS: Record<Theme, string> = {
-  numbers: "🔢",
-  time: "⏳",
-  people: "👥",
-  body: "✋",
-  nature: "🌿",
-  place: "🧭",
-  verbs: "🏃",
-  daily_life: "🏠",
+export const THEME_ICON_SRC: Record<Theme, string> = {
+  numbers: "/assets/icons/numbers.png",
+  time: "/assets/icons/time.png",
+  people: "/assets/icons/human.png",
+  body: "/assets/icons/body.png",
+  nature: "/assets/icons/nature.png",
+  place: "/assets/icons/places.png",
+  verbs: "/assets/icons/verbs.png",
+  daily_life: "/assets/icons/dailylife.png",
 };

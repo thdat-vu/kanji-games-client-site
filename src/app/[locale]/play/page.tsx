@@ -28,7 +28,7 @@ export default async function PlayPage({
   );
 
   return (
-    <div className="min-h-screen bg-[var(--color-background)] text-[var(--color-text)]">
+    <div className="min-h-screen text-[var(--color-text)]">
       <header className="flex items-center justify-between px-6 md:px-12 py-4 md:py-6 max-w-5xl mx-auto w-full">
         <Link
           href="/"
