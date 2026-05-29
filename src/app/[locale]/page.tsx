@@ -42,12 +42,7 @@ export default function Home() {
   const t = useTranslations("home");
 
   return (
-    <div className="relative min-h-screen flex flex-col text-[var(--color-text)] font-sans">
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 -z-10 bg-cover bg-center bg-no-repeat opacity-60"
-        style={{ backgroundImage: "url('/assets/images/landinghero_kanjido.png')" }}
-      />
+    <div className="min-h-screen flex flex-col text-[var(--color-text)] font-sans">
       <Header />
       <HomeStreakStrip />
 
