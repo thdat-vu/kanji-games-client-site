@@ -6,6 +6,7 @@ import { Link } from "@/i18n/navigation";
 import { useAuth } from "@/context/auth-context";
 import { HomeStreakStrip } from "@/components/features/streak/HomeStreakStrip";
 import { UserMenu } from "@/components/features/auth/UserMenu";
+import { LocaleSwitcher } from "@/components/LocaleSwitcher";
 
 function Header() {
   const { user, loading } = useAuth();
@@ -17,7 +18,8 @@ function Header() {
       <div className="text-xl font-bold tracking-wider text-[var(--color-primary)] justify-self-center md:justify-self-auto md:text-2xl">
         {tc("appName")}
       </div>
-      <nav className="flex items-center gap-4 justify-self-end md:gap-6">
+      <nav className="flex items-center gap-2 justify-self-end md:gap-3">
+        <LocaleSwitcher />
         {loading ? (
           <span className="text-xs text-[var(--color-primary)]/80 md:text-sm">
             {t("checkingAuth")}

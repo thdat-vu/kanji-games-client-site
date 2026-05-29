@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { KanjiSelector } from "@/components/features/play/KanjiSelector";
+import { LocaleSwitcher } from "@/components/LocaleSwitcher";
 import { listKanjiByTheme } from "@/lib/queries/kanji";
 import { THEMES, type Theme } from "@/constants/themes";
 
@@ -32,12 +33,15 @@ export default async function LessonPage({
         >
           {tc("appName")}
         </Link>
-        <Link
-          href="/play"
-          className="text-sm text-[var(--color-primary)] no-underline hover:text-[var(--color-accent)] transition-colors"
-        >
-          {tp("backToLessons")}
-        </Link>
+        <div className="flex items-center gap-3">
+          <LocaleSwitcher />
+          <Link
+            href="/play"
+            className="text-sm text-[var(--color-primary)] no-underline hover:text-[var(--color-accent)] transition-colors"
+          >
+            {tp("backToLessons")}
+          </Link>
+        </div>
       </header>
 
       <h2 className="text-center text-xl md:text-2xl font-bold text-[var(--color-primary)]">

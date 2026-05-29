@@ -3,6 +3,7 @@ import { Link } from "@/i18n/navigation";
 import { LessonSelector } from "@/components/features/play/LessonSelector";
 import { StreakBadge } from "@/components/features/streak/StreakBadge";
 import { UserMenu } from "@/components/features/auth/UserMenu";
+import { LocaleSwitcher } from "@/components/LocaleSwitcher";
 import { listThemes } from "@/lib/queries/kanji";
 import { getLessonCompletions, getUserStreak } from "@/lib/queries/streak";
 import type { Theme } from "@/constants/themes";
@@ -38,6 +39,7 @@ export default async function PlayPage({
         </Link>
         <div className="flex items-center gap-3">
           <StreakBadge streak={streak?.currentStreak ?? null} />
+          <LocaleSwitcher />
           <UserMenu />
         </div>
       </header>

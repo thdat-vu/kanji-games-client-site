@@ -9,6 +9,7 @@ import { markWordCorrect } from "@/lib/queries/streak";
 import { isAnswerCorrect } from "@/lib/play/answer";
 import { gradeStars } from "@/lib/play/stars";
 import { StarRow } from "@/components/features/play/StarRow";
+import { LocaleSwitcher } from "@/components/LocaleSwitcher";
 import type { Theme } from "@/constants/themes";
 import type { MarkWordCorrectResult } from "@/lib/types/streak";
 
@@ -138,14 +139,17 @@ export function GameRound({ kanji, word, reading, meaning, theme }: GameRoundPro
             {kanji}
           </p>
         </div>
-        <button
-          onClick={() => router.back()}
-          aria-label={t("back")}
-          className="w-8 h-8 rounded-full bg-[var(--window-close)] text-white font-bold text-sm flex items-center justify-center
-            hover:brightness-110 transition shadow-[var(--shadow-soft)]"
-        >
-          ×
-        </button>
+        <div className="flex items-center gap-3">
+          <LocaleSwitcher />
+          <button
+            onClick={() => router.back()}
+            aria-label={t("back")}
+            className="w-8 h-8 rounded-full bg-[var(--window-close)] text-white font-bold text-sm flex items-center justify-center
+              hover:brightness-110 transition shadow-[var(--shadow-soft)]"
+          >
+            ×
+          </button>
+        </div>
       </header>
 
       <main className="flex-1 flex flex-col items-center justify-center px-6 gap-6 md:gap-8">

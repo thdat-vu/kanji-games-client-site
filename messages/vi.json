@@ -2,7 +2,12 @@
   "common": {
     "appName": "Kanjido",
     "appNameKanji": "漢字道",
-    "kanjiBadge": "漢字"
+    "kanjiBadge": "漢字",
+    "localeSwitcher": {
+      "label": "Đổi ngôn ngữ",
+      "vi": "Tiếng Việt",
+      "en": "English"
+    }
   },
   "meta": {
     "homeTitle": "Kanjido — vừa chơi vừa học, nhớ lâu vượt trội",
