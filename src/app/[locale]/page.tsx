@@ -42,7 +42,16 @@ export default function Home() {
   const t = useTranslations("home");
 
   return (
-    <div className="min-h-screen flex flex-col text-[var(--color-text)] font-sans">
+    <div className="relative min-h-screen flex flex-col text-[var(--color-text)] font-sans">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 -z-20 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/assets/images/landinghero_kanjido.png')" }}
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 -z-10 bg-[var(--color-background)]/55 md:bg-gradient-to-r md:from-[var(--color-background)]/90 md:via-[var(--color-background)]/70 md:to-[var(--color-background)]/30"
+      />
       <Header />
       <HomeStreakStrip />
 
