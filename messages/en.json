@@ -55,7 +55,7 @@
       "lead": "Each kanji has multiple JLPT levels N5 → N1. Start with the easiest.",
       "s1": "Tap a kanji to reveal levels N5 → N1.",
       "s2": "Tap a level that has words to start a round.",
-      "s3": "Locked levels just have no data yet — come back later.",
+      "s3": "Levels marked 'Coming soon' just have no words yet — check back later.",
       "tip": "Tip: start at N5 and climb up gradually — no need to jump to N1."
     },
     "game": {
@@ -84,7 +84,7 @@
     "levelMap": {
       "ariaLabel": "JLPT levels",
       "wordCount": "{count, plural, =0 {No words yet} one {# word} other {# words}}",
-      "locked": "Not unlocked",
+      "locked": "Coming soon",
       "label": {
         "N5": "Beginner",
         "N4": "Lower-intermediate",
